@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ArdiraSurvey__Survey_Type__c</fullName>
+    <deprecated>false</deprecated>
+    <description>Use this field to differentiate between different types of survey records. Select &quot;Survey&quot; or &quot;Form&quot; for regular data collection surveys/forms and &quot;Design Template&quot; for reusable survey/form templates. If the field is empty, it means Survey.</description>
+    <inlineHelpText>This field to distinguish between various types of survey records. Choose &quot;Survey&quot; or &quot;Form&quot; for regular data collection surveys/forms, and select &quot;Design Template&quot; for reusable survey/form design templates. If the field is left empty, it indicates a regular survey.</inlineHelpText>
+    <label>Survey Type</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Survey</fullName>
+                <default>true</default>
+                <label>Survey</label>
+            </value>
+            <value>
+                <fullName>Design Template</fullName>
+                <default>false</default>
+                <label>Design Template</label>
+            </value>
+            <value>
+                <fullName>Form</fullName>
+                <default>false</default>
+                <label>Form</label>
+            </value>
+            <value>
+                <fullName>Form Builder</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Form Builder</label>
+            </value>
+            <value>
+                <fullName>Survey Design Template</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Survey Design Template</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

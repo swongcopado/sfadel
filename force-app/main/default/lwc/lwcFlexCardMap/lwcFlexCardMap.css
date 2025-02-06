@@ -1,0 +1,32 @@
+.slds-map_container{
+    background-color: #f00;
+}
+.slds-map{
+    position: relative;
+    min-width: 5.0rem;
+    width: 100%;
+    max-height: 100%;
+  }
+ 
+
+.google-wrapper {
+    position: relative;
+
+}
+.google-map {
+    width  : 500px;
+    height : 380px;
+}
+
+.google-map-overlay {
+    /*width  : 500px;
+    height : 380px;*/
+    width:300px;
+    height:112px;
+    background: linear-gradient(180deg, rgba(255,255,255,.1) 0%, rgba(255,255,255,.2) 70%, rgba(255,255,255,1) 90%, rgba(255,255,255,1) 100%);
+    position: absolute;
+    top: 0px; 
+    left: 0px; 
+    pointer-events: none;
+    z-index: 99;
+}

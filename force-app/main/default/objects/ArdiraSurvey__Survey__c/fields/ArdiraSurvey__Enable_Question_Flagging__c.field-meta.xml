@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ArdiraSurvey__Enable_Question_Flagging__c</fullName>
+    <defaultValue>false</defaultValue>
+    <deprecated>false</deprecated>
+    <description>Enable Question flagging with workflow for the survey.</description>
+    <inlineHelpText>Enabling this option allows for question flagging with associated workflow functionality for the survey. This feature enables the ability to flag specific questions within the survey, such as &quot;Need More Info&quot; or &quot;Accepted,&quot; during the data correction stages of the workflow processes.</inlineHelpText>
+    <label>Question Flagging with Workflow</label>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

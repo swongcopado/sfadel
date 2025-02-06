@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>redwing__Resize_To_Fit_Images__c</fullName>
+    <defaultValue>false</defaultValue>
+    <deprecated>false</deprecated>
+    <inlineHelpText>Enable this option to resize to fit background images used across the app</inlineHelpText>
+    <label>Resize To Fit Images</label>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

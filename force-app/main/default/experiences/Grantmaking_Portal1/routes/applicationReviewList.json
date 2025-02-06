@@ -1,0 +1,11 @@
+{
+  "activeViewId" : "29693f39-b9fb-405e-b733-319034a69129",
+  "appPageId" : "7cd60cbf-9c3c-4756-b031-e5d09e77c8ab",
+  "configurationTags" : [ ],
+  "devName" : "Application_Review_List",
+  "id" : "b6c1925c-aec6-42f2-b0b6-76ff6d360aad",
+  "label" : "Application Review List",
+  "routeType" : "list-0vx",
+  "type" : "route",
+  "urlPrefix" : "applicationReview"
+}

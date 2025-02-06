@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ServiceStartingMessage__c</fullName>
+    <deleteConstraint>SetNull</deleteConstraint>
+    <label>Starting Message</label>
+    <referenceTo>ChatResponse__c</referenceTo>
+    <relationshipLabel>EinsteinGPT Configuration</relationshipLabel>
+    <relationshipName>EinsteinGPT_Configuration</relationshipName>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Lookup</type>
+</CustomField>

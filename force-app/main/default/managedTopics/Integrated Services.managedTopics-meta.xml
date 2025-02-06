@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ManagedTopics xmlns="http://soap.sforce.com/2006/04/metadata">
+    <managedTopic>
+        <fullName>Integrated Services.Content:Adoption Assistance</fullName>
+        <managedTopicType>Content</managedTopicType>
+        <name>Adoption Assistance</name>
+        <parentName></parentName>
+        <position>2</position>
+        <topicDescription> </topicDescription>
+    </managedTopic>
+    <managedTopic>
+        <fullName>Integrated Services.Content:Cash Assistance</fullName>
+        <managedTopicType>Content</managedTopicType>
+        <name>Cash Assistance</name>
+        <parentName></parentName>
+        <position>1</position>
+        <topicDescription> </topicDescription>
+    </managedTopic>
+    <managedTopic>
+        <fullName>Integrated Services.Content:Foster Care</fullName>
+        <managedTopicType>Content</managedTopicType>
+        <name>Foster Care</name>
+        <parentName></parentName>
+        <position>0</position>
+        <topicDescription> </topicDescription>
+    </managedTopic>
+    <managedTopic>
+        <fullName>Integrated Services.Featured:Cash Assistance</fullName>
+        <managedTopicType>Featured</managedTopicType>
+        <name>Cash Assistance</name>
+        <parentName></parentName>
+        <position>0</position>
+        <topicDescription> </topicDescription>
+    </managedTopic>
+    <managedTopic>
+        <fullName>Integrated Services.Featured:Disability Services</fullName>
+        <managedTopicType>Featured</managedTopicType>
+        <name>Disability Services</name>
+        <parentName></parentName>
+        <position>1</position>
+        <topicDescription> </topicDescription>
+    </managedTopic>
+    <managedTopic>
+        <fullName>Integrated Services.Featured:Disaster &amp; Emergencies</fullName>
+        <managedTopicType>Featured</managedTopicType>
+        <name>Disaster &amp; Emergencies</name>
+        <parentName></parentName>
+        <position>2</position>
+        <topicDescription> </topicDescription>
+    </managedTopic>
+    <managedTopic>
+        <fullName>Integrated Services.Featured:Education Assistance</fullName>
+        <managedTopicType>Featured</managedTopicType>
+        <name>Education Assistance</name>
+        <parentName></parentName>
+        <position>3</position>
+        <topicDescription> </topicDescription>
+    </managedTopic>
+    <managedTopic>
+        <fullName>Integrated Services.Featured:Food Assistance</fullName>
+        <managedTopicType>Featured</managedTopicType>
+        <name>Food Assistance</name>
+        <parentName></parentName>
+        <position>4</position>
+        <topicDescription> </topicDescription>
+    </managedTopic>
+    <managedTopic>
+        <fullName>Integrated Services.Featured:Grants &amp; Loans</fullName>
+        <managedTopicType>Featured</managedTopicType>
+        <name>Grants &amp; Loans</name>
+        <parentName></parentName>
+        <position>5</position>
+        <topicDescription> </topicDescription>
+    </managedTopic>
+    <managedTopic>
+        <fullName>Integrated Services.Featured:Housing Assistance</fullName>
+        <managedTopicType>Featured</managedTopicType>
+        <name>Housing Assistance</name>
+        <parentName></parentName>
+        <position>6</position>
+        <topicDescription> </topicDescription>
+    </managedTopic>
+    <managedTopic>
+        <fullName>Integrated Services.Featured:Jobs &amp; Unemployment</fullName>
+        <managedTopicType>Featured</managedTopicType>
+        <name>Jobs &amp; Unemployment</name>
+        <parentName></parentName>
+        <position>7</position>
+        <topicDescription> </topicDescription>
+    </managedTopic>
+    <managedTopic>
+        <fullName>Integrated Services.Featured:Medical Assistance</fullName>
+        <managedTopicType>Featured</managedTopicType>
+        <name>Medical Assistance</name>
+        <parentName></parentName>
+        <position>8</position>
+        <topicDescription> </topicDescription>
+    </managedTopic>
+    <managedTopic>
+        <fullName>Integrated Services.Navigational:Adoption Assistance</fullName>
+        <managedTopicType>Navigational</managedTopicType>
+        <name>Adoption Assistance</name>
+        <parentName></parentName>
+        <position>14</position>
+        <topicDescription> </topicDescription>
+    </managedTopic>
+    <managedTopic>
+        <fullName>Integrated Services.Navigational:Cash Assistance</fullName>
+        <managedTopicType>Navigational</managedTopicType>
+        <name>Cash Assistance</name>
+        <parentName></parentName>
+        <position>12</position>
+        <topicDescription> </topicDescription>
+    </managedTopic>
+    <managedTopic>
+        <fullName>Integrated Services.Navigational:Constituent Taxes</fullName>
+        <managedTopicType>Navigational</managedTopicType>
+        <name>Constituent Taxes</name>
+        <parentName></parentName>
+        <position>3</position>
+        <topicDescription> </topicDescription>
+    </managedTopic>
+    <managedTopic>
+        <fullName>Integrated Services.Navigational:Covid-19</fullName>
+        <managedTopicType>Navigational</managedTopicType>
+        <name>Covid-19</name>
+        <parentName></parentName>
+        <position>6</position>
+        <topicDescription> </topicDescription>
+    </managedTopic>
+    <managedTopic>
+        <fullName>Integrated Services.Navigational:Disability Services</fullName>
+        <managedTopicType>Navigational</managedTopicType>
+        <name>Disability Services</name>
+        <parentName></parentName>
+        <position>9</position>
+        <topicDescription> </topicDescription>
+    </managedTopic>
+    <managedTopic>
+        <fullName>Integrated Services.Navigational:Disaster &amp; Emergencies</fullName>
+        <managedTopicType>Navigational</managedTopicType>
+        <name>Disaster &amp; Emergencies</name>
+        <parentName></parentName>
+        <position>1</position>
+        <topicDescription> </topicDescription>
+    </managedTopic>
+    <managedTopic>
+        <fullName>Integrated Services.Navigational:Education Assistance</fullName>
+        <managedTopicType>Navigational</managedTopicType>
+        <name>Education Assistance</name>
+        <parentName></parentName>
+        <position>4</position>
+        <topicDescription> </topicDescription>
+    </managedTopic>
+    <managedTopic>
+        <fullName>Integrated Services.Navigational:Food Assistance</fullName>
+        <managedTopicType>Navigational</managedTopicType>
+        <name>Food Assistance</name>
+        <parentName></parentName>
+        <position>7</position>
+        <topicDescription> </topicDescription>
+    </managedTopic>
+    <managedTopic>
+        <fullName>Integrated Services.Navigational:Foster Care</fullName>
+        <managedTopicType>Navigational</managedTopicType>
+        <name>Foster Care</name>
+        <parentName></parentName>
+        <position>13</position>
+        <topicDescription> </topicDescription>
+    </managedTopic>
+    <managedTopic>
+        <fullName>Integrated Services.Navigational:Grants &amp; Loans</fullName>
+        <managedTopicType>Navigational</managedTopicType>
+        <name>Grants &amp; Loans</name>
+        <parentName></parentName>
+        <position>0</position>
+        <topicDescription> </topicDescription>
+    </managedTopic>
+    <managedTopic>
+        <fullName>Integrated Services.Navigational:Housing Assistance</fullName>
+        <managedTopicType>Navigational</managedTopicType>
+        <name>Housing Assistance</name>
+        <parentName></parentName>
+        <position>2</position>
+        <topicDescription> </topicDescription>
+    </managedTopic>
+    <managedTopic>
+        <fullName>Integrated Services.Navigational:Jobs &amp; Unemployment</fullName>
+        <managedTopicType>Navigational</managedTopicType>
+        <name>Jobs &amp; Unemployment</name>
+        <parentName></parentName>
+        <position>5</position>
+        <topicDescription> </topicDescription>
+    </managedTopic>
+    <managedTopic>
+        <fullName>Integrated Services.Navigational:Medical Assistance</fullName>
+        <managedTopicType>Navigational</managedTopicType>
+        <name>Medical Assistance</name>
+        <parentName></parentName>
+        <position>10</position>
+        <topicDescription> </topicDescription>
+    </managedTopic>
+    <managedTopic>
+        <fullName>Integrated Services.Navigational:Permits &amp; License Center**</fullName>
+        <managedTopicType>Navigational</managedTopicType>
+        <name>Permits &amp; License Center**</name>
+        <parentName></parentName>
+        <position>8</position>
+        <topicDescription> </topicDescription>
+    </managedTopic>
+    <managedTopic>
+        <fullName>Integrated Services.Navigational:Transportation</fullName>
+        <managedTopicType>Navigational</managedTopicType>
+        <name>Transportation</name>
+        <parentName></parentName>
+        <position>11</position>
+        <topicDescription> </topicDescription>
+    </managedTopic>
+</ManagedTopics>

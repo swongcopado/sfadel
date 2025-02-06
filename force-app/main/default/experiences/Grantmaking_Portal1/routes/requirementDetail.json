@@ -1,0 +1,12 @@
+{
+  "activeViewId" : "ce678d7d-3b16-47b0-a270-b717f0f04187",
+  "appPageId" : "7cd60cbf-9c3c-4756-b031-e5d09e77c8ab",
+  "configurationTags" : [ ],
+  "devName" : "Requirement_Detail__c",
+  "id" : "b567814a-e070-4002-ad10-dc3fd5813ce0",
+  "label" : "Requirement Detail",
+  "objectApiName" : "outfunds__Requirement__c",
+  "routeType" : "detail-a1A",
+  "type" : "route",
+  "urlPrefix" : "requirement"
+}

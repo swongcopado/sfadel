@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>redwing__Register_Learning_Plans_upon_Launch__c</fullName>
+    <defaultValue>false</defaultValue>
+    <deprecated>false</deprecated>
+    <inlineHelpText>If checked, users will be able to register for a Learning Plan by clicking on a learning from the Learning Plan Activity component. (Does not work for e-commerce.)</inlineHelpText>
+    <label>Register Learning Plans upon Launch</label>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

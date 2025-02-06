@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PermissionSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <applicationVisibilities>
+        <application>Emergency_Requests</application>
+        <visible>true</visible>
+    </applicationVisibilities>
+    <applicationVisibilities>
+        <application>omnistudio__Vlocity_Digital_Studio</application>
+        <visible>true</visible>
+    </applicationVisibilities>
+    <applicationVisibilities>
+        <application>standard__PublicSectorInspectionManagement</application>
+        <visible>true</visible>
+    </applicationVisibilities>
+    <description>All app menu apps related to PSS</description>
+    <hasActivationRequired>false</hasActivationRequired>
+    <label>PSS Apps</label>
+</PermissionSet>

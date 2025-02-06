@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ArdiraSurvey__C_Multiple_Choice_Display__c</fullName>
+    <defaultValue>&quot;Checkbox&quot;</defaultValue>
+    <deprecated>false</deprecated>
+    <description>Way to display multiple choices.</description>
+    <inlineHelpText>Select how you would like to display multiple choices in the survey response interface.
+The radio button format allows user to select only single choice.</inlineHelpText>
+    <label>Multiple Choice - Display Option</label>
+    <required>true</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Checkbox</fullName>
+                <default>true</default>
+                <label>Checkbox</label>
+            </value>
+            <value>
+                <fullName>Checkbox - 2 Columns</fullName>
+                <default>false</default>
+                <label>Checkbox - 2 Columns</label>
+            </value>
+            <value>
+                <fullName>Checkbox - 3 Columns</fullName>
+                <default>false</default>
+                <label>Checkbox - 3 Columns</label>
+            </value>
+            <value>
+                <fullName>List</fullName>
+                <default>false</default>
+                <label>List</label>
+            </value>
+            <value>
+                <fullName>Radio</fullName>
+                <default>false</default>
+                <label>Radio</label>
+            </value>
+            <value>
+                <fullName>Radio - 2 Columns</fullName>
+                <default>false</default>
+                <label>Radio - 2 Columns</label>
+            </value>
+            <value>
+                <fullName>Radio - 3 Columns</fullName>
+                <default>false</default>
+                <label>Radio - 3 Columns</label>
+            </value>
+            <value>
+                <fullName>Hierarchy Tree</fullName>
+                <default>false</default>
+                <label>Hierarchy Tree</label>
+            </value>
+            <value>
+                <fullName>Typeahead</fullName>
+                <default>false</default>
+                <label>Typeahead</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

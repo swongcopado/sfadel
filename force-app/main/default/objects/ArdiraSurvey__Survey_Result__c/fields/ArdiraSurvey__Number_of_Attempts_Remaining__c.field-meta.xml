@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ArdiraSurvey__Number_of_Attempts_Remaining__c</fullName>
+    <deprecated>false</deprecated>
+    <description>This refers to the number of times a user is still allowed to retake a quiz in order to complete it, based on the maximum number of retakes allowed. For example, if a user is allowed up to 3 retakes to pass the quiz and has already taken the quiz twice, their &quot;number of retakes remaining&quot; would be 1.</description>
+    <externalId>false</externalId>
+    <formula>ArdiraSurvey__Number_of_Attempts_Allowed__c  -  ArdiraSurvey__Number_of_Attempts__c</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <inlineHelpText>This refers to the number of times a user is still allowed to retake a quiz in order to complete it, based on the maximum number of retakes allowed. For example, if a user is allowed up to 3 retakes to pass the quiz and has already taken the quiz twice, their &quot;number of retakes remaining&quot; would be 1.</inlineHelpText>
+    <label>Number of Retakes Remaining</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>0</scale>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Number</type>
+    <unique>false</unique>
+</CustomField>

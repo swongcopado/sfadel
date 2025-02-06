@@ -1,0 +1,12 @@
+{
+  "activeViewId" : "78b2c310-b43d-4485-9b52-fb026983e61b",
+  "appPageId" : "7fe97e67-1ab0-4fe3-8497-ddfeb8bcee4b",
+  "configurationTags" : [ ],
+  "devName" : "Food_Production_Submission__c",
+  "id" : "af51c635-8688-4396-849d-54a07459f775",
+  "label" : "Food Production Submission",
+  "pageAccess" : "UseParent",
+  "routeType" : "custom-food-production-submission",
+  "type" : "route",
+  "urlPrefix" : "food-production-submission"
+}

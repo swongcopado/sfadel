@@ -1,0 +1,12 @@
+{
+  "activeViewId" : "5bafd871-1d20-473e-9094-e93e8ae63b23",
+  "appPageId" : "7fe97e67-1ab0-4fe3-8497-ddfeb8bcee4b",
+  "configurationTags" : [ ],
+  "devName" : "Test_Learning__c",
+  "id" : "115bf559-1d99-4a93-8302-ff1750f68314",
+  "label" : "Test Learning",
+  "pageAccess" : "UseParent",
+  "routeType" : "custom-test-learning",
+  "type" : "route",
+  "urlPrefix" : "test-learning"
+}

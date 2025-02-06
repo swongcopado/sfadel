@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ArdiraSurvey__Respond_Survey__c</fullName>
+    <deprecated>false</deprecated>
+    <description>Users can use this link to respond to the survey.</description>
+    <externalId>false</externalId>
+    <formula>IF(ISPICKVAL(ArdiraSurvey__Status__c , &apos;Completed&apos;),&apos;&apos;,(HYPERLINK(LEFT($Api.Partner_Server_URL_450, FIND(&apos;/services&apos;, $Api.Partner_Server_URL_450)) &amp; &quot;lightning/r/&quot; &amp; Id &amp; &quot;/edit&quot;,   IF(ArdiraSurvey__Workflow_Stage_Name__c  != &apos;&apos;, ArdiraSurvey__Workflow_Stage_Name__c , &quot;Respond&quot;) , &quot;_blank&quot;)))</formula>
+    <inlineHelpText>Users can use this link to respond to the survey.</inlineHelpText>
+    <label>Click to Respond</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Case_Type_Image_URL__c</fullName>
+    <description>Image to display for case type so case records can display as tiles in a CMS collection on a community.  Each time you create a new case we default an image based on case type. See process builder for the process: Set Case Type Image&quot; (Brian Murphy)</description>
+    <inlineHelpText>Image to display for case type so case records can display as tiles in a CMS collection on a community.  Each time you create a new case we default an image based on case type. See process builder for the process: &quot;Set Case Type Image&quot;</inlineHelpText>
+    <label>Case Type Image URL</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Url</type>
+</CustomField>

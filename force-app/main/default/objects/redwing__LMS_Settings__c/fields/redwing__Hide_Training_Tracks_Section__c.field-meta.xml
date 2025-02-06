@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>redwing__Hide_Training_Tracks_Section__c</fullName>
+    <defaultValue>false</defaultValue>
+    <deprecated>false</deprecated>
+    <inlineHelpText>Enable this option to hide entry points to Learning Tracs</inlineHelpText>
+    <label>Hide Learning Tracs Section</label>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

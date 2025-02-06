@@ -1,0 +1,28 @@
+.THIS .toggle {
+    visibility: hidden;
+}
+
+.THIS .hide {
+    display: none;
+}
+
+.THIS .slds-textarea {
+    height: 150px;
+}
+
+.THIS .map {
+    position: relative;
+    height: 300px;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+
+.THIS .slds-spinner_container {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    /* bring your own prefixes */
+    transform: translate(-50%, -50%);
+}

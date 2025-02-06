@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>ConjPerm de Regra de Permissão do SGA</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>ConjPerm de Regras de Permissão do SGA</value>
+    </caseValues>
+    <gender>Masculine</gender>
+    <nameFieldLabel>ID do Conjunto de Permissões LMS</nameFieldLabel>
+</CustomObjectTranslation>

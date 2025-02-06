@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Operação lote do plano de aprendizagem</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Operações lotes do plano de aprendizagem</value>
+    </caseValues>
+    <gender>Feminine</gender>
+    <nameFieldLabel>ID oper. do lote do plano aprendizagem</nameFieldLabel>
+</CustomObjectTranslation>

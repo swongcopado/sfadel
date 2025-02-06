@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ArdiraSurvey__Reverse_Order__c</fullName>
+    <defaultValue>false</defaultValue>
+    <deprecated>false</deprecated>
+    <description>Enables to display NPS 10-0 instead of 0-10 choices order.</description>
+    <inlineHelpText>Enables to display NPS 10-0 instead of 0-10 choices order.</inlineHelpText>
+    <label>Reverse Order</label>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>redwing__Achievement_Community_Page__c</fullName>
+    <deprecated>false</deprecated>
+    <externalId>false</externalId>
+    <inlineHelpText>Use this custom setting only you would like to override the community Achievement Details page for users in email notifications. For example, “/s/achievement-detail-standard-custom”. If empty, default /s/achievement-detail-standard page will be used.</inlineHelpText>
+    <label>Achievement Community Page</label>
+    <length>255</length>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

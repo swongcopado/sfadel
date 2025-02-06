@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ArdiraSurvey__Do_Not_Allow_Change_Saved_Response__c</fullName>
+    <defaultValue>false</defaultValue>
+    <deprecated>false</deprecated>
+    <description>When enabled, a Survey/Form participant will not be allowed to change their response once it is saved.</description>
+    <inlineHelpText>When enabled, a Survey/Form participant will not be allowed to change their response once it is saved.</inlineHelpText>
+    <label>Do Not Allow to Change Saved Response</label>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

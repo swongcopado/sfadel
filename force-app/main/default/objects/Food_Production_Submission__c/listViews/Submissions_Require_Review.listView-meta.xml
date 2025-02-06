@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Submissions_Require_Review</fullName>
+    <columns>NAME</columns>
+    <columns>Farm_Plot_Number__c</columns>
+    <columns>Farm_Name__c</columns>
+    <columns>Year_of_Sale__c</columns>
+    <columns>Sale_Period__c</columns>
+    <columns>Status__c</columns>
+    <columns>Attention_Details__c</columns>
+    <columns>Require_Attention__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>Attention_Details__c</field>
+        <operation>notEqual</operation>
+    </filters>
+    <label>Submissions Require Review</label>
+</ListView>

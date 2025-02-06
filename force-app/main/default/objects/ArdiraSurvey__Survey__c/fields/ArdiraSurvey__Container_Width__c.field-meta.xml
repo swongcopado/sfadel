@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ArdiraSurvey__Container_Width__c</fullName>
+    <defaultValue>100</defaultValue>
+    <deprecated>false</deprecated>
+    <description>This setting enables you to restrict the overall width of the survey responder interface when viewed on a respondent&apos;s desktop device. It&apos;s important to be aware that this setting does not affect the survey responder interface when accessed on a mobile device.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Adjust the width of the survey responder interface to suit your preferences on desktop devices. This setting allows you to specify the width as a percentage relative to the screen area, ensuring optimal presentation.</inlineHelpText>
+    <label>Desktop Survey Interface Width (%)</label>
+    <precision>3</precision>
+    <required>false</required>
+    <scale>0</scale>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Number</type>
+    <unique>false</unique>
+</CustomField>

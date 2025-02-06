@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ArdiraSurvey__Hierarchy_Tree_Design_Option__c</fullName>
+    <deprecated>false</deprecated>
+    <description>Select to display answer choices either expanded or collapsed for Hierarchy Tree design option.</description>
+    <inlineHelpText>Select to display answer choices either expanded or collapsed for Hierarchy Tree design option.</inlineHelpText>
+    <label>Hierarchy Tree Design Option</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Expanded</fullName>
+                <default>true</default>
+                <label>Expanded</label>
+            </value>
+            <value>
+                <fullName>Collapsed</fullName>
+                <default>false</default>
+                <label>Collapsed</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

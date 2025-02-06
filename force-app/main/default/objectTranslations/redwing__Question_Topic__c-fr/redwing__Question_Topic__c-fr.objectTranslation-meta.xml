@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Sujet de question</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Sujets de question</value>
+    </caseValues>
+    <gender>Masculine</gender>
+    <nameFieldLabel>Nom de sujet de question</nameFieldLabel>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

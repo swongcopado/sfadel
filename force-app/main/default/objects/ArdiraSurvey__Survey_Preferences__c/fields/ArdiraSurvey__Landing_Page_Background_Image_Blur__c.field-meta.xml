@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ArdiraSurvey__Landing_Page_Background_Image_Blur__c</fullName>
+    <defaultValue>0</defaultValue>
+    <deprecated>false</deprecated>
+    <description>Setup image blurriness in scale of 0 to 20</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Select the background image blurriness in scale of 0 to 20</inlineHelpText>
+    <label>Landing Page Background Image Blur</label>
+    <precision>3</precision>
+    <required>false</required>
+    <scale>0</scale>
+    <trackTrending>false</trackTrending>
+    <type>Number</type>
+    <unique>false</unique>
+</CustomField>

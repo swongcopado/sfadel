@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ArdiraSurvey__Thank_You_Button_Link_URL__c</fullName>
+    <deprecated>false</deprecated>
+    <description>On button click, user will be redirected to button link URL, if empty close browser.</description>
+    <inlineHelpText>User will be redirected to the link added to this field upon clicking the thank you button.
+If this field is left empty, user’s browser window will be closed.</inlineHelpText>
+    <label>Deprecated Thank You Button Link URL</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Url</type>
+</CustomField>

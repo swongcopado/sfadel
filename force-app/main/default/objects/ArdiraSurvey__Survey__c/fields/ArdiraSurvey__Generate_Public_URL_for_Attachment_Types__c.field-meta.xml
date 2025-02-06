@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ArdiraSurvey__Generate_Public_URL_for_Attachment_Types__c</fullName>
+    <deprecated>false</deprecated>
+    <description>Limit the file types for which a Public URL would be generated and uploaded to the survey solution in a Tabular Report. Enter file extensions separated with a comma for example (jpg,doc,text). To allow all file types, leave this field empty.</description>
+    <inlineHelpText>Specify the file extensions for which a Public URL will be generated and displayed in the Tabular Report. Enter the file extensions separated by commas (e.g., jpg, doc, text). Leave this field empty to allow all file types. This feature generates publicly accessible URLs for the specified file types, making them accessible and viewable in the Tabular Report.</inlineHelpText>
+    <label>Public URL for File Types</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>TextArea</type>
+</CustomField>

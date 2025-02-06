@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<NavigationMenu xmlns="http://soap.sforce.com/2006/04/metadata">
+    <container>Constituent Self-Service</container>
+    <containerType>Network</containerType>
+    <label>TileMenu</label>
+    <navigationMenuItem>
+        <label>Apply for Services</label>
+        <position>0</position>
+        <publiclyAvailable>true</publiclyAvailable>
+        <target>/contactsupport</target>
+        <type>InternalLink</type>
+    </navigationMenuItem>
+    <navigationMenuItem>
+        <label>Submit a Complaint</label>
+        <position>1</position>
+        <publiclyAvailable>true</publiclyAvailable>
+        <target>/contactsupport</target>
+        <type>InternalLink</type>
+    </navigationMenuItem>
+    <navigationMenuItem>
+        <label>Schedule an Appointment</label>
+        <position>2</position>
+        <publiclyAvailable>true</publiclyAvailable>
+        <target>/lightschedulerflow</target>
+        <type>InternalLink</type>
+    </navigationMenuItem>
+</NavigationMenu>

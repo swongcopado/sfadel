@@ -1,0 +1,281 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <apiVersion>53.0</apiVersion>
+    <assignments>
+        <name>Supporting_Documentation_docId_assignment</name>
+        <label>Supporting_Documentation_docId_assignment</label>
+        <locationX>0</locationX>
+        <locationY>0</locationY>
+        <assignmentItems>
+            <assignToReference>Supporting_Documentation_docId</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>Supporting_Documentation_loopVar</elementReference>
+            </value>
+        </assignmentItems>
+        <assignmentItems>
+            <assignToReference>SvcCatalogAttachedContentDocIds</assignToReference>
+            <operator>Add</operator>
+            <value>
+                <elementReference>Supporting_Documentation_loopVar</elementReference>
+            </value>
+        </assignmentItems>
+        <connector>
+            <targetReference>Supporting_Documentation_loop</targetReference>
+        </connector>
+    </assignments>
+    <choices>
+        <name>Bereavement</name>
+        <choiceText>Bereavement</choiceText>
+        <dataType>String</dataType>
+        <value>
+            <stringValue>Bereavement</stringValue>
+        </value>
+    </choices>
+    <choices>
+        <name>Jury_Duty</name>
+        <choiceText>Jury Duty</choiceText>
+        <dataType>String</dataType>
+        <value>
+            <stringValue>Jury Duty</stringValue>
+        </value>
+    </choices>
+    <choices>
+        <name>Medical</name>
+        <choiceText>Medical</choiceText>
+        <dataType>String</dataType>
+        <value>
+            <stringValue>Medical</stringValue>
+        </value>
+    </choices>
+    <choices>
+        <name>Military</name>
+        <choiceText>Military</choiceText>
+        <dataType>String</dataType>
+        <value>
+            <stringValue>Military</stringValue>
+        </value>
+    </choices>
+    <choices>
+        <name>Parental</name>
+        <choiceText>Parental</choiceText>
+        <dataType>String</dataType>
+        <value>
+            <stringValue>Parental</stringValue>
+        </value>
+    </choices>
+    <choices>
+        <name>Sick</name>
+        <choiceText>Sick</choiceText>
+        <dataType>String</dataType>
+        <value>
+            <stringValue>Sick</stringValue>
+        </value>
+    </choices>
+    <choices>
+        <name>Unpaid</name>
+        <choiceText>Unpaid</choiceText>
+        <dataType>String</dataType>
+        <value>
+            <stringValue>Unpaid</stringValue>
+        </value>
+    </choices>
+    <choices>
+        <name>Vacation</name>
+        <choiceText>Vacation</choiceText>
+        <dataType>String</dataType>
+        <value>
+            <stringValue>Vacation</stringValue>
+        </value>
+    </choices>
+    <formulas>
+        <name>org_base_url</name>
+        <dataType>String</dataType>
+        <expression>LEFT({!$Api.Partner_Server_URL_530}, FIND(&apos;/services/&apos;, {!$Api.Partner_Server_URL_530}))</expression>
+    </formulas>
+    <isTemplate>true</isTemplate>
+    <label>Request Leave</label>
+    <loops>
+        <name>Supporting_Documentation_loop</name>
+        <label>Supporting_Documentation Loop</label>
+        <locationX>0</locationX>
+        <locationY>0</locationY>
+        <assignNextValueToReference>Supporting_Documentation_loopVar</assignNextValueToReference>
+        <collectionReference>Supporting_Documentation_docIds</collectionReference>
+        <iterationOrder>Asc</iterationOrder>
+        <nextValueConnector>
+            <targetReference>Supporting_Documentation_docId_assignment</targetReference>
+        </nextValueConnector>
+        <noMoreValuesConnector>
+            <targetReference>Service_Catalog_Create_Case_Fulfillment_Flow_Subflow</targetReference>
+        </noMoreValuesConnector>
+    </loops>
+    <processType>ServiceCatalogItemFlow</processType>
+    <screens>
+        <name>item_1637065047135_RequestLeave_questions</name>
+        <label>Request Leave Questions</label>
+        <locationX>0</locationX>
+        <locationY>0</locationY>
+        <allowBack>true</allowBack>
+        <allowFinish>true</allowFinish>
+        <allowPause>true</allowPause>
+        <connector>
+            <targetReference>Supporting_Documentation_loop</targetReference>
+        </connector>
+        <fields>
+            <name>Leave_Type</name>
+            <choiceReferences>Vacation</choiceReferences>
+            <choiceReferences>Sick</choiceReferences>
+            <choiceReferences>Parental</choiceReferences>
+            <choiceReferences>Bereavement</choiceReferences>
+            <choiceReferences>Medical</choiceReferences>
+            <choiceReferences>Military</choiceReferences>
+            <choiceReferences>Jury_Duty</choiceReferences>
+            <choiceReferences>Unpaid</choiceReferences>
+            <dataType>String</dataType>
+            <fieldText>Leave type</fieldText>
+            <fieldType>DropdownBox</fieldType>
+            <isRequired>true</isRequired>
+        </fields>
+        <fields>
+            <name>Start_Date</name>
+            <dataType>Date</dataType>
+            <fieldText>Start date</fieldText>
+            <fieldType>InputField</fieldType>
+            <isRequired>true</isRequired>
+        </fields>
+        <fields>
+            <name>Anticipated_End_Date</name>
+            <dataType>Date</dataType>
+            <fieldText>Anticipated end date</fieldText>
+            <fieldType>InputField</fieldType>
+            <isRequired>true</isRequired>
+        </fields>
+        <fields>
+            <name>Supporting_Documentation</name>
+            <extensionName>forceContent:fileUpload</extensionName>
+            <fieldText>Supporting documentation</fieldText>
+            <fieldType>ComponentInstance</fieldType>
+            <inputParameters>
+                <name>label</name>
+                <value>
+                    <stringValue>Attachments</stringValue>
+                </value>
+            </inputParameters>
+            <inputParameters>
+                <name>multiple</name>
+                <value>
+                    <booleanValue>false</booleanValue>
+                </value>
+            </inputParameters>
+            <isRequired>true</isRequired>
+            <outputParameters>
+                <assignToReference>Supporting_Documentation_docIds</assignToReference>
+                <name>contentDocIds</name>
+            </outputParameters>
+        </fields>
+        <fields>
+            <name>Additional_Information</name>
+            <fieldText>Additional Information</fieldText>
+            <fieldType>LargeTextArea</fieldType>
+            <isRequired>false</isRequired>
+        </fields>
+        <showFooter>true</showFooter>
+        <showHeader>true</showHeader>
+    </screens>
+    <start>
+        <locationX>0</locationX>
+        <locationY>0</locationY>
+        <connector>
+            <targetReference>item_1637065047135_RequestLeave_questions</targetReference>
+        </connector>
+    </start>
+    <status>Active</status>
+    <subflows>
+        <name>Service_Catalog_Create_Case_Fulfillment_Flow_Subflow</name>
+        <label>Fulfillment Flow</label>
+        <locationX>0</locationX>
+        <locationY>0</locationY>
+        <flowName>wkdw__Service_Catalog_Create_Case_Fulfillment_Flow</flowName>
+        <inputAssignments>
+            <name>AdditionalQuestions</name>
+            <value>
+                <stringValue>Leave Type
+{!Leave_Type}
+
+Start date
+{!Start_Date}
+
+Anticipated end date
+{!Anticipated_End_Date}
+
+Attachments
+{!org_base_url}{!Supporting_Documentation_docId}
+
+Additional Information
+{!Additional_Information}
+
+</stringValue>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <name>var_sc_caseStatus</name>
+            <value>
+                <stringValue>New</stringValue>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <name>var_sc_casePriority</name>
+            <value>
+                <stringValue>Medium</stringValue>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <name>var_sc_caseRecordTypeName</name>
+            <value>
+                <stringValue>HR_Leave</stringValue>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <name>var_sc_caseOrigin</name>
+            <value>
+                <stringValue>Web</stringValue>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <name>var_sc_caseSubject</name>
+            <value>
+                <stringValue>Request Leave</stringValue>
+            </value>
+        </inputAssignments>
+        <storeOutputAutomatically>true</storeOutputAutomatically>
+    </subflows>
+    <variables>
+        <name>Supporting_Documentation_docId</name>
+        <dataType>String</dataType>
+        <isCollection>false</isCollection>
+        <isInput>false</isInput>
+        <isOutput>false</isOutput>
+    </variables>
+    <variables>
+        <name>Supporting_Documentation_docIds</name>
+        <dataType>String</dataType>
+        <isCollection>true</isCollection>
+        <isInput>false</isInput>
+        <isOutput>false</isOutput>
+    </variables>
+    <variables>
+        <name>Supporting_Documentation_loopVar</name>
+        <dataType>String</dataType>
+        <isCollection>false</isCollection>
+        <isInput>false</isInput>
+        <isOutput>false</isOutput>
+    </variables>
+    <variables>
+        <name>SvcCatalogAttachedContentDocIds</name>
+        <dataType>String</dataType>
+        <isCollection>true</isCollection>
+        <isInput>false</isInput>
+        <isOutput>true</isOutput>
+    </variables>
+</Flow>

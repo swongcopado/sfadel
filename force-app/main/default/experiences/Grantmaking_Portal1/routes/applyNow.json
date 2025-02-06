@@ -1,0 +1,12 @@
+{
+  "activeViewId" : "5d088110-2ed4-41f1-9b1c-002c1de6e903",
+  "appPageId" : "7cd60cbf-9c3c-4756-b031-e5d09e77c8ab",
+  "configurationTags" : [ ],
+  "devName" : "Apply_now__c",
+  "id" : "361aae20-fcef-4c52-8ba9-e57fca5ba198",
+  "label" : "Apply now",
+  "pageAccess" : "UseParent",
+  "routeType" : "custom-apply-now",
+  "type" : "route",
+  "urlPrefix" : "apply-now"
+}

@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ArdiraSurvey__Status__c</fullName>
+    <deprecated>false</deprecated>
+    <description>Status of the survey.</description>
+    <inlineHelpText>Survey Response Status.</inlineHelpText>
+    <label>Status</label>
+    <required>false</required>
+    <trackHistory>true</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Draft/Not Dispatched</fullName>
+                <default>true</default>
+                <label>Draft/Not Dispatched</label>
+            </value>
+            <value>
+                <fullName>Ready for Dispatch</fullName>
+                <default>false</default>
+                <label>Ready for Dispatch</label>
+            </value>
+            <value>
+                <fullName>Assigned/Dispatched</fullName>
+                <default>false</default>
+                <label>Assigned/Dispatched</label>
+            </value>
+            <value>
+                <fullName>In Progress</fullName>
+                <default>false</default>
+                <label>In Progress</label>
+            </value>
+            <value>
+                <fullName>Completed</fullName>
+                <default>false</default>
+                <label>Completed</label>
+            </value>
+            <value>
+                <fullName>Overdue</fullName>
+                <default>false</default>
+                <label>Overdue</label>
+            </value>
+            <value>
+                <fullName>Dispatch Failed</fullName>
+                <default>false</default>
+                <label>Dispatch Failed</label>
+            </value>
+            <value>
+                <fullName>Email Opt Out</fullName>
+                <default>false</default>
+                <label>Email Opt Out</label>
+            </value>
+            <value>
+                <fullName>Archived</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Archived</label>
+            </value>
+            <value>
+                <fullName>In Review</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>In Review</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

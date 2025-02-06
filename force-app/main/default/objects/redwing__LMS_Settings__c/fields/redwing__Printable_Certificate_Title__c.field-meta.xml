@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>redwing__Printable_Certificate_Title__c</fullName>
+    <deprecated>false</deprecated>
+    <externalId>false</externalId>
+    <inlineHelpText>Defines what will be displayed on the Printable Certificate. The following values can be used: &quot;Achievement Name&quot;, &quot;Acquisition Rule Name&quot;, or &quot;Learning Name&quot;. If empty, Achievement Name will be used by default.</inlineHelpText>
+    <label>Printable Certificate Title</label>
+    <length>40</length>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

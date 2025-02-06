@@ -1,0 +1,329 @@
+<aura:component controller="PS311ServiceRequestIntakeController" implements="force:appHostable,forceCommunity:availableForAllPageTypes,flexipage:availableForAllPageTypes" access="global">
+
+  <ltng:require styles="{!$Resource.leaflet_1_0_2 + '/leaflet.css'}" scripts="{!$Resource.leaflet_1_0_2 + '/leaflet.js'}" afterScriptsLoaded="{!c.jsLoaded}" />
+
+  <aura:handler name="init" value="{!this}" action="{!c.doInit}" />
+
+  <aura:attribute name="userId" type="String" />
+  <aura:attribute name="contactId" type="String" />
+  <aura:attribute name="autoCenter" type="String" default="true" />
+  <aura:attribute name="mapCenterLat" type="String" default="30.267811" />
+  <aura:attribute name="mapCenterLng" type="String" default="-97.744328" />
+  <aura:attribute name="mapZoomLevel" type="Integer" default="11" />
+
+  <aura:attribute name="errorMsg" type="String" />
+  <aura:attribute name="saveResult" type="String" />
+  <aura:attribute name="Spinner" type="Boolean" default="false" />
+
+  <aura:attribute name="latitude" type="Decimal" />
+  <aura:attribute name="longitude" type="Decimal" />
+  <aura:attribute name="address" type="String" />
+  <aura:attribute name="addressField" type="String" default="Address__c" />
+  <aura:attribute name="street" type="String" />
+  <aura:attribute name="streetField" type="String"  default="Street__c"/>
+  <aura:attribute name="city" type="String" />
+  <aura:attribute name="cityField" type="String"  default="City__c"/>
+  <aura:attribute name="state" type="String" />
+  <aura:attribute name="stateField" type="String"  default="State__c"/>
+  <aura:attribute name="postal" type="String" />
+  <aura:attribute name="postalField" type="String"  default="Postal__c"/>
+  <aura:attribute name="description" type="String" />
+  <aura:attribute name="type" type="String" />
+  <aura:attribute name="subtype" type="String" />
+  <aura:attribute name="recordTypeId" type="String" default=""/>
+  <aura:attribute name="myDomain" type="String" default=""/>
+
+  <aura:attribute name="anonymousFlag" type="Boolean" default="true" />
+  <aura:attribute name="firstName" type="String" />
+  <aura:attribute name="lastName" type="String" />
+  <aura:attribute name="email" type="String" />
+  <aura:attribute name="phone" type="String" />
+
+  <aura:attribute name="typeList" type="List" />
+  <aura:attribute name="subtypeList" type="List" />
+
+  <aura:attribute name="attachFileName" type="String" />
+
+  <aura:attribute name="parentId" type="String" />
+  <aura:attribute name="runtimeEnv" type="Object" />
+  <aura:attribute name="map" type="Object" />
+
+  <aura:registerEvent name="saveFileEvent" type="c:ImageUploadSaveEvent_fk" />
+
+  <aura:handler name="saveCompleteEvent" event="c:ImageUploadSaveCompleteEvent_fk" action="{!c.saveFileComplete}" />
+  <aura:handler name="imageChangeEvent" event="c:ImageChangeEvent_fk" action="{!c.imageChange}" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+
+  <div aura:id="mainapp">
+    <aura:if isTrue="{!v.errorMsg.length > 0}">
+      <ui:message title="Error" severity="error" closable="true">
+        {!v.errorMsg}
+      </ui:message>
+    </aura:if>
+    <div class="c-container" onclick="{!c.closeQuickAction}">
+      <lightning:layout horizontalAlign="space">
+
+        <lightning:layoutItem size="12" smallDeviceSize="4" mediumDeviceSize="6" largeDeviceSize="8" flexibility="auto" padding="around-small">
+          <div class="slds-grid">
+            <div class="slds-tabs--path" role="application">
+              <ul class="slds-tabs--path__nav" role="tablist">
+                <li aura:id="step1Indicator" class="slds-tabs--path__item slds-is-current" role="presentation">
+                  <a class="slds-tabs--path__link" id="tabs-path-91" aria-controls="content-path-1" aria-selected="false" tabindex="-1" role="tab" href="javascript:void(0);" aria-live="assertive">
+                    <span class="slds-tabs--path__stage">
+                    <lightning:icon iconName="utility:check" size="x-small" alternativeText="Indicates approval"/>
+                  </span>
+                    <span class="slds-tabs--path__title">Issue Details</span>
+                  </a>
+                </li>
+                <li aura:id="step2Indicator" class="slds-tabs--path__item slds-is-incomplete" role="presentation">
+                  <a class="slds-tabs--path__link" id="tabs-path-92" aria-controls="content-path-1" aria-selected="false" tabindex="-1" role="tab" href="javascript:void(0);" aria-live="assertive">
+                    <span class="slds-tabs--path__stage">
+                    <lightning:icon iconName="utility:check" size="x-small" alternativeText="Indicates approval"/>
+                  </span>
+                    <span class="slds-tabs--path__title">Follow Up</span>
+                  </a>
+                </li>
+                <li aura:id="step3Indicator" class="slds-tabs--path__item slds-is-incomplete" role="presentation">
+                  <a class="slds-tabs--path__link" id="tabs-path-93" aria-controls="content-path-1" aria-selected="false" tabindex="-1" role="tab" href="javascript:void(0);" aria-live="assertive">
+                    <span class="slds-tabs--path__stage">
+                    <lightning:icon iconName="utility:check" size="x-small" alternativeText="Indicates approval"/>
+                  </span>
+                    <span class="slds-tabs--path__title">Verify</span>
+                  </a>
+                </li>
+                <li aura:id="step5Indicator" class="slds-tabs--path__item slds-is-incomplete" role="presentation">
+                  <a class="slds-tabs--path__link" id="tabs-path-95" aria-controls="content-path-1" aria-selected="false" tabindex="-1" role="tab" href="javascript:void(0);" aria-live="assertive">
+                    <span class="slds-tabs--path__stage">
+                    <lightning:icon iconName="utility:check" size="x-small" alternativeText="Indicates approval"/>
+                  </span>
+                    <span class="slds-tabs--path__title">Confirm</span>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </lightning:layoutItem>
+      </lightning:layout>
+    </div>
+
+    <div aura:id="step1Div">
+
+      <div class="slds-grid slds-wrap slds-grid--pull-padded">
+        <div class="slds-col--padded-medium slds-size--1-of-1 slds-small-size--1-of-2 slds-medium-size--1-of-2">
+          <lightning:card iconName="action:map">
+            <aura:set attribute="title">
+              Address
+            </aura:set>
+            <p class="slds-p-horizontal--small">
+              <div aura:id="map" class="map" id="map" style="position: relative; height: 370px;"></div>
+              <div align="center" style="font-family: Times New Roman, Times, serif; font-size: 20px;">{!v.address}</div>
+            </p>
+          </lightning:card>
+          <div class="slds-m-bottom--medium"></div>
+        </div>
+        <div class="slds-col--padded-medium slds-size--7-of-7 slds-small-size--1-of-2 slds-medium-size--1-of-2">
+          <lightning:card iconName="action:edit">
+            <aura:set attribute="title">
+              Issue Type
+            </aura:set>
+            <!--
+            <ui:inputSelect aura:id="typeSelect" class="slds-input" value="{!v.type}">
+              <aura:iteration items="{!v.typeList}" var="type">
+                <ui:inputSelectOption text="{!type}" label="{!type}" />
+              </aura:iteration>
+            </ui:inputSelect>
+        -->
+            <p class="slds-p-horizontal--small">
+              <lightning:select name="typeSelect" label="Select issue type" value="{!v.type}" onchange="{!c.onTypeChange}">
+                <aura:iteration items="{!v.typeList}" var="type">
+                  <option value="{!type}">{!type}</option>
+                </aura:iteration>
+              </lightning:select>
+              <aura:renderIf isTrue="{!and(v.subtypeList != null, v.subtypeList.length > 0)}">
+                <lightning:select name="subtypeSelect" label="Select issue sub-type" value="{!v.subtype}" onchange="{!c.onTypeChange}">
+                  <aura:iteration items="{!v.subtypeList}" var="subtype">
+                    <option value="{!subtype}">{!subtype}</option>
+                  </aura:iteration>
+                </lightning:select>
+              </aura:renderIf>
+            </p>
+          </lightning:card>
+          <lightning:card iconName="action:description">
+            <aura:set attribute="title">
+              Description
+            </aura:set>
+            <p class="slds-p-horizontal--small">
+              <lightning:textarea aura:id="description" name="Describe the issue" label="Describe the issue in detail." value="{!v.description}" maxlength="500" />
+            </p>
+          </lightning:card>
+          <lightning:card iconName="standard:photo">
+            <aura:set attribute="title">
+              Upload Image
+            </aura:set>
+            <p class="slds-p-horizontal--small">
+              <c:ImageUpload_fk parentId='{!v.parentId}' />
+            </p>
+          </lightning:card>
+        </div>
+      </div>
+
+      <br/>
+      <div>
+        <lightning:button aura:id="step1Next" label="Next" onclick="{!c.handleNextClick}" />
+      </div>
+
+    </div>
+
+    <div aura:id="step2Div">
+      <div class="slds">
+        <lightning:card iconName="action:user">
+          <aura:set attribute="title">
+            Contact Info
+          </aura:set>
+          <p class="slds-p-horizontal--small">
+            <div class="uiInput uiInputRadio uiInput--default uiInput--radio">
+              <label class="uiLabel-left form-element__label uiLabel">
+                <ui:inputRadio aura:id="r0" name="others" label="" value="true" click="{!c.onContactOptionChange}" />
+                <span>&nbsp;Submit your report anonymously</span>
+              </label>
+              <br/>
+              <label class="uiLabel-left form-element__label uiLabel">
+                <ui:inputRadio aura:id="r0" name="others" label="" click="{!c.onContactOptionChange}" />
+                <span>&nbsp;Provide your contact information below</span>
+              </label>
+            </div>
+            <br/>
+            <aura:renderIf isTrue="{!v.anonymousFlag == false}">
+              <div class="slds-grid slds-wrap">
+                <div class="slds-col slds-size--1-of-1 slds-medium-size--1-of-2 slds-large-size--1-of-2">
+                  <lightning:card iconName="standard:contact">
+                    <aura:set attribute="title">
+                      Provide Contact Details
+                    </aura:set>
+
+                    <p class="slds-p-horizontal--small">
+                      <lightning:input aura:id="firstName" type="text" name="FirstName" label="First Name" value="{!v.firstName}" required="true" />
+                      <lightning:input aura:id="lastName" type="text" name="LastName" label="Last Name" value="{!v.lastName}" required="true" />
+                      <lightning:input aura:id="email" type="text" name="Email" label="E-mail" value="{!v.email}" required="true" />
+                      <lightning:input aura:id="phone" type="Telephone" name="Phone" label="Phone" value="{!v.phone}" required="true" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"/>
+                    </p>
+                  </lightning:card>
+                </div>
+                <div class="slds-col slds-size--1-of-1 slds-medium-size--1-of-4 slds-large-size--1-of-4"></div>
+              </div>
+            </aura:renderIf>
+
+            <!--
+            <ui:inputRadio aura:id="r0" name="others" label="Prospecting" change="{!c.onContactOptionChange}" />
+            <ui:inputRadio aura:id="r1" name="others" label="Qualification" change="{!c.onContactOptionChange}" />
+          -->
+          </p>
+        </lightning:card>
+      </div>
+      <br/>
+      <div>
+        <lightning:button aura:id="step2Next" label="Next" onclick="{!c.handleNextClick}" />
+        <lightning:button aura:id="step2Back" label="Back" onclick="{!c.handleBackClick}" />
+      </div>
+    </div>
+
+    <div aura:id="step3Div">
+      <div class="slds">
+        <div class="slds-grid slds-wrap slds-grid--pull-padded">
+          <div class="slds-col--padded-medium slds-size--1-of-1 slds-small-size--1-of-2 slds-medium-size--1-of-2">
+            <lightning:card iconName="action:follow">
+              <aura:set attribute="title">
+                Report Details
+              </aura:set>
+              <p class="slds-p-horizontal--small">
+                <span class="slds-m-bottom--medium" style="font-weight:bold">Report Type:</span>&nbsp;{!v.type}
+                <br/>
+                <span style="font-weight:bold">Report Sub-type:</span>&nbsp;{!v.subtype}
+                <br/>
+                <br/>
+                <span style="font-weight:bold">Address:</span>&nbsp;{!v.address}
+                <br/>
+                <span style="font-weight:bold">Description:</span>&nbsp;{!v.description}
+                <br/>
+                <aura:renderIf isTrue="{!v.attachFileName != null}">
+                  <span style="font-weight:bold">Images:</span>&nbsp;1 image ({!v.attachFileName})
+                </aura:renderIf>
+                <aura:renderIf isTrue="{!v.attachFileName == null}">
+                  <span style="font-weight:bold">Images:</span>&nbsp;No image uploaded!
+                </aura:renderIf>
+              </p>
+            </lightning:card>
+            <div class="slds-m-bottom--medium"></div>
+          </div>
+          <div class="slds-col--padded-medium slds-size--1-of-1 slds-small-size--1-of-2 slds-medium-size--1-of-2">
+            <lightning:card iconName="action:user">
+              <aura:set attribute="title">
+                Contact Info
+              </aura:set>
+              <p class="slds-p-horizontal--small">
+                <aura:renderIf isTrue="{!v.anonymousFlag == true}">
+                  <span style="font-weight:bold">Anonymous user</span>
+                </aura:renderIf>
+                <aura:renderIf isTrue="{!v.anonymousFlag == false}">
+                  <span style="font-weight:bold">{!v.firstName}&nbsp;{!v.lastName}</span>
+                  <br/>
+                  <br/>
+                  <span style="font-weight:bold">{!v.email}</span>
+                  <br/>
+                  <br/>
+                  <span style="font-weight:bold">{!v.phone}</span>
+                </aura:renderIf>
+              </p>
+            </lightning:card>
+          </div>
+        </div>
+      </div>
+      <br/>
+      <div>
+        <lightning:button aura:id="step3Next" label="Confirm" onclick="{!c.handleNextClick}" variant="brand" />
+        <lightning:button aura:id="step3Back" label="Back" onclick="{!c.handleBackClick}" />
+      </div>
+    </div>
+  </div>
+
+  <div aura:id="step4Div">
+    <aura:renderIf isTrue="{!and(v.saveResult != null, v.saveResult.length > 0)}">
+      <div class="c-container" style="padding-top:6%">
+        <lightning:layout horizontalAlign="center" verticalAlign="center">
+          <lightning:layoutItem flexibility="auto" padding="around-small" size="2">
+            {!v.body}
+          </lightning:layoutItem>
+          <lightning:layoutItem flexibility="auto" padding="around-small" size="4">
+            {!v.saveResult}
+          </lightning:layoutItem>
+        </lightning:layout>
+      </div>
+      <br/>
+      <div>
+        <lightning:layout horizontalAlign="space" verticalAlign="center">
+          <lightning:buttonGroup >
+            <lightning:button label="Open Case" onclick="{!c.navigateToRecord}" />
+          </lightning:buttonGroup>
+        </lightning:layout>
+        <!-- <lightning:button aura:id="confirmBack" label="Back" onclick="{!c.handleBackClick}" /> -->
+      </div>
+    </aura:renderIf>
+    <aura:renderIf isTrue="{!or(v.saveResult == null, v.saveResult.length == 0)}">
+      <div class="c-container" style="padding-top:40%">
+        <lightning:layout horizontalAlign="center" verticalAlign="center">
+          <aura:if isTrue="{!v.Spinner}">
+            <div aura:id="spinnerId" class="slds-spinner_container">
+              <div class="slds-spinner--brand  slds-spinner slds-spinner--large slds-is-relative" role="alert">
+                <span class="slds-assistive-text">Loading</span>
+                <div class="slds-spinner__dot-a"></div>
+                <div class="slds-spinner__dot-b"></div>
+              </div>
+            </div>
+          </aura:if>
+        </lightning:layout>
+      </div>
+    </aura:renderIf>
+  </div>
+
+</aura:component>

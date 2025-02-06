@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ArdiraSurvey__Action_Time__c</fullName>
+    <deprecated>false</deprecated>
+    <description>Select when to execute the action: At Invocation, Future Date Time and Days after invocation.</description>
+    <inlineHelpText>This field indicates when to execute the action once a target record meets the criteria.</inlineHelpText>
+    <label>Action Time</label>
+    <required>true</required>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>At Invocation</fullName>
+                <default>true</default>
+                <label>At Invocation</label>
+            </value>
+            <value>
+                <fullName>Days after invocation</fullName>
+                <default>false</default>
+                <label>Days after invocation</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

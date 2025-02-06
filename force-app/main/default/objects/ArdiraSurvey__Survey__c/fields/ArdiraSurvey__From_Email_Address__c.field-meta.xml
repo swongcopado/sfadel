@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ArdiraSurvey__From_Email_Address__c</fullName>
+    <deprecated>false</deprecated>
+    <description>Select a From email address to use for Survey Notification Email Alerts.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Choose the email address to be used as the &quot;From&quot; address for Survey Notification Emails. This setting allows you to specify the sender&apos;s email address for a personalized and recognizable email communication experience. You can select a previously configured org-wide email address or choose &quot;Current user&apos;s Email Address&quot; to use the email associated with the user initiating the email. Additional org-wide email addresses can be configured in Salesforce setup to provide more options for sender addresses.</inlineHelpText>
+    <label>Sender Email Address</label>
+    <length>80</length>
+    <required>false</required>
+    <trackHistory>true</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

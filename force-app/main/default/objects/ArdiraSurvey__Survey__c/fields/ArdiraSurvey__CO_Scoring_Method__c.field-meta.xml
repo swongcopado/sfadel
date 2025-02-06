@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ArdiraSurvey__CO_Scoring_Method__c</fullName>
+    <defaultValue>&quot;Raw&quot;</defaultValue>
+    <deprecated>false</deprecated>
+    <description>Raw (aggregates raw score), Percentage (percentage for a question and averages for section)</description>
+    <inlineHelpText>Raw - Calculates and aggregates raw scores
+Percentage - Calculates and aggregates percentage scores</inlineHelpText>
+    <label>Scoring Method</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Raw</fullName>
+                <default>true</default>
+                <label>Raw</label>
+            </value>
+            <value>
+                <fullName>Percentage</fullName>
+                <default>false</default>
+                <label>Percentage</label>
+            </value>
+            <value>
+                <fullName>No Scoring</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>No Scoring</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

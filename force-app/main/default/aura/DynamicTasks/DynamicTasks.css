@@ -1,0 +1,47 @@
+.THIS .slds-button--icon-border{
+    border:none;
+}
+.THIS {
+    background-color: #fff;
+}
+.THIS .scaleMe {
+    height: 85px;
+}
+.THIS .strikeOutCompleted {
+    text-decoration: line-through;
+}
+
+.THIS .slds-media__body {
+    padding-left: 8px;
+}
+
+.THIS .slds-timeline__item_task:before {
+    background:none;
+}
+
+.THIS h3 {
+    padding-left:10px;
+}
+
+.THIS .slds-timeline__actions {
+    padding-right:5px;
+}
+
+.THIS .DTask-title{
+    padding-left:0.75rem;
+    padding-right:0.75rem;
+    font-size:1rem;
+    padding-bottom:5px;
+  }
+
+.THIS .slds-card__header {
+    padding-top:0;
+}
+
+.THIS .DTask-header {
+    padding-bottom:10px;
+}
+
+.THIS .slds-checkbox {
+    vertical-align:top;
+}

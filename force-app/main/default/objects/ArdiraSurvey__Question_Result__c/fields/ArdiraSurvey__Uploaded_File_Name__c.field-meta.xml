@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ArdiraSurvey__Uploaded_File_Name__c</fullName>
+    <deprecated>false</deprecated>
+    <description>This field contains a comma separated list of file names uploaded as part of the question response. This field can be used for history tracking.</description>
+    <inlineHelpText>This field contains a comma separated list of file names uploaded as part of the question response. This field can be used for history tracking.</inlineHelpText>
+    <label>Uploaded File Name</label>
+    <required>false</required>
+    <trackHistory>true</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>TextArea</type>
+</CustomField>

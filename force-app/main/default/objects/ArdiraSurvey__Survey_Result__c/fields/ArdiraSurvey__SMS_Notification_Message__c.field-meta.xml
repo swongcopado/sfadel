@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ArdiraSurvey__SMS_Notification_Message__c</fullName>
+    <deprecated>false</deprecated>
+    <description>When SMS notifications are enabled, this message will be sent via SMS along with the survey link. Please note that you may need to obtain approval from your SMS service provider for the content of the message.</description>
+    <inlineHelpText>When SMS notifications are enabled, this message will be sent via SMS along with the survey link. Please be aware that you might require approval from your SMS service provider for the message content.</inlineHelpText>
+    <label>SMS Notification Message</label>
+    <length>512</length>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>LongTextArea</type>
+    <visibleLines>3</visibleLines>
+</CustomField>

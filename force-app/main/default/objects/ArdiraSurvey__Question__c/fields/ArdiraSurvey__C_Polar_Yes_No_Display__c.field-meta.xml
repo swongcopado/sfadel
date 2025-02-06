@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ArdiraSurvey__C_Polar_Yes_No_Display__c</fullName>
+    <defaultValue>&quot;YesNo&quot;</defaultValue>
+    <deprecated>false</deprecated>
+    <description>Display options for Yes/No type of question.</description>
+    <inlineHelpText>Select how you would like to display yes-no choices in the survey response interface.</inlineHelpText>
+    <label>Yes-No Question - Display</label>
+    <required>true</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Checkbox</fullName>
+                <default>false</default>
+                <label>Checkbox</label>
+            </value>
+            <value>
+                <fullName>YesNo</fullName>
+                <default>true</default>
+                <label>Yes-No</label>
+            </value>
+            <value>
+                <fullName>TrueFalse</fullName>
+                <default>false</default>
+                <label>True-False</label>
+            </value>
+            <value>
+                <fullName>Switch</fullName>
+                <default>false</default>
+                <label>Switch</label>
+            </value>
+            <value>
+                <fullName>LikeDislike</fullName>
+                <default>false</default>
+                <label>Like-Dislike</label>
+            </value>
+            <value>
+                <fullName>Radio</fullName>
+                <default>false</default>
+                <label>Radio</label>
+            </value>
+            <value>
+                <fullName>Dropdown</fullName>
+                <default>false</default>
+                <label>Dropdown</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

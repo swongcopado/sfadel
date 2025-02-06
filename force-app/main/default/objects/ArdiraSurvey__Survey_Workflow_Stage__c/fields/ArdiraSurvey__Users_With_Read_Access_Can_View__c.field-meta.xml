@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ArdiraSurvey__Users_With_Read_Access_Can_View__c</fullName>
+    <defaultValue>true</defaultValue>
+    <deprecated>false</deprecated>
+    <description>When enabled, a user with read access to a survey result record can view responses.</description>
+    <inlineHelpText>When Salesforce Record View Authorization is enabled, SurveyVista seamlessly integrates with Salesforce&apos;s robust authorization framework to control access to survey result records. When Salesforce Record View Authorization is enabled, users who possess read access to a survey result record gain the ability to view responses within the context of the workflow stage.</inlineHelpText>
+    <label>Salesforce Record View Authorization</label>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

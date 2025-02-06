@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ArdiraSurvey__From_Email_Address__c</fullName>
+    <deprecated>false</deprecated>
+    <description>Select a From email address to use for Survey Notification Email Alerts.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Specify the email address that will appear in the &quot;From&quot; field when sending emails as part of the action.</inlineHelpText>
+    <label>From Email Address</label>
+    <length>80</length>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

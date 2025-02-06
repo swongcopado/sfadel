@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ArdiraSurvey__Survey_Not_Assigned_Within_Days__c</fullName>
+    <deprecated>false</deprecated>
+    <description>If set, if a recipient has received action in the specified number of days, the recipient will not receive action.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>This setting ensures that a survey is only sent to a recipient if they have not received a survey within the specified number of days. It helps to prevent survey fatigue by controlling the frequency of survey distribution to the same recipient.</inlineHelpText>
+    <label>Survey Not Assigned Within Days</label>
+    <precision>3</precision>
+    <required>false</required>
+    <scale>0</scale>
+    <trackTrending>false</trackTrending>
+    <type>Number</type>
+    <unique>false</unique>
+</CustomField>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Chat_Transcript__c</fullName>
+    <deleteConstraint>SetNull</deleteConstraint>
+    <description>Chat that this bot survey is related to</description>
+    <inlineHelpText>Chat that this bot survey is related to</inlineHelpText>
+    <label>Chat Transcript</label>
+    <referenceTo>LiveChatTranscript</referenceTo>
+    <relationshipLabel>Bot Feedback</relationshipLabel>
+    <relationshipName>Bot_Feedback</relationshipName>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Lookup</type>
+</CustomField>

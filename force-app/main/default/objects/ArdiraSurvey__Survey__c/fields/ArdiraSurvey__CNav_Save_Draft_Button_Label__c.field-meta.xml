@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ArdiraSurvey__CNav_Save_Draft_Button_Label__c</fullName>
+    <deprecated>false</deprecated>
+    <description>Though responses are automatically saved, you can set a label here to explicitly show Save Draft button for participants to save responses.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Specify the label to be used for the &apos;save draft&apos; button in the survey response interface. This button allows participants to explicitly save their responses as a draft, even though responses are automatically saved. Providing this button gives participants the option to save their progress and return to complete the survey at a later time.</inlineHelpText>
+    <label>Save Draft Button Label</label>
+    <length>80</length>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

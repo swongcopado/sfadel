@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ArdiraSurvey__Recipient_Skip_Email_Bounced__c</fullName>
+    <defaultValue>true</defaultValue>
+    <deprecated>false</deprecated>
+    <description>When checked, skip recipients that have email bounced field set to true.</description>
+    <inlineHelpText>Specify whether to skip recipients whose email addresses have previously bounced.</inlineHelpText>
+    <label>Recipient Skip Email Bounced</label>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ArdiraSurvey__Border_For_Non_Textual_Question__c</fullName>
+    <defaultValue>&quot;2&quot;</defaultValue>
+    <deprecated>false</deprecated>
+    <description>Border for non-textual questions, answer choices.
+0 - None, 1 - Light, 2 - Dark</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Border for non-textual questions, answer choices.
+0 - None, 1 - Light, 2 - Dark</inlineHelpText>
+    <label>Dep Border for non-textual questions</label>
+    <length>1</length>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

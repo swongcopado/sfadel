@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ArdiraSurvey__All</fullName>
+    <columns>NAME</columns>
+    <columns>ArdiraSurvey__Status__c</columns>
+    <columns>ArdiraSurvey__Description__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>ArdiraSurvey__Is_Latest_Version__c</field>
+        <operation>equals</operation>
+        <value>1</value>
+    </filters>
+    <filters>
+        <field>ArdiraSurvey__Survey_Type__c</field>
+        <operation>notEqual</operation>
+        <value>Design Template</value>
+    </filters>
+    <label>All Surveys</label>
+</ListView>

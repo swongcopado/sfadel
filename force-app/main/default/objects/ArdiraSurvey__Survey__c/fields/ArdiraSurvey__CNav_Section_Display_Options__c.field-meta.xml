@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ArdiraSurvey__CNav_Section_Display_Options__c</fullName>
+    <defaultValue>&apos;None&apos;</defaultValue>
+    <deprecated>false</deprecated>
+    <description>Show Section list as per selection.</description>
+    <inlineHelpText>Choose the preferred section display option in the survey response interface:
+None: No section display is shown.
+Horizontal Path: Sections are displayed in a horizontal path, allowing participants to see their progress through the survey.
+Vertical Tab: Sections are displayed as vertical tabs, providing a clear overview of the survey&apos;s structure.
+Note that section display options are applicable only if the section-level navigation option is selected.</inlineHelpText>
+    <label>Section Display Options</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>None</fullName>
+                <default>true</default>
+                <label>None</label>
+            </value>
+            <value>
+                <fullName>Horizontal Path</fullName>
+                <default>false</default>
+                <label>Horizontal Path</label>
+            </value>
+            <value>
+                <fullName>Vertical Tab</fullName>
+                <default>false</default>
+                <label>Vertical Tab</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ArdiraSurvey__Auto_Advance_on_Single_Select__c</fullName>
+    <deprecated>false</deprecated>
+    <description>Enable to show auto advance option for a participant in the survey responder
+        interface.</description>
+    <inlineHelpText>Choose how the survey navigates when a single-choice question is answered:
+        Disabled - The survey responder remains on the same question and must manually advance.
+        Enabled - Always Auto Advance - Automatically moves to the next question after a selection
+        is made. Enabled - Auto Advance with Responder Override - Allows the survey participaints to
+        decide whether questions advance automatically or require manual advancement.</inlineHelpText>
+    <label>Auto-Advance on Single-Select</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Disabled</fullName>
+                <default>true</default>
+                <label>Disabled</label>
+            </value>
+            <value>
+                <fullName>Enabled - Always Auto Advance</fullName>
+                <default>false</default>
+                <label>Enabled - Always Auto Advance</label>
+            </value>
+            <value>
+                <fullName>Enabled - Auto Advance with Responder Override</fullName>
+                <default>false</default>
+                <label>Enabled - Auto Advance with Responder Override</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

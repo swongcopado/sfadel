@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ArdiraSurvey__Translations__c</fullName>
+    <deprecated>false</deprecated>
+    <description>Translation of the record contents. Stored as a name, value pair JSON where name is the API name of the field and value is the translated text for that field.</description>
+    <inlineHelpText>Translation of the record contents. Stored as a name, value pair JSON where name is the API name of the field and value is the translated text for that field.</inlineHelpText>
+    <label>Translations</label>
+    <length>131072</length>
+    <trackTrending>false</trackTrending>
+    <type>LongTextArea</type>
+    <visibleLines>3</visibleLines>
+</CustomField>

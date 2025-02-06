@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ArdiraSurvey__C_Date_Time_24_Hour_Format__c</fullName>
+    <defaultValue>true</defaultValue>
+    <deprecated>false</deprecated>
+    <description>If checked, indicates date and date time values are to be displayed in 24 hour format.</description>
+    <inlineHelpText>Enable to display time value in 24 hour format.</inlineHelpText>
+    <label>Date Time Question - 24 Hour Format</label>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

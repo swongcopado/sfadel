@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>redwing__Default_Language_Learning_Trac__c</fullName>
+    <deleteConstraint>SetNull</deleteConstraint>
+    <deprecated>false</deprecated>
+    <label>Default Language Learning Trac</label>
+    <lookupFilter>
+        <active>true</active>
+        <filterItems>
+            <field>redwing__Training_Track__c.Id</field>
+            <operation>notEqual</operation>
+            <valueField>$Source.Id</valueField>
+        </filterItems>
+        <filterItems>
+            <field>redwing__Training_Track__c.redwing__Default_Language_Learning_Trac__c</field>
+            <operation>equals</operation>
+            <value></value>
+        </filterItems>
+        <isOptional>false</isOptional>
+    </lookupFilter>
+    <referenceTo>redwing__Training_Track__c</referenceTo>
+    <relationshipLabel>Learning Tracs</relationshipLabel>
+    <relationshipName>Training_Tracs</relationshipName>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Lookup</type>
+</CustomField>

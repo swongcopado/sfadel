@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ArdiraSurvey__Show_First_Question_on_Landing_Page__c</fullName>
+    <defaultValue>false</defaultValue>
+    <deprecated>false</deprecated>
+    <description>If checked, displays first question/section on landing page with &quot;Next&quot; button. &quot;Begin Survey&quot; button will not be displayed.</description>
+    <inlineHelpText>Enable to show the first question in the landing page.</inlineHelpText>
+    <label>Show First Question on Landing Page</label>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

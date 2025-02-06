@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ArdiraSurvey__Mark_In_Progress_Surveys_as_Completed__c</fullName>
+    <deprecated>false</deprecated>
+    <description>Mark an in progress survey response as completed after this number of days since the last response update.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Specify the number of days since the last update to a participant&apos;s survey response after which the response will be automatically marked as completed. This feature ensures that in-progress survey responses are automatically completed if no updates are made within the specified timeframe. To enable this functionality, activate the scheduled job &quot;SurveyCompletionSchedulable&quot;.</inlineHelpText>
+    <label>Auto Complete In-Progress Responses</label>
+    <precision>5</precision>
+    <required>false</required>
+    <scale>2</scale>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Number</type>
+    <unique>false</unique>
+</CustomField>

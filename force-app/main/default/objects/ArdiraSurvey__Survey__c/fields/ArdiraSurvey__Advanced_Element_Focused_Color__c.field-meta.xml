@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ArdiraSurvey__Advanced_Element_Focused_Color__c</fullName>
+    <deprecated>false</deprecated>
+    <description>Use this option to select an element keyboard focus color.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Keyboard Focus Color allows you to choose a color that will be applied to elements when they receive keyboard focus in the survey responder interface. This helps to visually highlight the currently focused element, providing better accessibility and usability for participants using keyboard navigation.</inlineHelpText>
+    <label>Keyboard Focus Color</label>
+    <length>20</length>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

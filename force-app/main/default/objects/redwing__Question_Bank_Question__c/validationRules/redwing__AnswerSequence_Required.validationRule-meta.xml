@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>redwing__AnswerSequence_Required</fullName>
+    <active>true</active>
+    <description>Display an error message when a type that requires an answer sequence chose and no answer sequence is defined</description>
+    <errorConditionFormula>(TEXT( redwing__Type__c )==&quot;SelectOneQuestion&quot; || TEXT( redwing__Type__c )==&quot;SelectMultipleQuestion&quot;) &amp;&amp;  ISBLANK(redwing__Answer_Sequence__c)</errorConditionFormula>
+    <errorMessage>You must specify an answer sequence for this type of question</errorMessage>
+</ValidationRule>

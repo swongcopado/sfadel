@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ArdiraSurvey__Show_Quiz_Result_Stats_when_Submitted__c</fullName>
+    <defaultValue>false</defaultValue>
+    <deprecated>false</deprecated>
+    <description>When enabled, the system will display overall quiz result stats to quiz taker post submission of the quiz.</description>
+    <inlineHelpText>When enabled, the system will show overall quiz result statistics to the quiz taker after they submit the quiz. These statistics provide an overview of the quiz performance, including the average score, highest score, and other relevant metrics.</inlineHelpText>
+    <label>Dep Display Quiz Result Statistics</label>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

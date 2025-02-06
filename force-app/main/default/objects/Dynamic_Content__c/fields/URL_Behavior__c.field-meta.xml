@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>URL_Behavior__c</fullName>
+    <description>When clicked, should the URL be visited in the same window/tab (_self) or a new one (_new)?</description>
+    <inlineHelpText>When clicked, should the URL be visited in the same window/tab (_self) or a new one (_new)?</inlineHelpText>
+    <label>URL Behavior</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>_self</fullName>
+                <default>false</default>
+                <label>_self</label>
+            </value>
+            <value>
+                <fullName>_new</fullName>
+                <default>false</default>
+                <label>_new</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

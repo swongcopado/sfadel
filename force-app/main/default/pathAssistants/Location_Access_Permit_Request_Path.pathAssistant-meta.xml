@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PathAssistant xmlns="http://soap.sforce.com/2006/04/metadata">
+    <active>true</active>
+    <entityName>IndividualApplication</entityName>
+    <fieldName>Status</fieldName>
+    <masterLabel>Location Access Permit Request Path</masterLabel>
+    <recordTypeName>Location_Access_Permit_Request</recordTypeName>
+</PathAssistant>

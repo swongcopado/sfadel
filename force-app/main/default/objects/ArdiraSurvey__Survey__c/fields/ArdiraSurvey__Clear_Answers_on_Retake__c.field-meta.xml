@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ArdiraSurvey__Clear_Answers_on_Retake__c</fullName>
+    <defaultValue>false</defaultValue>
+    <deprecated>false</deprecated>
+    <description>When enabled, the system will clear previous answers before presenting the quiz for retake to respondents.</description>
+    <inlineHelpText>When enabled, the system will reset or clear the previous answers of the quiz before presenting it for retake to the quiz takers. This ensures a fresh start for each retake and allows quiz takers to provide new responses without any pre-filled or retained answers from their previous attempts.</inlineHelpText>
+    <label>Clear Answers on Retake</label>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

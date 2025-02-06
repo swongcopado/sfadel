@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ArdiraSurvey__Dynamic_Radio_Choices_Source__c</fullName>
+    <deprecated>false</deprecated>
+    <description>Specifies the dynamic choices will be presented from a picklist field or using the records of an object meeting a matching criteria.</description>
+    <inlineHelpText>Specifies the dynamic choices will be presented from a picklist field or using the records of an object meeting a matching criteria.</inlineHelpText>
+    <label>Dynamic Radio Choices Source</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Picklist Field</fullName>
+                <default>false</default>
+                <label>Picklist Field</label>
+            </value>
+            <value>
+                <fullName>Object Records</fullName>
+                <default>false</default>
+                <label>Object Records</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

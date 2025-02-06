@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>redwing__Record_Type__c</fullName>
+    <deprecated>false</deprecated>
+    <description>Learning Record Type Name</description>
+    <externalId>true</externalId>
+    <inlineHelpText>Learning Record Type Name for which this plugin will be executed</inlineHelpText>
+    <label>Record Type</label>
+    <length>100</length>
+    <required>false</required>
+    <trackHistory>true</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

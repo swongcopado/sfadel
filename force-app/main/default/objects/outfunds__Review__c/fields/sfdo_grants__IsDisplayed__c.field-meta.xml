@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>sfdo_grants__IsDisplayed__c</fullName>
+    <deprecated>false</deprecated>
+    <description>Indicates if the review is available based on the Display Start and End Dates.</description>
+    <formula>IF(ISBLANK(sfdo_grants__DisplayStartDate__c) ,  sfdo_grants__DisplayEndDate__c &gt;= TODAY() , AND(sfdo_grants__DisplayStartDate__c &lt;= TODAY(), sfdo_grants__DisplayEndDate__c &gt;= TODAY()))</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Review Displayed</label>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

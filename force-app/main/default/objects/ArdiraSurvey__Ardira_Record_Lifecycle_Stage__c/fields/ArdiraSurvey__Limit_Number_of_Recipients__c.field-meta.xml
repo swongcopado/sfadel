@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ArdiraSurvey__Limit_Number_of_Recipients__c</fullName>
+    <deprecated>false</deprecated>
+    <description>If set, the lifecycle stage action will be executed only for this many recipients selected randomly from the eligible set of recipients e.g. send survey to randomly selected 50 campaign members only.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>This setting limits the number of recipients to whom the survey will be sent when the recipient filter criteria result in a large number of recipients. The specified number of recipients will be randomly selected from the total pool of recipients meeting the criteria.</inlineHelpText>
+    <label>Limit Number of Recipients</label>
+    <precision>4</precision>
+    <required>false</required>
+    <scale>0</scale>
+    <trackTrending>false</trackTrending>
+    <type>Number</type>
+    <unique>false</unique>
+</CustomField>

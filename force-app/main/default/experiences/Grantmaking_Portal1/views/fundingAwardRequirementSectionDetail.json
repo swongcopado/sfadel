@@ -1,0 +1,50 @@
+{
+  "appPageId" : "7cd60cbf-9c3c-4756-b031-e5d09e77c8ab",
+  "componentName" : "siteforce:sldsOneColLayout",
+  "dataProviders" : [ ],
+  "id" : "3c2fda6e-91a7-4949-a149-d3ca5c8fa482",
+  "label" : "Funding Award Requirement Section Detail",
+  "regions" : [ {
+    "id" : "1a7c00e2-4c96-40f2-84d4-2db6dacf7560",
+    "regionName" : "header",
+    "type" : "region"
+  }, {
+    "components" : [ {
+      "componentAttributes" : {
+        "formSectionConfiguration" : "FundingAwardRqmtSection",
+        "recordId" : "{!recordId}",
+        "renderMethod" : "viewIfSubmittedElseEdit"
+      },
+      "componentName" : "runtime_industries_application:formSection",
+      "id" : "9187538b-c856-4e73-b477-8a6372bdd395",
+      "renderPriority" : "NEUTRAL",
+      "renditionMap" : { },
+      "type" : "component"
+    } ],
+    "id" : "e13f87c5-4643-4f52-bb77-d75f3f114df8",
+    "regionName" : "content",
+    "type" : "region"
+  }, {
+    "id" : "5ece9dbe-a974-4edb-a238-20d74edc87d3",
+    "regionName" : "footer",
+    "type" : "region"
+  }, {
+    "components" : [ {
+      "componentAttributes" : {
+        "customHeadTags" : "",
+        "description" : "",
+        "title" : "{!Record._Object}: {!Record._Title}"
+      },
+      "componentName" : "forceCommunity:seoAssistant",
+      "id" : "644f8189-3cf0-4828-8749-20058373f8cf",
+      "renditionMap" : { },
+      "type" : "component"
+    } ],
+    "id" : "27fafdf9-5aae-4dd0-a428-9df4ecaac998",
+    "regionName" : "sfdcHiddenRegion",
+    "type" : "region"
+  } ],
+  "themeLayoutType" : "Inner",
+  "type" : "view",
+  "viewType" : "detail-1EK"
+}

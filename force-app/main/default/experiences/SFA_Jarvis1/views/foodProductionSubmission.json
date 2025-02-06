@@ -1,0 +1,71 @@
+{
+  "appPageId" : "7fe97e67-1ab0-4fe3-8497-ddfeb8bcee4b",
+  "componentName" : "siteforce:dynamicLayout",
+  "dataProviders" : [ ],
+  "id" : "78b2c310-b43d-4485-9b52-fb026983e61b",
+  "label" : "Food Production Submission",
+  "regions" : [ {
+    "components" : [ {
+      "componentAttributes" : {
+        "background" : "background: rgba(0,0,0,0)",
+        "backgroundOverlay" : "rgba(0,0,0,0.5)",
+        "contentAreaWidth" : 100,
+        "sectionConfig" : {
+          "UUID" : "db83bdb4-6491-42f4-8075-264974626ba7",
+          "columns" : [ {
+            "UUID" : "16d01013-2688-4efc-9e12-6fb244ba0f0c",
+            "columnKey" : "1",
+            "columnName" : "Column 1",
+            "columnWidth" : "12",
+            "seedComponents" : [ ]
+          } ]
+        },
+        "sectionHeight" : 300
+      },
+      "componentName" : "forceCommunity:section",
+      "id" : "db83bdb4-6491-42f4-8075-264974626ba7",
+      "regions" : [ {
+        "components" : [ {
+          "componentAttributes" : {
+            "flowArguments" : "",
+            "flowName" : "SFA_Seafood_Data_Submission"
+          },
+          "componentName" : "forceCommunity:flowCommunity",
+          "id" : "b4a1b4de-7645-4973-983a-21e57c59b9da",
+          "renderPriority" : "NEUTRAL",
+          "renditionMap" : { },
+          "type" : "component"
+        } ],
+        "id" : "16d01013-2688-4efc-9e12-6fb244ba0f0c",
+        "regionLabel" : "Column 1",
+        "regionName" : "1",
+        "renditionMap" : { },
+        "type" : "region"
+      } ],
+      "renderPriority" : "NEUTRAL",
+      "renditionMap" : { },
+      "type" : "component"
+    } ],
+    "id" : "a4e3412a-65e3-4856-9722-1f19b493d9e0",
+    "regionName" : "content",
+    "type" : "region"
+  }, {
+    "components" : [ {
+      "componentAttributes" : {
+        "customHeadTags" : "",
+        "description" : "",
+        "title" : "Food Production Submission"
+      },
+      "componentName" : "forceCommunity:seoAssistant",
+      "id" : "9cc98cdb-0077-44a4-944d-f02c6504675a",
+      "renditionMap" : { },
+      "type" : "component"
+    } ],
+    "id" : "9e7b6562-3c16-40bd-b4a1-6acd7e9ad6ee",
+    "regionName" : "sfdcHiddenRegion",
+    "type" : "region"
+  } ],
+  "themeLayoutType" : "Inner",
+  "type" : "view",
+  "viewType" : "custom-food-production-submission"
+}

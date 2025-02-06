@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ArdiraSurvey__Custom_Validation_Class_Name__c</fullName>
+    <deprecated>false</deprecated>
+    <description>Name of the class implementing SurveyResponseValidationInterface. When accepting a question response, this class method &apos;validateQuestionResponse&apos; will be invoked.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>To enable a customized validation for the question response, set a class name that implements SurveyResponseValidationInterface. When accepting a question response, the class method &apos;validateQuestionResponse&apos; will be invoked to validate the response.</inlineHelpText>
+    <label>Custom Validation Class Name</label>
+    <length>255</length>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

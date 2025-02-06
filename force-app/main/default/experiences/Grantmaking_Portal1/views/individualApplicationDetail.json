@@ -1,0 +1,137 @@
+{
+  "appPageId" : "7cd60cbf-9c3c-4756-b031-e5d09e77c8ab",
+  "componentName" : "siteforce:sldsTwoCol84SidebarFeaturedLayout",
+  "dataProviders" : [ ],
+  "id" : "3ed877dc-1c0a-4979-998d-304602e59523",
+  "label" : "Individual Application Detail",
+  "regions" : [ {
+    "components" : [ {
+      "componentAttributes" : {
+        "recordId" : "{!recordId}"
+      },
+      "componentName" : "forceCommunity:recordHeadline",
+      "id" : "5d87c18b-b754-4b86-a97d-c55c81a360ae",
+      "renderPriority" : "NEUTRAL",
+      "renditionMap" : { },
+      "type" : "component"
+    } ],
+    "id" : "d9a5cc31-4235-4106-9cae-e98ab4e1b61f",
+    "regionName" : "header",
+    "type" : "region"
+  }, {
+    "components" : [ {
+      "componentAttributes" : {
+        "tabsetConfig" : {
+          "UUID" : "f4634931-edc4-4cdc-93b6-f693ae45a8d3",
+          "activeTab" : "tab1",
+          "tabs" : [ {
+            "UUID" : "26c1ed39-2f3a-4ad0-bc10-424937f1a85b",
+            "allowGuestUser" : false,
+            "locked" : false,
+            "seedComponents" : [ {
+              "attributes" : { },
+              "fqn" : "forceCommunity:recordDetail"
+            } ],
+            "tabKey" : "tab1",
+            "tabName" : "Details"
+          }, {
+            "UUID" : "d96f0d2d-0356-4cc8-81f4-b354256684a0",
+            "allowGuestUser" : false,
+            "locked" : false,
+            "seedComponents" : [ {
+              "attributes" : {
+                "recordId" : "{!recordId}"
+              },
+              "fqn" : "runtime_industries_budget:budget"
+            } ],
+            "tabKey" : "tab2",
+            "tabName" : "Budget"
+          } ],
+          "useOverflowMenu" : false
+        }
+      },
+      "componentName" : "forceCommunity:tabset",
+      "id" : "f4634931-edc4-4cdc-93b6-f693ae45a8d3",
+      "regions" : [ {
+        "components" : [ {
+          "componentAttributes" : {
+            "recordId" : "{!recordId}"
+          },
+          "componentName" : "forceCommunity:recordDetail",
+          "id" : "5b644140-b28e-44d9-9357-d909f4507c25",
+          "renditionMap" : { },
+          "type" : "component"
+        } ],
+        "id" : "26c1ed39-2f3a-4ad0-bc10-424937f1a85b",
+        "regionLabel" : "Details",
+        "regionName" : "tab1",
+        "renditionMap" : { },
+        "type" : "region"
+      }, {
+        "components" : [ {
+          "componentAttributes" : {
+            "richTextValue" : "<p><br></p><p><strong>Proposed Budget</strong></p><p><br></p><p>Please enter your proposed budget for the categories and periods displayed below. Use the \"Reason\" field for any explanatory comments. Note that your changes are saved automatically upon clicking or tabbing out of a cell.</p><p><br></p><p><em>The budget </em><strong><em><u>will not</u></em></strong><em> be available for editing after submission.</em></p>"
+          },
+          "componentName" : "forceCommunity:richTextInline",
+          "id" : "9cac124b-1311-4b56-a978-8da71c0ee8d5",
+          "renditionMap" : { },
+          "type" : "component"
+        }, {
+          "componentAttributes" : { },
+          "componentName" : "runtime_industries_budget:budget",
+          "id" : "5af50993-e8c5-4739-b838-0bd6ec6041b4",
+          "renditionMap" : { },
+          "type" : "component"
+        } ],
+        "id" : "d96f0d2d-0356-4cc8-81f4-b354256684a0",
+        "regionLabel" : "Budget",
+        "regionName" : "tab2",
+        "renditionMap" : { },
+        "type" : "region"
+      } ],
+      "renderPriority" : "NEUTRAL",
+      "renditionMap" : { },
+      "type" : "component"
+    } ],
+    "id" : "d6a1e4dd-43e6-43e4-a1f9-6f511cf94916",
+    "regionName" : "content",
+    "type" : "region"
+  }, {
+    "components" : [ {
+      "componentAttributes" : {
+        "recordId" : "{!recordId}",
+        "width" : "SMALL"
+      },
+      "componentName" : "forceCommunity:relatedRecords",
+      "id" : "318d3a44-b112-40bb-ba8f-f551e846ff51",
+      "renderPriority" : "NEUTRAL",
+      "renditionMap" : { },
+      "type" : "component"
+    } ],
+    "id" : "dd145a46-1298-4041-9cd4-42ab7ca63d79",
+    "regionName" : "sidebar",
+    "type" : "region"
+  }, {
+    "id" : "6a8df50c-7ea6-4bbc-bb01-5acebc96209a",
+    "regionName" : "footer",
+    "type" : "region"
+  }, {
+    "components" : [ {
+      "componentAttributes" : {
+        "customHeadTags" : "",
+        "description" : "",
+        "title" : "{!Record._Object}: {!Record._Title}"
+      },
+      "componentName" : "forceCommunity:seoAssistant",
+      "id" : "7306944e-a1ee-401d-807f-8bfff72a8532",
+      "renditionMap" : { },
+      "type" : "component"
+    } ],
+    "id" : "3eaf08ac-3dff-4ef3-a868-4bdbd302a9f4",
+    "regionName" : "sfdcHiddenRegion",
+    "type" : "region"
+  } ],
+  "themeLayoutType" : "Inner",
+  "type" : "view",
+  "viewType" : "detail-0iT"
+}

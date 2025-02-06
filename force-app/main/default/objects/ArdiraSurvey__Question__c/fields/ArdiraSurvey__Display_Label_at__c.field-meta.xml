@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ArdiraSurvey__Display_Label_at__c</fullName>
+    <defaultValue>&apos;Bottom&apos;</defaultValue>
+    <deprecated>false</deprecated>
+    <description>Select label placement for question.</description>
+    <inlineHelpText>Select label placement for question.</inlineHelpText>
+    <label>Display Label at</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Top</fullName>
+                <default>false</default>
+                <label>Top</label>
+            </value>
+            <value>
+                <fullName>Bottom</fullName>
+                <default>true</default>
+                <label>Bottom</label>
+            </value>
+            <value>
+                <fullName>Sides</fullName>
+                <default>false</default>
+                <label>Sides</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

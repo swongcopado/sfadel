@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ArdiraSurvey__Allow_to_Skip_Answered_Questions__c</fullName>
+    <defaultValue>false</defaultValue>
+    <deprecated>false</deprecated>
+    <description>Allow user to hide answered questions from the response page.</description>
+    <inlineHelpText>When enabled, participants have the option to hide questions that they have already answered from the survey response page. This allows participants to focus on unanswered questions and provides a cleaner interface during the response process. Participants can easily toggle the visibility of answered questions as needed.</inlineHelpText>
+    <label>Hide Answered Questions</label>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

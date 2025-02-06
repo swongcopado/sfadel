@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ArdiraSurvey__Assessment_Fields__c</fullName>
+    <deprecated>false</deprecated>
+    <description>You can review the question response and based on the assessment criteria, you can update one or more assessment fields.</description>
+    <inlineHelpText>You can review the question response and based on the assessment criteria, you can update one or more assessment fields.</inlineHelpText>
+    <label>Assessment Fields</label>
+    <length>4096</length>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>LongTextArea</type>
+    <visibleLines>3</visibleLines>
+</CustomField>

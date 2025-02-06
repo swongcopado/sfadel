@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ArdiraSurvey__Answer_Choices_Opacity__c</fullName>
+    <defaultValue>1</defaultValue>
+    <deprecated>false</deprecated>
+    <description>Setup answer choices opacity in scale of 0 to 1</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Specify the opacity level for the answer choices in the survey response. Use a scale of 0 to 1 to adjust the transparency of the answer choices. This allows you to control the visibility and visual presentation of the answer options, creating a desired effect for the survey interface.</inlineHelpText>
+    <label>Answer Choices Opacity</label>
+    <precision>16</precision>
+    <required>false</required>
+    <scale>2</scale>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Number</type>
+    <unique>false</unique>
+</CustomField>

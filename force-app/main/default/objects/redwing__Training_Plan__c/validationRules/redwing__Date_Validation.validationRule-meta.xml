@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>redwing__Date_Validation</fullName>
+    <active>true</active>
+    <errorConditionFormula>redwing__Start_Date__c &gt;  redwing__End_Date__c</errorConditionFormula>
+    <errorMessage>Start Date cannot be greater than End Date</errorMessage>
+</ValidationRule>

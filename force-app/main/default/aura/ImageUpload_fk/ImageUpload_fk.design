@@ -1,0 +1,3 @@
+<design:component >
+    <design:attribute name="parentId" label="Parent ID" Description="Target ID to post the image. If this is not specified, the image will be posted to their own profile."/>
+</design:component>

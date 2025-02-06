@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>redwing__Is_Published_Formula__c</fullName>
+    <deprecated>false</deprecated>
+    <formula>IF(redwing__Published__c,TRUE,FALSE)</formula>
+    <label>Is Published</label>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

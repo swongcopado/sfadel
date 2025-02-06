@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>redwing__Answer_Sequence__c</fullName>
+    <deprecated>false</deprecated>
+    <label>Answer Sequence</label>
+    <referenceTo>redwing__Answer_Sequence__c</referenceTo>
+    <relationshipLabel>Answer Sequence Items</relationshipLabel>
+    <relationshipName>Answer_Sequence_Items</relationshipName>
+    <relationshipOrder>0</relationshipOrder>
+    <reparentableMasterDetail>true</reparentableMasterDetail>
+    <trackHistory>true</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>MasterDetail</type>
+    <writeRequiresMasterRead>true</writeRequiresMasterRead>
+</CustomField>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customValue>
+        <fullName>Grant Manager</fullName>
+        <default>false</default>
+        <label>Grant Manager</label>
+    </customValue>
+    <customValue>
+        <fullName>Financial Manager</fullName>
+        <default>false</default>
+        <label>Financial Manager</label>
+    </customValue>
+    <customValue>
+        <fullName>Applicant</fullName>
+        <default>false</default>
+        <label>Applicant</label>
+    </customValue>
+    <masterLabel>Funding Request Collaborator Role</masterLabel>
+    <sorted>false</sorted>
+</GlobalValueSet>

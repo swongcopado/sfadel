@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>redwing__Batch_Type__c</fullName>
+    <deprecated>false</deprecated>
+    <inlineHelpText>Defines batch type.</inlineHelpText>
+    <label>Batch Type</label>
+    <required>true</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Simple Assignment</fullName>
+                <default>false</default>
+                <label>Simple Assignment</label>
+            </value>
+            <value>
+                <fullName>Auto-Assign Process</fullName>
+                <default>false</default>
+                <label>Auto-Assign Process</label>
+            </value>
+            <value>
+                <fullName>Related Learning</fullName>
+                <default>false</default>
+                <label>Related Learning</label>
+            </value>
+            <value>
+                <fullName>ILT Users Batch</fullName>
+                <default>false</default>
+                <label>ILT Users Batch</label>
+            </value>
+            <value>
+                <fullName>Learning Assignment</fullName>
+                <default>false</default>
+                <label>Learning Assignment</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

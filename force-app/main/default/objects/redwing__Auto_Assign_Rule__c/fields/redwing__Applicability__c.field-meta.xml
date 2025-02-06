@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>redwing__Applicability__c</fullName>
+    <deprecated>false</deprecated>
+    <label>Applicability</label>
+    <required>true</required>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Existing users only</fullName>
+                <default>false</default>
+                <label>Existing users only</label>
+            </value>
+            <value>
+                <fullName>New and existing users</fullName>
+                <default>false</default>
+                <label>New and existing users</label>
+            </value>
+            <value>
+                <fullName>Existing, new and updated users</fullName>
+                <default>false</default>
+                <label>Existing, new and updated users</label>
+            </value>
+            <value>
+                <fullName>New users only</fullName>
+                <default>false</default>
+                <label>New users only</label>
+            </value>
+            <value>
+                <fullName>Self-registered users</fullName>
+                <default>false</default>
+                <label>Self-registered users</label>
+            </value>
+            <value>
+                <fullName>Updated users only</fullName>
+                <default>false</default>
+                <label>Updated users only</label>
+            </value>
+            <value>
+                <fullName>New and updated users</fullName>
+                <default>false</default>
+                <label>New and updated users</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

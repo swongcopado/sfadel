@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Asig. de art. según la regla de adq.</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Asig. de art. según las reglas de adq.</value>
+    </caseValues>
+    <gender>Feminine</gender>
+    <nameFieldLabel>Nom. asig. de art. según regla de adq.</nameFieldLabel>
+</CustomObjectTranslation>

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>redwing__Type__c</fullName>
+    <deprecated>false</deprecated>
+    <inlineHelpText>Type of Learning Assignment Request.</inlineHelpText>
+    <label>Type</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Simple Assignment</fullName>
+                <default>false</default>
+                <label>Simple Assignment</label>
+            </value>
+            <value>
+                <fullName>Related Learning</fullName>
+                <default>false</default>
+                <label>Related Learning</label>
+            </value>
+            <value>
+                <fullName>Learning Assignment</fullName>
+                <default>false</default>
+                <label>Learning Assignment</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

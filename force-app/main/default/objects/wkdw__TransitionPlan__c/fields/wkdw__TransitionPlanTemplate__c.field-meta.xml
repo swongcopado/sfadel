@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>wkdw__TransitionPlanTemplate__c</fullName>
+    <deleteConstraint>SetNull</deleteConstraint>
+    <deprecated>false</deprecated>
+    <label>Transition Plan Template</label>
+    <lookupFilter>
+        <active>true</active>
+        <filterItems>
+            <field>wkdw__OnboardingTemplate__c.wkdw__IsActive__c</field>
+            <operation>equals</operation>
+            <value>True</value>
+        </filterItems>
+        <isOptional>false</isOptional>
+    </lookupFilter>
+    <referenceTo>wkdw__OnboardingTemplate__c</referenceTo>
+    <relationshipLabel>Transition Plans</relationshipLabel>
+    <relationshipName>TransitionPlans</relationshipName>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Lookup</type>
+</CustomField>

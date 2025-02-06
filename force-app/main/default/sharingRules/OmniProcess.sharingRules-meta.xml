@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<SharingRules xmlns="http://soap.sforce.com/2006/04/metadata">
+    <sharingGuestRules>
+        <fullName>Access_Benefits_Omni_Process_Guest_User</fullName>
+        <accessLevel>Read</accessLevel>
+        <label>Access Benefits Omni Process Guest User</label>
+        <sharedTo>
+            <guestUser>Access_Benefits</guestUser>
+        </sharedTo>
+        <criteriaItems>
+            <field>CreatedById</field>
+            <operation>notEqual</operation>
+            <value>null</value>
+        </criteriaItems>
+        <includeHVUOwnedRecords>false</includeHVUOwnedRecords>
+    </sharingGuestRules>
+    <sharingGuestRules>
+        <fullName>Constituent_Self_Service_Omni_Process_Guest_User</fullName>
+        <accessLevel>Read</accessLevel>
+        <label>Constituent Self Service Omni Process Guest User</label>
+        <sharedTo>
+            <guestUser>Constituent_Self_Service</guestUser>
+        </sharedTo>
+        <criteriaItems>
+            <field>CreatedById</field>
+            <operation>notEqual</operation>
+            <value>null</value>
+        </criteriaItems>
+        <includeHVUOwnedRecords>false</includeHVUOwnedRecords>
+    </sharingGuestRules>
+    <sharingGuestRules>
+        <fullName>FR_Omni_Process_Guest_User</fullName>
+        <accessLevel>Read</accessLevel>
+        <label>FR Omni Process Guest User</label>
+        <sharedTo>
+            <guestUser>FR_Portail_Demandes_Aides_Permis</guestUser>
+        </sharedTo>
+        <criteriaItems>
+            <field>CreatedById</field>
+            <operation>notEqual</operation>
+            <value>null</value>
+        </criteriaItems>
+        <includeHVUOwnedRecords>false</includeHVUOwnedRecords>
+    </sharingGuestRules>
+    <sharingGuestRules>
+        <fullName>Funding_Program_Omni_Process_Guest_User</fullName>
+        <accessLevel>Read</accessLevel>
+        <label>Funding Program Omni Process Guest User</label>
+        <sharedTo>
+            <guestUser>Deprecated_Funding_Program_Portal</guestUser>
+        </sharedTo>
+        <criteriaItems>
+            <field>CreatedById</field>
+            <operation>notEqual</operation>
+            <value>null</value>
+        </criteriaItems>
+        <includeHVUOwnedRecords>false</includeHVUOwnedRecords>
+    </sharingGuestRules>
+    <sharingGuestRules>
+        <fullName>LPI_Omniscript_Guest_User_Sharing</fullName>
+        <accessLevel>Read</accessLevel>
+        <label>LPI_Omniscript Guest User Sharing</label>
+        <sharedTo>
+            <guestUser>LPI</guestUser>
+        </sharedTo>
+        <criteriaItems>
+            <field>CreatedById</field>
+            <operation>notEqual</operation>
+            <value>null</value>
+        </criteriaItems>
+        <includeHVUOwnedRecords>false</includeHVUOwnedRecords>
+    </sharingGuestRules>
+</SharingRules>

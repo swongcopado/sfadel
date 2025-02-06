@@ -1,0 +1,11 @@
+{
+  "activeViewId" : "9df01e44-47b8-4ec6-8ad5-916ee6e10c85",
+  "appPageId" : "7cd60cbf-9c3c-4756-b031-e5d09e77c8ab",
+  "configurationTags" : [ ],
+  "devName" : "Funding_Award_Detail",
+  "id" : "e13b8e3e-3316-4e33-acc1-b85a71af0f6a",
+  "label" : "Funding Award Detail",
+  "routeType" : "detail-121",
+  "type" : "route",
+  "urlPrefix" : "fundingaward"
+}

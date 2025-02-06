@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ArdiraSurvey__Logo_Image__c</fullName>
+    <deprecated>false</deprecated>
+    <description>Image to be displayed in the logo area of the survey.</description>
+    <inlineHelpText>Upload Logo image in jpg / png / gif format with maximum height of 300px.The recommended logo image file size should be less than or equal to 100 KB and recommended dimensions are: 300x55px or 300x120px.</inlineHelpText>
+    <label>Logo Image</label>
+    <length>131072</length>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Html</type>
+    <visibleLines>10</visibleLines>
+</CustomField>

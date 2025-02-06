@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ArdiraSurvey__Anonymous_Responses__c</fullName>
+    <defaultValue>false</defaultValue>
+    <deprecated>false</deprecated>
+    <description>Enabling the &quot;Anonymous Responses&quot; setting in this survey ensures that participants can provide feedback without revealing their identities. Regardless of whether they have established identities within your Salesforce org, their responses will remain untraceable, maintaining their anonymity throughout the survey. This setting is important to encourage honest and unbiased feedback, especially when dealing with sensitive or personal topics.</description>
+    <inlineHelpText>Enabling the &quot;Anonymous Responses&quot; setting in this survey ensures that participants can provide feedback without revealing their identities. Regardless of whether they have established identities within your Salesforce org, their responses will remain untraceable, maintaining their anonymity throughout the survey. This setting is important to encourage honest and unbiased feedback, especially when dealing with sensitive or personal topics.</inlineHelpText>
+    <label>Anonymous Responses</label>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

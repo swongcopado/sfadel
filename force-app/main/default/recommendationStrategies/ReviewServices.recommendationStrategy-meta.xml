@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RecommendationStrategy xmlns="http://soap.sforce.com/2006/04/metadata">
+    <contextRecordType>Case</contextRecordType>
+    <label>ReviewServices</label>
+    <recommendationLoad>
+        <label>Review Services</label>
+        <name>Review_Services</name>
+        <condition>
+            <field>Name</field>
+            <operator>CONTAINS</operator>
+            <value>
+                <type>TEXT</type>
+                <value>Review</value>
+            </value>
+        </condition>
+        <conditionLogic>and</conditionLogic>
+        <object>Recommendation</object>
+    </recommendationLoad>
+    <union>
+        <childNode>Review_Services</childNode>
+        <label>Output</label>
+        <name>Output_59bcec8b6fdd4f988c61d5ee1338b4f2</name>
+    </union>
+</RecommendationStrategy>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<SharingSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <accessMappings>
+        <accessLevel>Read</accessLevel>
+        <object>BenefitAssignment</object>
+        <objectField>ProgramEnrollment.Account</objectField>
+        <userField>Account</userField>
+    </accessMappings>
+    <accessMappings>
+        <accessLevel>Edit</accessLevel>
+        <object>GoalAssignment</object>
+        <objectField>Owner.Account</objectField>
+        <userField>Account</userField>
+    </accessMappings>
+    <accessMappings>
+        <accessLevel>Edit</accessLevel>
+        <object>IndividualApplication</object>
+        <objectField>Account</objectField>
+        <userField>Account</userField>
+    </accessMappings>
+    <description>For Community Users to see records for Individual Applications Object, Benefit Assignments, Goal Assignment. (BTMURPHY 2/28/2023)</description>
+    <name>Community User Sharing</name>
+    <profiles>pss customer community plus user</profiles>
+</SharingSet>

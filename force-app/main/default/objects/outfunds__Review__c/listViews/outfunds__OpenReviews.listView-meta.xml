@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>outfunds__OpenReviews</fullName>
+    <columns>NAME</columns>
+    <columns>outfunds__FundingRequest__c</columns>
+    <columns>outfunds__Status__c</columns>
+    <columns>outfunds__DueDate__c</columns>
+    <columns>outfunds__Comments__c</columns>
+    <columns>outfunds__AssignedTo__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>outfunds__Status__c</field>
+        <operation>notEqual</operation>
+        <value>Submitted</value>
+    </filters>
+    <label>Open Reviews</label>
+</ListView>

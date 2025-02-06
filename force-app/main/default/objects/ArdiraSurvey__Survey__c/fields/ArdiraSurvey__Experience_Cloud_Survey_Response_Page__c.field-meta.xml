@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ArdiraSurvey__Experience_Cloud_Survey_Response_Page__c</fullName>
+    <deprecated>false</deprecated>
+    <description>Enter the URL of the designated experience cloud page where respondents can easily complete the survey. Ensure that the page is hosted on the selected experience cloud site and has been built using the SurveyVista Responder LWC for a seamless survey experience.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Enter the URL of the designated experience cloud page where respondents can easily complete the survey. Ensure that the page is hosted on the selected experience cloud site and has been built using the SurveyVista Responder LWC for a seamless survey experience.</inlineHelpText>
+    <label>Experience Cloud Site - Responder Page</label>
+    <length>40</length>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

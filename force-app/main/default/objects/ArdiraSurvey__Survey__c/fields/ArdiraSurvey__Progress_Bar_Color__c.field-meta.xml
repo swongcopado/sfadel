@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ArdiraSurvey__Progress_Bar_Color__c</fullName>
+    <defaultValue>&quot;#529a4c&quot;</defaultValue>
+    <deprecated>false</deprecated>
+    <description>Progress bar color in survey responder.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Select a color to set as the progress bar color in the survey response interface. The progress bar provides visual indication of the participant&apos;s progress through the survey.</inlineHelpText>
+    <label>Progress Bar Color</label>
+    <length>40</length>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

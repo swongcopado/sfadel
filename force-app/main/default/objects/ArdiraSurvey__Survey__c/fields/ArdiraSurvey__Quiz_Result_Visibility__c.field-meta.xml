@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ArdiraSurvey__Quiz_Result_Visibility__c</fullName>
+    <deprecated>false</deprecated>
+    <description>Select to show what quiz result information to display.</description>
+    <inlineHelpText>Choose how quiz results are presented to quiz takers:
+Quiz Details: Shows each question response.
+Quiz Score: Shows only the quiz score.
+Quiz Statistics: Shows overall quiz result statistics.
+Quiz Details &amp; Statistics: Shows each question response and statistics.
+Quiz Score &amp; Details: Shows the quiz score and each question response.
+Quiz Score &amp; Statistics: Shows the quiz score and statistics.
+Quiz Score, Statistics, &amp; Details: Shows the quiz score, statistics and each question response.</inlineHelpText>
+    <label>Quiz Result Visibility</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Quiz Details</fullName>
+                <default>false</default>
+                <label>Quiz Details</label>
+            </value>
+            <value>
+                <fullName>Quiz Score</fullName>
+                <default>true</default>
+                <label>Quiz Score</label>
+            </value>
+            <value>
+                <fullName>Quiz Statistics</fullName>
+                <default>false</default>
+                <label>Quiz Statistics</label>
+            </value>
+            <value>
+                <fullName>Quiz Details and Statistics</fullName>
+                <default>false</default>
+                <label>Quiz Details and Statistics</label>
+            </value>
+            <value>
+                <fullName>Quiz Score and Details</fullName>
+                <default>false</default>
+                <label>Quiz Score and Details</label>
+            </value>
+            <value>
+                <fullName>Quiz Score and Statistics</fullName>
+                <default>false</default>
+                <label>Quiz Score and Statistics</label>
+            </value>
+            <value>
+                <fullName>Quiz Score, Statistics, and Details</fullName>
+                <default>false</default>
+                <label>Quiz Score, Statistics, and Details</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

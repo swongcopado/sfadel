@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>gps_Funding_Request_Omni_Channel_Routing_Funding_Request</fullName>
+    <filterScope>Queue</filterScope>
+    <label>GPS Funding Request Omni-Channel Routing</label>
+    <queue>gps_Funding_Request_Omni_Channel_Routing</queue>
+    <sharedTo>
+        <allInternalUsers></allInternalUsers>
+    </sharedTo>
+</ListView>

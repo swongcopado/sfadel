@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ArdiraSurvey__Allow_Responder_to_Collapse_a_Question__c</fullName>
+    <deprecated>false</deprecated>
+    <description>When enabled, a responder will be able to collapse a question response area. This improves usability when there are more questions, especially on mobile devices.</description>
+    <inlineHelpText>When enabled, responders will have the option to collapse the response area of a question. This feature enhances usability, particularly on mobile devices, by allowing participants to hide the response area for individual questions. This helps improve the overall user experience, especially when there are numerous questions in the survey.</inlineHelpText>
+    <label>Collapsible Question Responses</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>No</fullName>
+                <default>true</default>
+                <label>No</label>
+            </value>
+            <value>
+                <fullName>Yes</fullName>
+                <default>false</default>
+                <label>Yes</label>
+            </value>
+            <value>
+                <fullName>Only on Mobile Devices</fullName>
+                <default>false</default>
+                <label>Only on Mobile Devices</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

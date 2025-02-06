@@ -1,0 +1,60 @@
+{
+  "appPageId" : "7fe97e67-1ab0-4fe3-8497-ddfeb8bcee4b",
+  "componentName" : "siteforce:dynamicLayout",
+  "dataProviders" : [ ],
+  "id" : "5bafd871-1d20-473e-9094-e93e8ae63b23",
+  "label" : "Test Learning",
+  "regions" : [ {
+    "components" : [ {
+      "componentAttributes" : {
+        "background" : "background: rgba(0,0,0,0)",
+        "backgroundOverlay" : "rgba(0,0,0,0.5)",
+        "contentAreaWidth" : 100,
+        "sectionConfig" : {
+          "UUID" : "c1ebc1bf-925d-4e02-a861-b45132225f73",
+          "columns" : [ {
+            "UUID" : "aedfe616-c0d6-40d8-a8e8-10ea4fc4ff85",
+            "columnKey" : "1",
+            "columnName" : "Column 1",
+            "columnWidth" : "12",
+            "seedComponents" : [ ]
+          } ]
+        },
+        "sectionHeight" : 300
+      },
+      "componentName" : "forceCommunity:section",
+      "id" : "c1ebc1bf-925d-4e02-a861-b45132225f73",
+      "regions" : [ {
+        "id" : "aedfe616-c0d6-40d8-a8e8-10ea4fc4ff85",
+        "regionLabel" : "Column 1",
+        "regionName" : "1",
+        "renditionMap" : { },
+        "type" : "region"
+      } ],
+      "renderPriority" : "NEUTRAL",
+      "renditionMap" : { },
+      "type" : "component"
+    } ],
+    "id" : "638fe911-9722-4de6-a258-125d3661bc38",
+    "regionName" : "content",
+    "type" : "region"
+  }, {
+    "components" : [ {
+      "componentAttributes" : {
+        "customHeadTags" : "",
+        "description" : "",
+        "title" : "Test Learning"
+      },
+      "componentName" : "forceCommunity:seoAssistant",
+      "id" : "e94cf3c7-094d-46b8-9357-840b026e91e8",
+      "renditionMap" : { },
+      "type" : "component"
+    } ],
+    "id" : "3cff3fbd-9804-4adc-aba0-8bb796d2bfd7",
+    "regionName" : "sfdcHiddenRegion",
+    "type" : "region"
+  } ],
+  "themeLayoutType" : "Inner",
+  "type" : "view",
+  "viewType" : "custom-test-learning"
+}

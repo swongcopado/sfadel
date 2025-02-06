@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ArdiraSurvey__Type__c</fullName>
+    <defaultValue>&quot;Text-Short&quot;</defaultValue>
+    <deprecated>false</deprecated>
+    <description>Text Question - Short: Short text response
+Text Question - Long: Long text response
+Text Question - Rich: Rich text response
+Text Question - URL: URL response
+Text Question - Email: Email response
+Yes-No Question: Yes/No response
+Customer Satisfaction: A customer satisfaction response
+Net Promoter: A customer satisfaction response (CSR) using NPS
+Numeric Scale: A CSR using numeric scale
+Image Scale: Customer satisfaction response using image scale
+Multiple Choice: Multiple answer choices
+Date: Date response
+Date Time: Date-Time response
+Number: Numeric value response
+Percentage: Percentage value response
+Document Upload: Allow user to download a document, then upload the document
+Rating: Star rating response
+Ranking: Rank set of choices
+Grid - Rating: Star rating in a tabular format  
+Grid - Multiple Choice: Multiple choice in a tabular format
+Grid - Yes-No Question: Yes/No response in a tabular format
+Grid - Table: Tabular data response
+Certification: Electronic certification</description>
+    <inlineHelpText>Question Type.</inlineHelpText>
+    <label>Type</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetName>ArdiraSurvey__Question_Types</valueSetName>
+    </valueSet>
+</CustomField>

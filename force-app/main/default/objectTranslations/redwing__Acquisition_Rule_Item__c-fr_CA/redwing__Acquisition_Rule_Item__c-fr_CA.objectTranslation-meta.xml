@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Élément de règle d&apos;acquisition</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Éléments de  règle d&apos;acquisition</value>
+    </caseValues>
+    <gender>Masculine</gender>
+    <nameFieldLabel>N° élément de règle d’acquisition</nameFieldLabel>
+    <startsWith>Vowel</startsWith>
+</CustomObjectTranslation>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Élément prérequis</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Éléments prérequis</value>
+    </caseValues>
+    <gender>Masculine</gender>
+    <nameFieldLabel>Nom de l&apos;élément prérequis</nameFieldLabel>
+    <startsWith>Vowel</startsWith>
+</CustomObjectTranslation>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ArdiraSurvey__CS_Do_Not_Require_Authentication__c</fullName>
+    <defaultValue>true</defaultValue>
+    <deprecated>false</deprecated>
+    <description>If checked, unauthenticated users maybe able to respond based on other configuration</description>
+    <inlineHelpText>Enabling this feature allows external participants who are not logged in or registered users to provide feedback or complete the survey without requiring authentication.</inlineHelpText>
+    <label>Allow Unauthenticated Responders</label>
+    <trackHistory>true</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

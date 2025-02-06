@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ArdiraSurvey__Thank_You_Button_Label__c</fullName>
+    <defaultValue>&quot;Thank You&quot;</defaultValue>
+    <deprecated>false</deprecated>
+    <description>Label to be used for &quot;Thank You&quot; button.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Label to use for the &apos;thank you&apos; button in the survey response interface.</inlineHelpText>
+    <label>Thank You Button Label</label>
+    <length>255</length>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

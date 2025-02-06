@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Workflow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <alerts>
+        <fullName>New_Hire_Welcome_Email</fullName>
+        <description>New Hire Welcome Email</description>
+        <protected>false</protected>
+        <recipients>
+            <field>Email</field>
+            <type>email</type>
+        </recipients>
+        <senderAddress>jschillaci@salesforce.com</senderAddress>
+        <senderType>OrgWideEmailAddress</senderType>
+        <template>HR_Templates/New_Hire_Welcome</template>
+    </alerts>
+</Workflow>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ArdiraSurvey__Link_Uploaded_Files_To_Target_Record__c</fullName>
+    <defaultValue>false</defaultValue>
+    <deprecated>false</deprecated>
+    <description>When checked, a document uploaded with a question response will be linked with the target record.</description>
+    <inlineHelpText>When enabled, uploaded documents associated with question responses will be automatically linked to the survey target/subject record for easy reference.</inlineHelpText>
+    <label>Link Uploaded Files To Target Record</label>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ArdiraSurvey__Selected_Field_API_Name__c</fullName>
+    <deprecated>false</deprecated>
+    <description>Dynamic answer choices will be presented from a picklist field or using the records of an object meeting a matching criteria.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Dynamic answer choices will be presented from a picklist field or using the records of an object meeting a matching criteria.</inlineHelpText>
+    <label>Selected Field API Name</label>
+    <length>80</length>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

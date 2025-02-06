@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ArdiraSurvey__Dependent_Question__c</fullName>
+    <deleteConstraint>SetNull</deleteConstraint>
+    <deprecated>false</deprecated>
+    <description>User will be navigated to this question if the dependency criteria are met.</description>
+    <inlineHelpText>Based on the selected action, user will be navigated to this question when the dependency criteria is met.</inlineHelpText>
+    <label>Dependent Question</label>
+    <referenceTo>ArdiraSurvey__Question__c</referenceTo>
+    <relationshipLabel>Question Dependencies (Dependent)</relationshipLabel>
+    <relationshipName>Question_Dependencies_Dependent</relationshipName>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Lookup</type>
+</CustomField>

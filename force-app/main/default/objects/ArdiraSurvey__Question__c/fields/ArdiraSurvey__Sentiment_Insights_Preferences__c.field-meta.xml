@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ArdiraSurvey__Sentiment_Insights_Preferences__c</fullName>
+    <deprecated>false</deprecated>
+    <description>Customize your Sentiment Insight Analysis preferences by selecting the types of insights you want SurveyVista to analyze from your survey responses. Choose from the following options:
+    Key Phrases: Enable to identify significant phrases within survey responses, such as key topics, themes, or subjects.
+    Sentiment: Enable to analyze the overall sentiment expressed in survey responses, categorizing them as positive, neutral, negative, or mixed.
+    Targeted Sentiment: Enable to evaluate sentiment associated with specific entities mentioned in survey responses, providing insights into how respondents feel about particular topics or entities.</description>
+    <inlineHelpText>Customize your Sentiment Insight Analysis preferences by selecting the types of insights you want SurveyVista to analyze from your survey responses.</inlineHelpText>
+    <label>Sentiment Insights Preferences</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>MultiselectPicklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Key_Phrases</fullName>
+                <default>false</default>
+                <label>Key Phrases</label>
+            </value>
+            <value>
+                <fullName>Sentiment</fullName>
+                <default>false</default>
+                <label>Sentiment</label>
+            </value>
+            <value>
+                <fullName>Targeted_Sentiment</fullName>
+                <default>false</default>
+                <label>Targeted Sentiment</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+    <visibleLines>4</visibleLines>
+</CustomField>

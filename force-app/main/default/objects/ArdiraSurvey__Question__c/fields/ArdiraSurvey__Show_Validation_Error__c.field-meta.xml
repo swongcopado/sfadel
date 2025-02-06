@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ArdiraSurvey__Show_Validation_Error__c</fullName>
+    <defaultValue>false</defaultValue>
+    <deprecated>false</deprecated>
+    <description>When enabled, if the validation rule or regex evaluates to false for a question response, it will display the validation error message.</description>
+    <inlineHelpText>When enabled, if the validation rule or regex evaluates to false for a question response, it will display the validation error message.</inlineHelpText>
+    <label>Show Validation Error</label>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

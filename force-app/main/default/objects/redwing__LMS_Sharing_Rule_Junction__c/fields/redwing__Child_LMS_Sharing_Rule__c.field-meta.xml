@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>redwing__Child_LMS_Sharing_Rule__c</fullName>
+    <deleteConstraint>Restrict</deleteConstraint>
+    <deprecated>false</deprecated>
+    <inlineHelpText>Related Child LMS Sharing Rule.</inlineHelpText>
+    <label>Child LMS Sharing Rule</label>
+    <referenceTo>redwing__LMS_Sharing_Rule__c</referenceTo>
+    <relationshipLabel>LMS Sharing Rule Junctions (Child LMS Sharing Rule)</relationshipLabel>
+    <relationshipName>LMS_Sharing_Rule_Junctions1</relationshipName>
+    <required>true</required>
+    <trackTrending>false</trackTrending>
+    <type>Lookup</type>
+</CustomField>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ArdiraSurvey__Enable_Scoring_Survey_Responses__c</fullName>
+    <defaultValue>false</defaultValue>
+    <deprecated>false</deprecated>
+    <description>If enable, show scoring option tab from all survey question type otherwise it will hide</description>
+    <inlineHelpText>Enabling this option allows for scoring of question responses. Once enabled, you will have the ability to configure scoring-related options for both individual questions and the survey as a whole during the survey-building process.</inlineHelpText>
+    <label>Survey Response Scoring</label>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

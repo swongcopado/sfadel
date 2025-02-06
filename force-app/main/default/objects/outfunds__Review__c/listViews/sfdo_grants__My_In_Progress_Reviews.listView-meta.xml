@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>sfdo_grants__My_In_Progress_Reviews</fullName>
+    <columns>NAME</columns>
+    <columns>outfunds__DueDate__c</columns>
+    <columns>outfunds__Status__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>sfdo_grants__IsMine__c</field>
+        <operation>equals</operation>
+        <value>1</value>
+    </filters>
+    <filters>
+        <field>sfdo_grants__IsSubmitted__c</field>
+        <operation>equals</operation>
+        <value>0</value>
+    </filters>
+    <filters>
+        <field>sfdo_grants__IsDisplayed__c</field>
+        <operation>equals</operation>
+        <value>1</value>
+    </filters>
+    <label>My In Progress Reviews</label>
+</ListView>

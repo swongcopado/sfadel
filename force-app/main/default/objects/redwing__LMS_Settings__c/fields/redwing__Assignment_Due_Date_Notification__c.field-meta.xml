@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>redwing__Assignment_Due_Date_Notification__c</fullName>
+    <deprecated>false</deprecated>
+    <externalId>false</externalId>
+    <inlineHelpText>Number of days before Due Date to send Due Date reminder email notifications to users. If empty, notification will not be sent.The value is also used for the &quot;Due Date is coming&quot; highlighting on the user experience. If empty, 10 days is used as default.</inlineHelpText>
+    <label>Assignment Due Date Notification</label>
+    <precision>6</precision>
+    <required>false</required>
+    <scale>0</scale>
+    <trackTrending>false</trackTrending>
+    <type>Number</type>
+    <unique>false</unique>
+</CustomField>

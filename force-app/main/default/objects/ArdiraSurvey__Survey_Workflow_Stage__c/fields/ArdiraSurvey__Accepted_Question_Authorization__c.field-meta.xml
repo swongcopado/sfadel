@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ArdiraSurvey__Accepted_Question_Authorization__c</fullName>
+    <deprecated>false</deprecated>
+    <description>You can select authorization setting to control how accepted questions are presented in this stage of the workflow.</description>
+    <inlineHelpText>With Accepted Question Authorization, you have the ability to control the authorization settings for how accepted questions are presented to stakeholders within this specific stage of the workflow. This configuration allows you to define and manage who has the permission to view and interact with accepted questions, ensuring that only authorized individuals can access and engage with them.</inlineHelpText>
+    <label>Accepted Question Authorization</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Update</fullName>
+                <default>false</default>
+                <label>Update</label>
+            </value>
+            <value>
+                <fullName>Read Only</fullName>
+                <default>true</default>
+                <label>Read Only</label>
+            </value>
+            <value>
+                <fullName>Hidden</fullName>
+                <default>false</default>
+                <label>Hidden</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

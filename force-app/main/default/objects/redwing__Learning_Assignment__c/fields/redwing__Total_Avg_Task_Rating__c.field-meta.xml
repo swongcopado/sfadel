@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>redwing__Total_Avg_Task_Rating__c</fullName>
+    <deprecated>false</deprecated>
+    <externalId>false</externalId>
+    <formula>redwing__Total_Task_Rating__c / IF( redwing__Total_Votes__c  != 0, redwing__Total_Votes__c , 1)</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Total Avg Task Rating</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>1</scale>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Number</type>
+    <unique>false</unique>
+</CustomField>

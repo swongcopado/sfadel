@@ -1,0 +1,52 @@
+<template>
+    <template if:false={isAgent}>
+        <div class="chat-message chasitor">
+            <lightning-formatted-rich-text value={content}>
+            </lightning-formatted-rich-text>
+        </div>
+    </template>
+    <template if:true={isAgent}>
+        <!-- TEXT -->
+        <template if:true={isText}>
+            <div class="chat-message agent">
+                <lightning-formatted-rich-text value={content}>
+                </lightning-formatted-rich-text>
+            </div>
+        </template>
+
+        <!-- TICKET DETAILS -->
+        <template if:true={isTicket}>
+            <c-ticket-card
+                case-number={content.CaseNumber}
+                record-id={content.Id}
+                status={content.Status}
+                subject={content.Subject}
+                description={content.Description}
+                created-date={content.CreatedDate}
+                is-private={content.isPrivate}
+                priority={content.Priority}
+                show-footer="true"
+            >
+            </c-ticket-card>
+        </template>
+
+        <!-- Knowledge Articles -->
+        <template if:true={isArticle}>
+            <div class="chat-list-message">
+                <c-knowledge-article-list
+                    list-of-articles={content}
+                ></c-knowledge-article-list>
+            </div>
+        </template>
+
+        <!-- NEW TICKET -->
+        <template if:true={isNewTicket}>
+            <c-new-ticket ticket-type={content.ticketType}></c-new-ticket>
+        </template>
+
+        <!-- TICKET LIST -->
+        <template if:true={isTicketList}>
+            <c-ticket-menu-list tickets={content}></c-ticket-menu-list>
+        </template>
+    </template>
+</template>

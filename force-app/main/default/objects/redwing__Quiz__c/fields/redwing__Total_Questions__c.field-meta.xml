@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>redwing__Total_Questions__c</fullName>
+    <deprecated>false</deprecated>
+    <label>Total Questions</label>
+    <summarizedField>redwing__Question_Line__c.redwing__Total_Questions__c</summarizedField>
+    <summaryForeignKey>redwing__Question_Line__c.redwing__Quiz__c</summaryForeignKey>
+    <summaryOperation>sum</summaryOperation>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Summary</type>
+</CustomField>

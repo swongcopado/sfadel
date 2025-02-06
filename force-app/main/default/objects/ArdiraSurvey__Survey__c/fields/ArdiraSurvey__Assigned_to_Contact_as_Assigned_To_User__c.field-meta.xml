@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ArdiraSurvey__Assigned_to_Contact_as_Assigned_To_User__c</fullName>
+    <defaultValue>false</defaultValue>
+    <deprecated>false</deprecated>
+    <description>When a survey is send to a community/site contact, enable this option to link the community user as assigned to user.</description>
+    <inlineHelpText>When a survey is sent to a contact within a community or site, enabling this option allows you to automatically link the community user associated with that contact as the assigned user for the survey. This helps in assigning the survey responses to the appropriate user within the community or site, facilitating efficient tracking and management of the survey data.</inlineHelpText>
+    <label>Link Community User as Assigned User</label>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

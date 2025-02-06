@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ArdiraSurvey__Type__c</fullName>
+    <defaultValue>&quot;User&quot;</defaultValue>
+    <deprecated>false</deprecated>
+    <description>Type of resource that is being authorized for the survey result.</description>
+    <inlineHelpText>Type of resource that is being authorized for the survey result.</inlineHelpText>
+    <label>Type</label>
+    <required>true</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>User</fullName>
+                <default>true</default>
+                <label>User</label>
+            </value>
+            <value>
+                <fullName>Public Group</fullName>
+                <default>false</default>
+                <label>Public Group</label>
+            </value>
+            <value>
+                <fullName>Guest</fullName>
+                <default>false</default>
+                <label>Guest</label>
+            </value>
+            <value>
+                <fullName>Related User</fullName>
+                <default>false</default>
+                <label>Related User</label>
+            </value>
+            <value>
+                <fullName>Related User by Email</fullName>
+                <default>false</default>
+                <label>Related User by Email</label>
+            </value>
+            <value>
+                <fullName>Related User by Lookup</fullName>
+                <default>false</default>
+                <label>Related User by Lookup</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>redwing__Training_Plan_Section__c</fullName>
+    <deleteConstraint>SetNull</deleteConstraint>
+    <deprecated>false</deprecated>
+    <label>Learning Plan Section</label>
+    <lookupFilter>
+        <active>true</active>
+        <errorMessage>Only sections from the parent Learning Plan can be selected</errorMessage>
+        <filterItems>
+            <field>redwing__Training_Plan_Section__c.redwing__Training_Plan__c</field>
+            <operation>equals</operation>
+            <valueField>$Source.redwing__Training_Plan__c</valueField>
+        </filterItems>
+        <isOptional>false</isOptional>
+    </lookupFilter>
+    <referenceTo>redwing__Training_Plan_Section__c</referenceTo>
+    <relationshipLabel>Learning Plan Achievements</relationshipLabel>
+    <relationshipName>Training_Plan_Achievements</relationshipName>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Lookup</type>
+</CustomField>

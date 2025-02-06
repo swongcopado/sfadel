@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ArdiraSurvey__Survey_Cache_Type__c</fullName>
+    <deprecated>false</deprecated>
+    <description>Type of cache to use for Survey JSON used to build the survey response JSON.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Type of cache to use for Survey JSON used to build the survey response JSON. No value means caching will not be used. A value of &apos;File&apos; means Salesforce files are used for caching.</inlineHelpText>
+    <label>Survey Cache Type</label>
+    <length>40</length>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

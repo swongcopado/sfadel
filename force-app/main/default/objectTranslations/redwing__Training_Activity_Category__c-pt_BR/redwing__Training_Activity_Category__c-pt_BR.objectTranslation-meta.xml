@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Catálogo da Atvidiade de Aprendizado</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Catálogos das Atividades de Aprendizado</value>
+    </caseValues>
+    <gender>Masculine</gender>
+    <nameFieldLabel>ID Catálogo de Atividades de Aprendizado</nameFieldLabel>
+</CustomObjectTranslation>

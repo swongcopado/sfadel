@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ArdiraSurvey__C_Polar_Correct_Answer_When__c</fullName>
+    <defaultValue>&quot;True&quot;</defaultValue>
+    <deprecated>false</deprecated>
+    <description>Rule to determine a correct answer</description>
+    <inlineHelpText>Specify when a response to the question can be marked as the correct response.</inlineHelpText>
+    <label>Yes-No Question - Correct Answer When</label>
+    <required>true</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>True</fullName>
+                <default>true</default>
+                <label>True</label>
+            </value>
+            <value>
+                <fullName>False</fullName>
+                <default>false</default>
+                <label>False</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

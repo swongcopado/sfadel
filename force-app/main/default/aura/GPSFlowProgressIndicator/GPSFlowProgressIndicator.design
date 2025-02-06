@@ -1,0 +1,4 @@
+<design:component label="GPS Flow Progress Indicator">
+    <design:attribute name="steps" label="Comma-Separated Steps" description="Recommend you create a text variable with the comma-separated steps and reference it here"/>
+    <design:attribute name="currentStep" label="Current Step"/>
+</design:component>

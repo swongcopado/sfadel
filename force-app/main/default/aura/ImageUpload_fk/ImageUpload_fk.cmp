@@ -1,0 +1,42 @@
+<aura:component implements="force:appHostable,forceCommunity:availableForAllPageTypes,flexipage:availableForAllPageTypes" controller="ImageUploadController_fk">
+  <ltng:require styles="/resource/SLDS0121/assets/styles/salesforce-lightning-design-system-ltng.css" scripts="/resource/exifJS, /resource/binaryAjaxJS, /resource/megapixImageJS" />
+
+  <aura:handler name="init" value="{!this}" action="{!c.doInit}" />
+  <aura:handler event="aura:waiting" action="{!c.waiting}" />
+  <aura:handler event="aura:doneWaiting" action="{!c.doneWaiting}" />
+
+  <aura:attribute name="message" type="String" default="" />
+  <aura:attribute name="parentId" type="String" default="" />
+  <aura:attribute name="file_title" type="String" default="" />
+
+  <aura:registerEvent name="saveCompleteEvent" type="c:ImageUploadSaveCompleteEvent_fk" />
+  <aura:registerEvent name="imageChangeEvent" type="c:ImageChangeEvent_fk" />
+
+  <aura:handler event="c:ImageUploadSaveEvent_fk" action="{!c.saveEvent}" />
+
+  <div class="container slds">
+    <div class="camera-button-div">
+      <ui:button label="Choose Image" class="camera-button uiButton--neutral uiButton--default uiButton" aura:id="camera_button">
+        <img src="{!$SfdcSite.pathPrefix+'/resource/SLDS0121/assets/icons/utility/photo_120.png'}" class="camera" />
+      </ui:button>
+      <input type="file" class="file-button" aura:id="file" accept="image/*" onchange="{!c.imageChange}" onclick="{!c.colorCameraButton}" onmouseover="{!c.colorCameraButton}" onmouseout="{!c.undoCameraButton}" onblur="{!c.undoCameraButton}" />
+    </div>
+    <!-- <ui:button label="Save" press="{!c.save}" class="save-button uiButtonX-neutral uiButtonX-default"/> -->
+    <aura:renderIf isTrue="{!v.message != ''}">
+      <div aura:id="message_div" class="message">
+        <ui:outputText aura:Id="message" value="{!v.message}" />
+      </div>
+    </aura:renderIf>
+    <div class="clear">
+      <ui:outputText value="Image Preview" />
+    </div>
+    <div aura:id="uploadPreview" class="preview-div">
+      <canvas id="canvas" class="file-image-display"></canvas>
+    </div>
+    <ui:outputText aura:id="file_title" value="{!v.file_title}" />
+
+    <div aura:id="loading" class="loading">
+      <img src="{!$SfdcSite.pathPrefix+'/resource/loading_fk'}" class="loading-image" />
+    </div>
+  </div>
+</aura:component>

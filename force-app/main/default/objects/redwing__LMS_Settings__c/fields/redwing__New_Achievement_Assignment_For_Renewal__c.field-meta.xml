@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>redwing__New_Achievement_Assignment_For_Renewal__c</fullName>
+    <defaultValue>false</defaultValue>
+    <deprecated>false</deprecated>
+    <inlineHelpText>Enable this option if you would like new Achievement Assignment record to be created when user renews an achievement. If unchecked, existing Achievement Assignment record will be updated.</inlineHelpText>
+    <label>New Achievement Assignment for Renewal</label>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

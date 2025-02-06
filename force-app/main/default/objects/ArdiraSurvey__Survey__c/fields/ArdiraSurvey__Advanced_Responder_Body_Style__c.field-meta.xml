@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ArdiraSurvey__Advanced_Responder_Body_Style__c</fullName>
+    <defaultValue>&quot;box-shadow: none;&quot;</defaultValue>
+    <deprecated>false</deprecated>
+    <description>Use this option to change the survey body (except header) style of survey responder interface. Use standard CSS style. e.g. background-color: #445566;border-radius:20px;border: 3px solid #ff0000;font-size: 20px.</description>
+    <inlineHelpText>Survey Responder Body Style allows you to customize the appearance of the survey body (excluding the header) in the survey responder interface using custom CSS styles. You can use standard CSS syntax to define styles such as background color, border radius, border color, and font size. For example, you can use the following syntax to define the style: &quot;background-color: #445566; border-radius: 20px; border: 3px solid #ff0000; font-size: 20px&quot;.</inlineHelpText>
+    <label>Survey Responder Body Style</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>TextArea</type>
+</CustomField>

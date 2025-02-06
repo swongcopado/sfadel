@@ -1,0 +1,66 @@
+<aura:component controller="PSButtonLauncherController" implements="flexipage:availableForAllPageTypes,forceCommunity:availableForAllPageTypes" access="global" >
+    <aura:attribute name="launcherSetting" type="String" default=""/>
+    <aura:attribute name="bgColor" type="String" default="#E8E8E8"/>
+    <aura:attribute name="catSelectId" type="String" default=""/>
+    <aura:attribute name="backIcon" type="String" default="/resource/PSButtonLauncherBackIcon"/>
+    <aura:attribute name="gpsIcon" type="String" default="/resource/PSButtonLauncherGPSIcon"/>
+    <aura:attribute name="gpsIndicator" type="String" default="true"/>
+    <aura:attribute name="confirmCreateRecord" type="String" default="false"/>
+    <aura:attribute name="navigateToRecord" type="String" default="false"/>
+    
+    <aura:attribute name="config" type="Object"/>
+    <aura:attribute name="catConfig" type="Object"/>
+    
+    <aura:attribute name="latitude" type="String" />
+    <aura:attribute name="longitude" type="String" />
+    
+    <aura:attribute name="context" type="Object" />
+    
+    <aura:handler name="init" value="{!this}" action="{!c.doInit}" />
+    
+    <div>
+        <div aura:id="blcontainer" id="blcontainer" class="container" style="{!'border-radius: 5px;border-style: solid; border-width: 1px; border-color: #cccccc; background-color:' + v.bgColor + '; box-shadow: 1px 1px 1px #b3b3b3;'}">
+            <div aura:id="box" id="box" class="slds-grid slds-wrap slds-grid--vertical-stretch">
+                <aura:if isTrue="{!v.catConfig == null}">
+                    <aura:iteration items="{!v.config.catList}" var="cat">
+                        <div class="slds-col slds-p-around_xx-small slds-size_4-of-12 slds-small-size_3-of-12 slds-medium-size_2-of-12 slds-large-size_2-of-12">
+                            <div class="slds-card launchItem" style="height: 100%;" onclick="{!c.onCategoryClick}" id="{!cat.id}">
+                                <img class="slds-p-top_xx-small slds-p-bottom_xx-small" style="pointer-events: none; display: block; margin-left: auto; margin-right: auto;" src="{!cat.iconURL}" height="80" width="80"></img>
+                                <div class="slds-p-bottom_xx-small" style="text-align: center; pointer-events: none;">
+                                    <p class="slds-text-body_regular">{!cat.name}</p>
+                                </div>
+                            </div>
+                        </div>
+                    </aura:iteration>
+                    <aura:iteration items="{!v.config.itemList}" var="item">
+                        <div class="slds-col slds-p-around_xx-small slds-size_4-of-12 slds-small-size_3-of-12 slds-medium-size_2-of-12 slds-large-size_2-of-12 ">
+                            <div class="slds-card launchItem" style="height: 100%;" onclick="{!c.onItemClick}" id="{!item.id}">
+                                <img class="slds-p-top_xx-small slds-p-bottom_xx-small" style="pointer-events: none; display: block; margin-left: auto; margin-right: auto;" src="{!item.iconURL}" height="80" width="80"></img>
+                                <div class="slds-p-bottom_xx-small" style="pointer-events: none; text-align: center;">
+                                    <p class="slds-text-body_regular">{!item.name}</p>
+                                </div>
+                            </div>
+                        </div>
+                    </aura:iteration>
+                </aura:if>
+                <aura:if isTrue="{!v.catConfig != null}">
+                    <aura:iteration items="{!v.catConfig.itemList}" var="item">
+                        <div class="slds-col slds-p-around_xx-small slds-size_4-of-12 slds-small-size_3-of-12 slds-medium-size_2-of-12 slds-large-size_2-of-12 ">
+                            <div class="slds-card launchItem" style="height: 100%;" onclick="{!c.onItemClick}" id="{!item.id}">
+                                <img class="slds-p-top_xx-small slds-p-bottom_xx-small" style="pointer-events: none; display: block; margin-left: auto; margin-right: auto;" src="{!item.iconURL}" height="80" width="80"></img>
+                                <div class="slds-p-bottom_xx-small" style="pointer-events: none; text-align: center;">
+                                    <p class="slds-text-body_regular">{!item.name}</p>
+                                </div>
+                            </div>
+                        </div>
+                    </aura:iteration>
+                    <div class="slds-col slds-p-around_xx-small slds-size_4-of-12 slds-small-size_3-of-12 slds-medium-size_2-of-12 slds-large-size_2-of-12 ">
+                        <img class="slds-p-top_small" style="display: block; margin-left: auto; margin-right: auto;" src="{!v.backIcon}" height="80" width="80" onclick="{!c.onBackClick}" ></img>
+                    </div>
+                </aura:if>
+            </div>
+            <div aura:id="locateDiv" id="locateDiv" class="hide"><img src="{!v.gpsIcon}" height="15" width="15" /></div>
+            
+        </div>
+    </div>
+</aura:component>

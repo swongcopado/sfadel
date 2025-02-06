@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ArdiraSurvey__Allow_My_Company_User_to_Respond__c</fullName>
+    <defaultValue>false</defaultValue>
+    <deprecated>false</deprecated>
+    <description>Enable to allow your company users to respond a survey sent to your community users.</description>
+    <inlineHelpText>Enabling this option allows users from your company, such as service agents, to respond to surveys that are initially intended for community users. This feature enables company users to participate in surveys that are typically targeted towards community users.</inlineHelpText>
+    <label>Allow Company Users to Respond</label>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

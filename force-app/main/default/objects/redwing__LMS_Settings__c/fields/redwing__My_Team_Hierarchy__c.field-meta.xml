@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>redwing__My_Team_Hierarchy__c</fullName>
+    <deprecated>false</deprecated>
+    <externalId>false</externalId>
+    <inlineHelpText>Defines Hierarchy Type for My Team functionality for External Users. The following values can be used: &quot;Role hierarchy&quot;, &quot;Manager field&quot;, &quot;Account Power Users&quot;, Api Name of custom lookup field on the User object or Api Name of custom apex class.</inlineHelpText>
+    <label>My Team External User Hierarchy</label>
+    <length>255</length>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value><!-- Auto-Assign Rule Junction --></value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value><!-- Auto-Assign Rule Junction --></value>
+    </caseValues>
+    <gender><!-- Neuter --></gender>
+    <nameFieldLabel><!-- Auto-Assign Rule Junction Name --></nameFieldLabel>
+</CustomObjectTranslation>

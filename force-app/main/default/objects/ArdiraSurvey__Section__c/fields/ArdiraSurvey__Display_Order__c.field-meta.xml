@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ArdiraSurvey__Display_Order__c</fullName>
+    <deprecated>false</deprecated>
+    <description>Order in which this section is displayed in a survey or parent section. A typical value will be a three character text representing a number e.g. 005.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Order in which this section is displayed in a survey or parent section. A typical value will be a three character text representing a number e.g. 005.</inlineHelpText>
+    <label>Display Order</label>
+    <length>32</length>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

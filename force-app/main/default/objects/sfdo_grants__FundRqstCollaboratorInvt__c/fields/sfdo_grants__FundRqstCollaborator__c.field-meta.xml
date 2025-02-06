@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>sfdo_grants__FundRqstCollaborator__c</fullName>
+    <deleteConstraint>SetNull</deleteConstraint>
+    <deprecated>false</deprecated>
+    <label>Funding Request Collaborator</label>
+    <lookupFilter>
+        <active>true</active>
+        <errorMessage>The Funding Request Collaborator and this Funding Request Invitation must look up to the same Funding Request.</errorMessage>
+        <filterItems>
+            <field>sfdo_grants__FundRqstCollaborator__c.sfdo_grants__FundingRequest__c</field>
+            <operation>equals</operation>
+            <valueField>$Source.sfdo_grants__FundingRequest__c</valueField>
+        </filterItems>
+        <isOptional>false</isOptional>
+    </lookupFilter>
+    <referenceTo>sfdo_grants__FundRqstCollaborator__c</referenceTo>
+    <relationshipLabel>Funding Request Collaborator Invitations</relationshipLabel>
+    <relationshipName>FundRqstCollaboratorInvts</relationshipName>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Lookup</type>
+</CustomField>

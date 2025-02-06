@@ -1,0 +1,9 @@
+<design:component >
+   <design:attribute name="launcherSetting" label="Launch Settings Definition" Description="The PSButtonLauncher settings" datasource="apex://PSButtonLauncherSettingPicklist"/>
+   <design:attribute name="bgColor" label="Background color" Description="Background color of main container" />
+   <design:attribute name="backIcon" label="Back icon for category drill-down" Description="The back/return icon when you drill into a category" />
+   <design:attribute name="confirmCreateRecord" label="Create record confirmation screen flag" Description="Show confirmation screen for creating new records" datasource="true,false"/>
+   <design:attribute name="navigateToRecord" label="Navigate to new record" Description="Load detail screen of new record" datasource="true,false"/>
+    <design:attribute name="gpsIcon" label="GPS icon for la" Description="The icon to show in top-right that lat/lng has been acquired" />
+    <design:attribute name="gpsIndicator" label="Show GPS icon" Description="Show the GPS icon in top-right" datasource="true,false"/>
+</design:component>

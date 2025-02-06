@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Notation du critère</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Notations du critère</value>
+    </caseValues>
+    <gender>Feminine</gender>
+    <nameFieldLabel>Nom de la notation du critère</nameFieldLabel>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

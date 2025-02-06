@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ArdiraSurvey__Progress_Bar_Display_Options__c</fullName>
+    <deprecated>false</deprecated>
+    <inlineHelpText>Choose the desired display option for the progress bar in the survey response interface. Select from the available options to determine where the progress bar should be positioned.</inlineHelpText>
+    <label>Progress Bar Display Options</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Top Bar</fullName>
+                <default>true</default>
+                <label>Top Bar</label>
+            </value>
+            <value>
+                <fullName>With Top Navigation</fullName>
+                <default>false</default>
+                <label>With Top Navigation</label>
+            </value>
+            <value>
+                <fullName>With Bottom Navigation</fullName>
+                <default>false</default>
+                <label>With Bottom Navigation</label>
+            </value>
+            <value>
+                <fullName>Bottom Bar</fullName>
+                <default>false</default>
+                <label>Bottom Bar</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

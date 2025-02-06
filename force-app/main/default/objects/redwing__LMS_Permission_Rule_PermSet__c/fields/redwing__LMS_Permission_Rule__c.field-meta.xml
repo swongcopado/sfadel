@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>redwing__LMS_Permission_Rule__c</fullName>
+    <deprecated>false</deprecated>
+    <description>Parent Permission Rule</description>
+    <label>LMS Permission Rule</label>
+    <referenceTo>redwing__LMS_Permission_Rule__c</referenceTo>
+    <relationshipLabel>Permission Sets</relationshipLabel>
+    <relationshipName>LMS_Permission_Rule_PermSets</relationshipName>
+    <relationshipOrder>0</relationshipOrder>
+    <reparentableMasterDetail>true</reparentableMasterDetail>
+    <trackHistory>true</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>MasterDetail</type>
+    <writeRequiresMasterRead>false</writeRequiresMasterRead>
+</CustomField>

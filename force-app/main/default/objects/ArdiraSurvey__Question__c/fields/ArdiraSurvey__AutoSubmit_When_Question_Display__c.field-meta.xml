@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ArdiraSurvey__AutoSubmit_When_Question_Display__c</fullName>
+    <defaultValue>false</defaultValue>
+    <deprecated>false</deprecated>
+    <description>When enabled, when this question is rendered in the survey responder interface, system will automatically submit the survey.</description>
+    <inlineHelpText>When enabled, when this question is rendered in the survey responder interface, system will automatically submit the survey.</inlineHelpText>
+    <label>Auto Submit on this Question Display</label>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

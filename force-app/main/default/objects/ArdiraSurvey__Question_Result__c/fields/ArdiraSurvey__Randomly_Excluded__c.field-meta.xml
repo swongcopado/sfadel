@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ArdiraSurvey__Randomly_Excluded__c</fullName>
+    <defaultValue>false</defaultValue>
+    <deprecated>false</deprecated>
+    <description>When a subset of questions selection is enabled by setting a limit, if a question is removed from the presented questions for a respondent, this flag will be set to true.</description>
+    <inlineHelpText>When a subset of questions selection is enabled by setting a limit, if a question is removed from the presented questions for a respondent, this flag will be set to true.</inlineHelpText>
+    <label>Randomly Excluded</label>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

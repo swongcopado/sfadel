@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ArdiraSurvey__Advanced_Survey_Answer_Text_Style__c</fullName>
+    <deprecated>false</deprecated>
+    <description>Use this option to change the answer element style of survey responder interface. Use standard CSS style. e.g. color: #445566;font-size: 20px.</description>
+    <inlineHelpText>Answer Element Style allows you to customize the style of the answer elements in the survey responder interface. You can use standard CSS styles. e.g. color: #445566;font-size: 20px.</inlineHelpText>
+    <label>Answer Element Style</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>TextArea</type>
+</CustomField>

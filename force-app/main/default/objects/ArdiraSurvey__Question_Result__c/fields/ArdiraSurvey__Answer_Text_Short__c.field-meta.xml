@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ArdiraSurvey__Answer_Text_Short__c</fullName>
+    <deprecated>false</deprecated>
+    <description>This field contains the first 255 characters of the answer text. This field can be used for history tracking.</description>
+    <inlineHelpText>This field contains the first 255 characters of the answer text. This field can be used for history tracking.</inlineHelpText>
+    <label>Answer Text Short</label>
+    <required>false</required>
+    <trackHistory>true</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>TextArea</type>
+</CustomField>

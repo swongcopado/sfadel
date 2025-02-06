@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PermissionSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <description>Enables the &quot;Set Audit Fields upon Record Creation&quot; permission under System Permissions so that the user can upload items like Creation Date and Modification Date when uploading new records.</description>
+    <hasActivationRequired>false</hasActivationRequired>
+    <label>Upload Audit Fields on Creation</label>
+    <userPermissions>
+        <enabled>true</enabled>
+        <name>CreateAuditFields</name>
+    </userPermissions>
+</PermissionSet>

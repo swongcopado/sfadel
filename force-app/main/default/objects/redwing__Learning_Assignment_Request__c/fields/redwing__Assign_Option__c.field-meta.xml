@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>redwing__Assign_Option__c</fullName>
+    <deprecated>false</deprecated>
+    <inlineHelpText>Additional information for Assign process.</inlineHelpText>
+    <label>Assign Option</label>
+    <length>32768</length>
+    <trackTrending>false</trackTrending>
+    <type>LongTextArea</type>
+    <visibleLines>3</visibleLines>
+</CustomField>

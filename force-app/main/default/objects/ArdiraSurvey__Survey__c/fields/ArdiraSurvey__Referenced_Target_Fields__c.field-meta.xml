@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ArdiraSurvey__Referenced_Target_Fields__c</fullName>
+    <deprecated>false</deprecated>
+    <description>Fields in the target object referenced in the survey questions. This is a JSON serialization of a map of referenced set of target fields with question logical id as the key.
+These merge field values will be dynamically replaced when the survey is displayed for response.</description>
+    <inlineHelpText>Fields in the target object referenced in a question as a merge field.</inlineHelpText>
+    <label>Referenced Target Fields</label>
+    <length>10000</length>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>LongTextArea</type>
+    <visibleLines>3</visibleLines>
+</CustomField>

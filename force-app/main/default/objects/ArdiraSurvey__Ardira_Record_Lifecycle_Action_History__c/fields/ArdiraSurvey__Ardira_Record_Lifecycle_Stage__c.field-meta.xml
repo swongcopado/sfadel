@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ArdiraSurvey__Ardira_Record_Lifecycle_Stage__c</fullName>
+    <deleteConstraint>SetNull</deleteConstraint>
+    <deprecated>false</deprecated>
+    <description>Lifecycle stage that was used for the action.</description>
+    <inlineHelpText>An RLM stage that generated the action.</inlineHelpText>
+    <label>RLM Stage</label>
+    <referenceTo>ArdiraSurvey__Ardira_Record_Lifecycle_Stage__c</referenceTo>
+    <relationshipLabel>Ardira Record Lifecycle Action History</relationshipLabel>
+    <relationshipName>Ardira_Record_Lifecycle_Action_History</relationshipName>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Lookup</type>
+</CustomField>

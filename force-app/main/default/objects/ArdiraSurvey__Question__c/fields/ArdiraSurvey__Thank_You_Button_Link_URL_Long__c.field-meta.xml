@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ArdiraSurvey__Thank_You_Button_Link_URL_Long__c</fullName>
+    <deprecated>false</deprecated>
+    <description>URL to redirect when thank you button is clicked.</description>
+    <inlineHelpText>When the thank you button is clicked, a survey participant is redirected to this URL.</inlineHelpText>
+    <label>Thank You Button Link URL - Long</label>
+    <length>4096</length>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>LongTextArea</type>
+    <visibleLines>3</visibleLines>
+</CustomField>

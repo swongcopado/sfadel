@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ArdiraSurvey__Response_Formula__c</fullName>
+    <deprecated>false</deprecated>
+    <description>To calculate the response, you can configure a formula that utilizes supported mathematical operations ( addition (+), subtraction (-), multiplication (*), division (/), and modulo (%) ). To build the formula, you can use responses from previously answered questions as well as a static value, also known as a factor. For instance, you could create a formula like this: {{{Q1.Response}}} + {{{Q2.Response}}} * 2. This formula would add the response from Question 1 to twice the response from Question 2.</description>
+    <inlineHelpText>Enter a formula to calculate the response. Use standard math operations (addition (+), subtraction (-), multiplication (*), division (/), and modulo (%)), and functions ROUND and ABS. You can include responses from previous questions and static values. E.g.  {{{Q1.Response}}} + {{{Q2.Response}}} * 2+ ROUND({{{Q1.Response}}},2), and ABS(ROUND(({{{Q1.Response}}}+{{{Q1.Response}}})/2,2)).</inlineHelpText>
+    <label>Response Formula</label>
+    <length>4096</length>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>LongTextArea</type>
+    <visibleLines>3</visibleLines>
+</CustomField>

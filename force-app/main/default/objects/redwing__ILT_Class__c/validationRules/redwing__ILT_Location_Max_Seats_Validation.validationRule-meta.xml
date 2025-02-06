@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>redwing__ILT_Location_Max_Seats_Validation</fullName>
+    <active>true</active>
+    <errorConditionFormula>redwing__Location__r.redwing__Max_Seats__c &lt; redwing__Max_Seats__c</errorConditionFormula>
+    <errorDisplayField>redwing__Location__c</errorDisplayField>
+    <errorMessage>ILT Location does not have enough seats to accomodate this ILT Class. Please select a different Location</errorMessage>
+</ValidationRule>

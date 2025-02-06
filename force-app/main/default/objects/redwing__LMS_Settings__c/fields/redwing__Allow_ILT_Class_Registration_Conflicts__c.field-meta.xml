@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>redwing__Allow_ILT_Class_Registration_Conflicts__c</fullName>
+    <defaultValue>false</defaultValue>
+    <deprecated>false</deprecated>
+    <inlineHelpText>Enable this option if you would like to allow users to register to ILT Classes even if they are already registered for a conflicting ILT Class.</inlineHelpText>
+    <label>Allow ILT Class Registration Conflicts</label>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

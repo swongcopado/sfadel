@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ArdiraSurvey__Authorized_Users_Can_View_and_Update__c</fullName>
+    <defaultValue>true</defaultValue>
+    <deprecated>false</deprecated>
+    <description>When enabled, system will use authorization configuration to allow users to view or update responses.</description>
+    <inlineHelpText>When this feature is enabled, SurveyVista utilizes an advanced stakeholders configuration, granting authorized users the ability to view and update responses within the context of the workflow stage. With Stakeholders Response Access, you have complete control over who can access and modify survey data, ensuring the utmost security and privacy for your valuable information.</inlineHelpText>
+    <label>Stakeholder Response Access</label>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

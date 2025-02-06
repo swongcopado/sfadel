@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Survey_Positive__c</fullName>
+    <defaultValue>false</defaultValue>
+    <description>Was this a positive interaction or not?</description>
+    <inlineHelpText>Was this a positive interaction or not? True for positive, False for negative/neutral</inlineHelpText>
+    <label>Survey Positive</label>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

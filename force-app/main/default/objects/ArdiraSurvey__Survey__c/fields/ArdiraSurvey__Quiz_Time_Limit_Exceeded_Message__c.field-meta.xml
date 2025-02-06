@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ArdiraSurvey__Quiz_Time_Limit_Exceeded_Message__c</fullName>
+    <deprecated>false</deprecated>
+    <description>Configure a message to display when a respondent goes over time limit to complete the quiz.</description>
+    <inlineHelpText>Configure a message to display when a respondent goes over time limit to complete the quiz.</inlineHelpText>
+    <label>Quiz Time Limit Exceeded Message</label>
+    <length>1024</length>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Html</type>
+    <visibleLines>10</visibleLines>
+</CustomField>

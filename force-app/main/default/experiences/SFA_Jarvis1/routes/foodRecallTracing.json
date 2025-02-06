@@ -1,0 +1,12 @@
+{
+  "activeViewId" : "df0434b7-8939-4dd4-8e02-05af39004684",
+  "appPageId" : "7fe97e67-1ab0-4fe3-8497-ddfeb8bcee4b",
+  "configurationTags" : [ ],
+  "devName" : "Food_Recall_tracing__c",
+  "id" : "900204de-44ad-4f4c-b4b4-ed94a8e9a63d",
+  "label" : "Food Recall Tracing",
+  "pageAccess" : "UseParent",
+  "routeType" : "custom-food-recall-tracing",
+  "type" : "route",
+  "urlPrefix" : "food-recall-tracing"
+}

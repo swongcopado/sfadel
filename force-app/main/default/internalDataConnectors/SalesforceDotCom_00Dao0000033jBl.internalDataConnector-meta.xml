@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<InternalDataConnector xmlns="http://soap.sforce.com/2006/04/metadata" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <alias xsi:nil="true"/>
+    <dataConnectionStatus>Connected</dataConnectionStatus>
+    <dataConnectorType>SalesforceDotCom</dataConnectorType>
+    <dataPlatform>Salesforce_Sales_and_Service_Cloud</dataPlatform>
+    <dataSourceTenant>SalesforceDotCom_core_prod_00Dao0000033jBlEAI</dataSourceTenant>
+    <dataSpace xsi:nil="true"/>
+    <externalRecordId>00Dao0000033jBl</externalRecordId>
+    <isMetadataSync>false</isMetadataSync>
+    <masterLabel>Salesforce Connector Deloitte Global Services Limited 00Dao0000033jBl</masterLabel>
+</InternalDataConnector>

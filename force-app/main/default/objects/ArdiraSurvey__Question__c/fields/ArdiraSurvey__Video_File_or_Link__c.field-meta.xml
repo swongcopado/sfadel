@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ArdiraSurvey__Video_File_or_Link__c</fullName>
+    <deprecated>false</deprecated>
+    <description>For Native Salesforce, upload a video as a file and then enter the file id or name. For other sources, enter the video url.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>For Native Salesforce, upload a video as a file and then enter the file id or name. For other sources, enter the embed video URL from the source.</inlineHelpText>
+    <label>Video File or Link</label>
+    <length>255</length>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

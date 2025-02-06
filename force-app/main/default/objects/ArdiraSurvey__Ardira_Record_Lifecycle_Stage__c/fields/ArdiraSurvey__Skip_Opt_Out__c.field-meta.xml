@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ArdiraSurvey__Skip_Opt_Out__c</fullName>
+    <defaultValue>false</defaultValue>
+    <deprecated>false</deprecated>
+    <description>When checked, skip recipients that have email opt out field set to true.</description>
+    <inlineHelpText>This setting ensures that surveys are not sent to recipients who have opted out. Enabling this option respects the preferences of recipients who have chosen not to receive further surveys, thereby maintaining compliance with privacy standards and improving recipient satisfaction.</inlineHelpText>
+    <label>Skip Opt Out</label>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

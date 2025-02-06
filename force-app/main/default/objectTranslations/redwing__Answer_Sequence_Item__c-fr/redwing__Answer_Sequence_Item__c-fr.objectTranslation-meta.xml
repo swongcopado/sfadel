@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Élément de la séquence de réponse</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Éléments de la séquence de réponse</value>
+    </caseValues>
+    <gender>Masculine</gender>
+    <nameFieldLabel>ID d&apos;élément de la séquence de réponse</nameFieldLabel>
+    <startsWith>Vowel</startsWith>
+</CustomObjectTranslation>

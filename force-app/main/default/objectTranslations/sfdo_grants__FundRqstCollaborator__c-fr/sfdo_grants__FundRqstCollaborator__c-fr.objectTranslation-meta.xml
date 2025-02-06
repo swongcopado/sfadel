@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Collaborateur de la demande de subvention</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Collaborateurs de la demande de subvention</value>
+    </caseValues>
+    <gender>Masculine</gender>
+    <nameFieldLabel>Nom du collaborateur de la demande de su</nameFieldLabel>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

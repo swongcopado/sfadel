@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ArdiraSurvey__Score_Percentage__c</fullName>
+    <deprecated>false</deprecated>
+    <description>Average of the percentage score of all the questions in survey</description>
+    <inlineHelpText>Survey response percentage score (average of all questions percentage scores).</inlineHelpText>
+    <label>Score (Percentage)</label>
+    <precision>5</precision>
+    <required>false</required>
+    <scale>2</scale>
+    <trackHistory>true</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Percent</type>
+</CustomField>

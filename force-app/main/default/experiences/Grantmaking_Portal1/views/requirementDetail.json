@@ -1,0 +1,76 @@
+{
+  "appPageId" : "7cd60cbf-9c3c-4756-b031-e5d09e77c8ab",
+  "componentName" : "siteforce:sldsOneColLayout",
+  "dataProviders" : [ ],
+  "id" : "ce678d7d-3b16-47b0-a270-b717f0f04187",
+  "label" : "Requirement Detail",
+  "regions" : [ {
+    "id" : "d0617107-f5d1-4431-8964-6ab3ba9a6f9f",
+    "regionName" : "header",
+    "type" : "region"
+  }, {
+    "components" : [ {
+      "componentAttributes" : {
+        "recordId" : "{!recordId}"
+      },
+      "componentName" : "forceCommunity:recordHeadline",
+      "id" : "de9c7ea9-94c7-4190-af0d-24c2f37b482e",
+      "renderPriority" : "NEUTRAL",
+      "renditionMap" : { },
+      "type" : "component"
+    }, {
+      "componentAttributes" : {
+        "mode" : "readonly",
+        "objectApiName" : "outfunds__Requirement__c",
+        "recordId" : "{!recordId}"
+      },
+      "componentName" : "sfdo_grants:recordDetail",
+      "id" : "dc250da8-d54b-462d-94ea-26c3c2bdfa67",
+      "renderPriority" : "NEUTRAL",
+      "renditionMap" : { },
+      "type" : "component"
+    }, {
+      "componentAttributes" : {
+        "recordId" : "{!recordId}"
+      },
+      "componentName" : "sfdo_grants:submitProgressReport",
+      "id" : "82d2fc46-1ef0-4381-93ee-5eed6cf0b5e1",
+      "renderPriority" : "NEUTRAL",
+      "renditionMap" : { },
+      "type" : "component"
+    }, {
+      "componentAttributes" : {
+        "headerText" : "Files"
+      },
+      "componentName" : "sfdo_grants:communityFileList",
+      "id" : "05dd857f-3102-45a6-ab72-faa30a8641fd",
+      "renderPriority" : "NEUTRAL",
+      "renditionMap" : { },
+      "type" : "component"
+    } ],
+    "id" : "fbde2bbe-8758-4664-88a1-e9a8c6d449bf",
+    "regionName" : "content",
+    "type" : "region"
+  }, {
+    "id" : "2604bb4c-0797-46f5-bafa-91ea83a53399",
+    "regionName" : "footer",
+    "type" : "region"
+  }, {
+    "components" : [ {
+      "componentAttributes" : {
+        "customHeadTags" : "",
+        "title" : "{!Record._Object}: {!Record._Title}"
+      },
+      "componentName" : "forceCommunity:seoAssistant",
+      "id" : "c9083837-579d-44fd-be41-6be57ad682fd",
+      "renditionMap" : { },
+      "type" : "component"
+    } ],
+    "id" : "1bf041bb-50dd-4611-b6c7-f25b13ee81b5",
+    "regionName" : "sfdcHiddenRegion",
+    "type" : "region"
+  } ],
+  "themeLayoutType" : "Inner",
+  "type" : "view",
+  "viewType" : "detail-a1A"
+}

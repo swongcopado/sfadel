@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>redwing__CorrectNumber_Required</fullName>
+    <active>true</active>
+    <errorConditionFormula>redwing__Question_Line__r.redwing__Quiz__r.redwing__Enable_Survey_Mode__c == false &amp;&amp; ISBLANK(TEXT(redwing__Correct_Number__c)) &amp;&amp; TEXT(redwing__Type__c) == &quot;Number&quot;</errorConditionFormula>
+    <errorMessage>You must specify a correct number value when defining a Number type of question</errorMessage>
+</ValidationRule>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ArdiraSurvey__Show_Color_Coding_to_NPS_answer_scale__c</fullName>
+    <defaultValue>true</defaultValue>
+    <deprecated>false</deprecated>
+    <description>On Check of this field it will allow user to show color for answer scale</description>
+    <inlineHelpText>Enable to color code an answer scale.</inlineHelpText>
+    <label>Color Code Answer Scale</label>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

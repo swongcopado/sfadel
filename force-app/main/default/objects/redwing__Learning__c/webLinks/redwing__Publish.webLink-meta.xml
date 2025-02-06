@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebLink xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>redwing__Publish</fullName>
+    <availability>online</availability>
+    <description>Button used for launching the learning publish VF page</description>
+    <displayType>button</displayType>
+    <height>600</height>
+    <linkType>page</linkType>
+    <masterLabel>Publish</masterLabel>
+    <openType>noSidebar</openType>
+    <page>redwing__LearningPublish</page>
+    <protected>false</protected>
+</WebLink>

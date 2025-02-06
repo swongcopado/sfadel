@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>redwing__Learning_Search_Category__c</fullName>
+    <deprecated>false</deprecated>
+    <label>Learning Search Category</label>
+    <referenceTo>redwing__Learning_Search_Category__c</referenceTo>
+    <relationshipLabel>Learning Search Category Items</relationshipLabel>
+    <relationshipName>Learning_Search_Category_Items</relationshipName>
+    <relationshipOrder>0</relationshipOrder>
+    <reparentableMasterDetail>false</reparentableMasterDetail>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>MasterDetail</type>
+    <writeRequiresMasterRead>true</writeRequiresMasterRead>
+</CustomField>

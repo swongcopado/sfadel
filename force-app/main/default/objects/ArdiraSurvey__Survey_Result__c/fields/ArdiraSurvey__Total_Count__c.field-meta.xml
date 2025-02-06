@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ArdiraSurvey__Total_Count__c</fullName>
+    <deprecated>false</deprecated>
+    <description>Count of all the questions in the survey. Note that this count does not include dependent questions that may require response based on a source question response.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Count of all the questions in the survey. Note that this count does not include dependent questions that may require response based on a source question response.</inlineHelpText>
+    <label>Total Count</label>
+    <precision>5</precision>
+    <required>false</required>
+    <scale>0</scale>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Number</type>
+    <unique>false</unique>
+</CustomField>

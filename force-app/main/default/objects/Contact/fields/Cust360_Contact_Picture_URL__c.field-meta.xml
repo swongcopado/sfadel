@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Cust360_Contact_Picture_URL__c</fullName>
+    <externalId>false</externalId>
+    <inlineHelpText>This is the URL or Static Resource to the photo that shows up on the Customer 360 Highlight Card lightning component for this contact.</inlineHelpText>
+    <label>Cust360 Contact Picture URL</label>
+    <length>255</length>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

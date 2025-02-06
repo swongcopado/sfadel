@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ArdiraSurvey__C_Help_Text_Display__c</fullName>
+    <defaultValue>&quot;As Tooltip&quot;</defaultValue>
+    <deprecated>false</deprecated>
+    <description>Location of tooltip with respect to the question.</description>
+    <inlineHelpText>Select display location for the question help text in the survey response interface.</inlineHelpText>
+    <label>Help Text Display Location</label>
+    <required>true</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Above Question Text</fullName>
+                <default>false</default>
+                <label>Above Question Text</label>
+            </value>
+            <value>
+                <fullName>Below Question Text</fullName>
+                <default>false</default>
+                <label>Below Question Text</label>
+            </value>
+            <value>
+                <fullName>As Tooltip</fullName>
+                <default>true</default>
+                <label>As Tooltip</label>
+            </value>
+            <value>
+                <fullName>Below Answer Element</fullName>
+                <default>false</default>
+                <label>Below Answer Element</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

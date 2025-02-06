@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<DecisionMatrixDefinition xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label>Food Assistance Income Limits</label>
+    <type>Standard</type>
+    <versions>
+        <fullName>Food_Assistance_Income_Limits_V1</fullName>
+        <columns>
+            <columnType>Output</columnType>
+            <dataType>Currency</dataType>
+            <displaySequence>2</displaySequence>
+            <isWildcardColumn>false</isWildcardColumn>
+            <name>GrossHouseholdIncomeLimit</name>
+        </columns>
+        <columns>
+            <columnType>Output</columnType>
+            <dataType>Currency</dataType>
+            <displaySequence>3</displaySequence>
+            <isWildcardColumn>false</isWildcardColumn>
+            <name>NetHouseholdIncomeLimit</name>
+        </columns>
+        <columns>
+            <columnType>Input</columnType>
+            <dataType>Number</dataType>
+            <displaySequence>1</displaySequence>
+            <isWildcardColumn>false</isWildcardColumn>
+            <name>HouseholdSize</name>
+        </columns>
+        <decisionMatrixDefinition>Food_Assistance_Income_Limits</decisionMatrixDefinition>
+        <label>Food Assistance Income Limits V1</label>
+        <startDate>2022-01-01T08:00:00.000Z</startDate>
+        <status>Active</status>
+        <versionNumber>1</versionNumber>
+    </versions>
+</DecisionMatrixDefinition>

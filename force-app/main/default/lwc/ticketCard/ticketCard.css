@@ -1,0 +1,25 @@
+.card {
+    width: 85%;
+    margin-left: 15%;
+}
+
+.icon {
+    fill: rgb(129, 129, 129);
+}
+
+.ticket-status-row {
+    display: grid;
+    grid-template-columns:
+        [icon] min-content
+        [label] max-content
+        [id] 1fr
+        [badge] max-content;
+    grid-template-rows: auto;
+    align-items: center;
+    width: 100%;
+    grid-gap: 0.5ch;
+    justify-items: start;
+
+    position: relative;
+    top: -10px;
+}

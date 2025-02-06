@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ArdiraSurvey__Question_Card_Opacity__c</fullName>
+    <defaultValue>1</defaultValue>
+    <deprecated>false</deprecated>
+    <description>Setup question background opacity in scale of 0 to 1</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Choose a question card opacity level on a scale of 0 to 1. This setting determines the transparency of the background color of the question cards in the survey response interface. Adjusting the opacity can help achieve the desired visual effect, allowing the underlying elements or background image to be partially visible through the question cards.</inlineHelpText>
+    <label>Question Card Opacity</label>
+    <precision>6</precision>
+    <required>false</required>
+    <scale>2</scale>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Number</type>
+    <unique>false</unique>
+</CustomField>

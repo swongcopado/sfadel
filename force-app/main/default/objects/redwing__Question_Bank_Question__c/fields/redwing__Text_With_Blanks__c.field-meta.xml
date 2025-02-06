@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>redwing__Text_With_Blanks__c</fullName>
+    <deprecated>false</deprecated>
+    <inlineHelpText>Add text and blanks into this field using the &quot;Add Blank&quot; button.</inlineHelpText>
+    <label>Text With Blanks</label>
+    <length>32768</length>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Html</type>
+    <visibleLines>25</visibleLines>
+</CustomField>

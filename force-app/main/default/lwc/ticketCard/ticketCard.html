@@ -1,0 +1,89 @@
+<template>
+    <template if:true={recordId}>
+        <div class="slds-size_1-of-1 card">
+            <lightning-card>
+                <div
+                    key={recordId}
+                    data-element="title"
+                    class="slds-var-p-horizontal_medium slds-text-body_small ticket-status-row"
+                >
+                    <span>
+                        <lightning-icon
+                            icon-name="utility:lock"
+                            alternative-text="Private Ticket"
+                            title="Private Ticket"
+                            size="xx-small"
+                            if:true={isPrivate}
+                        ></lightning-icon>
+                    </span>
+                    <label class="slds-text-color_weak">{label.ticketNumber}</label>
+                    <span>{caseNumber}</span>
+                    <lightning-badge label={status}></lightning-badge>
+                </div>
+
+                <div
+                    class="slds-var-p-horizontal_medium slds-text-heading_small slds-text-align_left slds-var-p-bottom_xx-small"
+                >
+                    <p>
+                        <a data-element="subject" href="#" onclick={openTicketDetails}
+                            >{subject}</a
+                        >
+                    </p>
+                </div>
+
+                <template if:true={isPrivate}>
+                    <div class="slds-size_1-of-1">
+                        <p
+                            data-element="private"
+                            class="slds-var-p-horizontal_medium slds-text-body_small slds-text-align_left slds-truncate slds-text-color_weak"
+                        >
+                            <i>{label.privateTicketMessage}</i>
+                        </p>
+                    </div>
+                </template>
+
+                <div class="slds-size_1-of-1 slds-var-p-bottom_x-small">
+                    <p
+                        data-element="description"
+                        class="slds-var-p-horizontal_medium slds-text-body_small slds-text-align_left slds-line-clamp_small"
+                    >
+                        <lightning-formatted-rich-text
+                            value={description}
+                        ></lightning-formatted-rich-text>
+                    </p>
+                </div>
+
+                <div class="slds-size_1-of-1 slds-var-p-bottom_x-small">
+                    <p
+                        data-element="createdDate"
+                        class="slds-var-p-horizontal_medium slds-text-body_small slds-text-align_left slds-truncate"
+                    >
+                        <label class="slds-text-color_weak">{label.dateCreated} </label>
+                        <lightning-formatted-date-time
+                            value={msCreatedDate}
+                        ></lightning-formatted-date-time>
+                    </p>
+                </div>
+
+                <div class="slds-size_1-of-1 slds-var-p-bottom_x-small">
+                    <p
+                        data-element="priority"
+                        class="slds-var-p-horizontal_medium slds-text-body_small slds-text-align_left slds-truncate"
+                    >
+                        <span class="slds-text-color_weak">{label.priority}</span>
+                        <span> {priority}</span>
+                    </p>
+                </div>
+            </lightning-card>
+        </div>
+    </template>
+    <template if:false={recordId}>
+        <lightning-card>
+            <div class="slds-grid slds-var-p-horizontal_medium slds-var-p-bottom_large">
+                <div class="slds-size_1-of-1" data-element="noTickets">
+                    <span class="footer-text"><a href="#">{label.noTickets}</a></span>
+                </div>
+            </div>
+        </lightning-card>
+    </template>
+</template>

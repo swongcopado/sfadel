@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ArdiraSurvey__Show_Correct_Incorrect_Answer_Indication__c</fullName>
+    <deprecated>false</deprecated>
+    <description>When a question is responded, choose to show correct / incorrect response indication in the responder interface.</description>
+    <inlineHelpText>Choose whether to display correct/incorrect response indications in the responder interface when a question is answered. This feature provides immediate feedback to participants, indicating whether their response was correct or incorrect.</inlineHelpText>
+    <label>Display Answer Feedback</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Never</fullName>
+                <default>true</default>
+                <label>Never</label>
+            </value>
+            <value>
+                <fullName>Always</fullName>
+                <default>false</default>
+                <label>Always</label>
+            </value>
+            <value>
+                <fullName>Only on Retake</fullName>
+                <default>false</default>
+                <label>Only on Retake</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

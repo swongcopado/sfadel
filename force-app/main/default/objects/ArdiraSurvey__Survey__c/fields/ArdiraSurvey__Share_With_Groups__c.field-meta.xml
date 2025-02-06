@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ArdiraSurvey__Share_With_Groups__c</fullName>
+    <deprecated>false</deprecated>
+    <description>To share this survey and corresponding survey results, enter a comma separated list of public group api names. Criteria based sharing rule(s) to be defined to implement the sharing.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>To share this survey and corresponding survey results, enter a comma separated list of public group api names. Criteria based sharing rule(s) to be defined to implement the sharing.</inlineHelpText>
+    <label>Share With Groups</label>
+    <length>255</length>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

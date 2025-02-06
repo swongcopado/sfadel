@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>redwing__Learning_Assignment_Last_Update__c</fullName>
+    <deleteConstraint>SetNull</deleteConstraint>
+    <deprecated>false</deprecated>
+    <label>Learning Assignment Last Update</label>
+    <referenceTo>redwing__Learning_Assignment__c</referenceTo>
+    <relationshipLabel>Shared Learning Assignments</relationshipLabel>
+    <relationshipName>Shared_Learning_Assignments</relationshipName>
+    <required>false</required>
+    <trackHistory>true</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Lookup</type>
+</CustomField>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ArdiraSurvey__Unsubscribe_Message__c</fullName>
+    <deprecated>false</deprecated>
+    <description>A message to display when unsubscribe preferences are updated.</description>
+    <inlineHelpText>A message to display when unsubscribe preferences are updated.</inlineHelpText>
+    <label>Unsubscribe Message</label>
+    <length>4000</length>
+    <trackTrending>false</trackTrending>
+    <type>LongTextArea</type>
+    <visibleLines>10</visibleLines>
+</CustomField>

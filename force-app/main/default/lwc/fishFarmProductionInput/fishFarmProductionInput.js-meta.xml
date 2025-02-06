@@ -1,0 +1,35 @@
+<LightningComponentBundle xmlns="http://soap.sforce.com/2006/04/metadata">
+	<apiVersion>58.0</apiVersion>
+	<isExposed>true</isExposed>
+	<masterLabel>Fish Farm Production Input</masterLabel>
+	<targets>
+		<target>lightning__AppPage</target>
+		<target>lightning__RecordPage</target>
+		<target>lightning__FlowScreen</target>
+		<target>lightningCommunity__Page</target>
+	</targets>
+	<targetConfigs>
+		<targetConfig targets="lightning__AppPage">
+			<supportedFormFactors>
+				<supportedFormFactor type="Small"/>
+				<supportedFormFactor type="Large"/>
+			</supportedFormFactors>
+		</targetConfig>
+		<targetConfig targets="lightning__RecordPage">
+			<supportedFormFactors>
+				<supportedFormFactor type="Small"/>
+				<supportedFormFactor type="Large"/>
+			</supportedFormFactors>
+		</targetConfig>
+
+		<targetConfig targets="lightning__FlowScreen">
+			<property name="foodProductionSubmissionId" label="Product Submission Id" type="String"/>
+			<property name="farmId" label="Farm ID" type="String" />
+			<property name="selectedYear" label="Selected Year" type="String" />
+			<property name="selectedQuarter" label="Selected Quarter" type="String" />
+			<property name="foodProduceList" label="Output Food Production Data" type="@salesforce/schema/Food_Production__c[]"  role="outputOnly"/>
+			<property name="errorMessage" label="Output ErrorMsg" type="String"  role="outputOnly"/>
+		</targetConfig>
+
+	</targetConfigs>
+</LightningComponentBundle>

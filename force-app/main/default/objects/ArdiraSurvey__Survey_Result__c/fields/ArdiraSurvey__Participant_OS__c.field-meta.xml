@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ArdiraSurvey__Participant_OS__c</fullName>
+    <deprecated>false</deprecated>
+    <description>This field contain participant operating system name and version number.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>This field contain participant operating system name and version number.</inlineHelpText>
+    <label>Participant Operating System</label>
+    <length>30</length>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

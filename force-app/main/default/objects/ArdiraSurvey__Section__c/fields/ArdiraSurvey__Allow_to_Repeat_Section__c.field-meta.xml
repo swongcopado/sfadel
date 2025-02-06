@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ArdiraSurvey__Allow_to_Repeat_Section__c</fullName>
+    <defaultValue>false</defaultValue>
+    <deprecated>false</deprecated>
+    <description>When enabled, responder will be able to respond to all questions in the section multiple times.</description>
+    <inlineHelpText>When enabled, responder will be able to respond to all questions in the section multiple times.</inlineHelpText>
+    <label>Allow to Repeat Section</label>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

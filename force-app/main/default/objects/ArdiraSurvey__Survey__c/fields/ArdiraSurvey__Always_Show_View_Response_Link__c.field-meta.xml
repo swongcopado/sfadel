@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ArdiraSurvey__Always_Show_View_Response_Link__c</fullName>
+    <defaultValue>false</defaultValue>
+    <deprecated>false</deprecated>
+    <description>When enabled, the view response link always shows up with Prev/Next/Submit navigation buttons. If disabled, the view response link will be visible only with Submit button, including a terminating thank you question button.</description>
+    <inlineHelpText>When enabled, the &quot;Preview Response&quot; link will be displayed along with the navigation buttons (Prev/Next/Submit) in the survey response interface. This allows participants to preview their responses before submitting the survey. Enabling this feature provides participants with an opportunity to review and make any necessary changes to their responses before finalizing their submission.</inlineHelpText>
+    <label>Preview Response Link</label>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

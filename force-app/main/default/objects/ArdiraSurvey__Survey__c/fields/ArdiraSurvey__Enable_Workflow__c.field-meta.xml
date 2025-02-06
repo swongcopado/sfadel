@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ArdiraSurvey__Enable_Workflow__c</fullName>
+    <defaultValue>false</defaultValue>
+    <deprecated>false</deprecated>
+    <description>If enabled, show workflow tab</description>
+    <inlineHelpText>Enabling this option activates the data correction and review workflow functionality for the survey. This allows for efficient handling of data corrections and review processes associated with the survey.</inlineHelpText>
+    <label>Data Correction and Review Workflow</label>
+    <trackHistory>true</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

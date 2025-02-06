@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>sfdo_grants__DocumentChecklistItem__c</fullName>
+    <deleteConstraint>Restrict</deleteConstraint>
+    <deprecated>false</deprecated>
+    <description>Lookup to the Document Checklist Item associated with the Verification Check.</description>
+    <inlineHelpText>Lookup to the Document Checklist Item associated with the Verification Check.</inlineHelpText>
+    <label>Document Checklist Item</label>
+    <referenceTo>DocumentChecklistItem</referenceTo>
+    <relationshipLabel>Verification Checks</relationshipLabel>
+    <relationshipName>VerificationChecks</relationshipName>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Lookup</type>
+</CustomField>

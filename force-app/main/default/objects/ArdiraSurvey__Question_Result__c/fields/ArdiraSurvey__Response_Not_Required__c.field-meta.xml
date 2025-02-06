@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ArdiraSurvey__Response_Not_Required__c</fullName>
+    <defaultValue>false</defaultValue>
+    <deprecated>false</deprecated>
+    <description>If checked, indicates that response is not required for this question. Typically set when questions are skipped based on question dependency configuration.</description>
+    <inlineHelpText>If checked, the question response is not required. Typically set when a question is skipped based on question dependency logic rule.</inlineHelpText>
+    <label>Response Not Required</label>
+    <trackHistory>true</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

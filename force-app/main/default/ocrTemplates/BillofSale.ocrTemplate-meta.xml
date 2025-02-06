@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<OcrTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <active>true</active>
+    <documentType>BillofSale</documentType>
+    <masterLabel>BillofSale</masterLabel>
+    <ocrTargetObjects>
+        <ocrTargetObjFieldMappings>
+            <ocrSampleDocField>
+                <fieldLabelMaxX>0.2600622</fieldLabelMaxX>
+                <fieldLabelMaxY>0.25794435</fieldLabelMaxY>
+                <fieldLabelMinX>0.117868856</fieldLabelMinX>
+                <fieldLabelMinY>0.24468672</fieldLabelMinY>
+                <isAutoExtractedValue>false</isAutoExtractedValue>
+                <keyContent>Hull ID Number:</keyContent>
+                <ocrSampleDocument>Notarized_Bill_of_Sale_Form_1</ocrSampleDocument>
+                <ocrSampleDocumentPage>1</ocrSampleDocumentPage>
+            </ocrSampleDocField>
+            <targetField>IndividualApplication.Hull_ID_Number__c</targetField>
+            <type>FormField</type>
+        </ocrTargetObjFieldMappings>
+        <ocrTargetObjFieldMappings>
+            <ocrSampleDocField>
+                <fieldLabelMaxX>0.24769236</fieldLabelMaxX>
+                <fieldLabelMaxY>0.53872114</fieldLabelMaxY>
+                <fieldLabelMinX>0.11797342</fieldLabelMinX>
+                <fieldLabelMinY>0.5250739</fieldLabelMinY>
+                <isAutoExtractedValue>false</isAutoExtractedValue>
+                <keyContent>DATE OF SALE:</keyContent>
+                <ocrSampleDocument>Notarized_Bill_of_Sale_Form_1</ocrSampleDocument>
+                <ocrSampleDocumentPage>1</ocrSampleDocumentPage>
+            </ocrSampleDocField>
+            <targetField>IndividualApplication.Purchase_Date__c</targetField>
+            <type>FormField</type>
+        </ocrTargetObjFieldMappings>
+        <ocrTargetObjFieldMappings>
+            <ocrSampleDocField>
+                <fieldLabelMaxX>0.40083697</fieldLabelMaxX>
+                <fieldLabelMaxY>0.40107507</fieldLabelMaxY>
+                <fieldLabelMinX>0.11916089</fieldLabelMinX>
+                <fieldLabelMinY>0.384752</fieldLabelMinY>
+                <isAutoExtractedValue>false</isAutoExtractedValue>
+                <keyContent>conveys the following described:</keyContent>
+                <ocrSampleDocument>Notarized_Bill_of_Sale_Form_1</ocrSampleDocument>
+                <ocrSampleDocumentPage>1</ocrSampleDocumentPage>
+            </ocrSampleDocField>
+            <targetField>IndividualApplication.Description</targetField>
+            <type>FormField</type>
+        </ocrTargetObjFieldMappings>
+        <ocrTargetObjFieldMappings>
+            <ocrSampleDocField>
+                <fieldLabelMaxX>0.25200024</fieldLabelMaxX>
+                <fieldLabelMaxY>0.23840879</fieldLabelMaxY>
+                <fieldLabelMinX>0.118017875</fieldLabelMinX>
+                <fieldLabelMinY>0.22501212</fieldLabelMinY>
+                <isAutoExtractedValue>false</isAutoExtractedValue>
+                <keyContent>Purchase Price:</keyContent>
+                <ocrSampleDocument>Notarized_Bill_of_Sale_Form_1</ocrSampleDocument>
+                <ocrSampleDocumentPage>1</ocrSampleDocumentPage>
+            </ocrSampleDocField>
+            <targetField>IndividualApplication.Purchase_Price__c</targetField>
+            <type>FormField</type>
+        </ocrTargetObjFieldMappings>
+        <targetObject>IndividualApplication</targetObject>
+    </ocrTargetObjects>
+    <ocrTemplateSampleDocuments>
+        <ocrSampleDocument>BillofSale</ocrSampleDocument>
+    </ocrTemplateSampleDocuments>
+    <ocrTemplateSampleDocuments>
+        <ocrSampleDocument>Notarized_Bill_of_Sale_Form_1</ocrSampleDocument>
+    </ocrTemplateSampleDocuments>
+    <templateName>BillofSale</templateName>
+</OcrTemplate>

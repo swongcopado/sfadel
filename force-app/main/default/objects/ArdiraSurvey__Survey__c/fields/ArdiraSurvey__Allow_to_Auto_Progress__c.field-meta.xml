@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ArdiraSurvey__Allow_to_Auto_Progress__c</fullName>
+    <defaultValue>false</defaultValue>
+    <deprecated>false</deprecated>
+    <description>Enable to show auto advance option for a participant in the survey responder interface.</description>
+    <inlineHelpText>When enabled, the survey will automatically advance to the next question after a user selects an answer for a single-select type question. This streamlines the survey-taking experience by eliminating the need for participants to manually navigate to the next question.</inlineHelpText>
+    <label>Dep Auto-Advance on Single-Select</label>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

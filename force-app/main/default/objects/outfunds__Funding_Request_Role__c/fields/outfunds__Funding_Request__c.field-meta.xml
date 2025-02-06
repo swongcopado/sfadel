@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>outfunds__Funding_Request__c</fullName>
+    <deprecated>false</deprecated>
+    <label>Funding Request</label>
+    <referenceTo>outfunds__Funding_Request__c</referenceTo>
+    <relationshipLabel>Funding Request Roles</relationshipLabel>
+    <relationshipName>Funding_Request_Roles</relationshipName>
+    <relationshipOrder>0</relationshipOrder>
+    <reparentableMasterDetail>false</reparentableMasterDetail>
+    <trackTrending>false</trackTrending>
+    <type>MasterDetail</type>
+    <writeRequiresMasterRead>false</writeRequiresMasterRead>
+</CustomField>

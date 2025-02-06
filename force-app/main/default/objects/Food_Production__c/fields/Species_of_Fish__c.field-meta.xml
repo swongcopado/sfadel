@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Species_of_Fish__c</fullName>
+    <label>Species of Fish</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Asian Seabass 金目鲈</fullName>
+                <default>false</default>
+                <label>Asian Seabass 金目鲈</label>
+            </value>
+            <value>
+                <fullName>Black-Spotted Grouper 黑点斑</fullName>
+                <default>false</default>
+                <label>Black-Spotted Grouper 黑点斑</label>
+            </value>
+            <value>
+                <fullName>Flower Crab 花蟹</fullName>
+                <default>false</default>
+                <label>Flower Crab 花蟹</label>
+            </value>
+            <value>
+                <fullName>Giant Grouper 龙胆</fullName>
+                <default>false</default>
+                <label>Giant Grouper 龙胆</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

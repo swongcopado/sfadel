@@ -1,0 +1,52 @@
+.THIS.TCFLL_scrollerSizePrimary {
+    height: calc(100vh - 145px);
+    /* 12rem  173px*/
+    overflow:hidden;
+    z-index: 2;
+}
+
+.THIS.TCFLL_scrollerSizeSecondary {
+    height: calc(100vh - 185px);
+    /* 12rem  173px*/
+    overflow:hidden;
+    z-index: 2;
+}
+
+.THIS .TCFLL_buttonSize {
+    /*height: 100%;
+    padding-top:    calc(50vh - 6.7rem);
+    padding-bottom: calc(50vh - 3rem);
+    display:block;*/
+    width:12px;
+    height: 70px;
+    margin-right:0rem !important;
+    margin-left:0rem !important;
+}
+
+.THIS .TCFLL_leftButtonContainerSideBarOn {
+    z-index: 10;
+    position: absolute; 
+    Left: -0.8em; top: 
+	calc(35vh);
+}
+
+.THIS .TCFLL_leftButtonContainerSideBarOff {
+    z-index: 10;
+    position: absolute; 
+    Left: -0.2em; top: 
+	calc(35vh);
+}
+
+.THIS .TCFLL_rightButtonContainerSideBarOn {
+    z-index: 10;
+    position: absolute; 
+    right: -0.8em; 
+    top: calc(35vh);
+}
+
+.THIS .TCFLL_rightButtonContainerSideBarOff {
+    z-index: 10;
+    position: absolute; 
+    right: -0.2em; 
+    top: calc(35vh);
+}

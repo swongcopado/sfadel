@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ArdiraSurvey__Participant_Browser_Name__c</fullName>
+    <deprecated>false</deprecated>
+    <description>This field contain participant browser name.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>This field contain participant browser name.</inlineHelpText>
+    <label>Participant Browser Name</label>
+    <length>30</length>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

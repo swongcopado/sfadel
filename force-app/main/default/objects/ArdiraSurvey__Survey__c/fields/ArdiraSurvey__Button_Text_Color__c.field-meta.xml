@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ArdiraSurvey__Button_Text_Color__c</fullName>
+    <defaultValue>&quot;#000000&quot;</defaultValue>
+    <deprecated>false</deprecated>
+    <description>Use this color as button label color.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Select a color to use for the button labels in the survey response interface. This customization option allows you to choose a color that aligns with your branding or design preferences, enhancing the visual appeal and usability of the survey for participants.</inlineHelpText>
+    <label>Button Text Color</label>
+    <length>40</length>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

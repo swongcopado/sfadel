@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ArdiraSurvey__Show_Landing_Page__c</fullName>
+    <defaultValue>false</defaultValue>
+    <deprecated>false</deprecated>
+    <description>Turn off to take user directly to question response page.</description>
+    <inlineHelpText>Enable to show the landing page when a participant clicks to respond to a survey. Disable to take a participant directly to the survey response interface.</inlineHelpText>
+    <label>Show Landing Page</label>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

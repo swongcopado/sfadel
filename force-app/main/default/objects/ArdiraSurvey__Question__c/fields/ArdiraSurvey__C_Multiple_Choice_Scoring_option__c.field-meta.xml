@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ArdiraSurvey__C_Multiple_Choice_Scoring_option__c</fullName>
+    <defaultValue>&quot;Use Choice Score&quot;</defaultValue>
+    <deprecated>false</deprecated>
+    <description>If &quot;Use Correct Answer Score&quot; is selected, the question gets “Correct Answer Score”. If &quot;Use Choice Score&quot; is selected, use score associated with the selected answer choices.</description>
+    <inlineHelpText>Use Correct Answer Score - Uses the correct answer score when the question response is correct based on correct choices; 
+Use Choice Score - Uses the scores configured for the selected response choices</inlineHelpText>
+    <label>Multiple Choice - Scoring option</label>
+    <required>true</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Use Correct Answers</fullName>
+                <default>false</default>
+                <label>Use Correct Answer Score</label>
+            </value>
+            <value>
+                <fullName>Use Choice Score</fullName>
+                <default>true</default>
+                <label>Use Choice Score</label>
+            </value>
+            <value>
+                <fullName>Use Correct Answer</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Use Correct Answer</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

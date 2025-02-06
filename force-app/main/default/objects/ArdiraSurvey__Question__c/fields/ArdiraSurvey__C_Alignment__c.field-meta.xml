@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ArdiraSurvey__C_Alignment__c</fullName>
+    <defaultValue>&quot;Left&quot;</defaultValue>
+    <deprecated>false</deprecated>
+    <description>Alignment of all the elements of a question.</description>
+    <inlineHelpText>Select an alignment for all elements of the question.</inlineHelpText>
+    <label>Alignment</label>
+    <required>true</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Center</fullName>
+                <default>false</default>
+                <label>Center</label>
+            </value>
+            <value>
+                <fullName>Left</fullName>
+                <default>true</default>
+                <label>Left</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

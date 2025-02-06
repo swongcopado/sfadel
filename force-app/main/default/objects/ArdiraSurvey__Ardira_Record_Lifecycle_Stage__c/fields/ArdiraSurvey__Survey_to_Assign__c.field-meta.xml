@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ArdiraSurvey__Survey_to_Assign__c</fullName>
+    <deleteConstraint>SetNull</deleteConstraint>
+    <deprecated>false</deprecated>
+    <description>Select a survey to send for Send Survey action for a record lifecycle stage.</description>
+    <inlineHelpText>Specify which survey to send when the action type is set to Send Survey.</inlineHelpText>
+    <label>Survey to Assign</label>
+    <lookupFilter>
+        <active>true</active>
+        <booleanFilter>1 AND (2 OR 3)</booleanFilter>
+        <filterItems>
+            <field>ArdiraSurvey__Survey__c.ArdiraSurvey__Survey_Type__c</field>
+            <operation>notEqual</operation>
+            <value>Design Template</value>
+        </filterItems>
+        <filterItems>
+            <field>ArdiraSurvey__Survey__c.ArdiraSurvey__Status__c</field>
+            <operation>equals</operation>
+            <value>Draft</value>
+        </filterItems>
+        <filterItems>
+            <field>ArdiraSurvey__Survey__c.ArdiraSurvey__Status__c</field>
+            <operation>equals</operation>
+            <value>Open</value>
+        </filterItems>
+        <isOptional>false</isOptional>
+    </lookupFilter>
+    <referenceTo>ArdiraSurvey__Survey__c</referenceTo>
+    <relationshipLabel>Ardira Record Lifecycle Stages</relationshipLabel>
+    <relationshipName>Ardira_Record_Lifecycle_Stages</relationshipName>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Lookup</type>
+</CustomField>

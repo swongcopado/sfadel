@@ -1,0 +1,32 @@
+.barchart {
+    position: absolute;
+    top: 5%;
+    left: 30%;
+}
+
+.nodeCursor
+{
+    cursor: pointer;
+}
+
+.backdrop {
+    position: fixed;
+    z-index: 999;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+
+h2{
+    font-size:medium; 
+    font-weight: bold; 
+}
+
+div.nodeChart{
+    max-height:500px; 
+}
+
+td{
+    padding: 8px;
+}

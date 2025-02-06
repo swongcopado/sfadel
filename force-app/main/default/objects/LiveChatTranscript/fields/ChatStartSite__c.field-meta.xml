@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ChatStartSite__c</fullName>
+    <description>Populated by Chat Snippet File</description>
+    <externalId>false</externalId>
+    <inlineHelpText>The site that the user initiated the chat from...</inlineHelpText>
+    <label>ChatStartSite</label>
+    <length>200</length>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

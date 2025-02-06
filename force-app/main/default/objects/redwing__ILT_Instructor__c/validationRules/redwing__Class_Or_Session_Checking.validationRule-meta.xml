@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>redwing__Class_Or_Session_Checking</fullName>
+    <active>true</active>
+    <errorConditionFormula>OR(AND(ISBLANK(redwing__ILT_Class__c),ISBLANK(redwing__ILT_Session__c)),AND(NOT(ISBLANK(redwing__ILT_Class__c)),NOT(ISBLANK(redwing__ILT_Session__c))))</errorConditionFormula>
+    <errorMessage>Instructor should be assigned to ILT Class or ILT Session</errorMessage>
+</ValidationRule>

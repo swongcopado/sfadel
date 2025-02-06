@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ArdiraSurvey__Update_Email_Opt_Out__c</fullName>
+    <defaultValue>true</defaultValue>
+    <deprecated>false</deprecated>
+    <description>When enabled, a survey target lead/contact object record&apos;s Email Opt Out field will be updated using the selected unsubscribe option value.</description>
+    <inlineHelpText>When enabled, a survey target lead/contact object record&apos;s Email Opt Out field will be updated using the selected unsubscribe option value.</inlineHelpText>
+    <label>Update Email Opt Out</label>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

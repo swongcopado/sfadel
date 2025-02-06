@@ -1,0 +1,7 @@
+<apex:page >
+   <apex:outputPanel id="ESRIDisplayMap">
+       <div class="slds-panel slds-grid slds-grid--vertical slds-panel__section " style="position: relative; height: 600px">            
+            <c:ESRIDisplayMap ></c:ESRIDisplayMap>
+       </div>
+   </apex:outputPanel>
+</apex:page>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ArdiraSurvey__Survey_Result_Field_as_Response__c</fullName>
+    <deprecated>false</deprecated>
+    <description>Allow a user to select a survey result field to present as the question response field.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Select a survey result field that would allow responder to enter the field value when responding to the question.</inlineHelpText>
+    <label>Survey Result Field as Response</label>
+    <length>255</length>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

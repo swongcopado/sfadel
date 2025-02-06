@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ArdiraSurvey__Action_Email_Template__c</fullName>
+    <deprecated>false</deprecated>
+    <description>Select an email template to use for Send Email action for the record lifecycle stage.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Select the email template to use when the action type is set to send an email.</inlineHelpText>
+    <label>Action Email Template</label>
+    <length>255</length>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

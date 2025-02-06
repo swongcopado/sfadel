@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>redwing__Blank__c</fullName>
+    <deprecated>false</deprecated>
+    <inlineHelpText>Related Blank record.</inlineHelpText>
+    <label>Blank</label>
+    <referenceTo>redwing__Blank__c</referenceTo>
+    <relationshipLabel>Blank Items</relationshipLabel>
+    <relationshipName>Blank_Items</relationshipName>
+    <relationshipOrder>0</relationshipOrder>
+    <reparentableMasterDetail>false</reparentableMasterDetail>
+    <trackTrending>false</trackTrending>
+    <type>MasterDetail</type>
+    <writeRequiresMasterRead>false</writeRequiresMasterRead>
+</CustomField>

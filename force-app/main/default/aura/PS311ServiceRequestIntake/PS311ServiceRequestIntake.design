@@ -1,0 +1,13 @@
+<design:component >
+    <design:attribute name="autoCenter" label="Auto-center map to current location" Description="Use real-time GPS location to center on map" datasource="true,false"/>
+    <design:attribute name="mapCenterLat" label="Map Center Latitude" Description="Latitude for center of map"  />
+    <design:attribute name="mapCenterLng" label="Map Center Longitude" Description="Longitude for center of map"  />
+    <design:attribute name="mapZoomLevel" label="Map Zoom Level" Description="Map zoom level"  />
+    <design:attribute name="addressField" label="Field API name for full address" Description="Field API name to store the full address string"  />
+    <design:attribute name="streetField" label="Field API name for street" Description="Field API name to store the street name"  />
+    <design:attribute name="cityField" label="Field API name for city" Description="Field API name to store the city name"  />
+    <design:attribute name="stateField" label="Field API name for state" Description="Field API name to store the state name"  />
+    <design:attribute name="postalField" label="Field API name for zip code" Description="Field API name to store the postal/zip code"  />
+    <design:attribute name="recordTypeId" label="Record type for new records" datasource="apex://PS311CaseRecordTypePicklist"/>
+    <design:attribute name="myDomain" label="My domain name"/>
+</design:component>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ArdiraSurvey__Is_Deleted__c</fullName>
+    <defaultValue>false</defaultValue>
+    <deprecated>false</deprecated>
+    <description>This field tracks the soft deletion status of answer choices in an open survey, enabling the deactivation or hiding of choices without permanently removing them.</description>
+    <inlineHelpText>This field tracks the soft deletion status of answer choices in an open survey, enabling the deactivation or hiding of choices without permanently removing them.</inlineHelpText>
+    <label>Is Deleted</label>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

@@ -1,0 +1,151 @@
+.progresscontainer {
+    width: 150px;
+    height: 150px;
+    min-width:100px;
+    min-height:100px;
+    margin: 0 auto;
+    display:block;
+} 
+/*** <--- CIRCLE STYLES ---> ***/
+.wrap-circles {
+    display: flex;
+    /*min-height: 100vh;*/
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem 1rem;
+    height:240px;
+    width:240px;
+    margin:0 auto;
+    background: #FFF;
+  }
+   
+  .circle {
+    position: relative;
+    width: 150px;
+    height: 150px;
+    margin: 0.5rem;
+    border-radius: 50%;
+    background: #FFCDB2;
+    overflow: hidden;
+  }
+/* new css classes that are being dynamically added via javascript*/
+  .circle .inner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 115px;
+    height: 115px;
+    background: #FFF;
+    border-radius: 50%;
+    font-size: 1.85em;
+    font-weight: 300;
+    color:#838383;
+    /*color: rgba(255, 255, 255, 0.75);*/
+  }
+
+.circle.per-0 {background-image: conic-gradient(#218103 0%, #e3e3e4 0);}
+.circle.per-1 {background-image: conic-gradient(#218103 1%, #e3e3e4 0);}
+.circle.per-2 {background-image: conic-gradient(#218103 2%, #e3e3e4 0);}
+.circle.per-3 {background-image: conic-gradient(#218103 3%, #e3e3e4 0);}
+.circle.per-4 {background-image: conic-gradient(#218103 4%, #e3e3e4 0);}
+.circle.per-5 {background-image: conic-gradient(#218103 5%, #e3e3e4 0);}
+.circle.per-6 {background-image: conic-gradient(#218103 6%, #e3e3e4 0);}
+.circle.per-7 {background-image: conic-gradient(#218103 7%, #e3e3e4 0);}
+.circle.per-8 {background-image: conic-gradient(#218103 8%, #e3e3e4 0);}
+.circle.per-9 {background-image: conic-gradient(#218103 9%, #e3e3e4 0);}
+.circle.per-10 {background-image: conic-gradient(#218103 10%, #e3e3e4 0);}
+.circle.per-11 {background-image: conic-gradient(#218103 11%, #e3e3e4 0);}
+.circle.per-12 {background-image: conic-gradient(#218103 12%, #e3e3e4 0);}
+.circle.per-13 {background-image: conic-gradient(#218103 13%, #e3e3e4 0);}
+.circle.per-14 {background-image: conic-gradient(#218103 14%, #e3e3e4 0);}
+.circle.per-15 {background-image: conic-gradient(#218103 15%, #e3e3e4 0);}
+.circle.per-16 {background-image: conic-gradient(#218103 16%, #e3e3e4 0);}
+.circle.per-17 {background-image: conic-gradient(#218103 17%, #e3e3e4 0);}
+.circle.per-18 {background-image: conic-gradient(#218103 18%, #e3e3e4 0);}
+.circle.per-19 {background-image: conic-gradient(#218103 19%, #e3e3e4 0);}
+.circle.per-20 {background-image: conic-gradient(#218103 20%, #e3e3e4 0);}
+.circle.per-21 {background-image: conic-gradient(#218103 21%, #e3e3e4 0);}
+.circle.per-22 {background-image: conic-gradient(#218103 22%, #e3e3e4 0);}
+.circle.per-23 {background-image: conic-gradient(#218103 23%, #e3e3e4 0);}
+.circle.per-24 {background-image: conic-gradient(#218103 24%, #e3e3e4 0);}
+.circle.per-25 {background-image: conic-gradient(#218103 25%, #e3e3e4 0);}
+.circle.per-26 {background-image: conic-gradient(#218103 26%, #e3e3e4 0);}
+.circle.per-27 {background-image: conic-gradient(#218103 27%, #e3e3e4 0);}
+.circle.per-28 {background-image: conic-gradient(#218103 28%, #e3e3e4 0);}
+.circle.per-29 {background-image: conic-gradient(#218103 29%, #e3e3e4 0);}
+.circle.per-30 {background-image: conic-gradient(#218103 30%, #e3e3e4 0);}
+.circle.per-31 {background-image: conic-gradient(#218103 31%, #e3e3e4 0);}
+.circle.per-32 {background-image: conic-gradient(#218103 32%, #e3e3e4 0);}
+.circle.per-33 {background-image: conic-gradient(#218103 33%, #e3e3e4 0);}
+.circle.per-34 {background-image: conic-gradient(#218103 34%, #e3e3e4 0);}
+.circle.per-35 {background-image: conic-gradient(#218103 35%, #e3e3e4 0);}
+.circle.per-36 {background-image: conic-gradient(#218103 36%, #e3e3e4 0);}
+.circle.per-37 {background-image: conic-gradient(#218103 37%, #e3e3e4 0);}
+.circle.per-38 {background-image: conic-gradient(#218103 38%, #e3e3e4 0);}
+.circle.per-39 {background-image: conic-gradient(#218103 39%, #e3e3e4 0);}
+.circle.per-40 {background-image: conic-gradient(#218103 40%, #e3e3e4 0);}
+.circle.per-41 {background-image: conic-gradient(#218103 41%, #e3e3e4 0);}
+.circle.per-42 {background-image: conic-gradient(#218103 42%, #e3e3e4 0);}
+.circle.per-43 {background-image: conic-gradient(#218103 43%, #e3e3e4 0);}
+.circle.per-44 {background-image: conic-gradient(#218103 44%, #e3e3e4 0);}
+.circle.per-45 {background-image: conic-gradient(#218103 45%, #e3e3e4 0);}
+.circle.per-46 {background-image: conic-gradient(#218103 46%, #e3e3e4 0);}
+.circle.per-47 {background-image: conic-gradient(#218103 47%, #e3e3e4 0);}
+.circle.per-48 {background-image: conic-gradient(#218103 48%, #e3e3e4 0);}
+.circle.per-49 {background-image: conic-gradient(#218103 49%, #e3e3e4 0);}
+.circle.per-50 {background-image: conic-gradient(#218103 50%, #e3e3e4 0);}
+.circle.per-51 {background-image: conic-gradient(#218103 51%, #e3e3e4 0);}
+.circle.per-52 {background-image: conic-gradient(#218103 52%, #e3e3e4 0);}
+.circle.per-53 {background-image: conic-gradient(#218103 53%, #e3e3e4 0);}
+.circle.per-54 {background-image: conic-gradient(#218103 54%, #e3e3e4 0);}
+.circle.per-55 {background-image: conic-gradient(#218103 55%, #e3e3e4 0);}
+.circle.per-56 {background-image: conic-gradient(#218103 56%, #e3e3e4 0);}
+.circle.per-57 {background-image: conic-gradient(#218103 57%, #e3e3e4 0);}
+.circle.per-58 {background-image: conic-gradient(#218103 58%, #e3e3e4 0);}
+.circle.per-59 {background-image: conic-gradient(#218103 59%, #e3e3e4 0);}
+.circle.per-60 {background-image: conic-gradient(#218103 60%, #e3e3e4 0);}
+.circle.per-61 {background-image: conic-gradient(#218103 61%, #e3e3e4 0);}
+.circle.per-62 {background-image: conic-gradient(#218103 62%, #e3e3e4 0);}
+.circle.per-63 {background-image: conic-gradient(#218103 63%, #e3e3e4 0);}
+.circle.per-64 {background-image: conic-gradient(#218103 64%, #e3e3e4 0);}
+.circle.per-65 {background-image: conic-gradient(#218103 65%, #e3e3e4 0);}
+.circle.per-66 {background-image: conic-gradient(#218103 66%, #e3e3e4 0);}
+.circle.per-67 {background-image: conic-gradient(#218103 67%, #e3e3e4 0);}
+.circle.per-68 {background-image: conic-gradient(#218103 68%, #e3e3e4 0);}
+.circle.per-69 {background-image: conic-gradient(#218103 69%, #e3e3e4 0);}
+.circle.per-70 {background-image: conic-gradient(#218103 70%, #e3e3e4 0);}
+.circle.per-71 {background-image: conic-gradient(#218103 71%, #e3e3e4 0);}
+.circle.per-72 {background-image: conic-gradient(#218103 72%, #e3e3e4 0);}
+.circle.per-73 {background-image: conic-gradient(#218103 73%, #e3e3e4 0);}
+.circle.per-74 {background-image: conic-gradient(#218103 74%, #e3e3e4 0);}
+.circle.per-75 {background-image: conic-gradient(#218103 75%, #e3e3e4 0);}
+.circle.per-76 {background-image: conic-gradient(#218103 76%, #e3e3e4 0);}
+.circle.per-77 {background-image: conic-gradient(#218103 77%, #e3e3e4 0);}
+.circle.per-78 {background-image: conic-gradient(#218103 78%, #e3e3e4 0);}
+.circle.per-79 {background-image: conic-gradient(#218103 79%, #e3e3e4 0);}
+.circle.per-80 {background-image: conic-gradient(#218103 80%, #e3e3e4 0);}
+.circle.per-81 {background-image: conic-gradient(#218103 81%, #e3e3e4 0);}
+.circle.per-82 {background-image: conic-gradient(#218103 82%, #e3e3e4 0);}
+.circle.per-83 {background-image: conic-gradient(#218103 83%, #e3e3e4 0);}
+.circle.per-84 {background-image: conic-gradient(#218103 84%, #e3e3e4 0);}
+.circle.per-85 {background-image: conic-gradient(#218103 85%, #e3e3e4 0);}
+.circle.per-86 {background-image: conic-gradient(#218103 86%, #e3e3e4 0);}
+.circle.per-87 {background-image: conic-gradient(#218103 87%, #e3e3e4 0);}
+.circle.per-88 {background-image: conic-gradient(#218103 88%, #e3e3e4 0);}
+.circle.per-89 {background-image: conic-gradient(#218103 89%, #e3e3e4 0);}
+.circle.per-90 {background-image: conic-gradient(#218103 90%, #e3e3e4 0);}
+.circle.per-91 {background-image: conic-gradient(#218103 91%, #e3e3e4 0);}
+.circle.per-92 {background-image: conic-gradient(#218103 92%, #e3e3e4 0);}
+.circle.per-93 {background-image: conic-gradient(#218103 93%, #e3e3e4 0);}
+.circle.per-94 {background-image: conic-gradient(#218103 94%, #e3e3e4 0);}
+.circle.per-95 {background-image: conic-gradient(#218103 95%, #e3e3e4 0);}
+.circle.per-96 {background-image: conic-gradient(#218103 96%, #e3e3e4 0);}
+.circle.per-97 {background-image: conic-gradient(#218103 97%, #e3e3e4 0);}
+.circle.per-98 {background-image: conic-gradient(#218103 98%, #e3e3e4 0);}
+.circle.per-99 {background-image: conic-gradient(#218103 99%, #e3e3e4 0);}
+.circle.per-100 {background-image: conic-gradient(#218103 100%, #e3e3e4 0);}

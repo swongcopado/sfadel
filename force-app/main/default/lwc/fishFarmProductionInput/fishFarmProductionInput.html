@@ -1,0 +1,101 @@
+<template>
+
+    <template lwc:if={isLoading}>
+        <lightning-spinner alternative-text="Loading" size="medium"></lightning-spinner>
+    </template>
+    <template iterator:it={iterator}>
+
+        <article class="slds-card" key={it.value.autoNumber} data-id={it.value.autoNumber} style="background-color: #f6f5f4b1;" >
+            <div class="slds-card__header slds-grid">
+              <header class="slds-media slds-media_center slds-has-flexi-truncate">
+                <h2 class="slds-card__header-title"> Item {it.value.autoNumber} </h2>
+              </header>
+            </div>
+            <div class="slds-card__body slds-card__body_inner">
+                
+                    <div class="slds-grid slds-wrap slds-p-horizontal_small">
+                        <div class="slds-col slds-size_12-of-12 slds-p-bottom_small">
+                            <lightning-combobox
+                                data-index={it.index} 
+                                data-autonumber = {it.value.autoNumber}
+                                name="Species_of_Fish__c"
+                                data-name="Species_of_Fish__c"
+                                label="Species of Fish 鱼类品种"
+                                value={it.value.Species_of_Fish__c}
+                                placeholder="Select Species"
+                                options={speciesOfFishSelection}
+                                onchange={handleFieldChange} 
+                                required></lightning-combobox>
+                        </div>
+        
+                        <div class="slds-col slds-size_12-of-12 slds-p-bottom_small">
+                            <lightning-input 
+                                type="number"
+                                data-autonumber ={it.value.autoNumber}
+                                data-index={it.index} 
+                                data-name="Quantity__c" 
+                                name="Quantity__c" 
+                                label="Quantity (Kg)  数量（公斤）" 
+                                placeholder="1000"  
+                                value={it.value.Quantity__c}
+                                onchange={handleFieldChange}
+                                required>
+                            </lightning-input>
+                        </div>
+        
+                        <div class="slds-col slds-size_12-of-12 slds-p-bottom_small">
+                            <lightning-input 
+                                data-index={it.index} 
+                                data-autonumber = {it.value.autoNumber}
+                                name="Average_Price__c" 
+                                data-name="Average_Price__c" 
+                                type="number"
+                                label="Average Price (S$/Kg) 平均价格 （S$/公斤） "
+                                value={it.value.Average_Price__c}
+                                onchange={handleFieldChange}
+                                required>
+                            </lightning-input>
+                        </div>
+        
+                        <div class="slds-col slds-size_12-of-12 slds-p-bottom_small">
+                            <lightning-input 
+                                type="checkbox"
+                                data-index={it.index}
+                                data-autonumber = {it.value.autoNumber} 
+                                name="Transhipped__c" 
+                                data-name="Transhipped__c"
+                                label="1) Are these seafood sales transhipped? i.e. less than 3 months in farm. 这些海鲜是转运的吗？- 即在农场呆少过3个月。"
+                                checked={it.value.Transhipped__c}
+                                onchange={handleFieldChange}
+                                >
+                            </lightning-input>
+                        </div>            
+                    </div>
+
+            </div> <!--end of body-->
+            <footer class="slds-card__footer"  >
+                <div class="slds-grid slds-wrap slds-p-horizontal_small">
+                    <div class="slds-col slds-size_8-of-12 slds-p-bottom_small" style="color:red;text-align:left;"> {it.value.errorMsg}</div>
+                    <div class="slds-col slds-size_4-of-12 slds-p-bottom_small" style="text-align:right;">
+                        <lightning-button label="Remove" variant='destructive' slot="actions" onclick={handleRemoveItem} data-id={it.value.Id} data-index={it.value.autoNumber}></lightning-button>
+                    </div>
+                </div>
+
+
+              </footer>
+          </article>
+       
+        <div key={it.value.autoNumber} class="slds-p-top_small slds-p-bottom_small"></div>
+    </template>
+
+    <button type="submit" onclick={handleAddProduction} data-index={iterator.last}  icon-name="utility:new" class="slds-button slds-button_neutral slds-button_stretch">Add Production Item</button>
+
+
+    <footer class="slds-m-around_medium" style="text-align: right;">
+        <lightning-button onclick={handleBack} variant="neutral" title="Back" label="Back"
+			class="slds-var-m-left_x-small"></lightning-button>
+		<lightning-button onclick={handleNext} variant="brand" title="Save" label="Save & Next"
+			class="slds-var-m-left_x-small"></lightning-button>
+	</footer>
+
+</template>

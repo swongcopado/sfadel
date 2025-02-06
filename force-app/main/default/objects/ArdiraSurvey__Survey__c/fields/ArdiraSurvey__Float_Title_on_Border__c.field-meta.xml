@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ArdiraSurvey__Float_Title_on_Border__c</fullName>
+    <deprecated>false</deprecated>
+    <description>Select your choice to float section title on section border.</description>
+    <inlineHelpText>Choose whether to float the section title on the section border in the survey response interface. When enabled, the section title will appear on the border of the section area, providing a distinct visual distinction and enhancing the readability of the survey. This option allows you to customize the presentation of the section titles and create a unique and engaging survey experience for participants.</inlineHelpText>
+    <label>Section Title Float on Border</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Left</fullName>
+                <default>false</default>
+                <label>Left</label>
+            </value>
+            <value>
+                <fullName>Center</fullName>
+                <default>false</default>
+                <label>Center</label>
+            </value>
+            <value>
+                <fullName>Right</fullName>
+                <default>false</default>
+                <label>Right</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

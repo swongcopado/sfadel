@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Quarter__c</fullName>
+    <formula>CASE(Sales_Period__c, 
+&quot;Jan-Mar 一月至三月&quot;, DATE(Year_of_Sale__c ,01,01),
+&quot;Apr-Jun 四月至六月&quot;, DATE(Year_of_Sale__c ,04,01),
+&quot;July-Sep 七月至九月&quot;, DATE(Year_of_Sale__c ,07,01), 
+&quot;Oct-Dec 十月至十二月&quot;, DATE(Year_of_Sale__c ,10,01),
+DATE(Year_of_Sale__c ,01,01))</formula>
+    <label>Quarter</label>
+    <required>false</required>
+    <type>Date</type>
+</CustomField>

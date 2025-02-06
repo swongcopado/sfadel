@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebLink xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>redwing__Export_Training_Track</fullName>
+    <availability>online</availability>
+    <description>Display VF page for exporting a Learning Trac</description>
+    <displayType>button</displayType>
+    <height>600</height>
+    <linkType>page</linkType>
+    <masterLabel>Export</masterLabel>
+    <openType>noSidebar</openType>
+    <page>redwing__TrainingTrackExport</page>
+    <protected>false</protected>
+</WebLink>

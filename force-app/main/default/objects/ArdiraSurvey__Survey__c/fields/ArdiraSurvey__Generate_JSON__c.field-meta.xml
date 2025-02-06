@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ArdiraSurvey__Generate_JSON__c</fullName>
+    <defaultValue>false</defaultValue>
+    <deprecated>false</deprecated>
+    <description>If true, Survey Result JSON is generated when the survey status changes to &quot;Open&quot;.</description>
+    <inlineHelpText>If true, Survey Result JSON is generated when the survey status changes to &quot;Open&quot;.</inlineHelpText>
+    <label>Dep Generate JSON</label>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ArdiraSurvey__Recurrence_Source__c</fullName>
+    <deleteConstraint>SetNull</deleteConstraint>
+    <deprecated>false</deprecated>
+    <description>Original survey result record that initiated this recurrence.</description>
+    <inlineHelpText>Original survey result record that initiated this recurrence.</inlineHelpText>
+    <label>Recurrence Source</label>
+    <referenceTo>ArdiraSurvey__Survey_Result__c</referenceTo>
+    <relationshipLabel>Recurring Results</relationshipLabel>
+    <relationshipName>Recurring_Results</relationshipName>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Lookup</type>
+</CustomField>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ArdiraSurvey__Survey_Flags__c</fullName>
+    <deprecated>false</deprecated>
+    <description>Bitmap field for internal use with each bit representing a specific flag. For example, the first bit could indicate that survey URLs are updated for enhanced domains.</description>
+    <externalId>false</externalId>
+    <label>Survey Flags</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>0</scale>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Number</type>
+    <unique>false</unique>
+</CustomField>

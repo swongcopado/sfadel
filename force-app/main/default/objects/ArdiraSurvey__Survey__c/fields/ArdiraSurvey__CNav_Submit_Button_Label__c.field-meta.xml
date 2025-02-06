@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ArdiraSurvey__CNav_Submit_Button_Label__c</fullName>
+    <defaultValue>&quot;Submit&quot;</defaultValue>
+    <deprecated>false</deprecated>
+    <description>Label to use for the &apos;submit&apos; button in the survey response interface.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Specify the label to be displayed on the &apos;Submit&apos; button in the survey response interface. This button is typically shown on the final page of the survey and allows participants to submit their completed responses. Choose a clear and engaging label that encourages participants to finalize and submit their survey.</inlineHelpText>
+    <label>Submit Button Label</label>
+    <length>80</length>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionCalls>
+        <name>Calculate_Fee_on_VEA</name>
+        <label>Calculate Fee on VEA</label>
+        <locationX>436</locationX>
+        <locationY>442</locationY>
+        <actionName>IntegrationProcedureInvocable</actionName>
+        <actionType>apex</actionType>
+        <flowTransactionModel>CurrentTransaction</flowTransactionModel>
+        <inputParameters>
+            <name>input</name>
+            <value>
+                <elementReference>$Record.Id</elementReference>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>procedureAPIName</name>
+            <value>
+                <stringValue>ViolationFee_Calculator</stringValue>
+            </value>
+        </inputParameters>
+        <nameSegment>IntegrationProcedureInvocable</nameSegment>
+        <storeOutputAutomatically>true</storeOutputAutomatically>
+        <versionSegment>1</versionSegment>
+    </actionCalls>
+    <apiVersion>54.0</apiVersion>
+    <interviewLabel>Calculate Fee on Violation Enforcement Action {!$Flow.CurrentDateTime}</interviewLabel>
+    <label>Calculate Fee on Violation Enforcement Action</label>
+    <processMetadataValues>
+        <name>BuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>CanvasMode</name>
+        <value>
+            <stringValue>FREE_FORM_CANVAS</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>OriginBuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processType>AutoLaunchedFlow</processType>
+    <start>
+        <locationX>397</locationX>
+        <locationY>65</locationY>
+        <connector>
+            <targetReference>Calculate_Fee_on_VEA</targetReference>
+        </connector>
+        <object>ViolationEnforcementAction</object>
+        <recordTriggerType>Create</recordTriggerType>
+        <triggerType>RecordAfterSave</triggerType>
+    </start>
+    <status>Active</status>
+</Flow>

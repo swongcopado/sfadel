@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Is_a_Top_10_FAQ__c</fullName>
+    <defaultValue>false</defaultValue>
+    <inlineHelpText>Check this flag if you want to use this as one of the top 10 FAQ&apos;s on the Department of the Future (Service) Community CMS Records (added by BTMURPHY)</inlineHelpText>
+    <label>Is a Top 10 FAQ</label>
+    <type>Checkbox</type>
+</CustomField>

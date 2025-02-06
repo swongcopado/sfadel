@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ArdiraSurvey__Verify_Captcha_at__c</fullName>
+    <deprecated>false</deprecated>
+    <description>Verify captcha at beginning of the response or submitting response.</description>
+    <inlineHelpText>Choose the preferred placement for Captcha verification:
+Before survey start: Verify Captcha on the landing page before participants begin responding to the survey.
+Upon survey submission: Verify Captcha when participants submit their survey responses.</inlineHelpText>
+    <label>Captcha Verification Placement</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Beginning Response</fullName>
+                <default>true</default>
+                <label>Before survey start</label>
+            </value>
+            <value>
+                <fullName>Submitting Response</fullName>
+                <default>false</default>
+                <label>Upon survey submission</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

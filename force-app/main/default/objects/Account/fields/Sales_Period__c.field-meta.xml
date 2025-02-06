@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Sales_Period__c</fullName>
+    <label>Sales Period</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Jan-Mar 一月至三月</fullName>
+                <default>false</default>
+                <label>Jan-Mar 一月至三月</label>
+            </value>
+            <value>
+                <fullName>Apr-Jun 四月至六月</fullName>
+                <default>false</default>
+                <label>Apr-Jun 四月至六月</label>
+            </value>
+            <value>
+                <fullName>July-Sep 七月至九月</fullName>
+                <default>false</default>
+                <label>July-Sep 七月至九月</label>
+            </value>
+            <value>
+                <fullName>Oct-Dec 十月至十二月</fullName>
+                <default>false</default>
+                <label>Oct-Dec 十月至十二月</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

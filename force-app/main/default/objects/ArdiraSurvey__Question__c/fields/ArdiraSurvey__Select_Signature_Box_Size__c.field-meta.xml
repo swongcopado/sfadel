@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ArdiraSurvey__Select_Signature_Box_Size__c</fullName>
+    <deprecated>false</deprecated>
+    <description>Signature Box size.</description>
+    <inlineHelpText>Select signature box size.</inlineHelpText>
+    <label>Select Signature Box Size</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Small (60px x 210px)</fullName>
+                <default>false</default>
+                <label>Small (60px x 210px)</label>
+            </value>
+            <value>
+                <fullName>Medium (80px × 280px)</fullName>
+                <default>false</default>
+                <label>Medium (80px × 280px)</label>
+            </value>
+            <value>
+                <fullName>Large (100px x 350px)</fullName>
+                <default>false</default>
+                <label>Large (100px x 350px)</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

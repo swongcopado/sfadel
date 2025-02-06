@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ArdiraSurvey__CNav_Allow_To_Advance_With_Incomplete_Q__c</fullName>
+    <defaultValue>true</defaultValue>
+    <deprecated>false</deprecated>
+    <description>If checked, allows to move to next question/section even if question is not complete.</description>
+    <inlineHelpText>Enable this option to allow participants to skip incomplete questions and proceed to the next question. By enabling this setting, participants can advance through the survey without being required to provide a response for every question. This can be useful in cases where participants may not have an answer or prefer to skip certain questions.</inlineHelpText>
+    <label>Skip Incomplete Questions</label>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

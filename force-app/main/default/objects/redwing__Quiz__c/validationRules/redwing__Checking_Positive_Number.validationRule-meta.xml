@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>redwing__Checking_Positive_Number</fullName>
+    <active>true</active>
+    <errorConditionFormula>!ISBLANK(redwing__Max_Attempts__c) &amp;&amp; redwing__Max_Attempts__c &lt; 1</errorConditionFormula>
+    <errorDisplayField>redwing__Max_Attempts__c</errorDisplayField>
+    <errorMessage>Number of attempts must be greater than zero</errorMessage>
+</ValidationRule>

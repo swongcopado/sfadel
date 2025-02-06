@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ArdiraSurvey__CT_Auto_Close_Date__c</fullName>
+    <deprecated>false</deprecated>
+    <description>Survey status is set to &quot;Closed&quot; on this date.</description>
+    <inlineHelpText>Set a date for automatic survey closure. After this date, the survey status will be changed to &apos;Closed&apos;. Existing participants can still complete the survey, but new participant assignments will not be allowed.</inlineHelpText>
+    <label>Auto Close Date</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Date</type>
+</CustomField>

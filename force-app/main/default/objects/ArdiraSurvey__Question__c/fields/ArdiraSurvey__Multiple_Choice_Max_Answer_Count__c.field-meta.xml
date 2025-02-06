@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ArdiraSurvey__Multiple_Choice_Max_Answer_Count__c</fullName>
+    <deprecated>false</deprecated>
+    <description>Maximum number of choices that can be selected for this question. Has to be equal or less than the number of available choices.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Enter the maximum number of answer choices that can be selected for the question response.
+The number must be equal to or less than the number of available answer choices.</inlineHelpText>
+    <label>Multiple Choice - Max Answer Count</label>
+    <precision>2</precision>
+    <required>false</required>
+    <scale>0</scale>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Number</type>
+    <unique>false</unique>
+</CustomField>

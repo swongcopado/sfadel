@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Flow_URL__c</fullName>
+    <description>Flow API name or hyperlink/URL to direct the user to when they click on this content</description>
+    <inlineHelpText>Flow API name or hyperlink/URL to direct the user to when they click on this content</inlineHelpText>
+    <label>Flow/URL</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>TextArea</type>
+</CustomField>

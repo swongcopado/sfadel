@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ArdiraSurvey__CNav_Pagination__c</fullName>
+    <deprecated>false</deprecated>
+    <description>Method of paginating through survey questions.</description>
+    <inlineHelpText>Choose the preferred navigation style for the survey response interface:
+No Pagination: Participants can view and respond to all the questions on a single page.
+Question: Participants can view and respond to one question at a time, navigating through the survey using previous and next buttons.
+Section: Participants can view and respond to all questions within a section at a time, navigating through the survey using previous and next buttons.
+Select the option that best suits survey format.</inlineHelpText>
+    <label>Pagination</label>
+    <required>true</required>
+    <trackHistory>true</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>No Pagination</fullName>
+                <default>false</default>
+                <label>No Pagination</label>
+            </value>
+            <value>
+                <fullName>Section</fullName>
+                <default>false</default>
+                <label>Section</label>
+            </value>
+            <value>
+                <fullName>Question</fullName>
+                <default>true</default>
+                <label>Question</label>
+            </value>
+            <value>
+                <fullName>None</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>None</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

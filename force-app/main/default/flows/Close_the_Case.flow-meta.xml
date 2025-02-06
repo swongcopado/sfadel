@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionCalls>
+        <name>Show_Case_Closed_Toast</name>
+        <label>Show Case Closed Toast</label>
+        <locationX>569</locationX>
+        <locationY>50</locationY>
+        <actionName>c:showToast</actionName>
+        <actionType>component</actionType>
+        <inputParameters>
+            <name>type</name>
+            <value>
+                <stringValue>success</stringValue>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>message</name>
+            <value>
+                <stringValue>The case has been closed.</stringValue>
+            </value>
+        </inputParameters>
+        <nameSegment>c:showToast</nameSegment>
+        <versionSegment>1</versionSegment>
+    </actionCalls>
+    <actionCalls>
+        <name>Update_the_Screen</name>
+        <label>Update the Screen</label>
+        <locationX>390</locationX>
+        <locationY>50</locationY>
+        <actionName>c:UpdateScreen</actionName>
+        <actionType>component</actionType>
+        <connector>
+            <targetReference>Show_Case_Closed_Toast</targetReference>
+        </connector>
+        <inputParameters>
+            <name>recordId</name>
+            <value>
+                <elementReference>recordId</elementReference>
+            </value>
+        </inputParameters>
+        <nameSegment>c:UpdateScreen</nameSegment>
+        <versionSegment>1</versionSegment>
+    </actionCalls>
+    <apiVersion>49.0</apiVersion>
+    <description>Sample screen flow that closes the case, to be used as part of a guided action list.</description>
+    <interviewLabel>Close the Case {!$Flow.CurrentDateTime}</interviewLabel>
+    <label>Close the Case</label>
+    <processMetadataValues>
+        <name>BuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>OriginBuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processType>Flow</processType>
+    <recordUpdates>
+        <description>Updates the case Status field to &quot;Closed&quot;.</description>
+        <name>Update_Case_Status_to_Closed</name>
+        <label>Update Case Status to Closed</label>
+        <locationX>222</locationX>
+        <locationY>50</locationY>
+        <connector>
+            <targetReference>Update_the_Screen</targetReference>
+        </connector>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>Id</field>
+            <operator>EqualTo</operator>
+            <value>
+                <elementReference>recordId</elementReference>
+            </value>
+        </filters>
+        <inputAssignments>
+            <field>Status</field>
+            <value>
+                <stringValue>Closed</stringValue>
+            </value>
+        </inputAssignments>
+        <object>Case</object>
+    </recordUpdates>
+    <startElementReference>Update_Case_Status_to_Closed</startElementReference>
+    <status>Active</status>
+    <variables>
+        <description>Standard recordId variable that will be set by the system at the start of the screen flow.</description>
+        <name>recordId</name>
+        <dataType>String</dataType>
+        <isCollection>false</isCollection>
+        <isInput>true</isInput>
+        <isOutput>false</isOutput>
+    </variables>
+</Flow>

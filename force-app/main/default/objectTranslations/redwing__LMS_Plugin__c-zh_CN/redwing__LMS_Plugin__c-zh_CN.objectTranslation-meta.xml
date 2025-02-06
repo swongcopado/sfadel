@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>LMS 插件</value>
+    </caseValues>
+    <nameFieldLabel>LMS 插件 ID</nameFieldLabel>
+</CustomObjectTranslation>

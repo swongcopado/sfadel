@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Concierge_Bot_Channel_Case</fullName>
+    <filterScope>Queue</filterScope>
+    <label>Concierge Bot Channel</label>
+    <queue>Concierge_Bot_Channel</queue>
+    <sharedTo>
+        <allInternalUsers></allInternalUsers>
+    </sharedTo>
+</ListView>

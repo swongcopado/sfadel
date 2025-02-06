@@ -1,0 +1,15 @@
+{
+  "defaultCode" : "en_US",
+  "defaultLabel" : "English (US)",
+  "id" : "b3f289fa-ef69-41f0-9b34-fa3803729aaa",
+  "languages" : [ {
+    "countryCode" : "SG",
+    "fallbackLanguageId" : null,
+    "id" : "56032851-c4c0-4f5b-ba37-c37b5260baec",
+    "isActive" : true,
+    "label" : "Chinese (Singapore) (SG)",
+    "languageCode" : "zh",
+    "type" : "language"
+  } ],
+  "type" : "languageContainer"
+}

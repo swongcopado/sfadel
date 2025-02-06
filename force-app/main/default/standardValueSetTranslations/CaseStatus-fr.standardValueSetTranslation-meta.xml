@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<StandardValueSetTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <valueTranslation>
+        <masterLabel>Closed</masterLabel>
+        <translation>Fermé</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Escalated</masterLabel>
+        <translation>Escaladé</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>New</masterLabel>
+        <translation>Nouveau</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>On Hold</masterLabel>
+        <translation>Suspendu</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Proceeding Result</masterLabel>
+        <translation><!-- Proceeding Result --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Proceeding Scheduled</masterLabel>
+        <translation><!-- Proceeding Scheduled --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Response Received</masterLabel>
+        <translation>Réponse reçue</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Waiting on Constituent</masterLabel>
+        <translation>En attente de l&apos;usager</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Working</masterLabel>
+        <translation>Pris en charge</translation>
+    </valueTranslation>
+</StandardValueSetTranslation>

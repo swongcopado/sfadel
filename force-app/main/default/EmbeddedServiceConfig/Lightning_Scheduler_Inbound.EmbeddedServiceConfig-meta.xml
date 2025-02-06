@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmbeddedServiceConfig xmlns="http://soap.sforce.com/2006/04/metadata">
+    <areGuestUsersAllowed>false</areGuestUsersAllowed>
+    <deploymentFeature>FieldService</deploymentFeature>
+    <deploymentType>Web</deploymentType>
+    <embeddedServiceAppointmentSettings>
+        <appointmentConfirmImg>https://isvsi-14ddd2ecd93-1687f12594-16997832f7a.force.com/service/servlet/servlet.FileDownload?file=0151U000001o6qA</appointmentConfirmImg>
+        <enabled>true</enabled>
+        <homeImg>https://isvsi-14ddd2ecd93-1687f12594-16997832f7a.force.com/service/servlet/servlet.FileDownload?file=0151U000001o6q0</homeImg>
+        <shouldShowExistingAppointment>true</shouldShowExistingAppointment>
+        <shouldShowNewAppointment>true</shouldShowNewAppointment>
+    </embeddedServiceAppointmentSettings>
+    <embeddedServiceCustomLabels>
+        <customLabel>FS_ResourceDetail_Base_Header_04I1U000000PKJp_8863728</customLabel>
+        <labelKey>FS_ResourceDetail_Base_Header</labelKey>
+    </embeddedServiceCustomLabels>
+    <embeddedServiceFlows>
+        <flow>Inbound_New_Appointment</flow>
+        <flowType>FS_NewAppointment</flowType>
+        <isAuthenticationRequired>true</isAuthenticationRequired>
+    </embeddedServiceFlows>
+    <embeddedServiceFlows>
+        <flow>runtime_appointmentbooking__In_Modify</flow>
+        <flowType>FS_ModifyAppointment</flowType>
+        <isAuthenticationRequired>true</isAuthenticationRequired>
+    </embeddedServiceFlows>
+    <embeddedServiceFlows>
+        <flow>runtime_appointmentbooking__In_Cancel</flow>
+        <flowType>FS_CancelAppointment</flowType>
+        <isAuthenticationRequired>true</isAuthenticationRequired>
+    </embeddedServiceFlows>
+    <isEnabled>true</isEnabled>
+    <isTermsAndConditionsEnabled>false</isTermsAndConditionsEnabled>
+    <isTermsAndConditionsRequired>false</isTermsAndConditionsRequired>
+    <masterLabel>Lightning Scheduler Inbound</masterLabel>
+    <shouldHideAuthDialog>false</shouldHideAuthDialog>
+    <site>Constituent_Self_Service</site>
+</EmbeddedServiceConfig>

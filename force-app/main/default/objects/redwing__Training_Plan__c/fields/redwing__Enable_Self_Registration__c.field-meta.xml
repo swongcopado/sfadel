@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>redwing__Enable_Self_Registration__c</fullName>
+    <defaultValue>false</defaultValue>
+    <deprecated>false</deprecated>
+    <description>Check this box if you&apos;d like to make this Learning Plan available to all your company and allow users to create assignments on-the-fly.</description>
+    <inlineHelpText>Check this box if you&apos;d like to make this Learning Plan available to all your company and allow users to create assignments on-the-fly.</inlineHelpText>
+    <label>Enable Self-Registration (Obsolete)</label>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>true</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

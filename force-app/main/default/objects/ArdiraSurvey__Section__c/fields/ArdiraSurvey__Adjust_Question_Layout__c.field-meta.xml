@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ArdiraSurvey__Adjust_Question_Layout__c</fullName>
+    <deprecated>false</deprecated>
+    <description>You can decide to display a question on it’s own row or two consecutive questions side-by-side for this specific section. For the best respondent experience, we automatically override certain layout options when you take a survey on a tablet or mobile device.</description>
+    <inlineHelpText>You can decide to display a question on its own row or two consecutive questions side-by-side for this specific section. For the best experience, system may overrides certain layout options when a user takes a survey on a tablet or mobile device.</inlineHelpText>
+    <label>Question Layout</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Display question in single row in 1-column layout</fullName>
+                <default>false</default>
+                <label>Display question in single row in 1-column layout</label>
+            </value>
+            <value>
+                <fullName>Display two questions side-by-side in 2-column layout</fullName>
+                <default>false</default>
+                <label>Display two questions side-by-side in 2-column layout</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

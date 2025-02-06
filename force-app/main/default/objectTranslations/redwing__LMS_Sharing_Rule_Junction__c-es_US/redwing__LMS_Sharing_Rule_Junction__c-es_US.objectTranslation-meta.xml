@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Conjunto de reglas de uso compar de LMS</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Conjuntos de reglas de uso compar de LMS</value>
+    </caseValues>
+    <gender>Masculine</gender>
+    <nameFieldLabel>Conjunto de reglas de uso compar de LMS</nameFieldLabel>
+</CustomObjectTranslation>

@@ -1,0 +1,80 @@
+<template>
+    <div  if:true={hasNoContent} class={messageStyle}>
+        <lightning-formatted-rich-text
+            value={text}>
+        </lightning-formatted-rich-text>
+    </div>
+    <div  if:true={hasMultiRecords} >
+            <template if:true={records}>
+                    <lightning-layout class="horizontalRecords">
+                        <template for:each={records} for:item="rec">
+                              <lightning-layout-item  size="12"  key={rec}>
+                                <lightning-card  variant="Narrow" >
+                                    <lightning-record-form 
+                                    record-id={rec}
+                                    object-api-name={objectName}
+                                    layout-type="Compact"
+                                    mode={viewMode}>
+                                    </lightning-record-form>                            
+                            </lightning-card>   
+                        </lightning-layout-item>  
+                    </template>
+                    <br><br><br><br>
+                    </lightning-layout>
+             </template>
+            
+    </div>
+    <div  if:true={hasRecord}>
+            <template if:true={record}>
+                    <lightning-card variant="Narrow" >
+                            <h3 slot="title">
+                                    <lightning-icon icon-name={iconName} size="small"></lightning-icon>
+                                     <span style="margin-left:5px;">{title}</span>
+                                </h3>
+                            <lightning-record-form 
+                            record-id={record}
+                            object-api-name={objectName}
+                            layout-type="Compact"
+                            mode={viewMode}>
+                            </lightning-record-form>                            
+                    </lightning-card>   
+            </template>
+            <br><br>
+    </div>
+    <div  if:true={hasImage}>
+        <img src={srcUrl} />
+        <br><br>
+    </div>
+    <div  if:true={hasFileUpload}>
+            <lightning-file-upload
+            label="Upload"
+            name="fileUploader"
+            accept={acceptedFormats}
+            record-id={record}
+            onuploadfinished={handleUploadFinished}
+            multiple> </lightning-file-upload>
+            <div  if:true={hasFileUploaded} class="chasitor chat-content">
+                    <lightning-formatted-rich-text
+                        value={text}>
+                    </lightning-formatted-rich-text>
+                </div>
+            <br><br>
+    </div>
+    <div  if:true={hasIframe} >
+         <iframe src={srcUrl} ></iframe>
+         <br><br>
+    </div>
+    <div  if:true={hasCreateRecord} >
+                    <lightning-card variant="Narrow" >
+                            <h3 slot="title">
+                                    <lightning-icon icon-name={iconName} size="small"></lightning-icon>
+                                    <span style="margin-left:5px;">{title}</span>
+                                </h3>
+                            <lightning-record-form 
+                            object-api-name={objectName}
+                            fields={fields} >
+                            </lightning-record-form>                            
+                    </lightning-card>   
+            <br><br>
+    </div>
+</template>

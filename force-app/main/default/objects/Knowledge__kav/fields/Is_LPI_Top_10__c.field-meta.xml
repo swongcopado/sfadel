@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Is_LPI_Top_10__c</fullName>
+    <defaultValue>false</defaultValue>
+    <inlineHelpText>Check this flag if you want to use this as one of the top 10 FAQ&apos;s on the LPI Community CMS Records (added by BTMURPHY)</inlineHelpText>
+    <label>Is LPI Top 10</label>
+    <type>Checkbox</type>
+</CustomField>

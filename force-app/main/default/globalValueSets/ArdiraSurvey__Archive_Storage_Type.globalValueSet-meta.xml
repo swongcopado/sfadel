@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customValue>
+        <fullName>Not Archived</fullName>
+        <default>true</default>
+        <label>Not Archived</label>
+    </customValue>
+    <customValue>
+        <fullName>In Record</fullName>
+        <default>false</default>
+        <label>Archived - In Record</label>
+    </customValue>
+    <customValue>
+        <fullName>In Big Object</fullName>
+        <default>false</default>
+        <label>Archived - In Big Object</label>
+    </customValue>
+    <customValue>
+        <fullName>In Custom Object</fullName>
+        <default>false</default>
+        <label>Archived - In Custom Object</label>
+    </customValue>
+    <customValue>
+        <fullName>In AWS Storage</fullName>
+        <default>false</default>
+        <label>Archived - In AWS Storage</label>
+    </customValue>
+    <masterLabel>Archive Storage Type</masterLabel>
+    <sorted>false</sorted>
+</GlobalValueSet>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ArdiraSurvey__Sort_Values_By_Field__c</fullName>
+    <deprecated>false</deprecated>
+    <description>By default, values are presented in alphabetical order. For custom order, you can select a field to order values by the field value.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>By default, values are presented in alphabetical order. For custom order, you can select a field to order values by the field value.</inlineHelpText>
+    <label>Sort Values By Field</label>
+    <length>80</length>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

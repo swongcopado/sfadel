@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>wkdw__TransitionPlanTask__c</fullName>
+    <deprecated>false</deprecated>
+    <description>The transition plan task that this task was generated from</description>
+    <externalId>false</externalId>
+    <label>Transition Plan Task</label>
+    <length>255</length>
+    <required>false</required>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

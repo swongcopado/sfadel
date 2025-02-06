@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>All_RegulatoryTrxnFee</fullName>
+    <columns>Name</columns>
+    <columns>CalculationDate</columns>
+    <columns>ParentRecord</columns>
+    <columns>TotalFeeAmount</columns>
+    <filterScope>Everything</filterScope>
+    <label>All Regulatory Transaction Fees</label>
+</ListView>

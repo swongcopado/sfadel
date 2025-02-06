@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Queue xmlns="http://soap.sforce.com/2006/04/metadata">
+    <doesSendEmailToMembers>false</doesSendEmailToMembers>
+    <name>SMS</name>
+    <queueMembers>
+        <users>
+            <user>brendasupervisor.ghcvcvcg8e2n.mazjshrl2jr9.ybet4x8t4gup@deloitte.com.sfademo</user>
+            <user>bmurphy.tkeme2dtyoyq.tx3j0lihpa8z@deloitte.com.sfademo</user>
+            <user>miho@deloitte.com.sfademo</user>
+            <user>steve.service.12y1bb63mh3p.dso9zrbsfxz3@deloitte.com.sfademo</user>
+            <user>tim.service.5t21sqagvev9.oabdeshavv2x@deloitte.com.sfademo</user>
+        </users>
+    </queueMembers>
+    <queueRoutingConfig>Cases_Routing_Configuration</queueRoutingConfig>
+    <queueSobject>
+        <sobjectType>MessagingSession</sobjectType>
+    </queueSobject>
+</Queue>

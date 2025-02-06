@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ArdiraSurvey__Rank__c</fullName>
+    <deprecated>false</deprecated>
+    <description>Rank order of this stage in the workflow.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>The Rank refers to the position or order of a stage within the workflow. It determines the sequence in which the stages are presented or processed. A lower rank number indicates an earlier stage in the workflow, while a higher rank number indicates a later stage. The Rank helps establish the flow and progression of the workflow stages.</inlineHelpText>
+    <label>Stage Rank</label>
+    <precision>2</precision>
+    <required>true</required>
+    <scale>0</scale>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Number</type>
+    <unique>false</unique>
+</CustomField>

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ArdiraSurvey__Who_Can_Execute_This_RLM__c</fullName>
+    <deprecated>false</deprecated>
+    <description>If &quot;Any user&quot; is selected, the RLM will execute without sharing in system mode.
+If &quot;Only authorized users&quot; (i.e. user has “Read” permission on the object) is selected, the RLM will execute in user mode.</description>
+    <inlineHelpText>Select who can execute this RLM: either only authorized users who have access to this record or any user.</inlineHelpText>
+    <label>Who Can Execute This RLM</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Any User</fullName>
+                <default>true</default>
+                <label>Any User</label>
+            </value>
+            <value>
+                <fullName>Only Authorized Users</fullName>
+                <default>false</default>
+                <label>Only Authorized Users</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

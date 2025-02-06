@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ArdiraSurvey__Recipient_Entity__c</fullName>
+    <deprecated>false</deprecated>
+    <description>The entity receiving the survey as a result of the lifecycle stage trigger.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>The entity receiving the survey or action as a result of the lifecycle stage trigger.</inlineHelpText>
+    <label>Recipient Entity</label>
+    <length>80</length>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

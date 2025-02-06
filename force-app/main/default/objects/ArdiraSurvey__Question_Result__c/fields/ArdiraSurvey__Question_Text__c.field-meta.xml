@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ArdiraSurvey__Question_Text__c</fullName>
+    <deprecated>false</deprecated>
+    <description>Question text (limited to first 220 characters)</description>
+    <externalId>false</externalId>
+    <formula>HYPERLINK(
+    &quot;/&quot; &amp; ArdiraSurvey__Question__r.Id, 
+    BLANKVALUE(ArdiraSurvey__Question__r.ArdiraSurvey__Question_Short_Text__c, &quot;None&quot;)
+)</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <inlineHelpText>Question text (limited to first 220 characters)</inlineHelpText>
+    <label>Question Text</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

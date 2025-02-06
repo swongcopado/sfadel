@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<FieldSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ArdiraSurvey__Assessment_Fields</fullName>
+    <availableFields>
+        <field>ArdiraSurvey__Flag__c</field>
+        <isFieldManaged>false</isFieldManaged>
+        <isRequired>false</isRequired>
+    </availableFields>
+    <availableFields>
+        <field>ArdiraSurvey__Internal_Comment__c</field>
+        <isFieldManaged>false</isFieldManaged>
+        <isRequired>false</isRequired>
+    </availableFields>
+    <availableFields>
+        <field>ArdiraSurvey__Reviewer_Comment__c</field>
+        <isFieldManaged>false</isFieldManaged>
+        <isRequired>false</isRequired>
+    </availableFields>
+    <description>Customers can define more custom fields in the question result object and add into the assessment fields fieldset.</description>
+    <label>Assessment Fields</label>
+</FieldSet>

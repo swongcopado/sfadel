@@ -1,0 +1,12 @@
+{
+  "activeViewId" : "fef6b0a5-1b61-4e47-af23-ad88618d2d15",
+  "appPageId" : "7cd60cbf-9c3c-4756-b031-e5d09e77c8ab",
+  "configurationTags" : [ ],
+  "devName" : "Requirement_Related_List__c",
+  "id" : "58f247c1-46d9-4200-9aac-cc7cc3d2dcf6",
+  "label" : "Requirement Related List",
+  "objectApiName" : "outfunds__Requirement__c",
+  "routeType" : "relatedlist-a1A",
+  "type" : "route",
+  "urlPrefix" : "requirement"
+}

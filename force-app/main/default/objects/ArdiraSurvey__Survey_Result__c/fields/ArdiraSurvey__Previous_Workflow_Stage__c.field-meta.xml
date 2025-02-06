@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ArdiraSurvey__Previous_Workflow_Stage__c</fullName>
+    <deleteConstraint>SetNull</deleteConstraint>
+    <deprecated>false</deprecated>
+    <description>Previous workflow stage.</description>
+    <inlineHelpText>Previous workflow stage.</inlineHelpText>
+    <label>Previous Workflow Stage</label>
+    <referenceTo>ArdiraSurvey__Survey_Workflow_Stage__c</referenceTo>
+    <relationshipLabel>Ardira Survey Results(Prev)</relationshipLabel>
+    <relationshipName>Ardira_Survey_Results_Prev</relationshipName>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Lookup</type>
+</CustomField>

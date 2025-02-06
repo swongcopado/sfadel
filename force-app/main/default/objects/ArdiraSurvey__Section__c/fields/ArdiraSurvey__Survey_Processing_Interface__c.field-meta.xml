@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ArdiraSurvey__Survey_Processing_Interface__c</fullName>
+    <deprecated>false</deprecated>
+    <description>Configure a public class name that implements svProcessEvent(eventInfo) method to process survey data and return one or more question results to update on client side.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Configure a public class name that implements svProcessEvent(eventInfo) method to process survey data and return one or more question results to update on client side.</inlineHelpText>
+    <label>Survey Processing Interface</label>
+    <length>80</length>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

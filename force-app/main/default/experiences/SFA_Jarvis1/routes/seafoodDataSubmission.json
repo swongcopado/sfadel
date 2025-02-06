@@ -1,0 +1,12 @@
+{
+  "activeViewId" : "d7c0f052-987f-43e5-a7db-cb991c4bb42b",
+  "appPageId" : "7fe97e67-1ab0-4fe3-8497-ddfeb8bcee4b",
+  "configurationTags" : [ ],
+  "devName" : "Seafood_Data_Submission__c",
+  "id" : "5c5d96b4-65f2-42c9-b0a5-1367f053fde6",
+  "label" : "Seafood Data Submission",
+  "pageAccess" : "UseParent",
+  "routeType" : "custom-seafood-data-submission",
+  "type" : "route",
+  "urlPrefix" : "food-recall-tracing/seafood-data-submission"
+}

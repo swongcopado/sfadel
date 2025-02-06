@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ArdiraSurvey__Maximum_Number_of_Files_Allowed__c</fullName>
+    <defaultValue>10</defaultValue>
+    <deprecated>false</deprecated>
+    <description>Limit the number of files that can be uploaded with the question.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Specify the maximum number of files that can be uploaded with each question. This setting limits the number of files that participants can attach to a question response.</inlineHelpText>
+    <label>Maximum Number of Files Allowed</label>
+    <precision>2</precision>
+    <required>false</required>
+    <scale>0</scale>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Number</type>
+    <unique>false</unique>
+</CustomField>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Conta do currículo aprendizagem (obsol.)</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Contas do curríc. aprendizagem (obsol.)</value>
+    </caseValues>
+    <gender>Feminine</gender>
+    <nameFieldLabel>ID da conta do currículo de aprendizagem</nameFieldLabel>
+</CustomObjectTranslation>

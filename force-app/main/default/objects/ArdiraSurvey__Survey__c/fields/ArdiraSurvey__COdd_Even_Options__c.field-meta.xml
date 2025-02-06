@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ArdiraSurvey__COdd_Even_Options__c</fullName>
+    <deprecated>false</deprecated>
+    <description>This setting determines how questions are classified as odd or even for the purpose of setting background colors.
+Odd-Even Over Entire Survey: Questions will be classified as odd or even based on their sequential order throughout the entire survey.
+Odd-Even Each Section Separately: Questions will be classified as odd or even based on their sequential order within each section separately.</description>
+    <inlineHelpText>This setting determines how questions are classified as odd or even for the purpose of setting background colors.
+Odd-Even Over Entire Survey: Questions will be classified as odd or even based on their sequential order throughout the entire survey.
+Odd-Even Each Section Separately: Questions will be classified as odd or even based on their sequential order within each section separately.</inlineHelpText>
+    <label>Odd-Even Question Classification</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Odd-Even Over Entire Survey</fullName>
+                <default>true</default>
+                <label>Odd-Even Over Entire Survey</label>
+            </value>
+            <value>
+                <fullName>Odd-Even Each Section Separately</fullName>
+                <default>false</default>
+                <label>Odd-Even Each Section Separately</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

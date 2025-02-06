@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ArdiraSurvey__Landing_Page_Message__c</fullName>
+    <deprecated>false</deprecated>
+    <description>Introduction message to be displayed in the landing page.</description>
+    <inlineHelpText>Message to display in the landing page of the survey response interface.</inlineHelpText>
+    <label>Landing Page Message</label>
+    <length>8192</length>
+    <trackTrending>false</trackTrending>
+    <type>Html</type>
+    <visibleLines>10</visibleLines>
+</CustomField>

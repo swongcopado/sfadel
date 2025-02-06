@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ArdiraSurvey__Allow_to_view_survey_result__c</fullName>
+    <defaultValue>false</defaultValue>
+    <deprecated>false</deprecated>
+    <description>Enable to allow participants to view a completed survey result.</description>
+    <inlineHelpText>Enabling this option allows participants to view the completed survey results. Once enabled, participants will have the ability to access and review the aggregated survey results after completing the survey.</inlineHelpText>
+    <label>Viewing of Survey Results</label>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

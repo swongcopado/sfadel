@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ArdiraSurvey__ThankYou_Page_Background_Color__c</fullName>
+    <deprecated>false</deprecated>
+    <description>Select a background color for the Thank you page</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Select a background color for the Thank you page area.</inlineHelpText>
+    <label>ThankYou Page Background Color</label>
+    <length>20</length>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

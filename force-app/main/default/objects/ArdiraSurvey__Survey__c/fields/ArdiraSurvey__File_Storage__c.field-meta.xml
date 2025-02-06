@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ArdiraSurvey__File_Storage__c</fullName>
+    <deprecated>false</deprecated>
+    <description>Select file storage type.</description>
+    <inlineHelpText>Choose the desired file storage type:
+Salesforce: Store files in the Salesforce file storage.
+Amazon Web Services: Store files in the Amazon Web Services file storage.</inlineHelpText>
+    <label>File Storage</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>SF</fullName>
+                <default>true</default>
+                <label>Salesforce</label>
+            </value>
+            <value>
+                <fullName>AWS</fullName>
+                <default>false</default>
+                <label>Amazon Web Services</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>redwing__Last_Published_Learning_Version_Decision__c</fullName>
+    <deprecated>false</deprecated>
+    <label>Last Published Learning Version Decision</label>
+    <required>false</required>
+    <trackHistory>true</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>New version taken</fullName>
+                <default>false</default>
+                <label>New version taken</label>
+            </value>
+            <value>
+                <fullName>Keep using old version</fullName>
+                <default>false</default>
+                <label>Keep using old version</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

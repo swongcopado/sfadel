@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomApplication xmlns="http://soap.sforce.com/2006/04/metadata">
+    <brand>
+        <headerColor>#032E61</headerColor>
+        <logoVersion>1</logoVersion>
+        <shouldOverrideOrgTheme>false</shouldOverrideOrgTheme>
+    </brand>
+    <description>Tools and resources to configure your demo.</description>
+    <formFactors>Large</formFactors>
+    <isNavAutoTempTabsDisabled>false</isNavAutoTempTabsDisabled>
+    <isNavPersonalizationDisabled>false</isNavPersonalizationDisabled>
+    <isNavTabPersistenceDisabled>false</isNavTabPersistenceDisabled>
+    <isOmniPinnedViewEnabled>false</isOmniPinnedViewEnabled>
+    <label>Q Branch</label>
+    <navType>Standard</navType>
+    <profileActionOverrides>
+        <actionName>View</actionName>
+        <content>gps_Individual_Application_Record_Page11</content>
+        <formFactor>Large</formFactor>
+        <pageOrSobjectType>IndividualApplication</pageOrSobjectType>
+        <recordType>IndividualApplication.Foster_Care_Application</recordType>
+        <type>Flexipage</type>
+        <profile>Admin</profile>
+    </profileActionOverrides>
+    <subscriberTabs>PBU_Demo_Tools</subscriberTabs>
+    <subscriberTabs>LPI_Demo_Management</subscriberTabs>
+    <subscriberTabs>Grants_Demo_Management</subscriberTabs>
+    <tabs>qbranch__Q_Home_Lightning</tabs>
+    <tabs>qbranch__Demo_Wizard</tabs>
+    <tabs>qbranch__Q_Tools_Lightning</tabs>
+    <tabs>qbranch__Q_Demo_Components_Lightning</tabs>
+    <uiType>Lightning</uiType>
+    <utilityBar>qbranch__Q_Branch_UtilityBar</utilityBar>
+</CustomApplication>

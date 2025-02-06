@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ArdiraSurvey__Target_Records_Criteria__c</fullName>
+    <deprecated>false</deprecated>
+    <description>A JSON representation of filter conditions to filter records that are included in this stage action.</description>
+    <inlineHelpText>A JSON representation of filter conditions to filter records that are included in this stage action.</inlineHelpText>
+    <label>Filter Records Criteria</label>
+    <length>32768</length>
+    <trackTrending>false</trackTrending>
+    <type>LongTextArea</type>
+    <visibleLines>3</visibleLines>
+</CustomField>

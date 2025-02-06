@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Leeractiviteit Zoekcategorie Artikel</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Leeractiviteit Zoekcategorie Artikels</value>
+    </caseValues>
+    <gender>Neuter</gender>
+    <nameFieldLabel>Leeractiviteit Zoeken op categorie-item</nameFieldLabel>
+</CustomObjectTranslation>

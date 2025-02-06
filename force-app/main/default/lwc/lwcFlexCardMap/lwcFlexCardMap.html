@@ -1,0 +1,16 @@
+<template>
+    <div class="google-wrapper">
+        <lightning-map 
+        map-markers={mapMarkers}
+        markers-title={mapTitle}
+        onmarkerselect={handleMarkerSelect}
+        selected-marker-value={selectedMarkerValue}
+        zoom-level={zoomLevel}
+        options={mapOptions}
+        list-view={listView}>
+        </lightning-map>
+        <div class="google-map-overlay">
+            <p></p>
+        </div>
+    </div>
+</template>

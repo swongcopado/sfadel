@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ArdiraSurvey__Landing_Page_Background_Color__c</fullName>
+    <defaultValue>&quot;#FFFFFF&quot;</defaultValue>
+    <deprecated>false</deprecated>
+    <description>Select a background color for the landing page</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Select a background color for the landing page area.</inlineHelpText>
+    <label>Landing Page Background Color</label>
+    <length>100</length>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

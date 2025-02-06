@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>redwing__Off_Platform__c</fullName>
+    <defaultValue>false</defaultValue>
+    <deprecated>false</deprecated>
+    <inlineHelpText>If checked, registration for this ILT Class will be managed outside of Appinium/Salesforce.</inlineHelpText>
+    <label>Off-Platform</label>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

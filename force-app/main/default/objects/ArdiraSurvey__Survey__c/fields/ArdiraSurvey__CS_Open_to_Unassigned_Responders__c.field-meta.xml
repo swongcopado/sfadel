@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ArdiraSurvey__CS_Open_to_Unassigned_Responders__c</fullName>
+    <defaultValue>true</defaultValue>
+    <deprecated>false</deprecated>
+    <description>If checked, a unique assignment link (i.e. existence of Survey Result record) is not required to respond. Based on other configuration, a user may be able to respond as long as s/he has a right survey response link (for internal user or community user). Note that assigned responders can still be able to respond irrespective of this setting.</description>
+    <inlineHelpText>Enables a participant to respond to the survey by clicking the public survey response link. Does not require the participant to authenticate and identify using her Salesforce credentials.</inlineHelpText>
+    <label>Open to Unassigned Participants</label>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ArdiraSurvey__Use_Latest_Version_at_Dispatch__c</fullName>
+    <defaultValue>true</defaultValue>
+    <deprecated>false</deprecated>
+    <description>When enabled, uses latest version of the survey when the survey is dispatched at future date for data collection.</description>
+    <inlineHelpText>When this option is enabled, participants will always be presented with the latest version of the survey. This ensures that any updates or changes to the survey are immediately reflected, providing the most current content to participants.</inlineHelpText>
+    <label>Use Latest Survey Version</label>
+    <trackHistory>true</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

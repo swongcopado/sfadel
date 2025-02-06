@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ArdiraSurvey__Answer_Text_Other5__c</fullName>
+    <deprecated>false</deprecated>
+    <description>This field serves multiple functions based on the type of question asked:For Address question, it stores Postal Code.For Full Name question, it stores Suffix. For Payment Gateway questions, it stores payment gateway provider.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>This field serves multiple functions based on the type of question asked:For Address question, it stores Postal Code.For Full Name question, it stores Suffix. For Payment Gateway questions, it stores payment gateway provider.</inlineHelpText>
+    <label>Answer Text Other5</label>
+    <length>255</length>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

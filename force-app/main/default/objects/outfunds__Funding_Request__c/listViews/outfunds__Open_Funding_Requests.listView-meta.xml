@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>outfunds__Open_Funding_Requests</fullName>
+    <columns>NAME</columns>
+    <columns>outfunds__Applying_Contact__c</columns>
+    <columns>outfunds__Status__c</columns>
+    <columns>outfunds__Requested_Amount__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>outfunds__Status__c</field>
+        <operation>equals</operation>
+        <value>LOI Submitted,Invited,Submitted</value>
+    </filters>
+    <label>Open Funding Requests</label>
+</ListView>

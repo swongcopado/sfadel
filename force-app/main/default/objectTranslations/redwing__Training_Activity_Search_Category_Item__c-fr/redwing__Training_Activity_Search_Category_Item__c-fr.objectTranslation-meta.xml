@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Catégorie de recherche d&apos;activité d&apos;apprentissage</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Catégories de recherche d&apos;activité d&apos;apprentissage</value>
+    </caseValues>
+    <gender>Feminine</gender>
+    <nameFieldLabel>Élément I de catégorie de recherche d&apos;ac</nameFieldLabel>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

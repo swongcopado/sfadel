@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Workflow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <alerts>
+        <fullName>redwing__Approved_Task_Alert</fullName>
+        <description>Approved Task Alert</description>
+        <protected>false</protected>
+        <recipients>
+            <type>owner</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>redwing__LMS_Email_Templates/redwing__LearnTrac_Approved_Task_Notification</template>
+    </alerts>
+    <alerts>
+        <fullName>redwing__Class_Assignment_Alert</fullName>
+        <description>Class Assignment Email Alert</description>
+        <protected>false</protected>
+        <recipients>
+            <field>redwing__User__c</field>
+            <type>userLookup</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>redwing__LMS_Email_Templates/redwing__LearnTrac_Class_Assignment</template>
+    </alerts>
+    <alerts>
+        <fullName>redwing__Rejected_Task_Alert</fullName>
+        <description>Rejected Task Alert</description>
+        <protected>false</protected>
+        <recipients>
+            <type>owner</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>redwing__LMS_Email_Templates/redwing__LearnTrac_Rejected_Task_Notification</template>
+    </alerts>
+    <alerts>
+        <fullName>redwing__User_Added_To_Waitlist_Alert</fullName>
+        <description>User Added To Waitlist Alert</description>
+        <protected>false</protected>
+        <recipients>
+            <field>redwing__User__c</field>
+            <type>userLookup</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>redwing__LMS_Email_Templates/redwing__LearnTrac_User_Added_To_Waitlist</template>
+    </alerts>
+    <alerts>
+        <fullName>redwing__User_Removed_From_Waitlist_Alert</fullName>
+        <description>User Removed From Waitlist Alert</description>
+        <protected>false</protected>
+        <recipients>
+            <field>redwing__User__c</field>
+            <type>userLookup</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>redwing__LMS_Email_Templates/redwing__LearnTrac_User_Removed_From_Waitlist</template>
+    </alerts>
+    <rules>
+        <fullName>redwing__Approved_Task_Notification</fullName>
+        <actions>
+            <name>redwing__Approved_Task_Alert</name>
+            <type>Alert</type>
+        </actions>
+        <active>false</active>
+        <formula>(PRIORVALUE( redwing__Approved__c ) != redwing__Approved__c) &amp;&amp; redwing__Approved__c &amp;&amp;  TEXT(redwing__Approval_Status__c) == &apos;Approved&apos;</formula>
+        <triggerType>onAllChanges</triggerType>
+    </rules>
+    <rules>
+        <fullName>redwing__Class_Assignment_Notification</fullName>
+        <actions>
+            <name>redwing__Class_Assignment_Alert</name>
+            <type>Alert</type>
+        </actions>
+        <active>false</active>
+        <formula>AND(redwing__Is_Test_Assignment__c &lt;&gt; true,  NOT(ISNULL(redwing__Learning__c)),  redwing__Learning__r.RecordType.DeveloperName = &apos;ILT&apos;,  NOT(ISNULL(redwing__Learning_Version__r.redwing__ILT__c)),   ISNEW(),   TEXT(redwing__Progress__c) = &apos;Not Started&apos;)</formula>
+        <triggerType>onAllChanges</triggerType>
+    </rules>
+    <rules>
+        <fullName>redwing__Rejected_Task_Notification</fullName>
+        <actions>
+            <name>redwing__Rejected_Task_Alert</name>
+            <type>Alert</type>
+        </actions>
+        <active>false</active>
+        <formula>!redwing__Approved__c &amp;&amp; TEXT(PRIORVALUE(redwing__Approval_Status__c)) != TEXT(redwing__Approval_Status__c) &amp;&amp; TEXT(redwing__Approval_Status__c) == &quot;Rejected&quot;</formula>
+        <triggerType>onAllChanges</triggerType>
+    </rules>
+    <rules>
+        <fullName>redwing__User_Added_To_Waitlist_Notification</fullName>
+        <actions>
+            <name>redwing__User_Added_To_Waitlist_Alert</name>
+            <type>Alert</type>
+        </actions>
+        <active>false</active>
+        <formula>AND(redwing__Is_Test_Assignment__c  &lt;&gt; true, NOT(ISNULL(redwing__Learning__c)), redwing__Learning__r.RecordType.DeveloperName = &apos;ILT&apos;, NOT(ISNULL(redwing__Learning_Version__r.redwing__ILT__c)), ISPICKVAL(redwing__Progress__c, &apos;Waiting&apos;))</formula>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+    </rules>
+    <rules>
+        <fullName>redwing__User_Removed_From_Waitlist_Notification</fullName>
+        <actions>
+            <name>redwing__User_Removed_From_Waitlist_Alert</name>
+            <type>Alert</type>
+        </actions>
+        <active>false</active>
+        <formula>AND(redwing__Is_Test_Assignment__c &lt;&gt; true,  NOT(ISNULL(redwing__Learning__c)),  redwing__Learning__r.RecordType.DeveloperName = &apos;ILT&apos;,  NOT(ISNULL(redwing__Learning_Version__r.redwing__ILT__c)),  TEXT(PRIORVALUE(redwing__Progress__c)) = &apos;Waiting&apos;, TEXT(redwing__Progress__c) = &apos;Not Started&apos;, NOT(AND(OwnerId &lt;&gt; $User.Id, NOT(ISBLANK($User.ContactId)))))</formula>
+        <triggerType>onAllChanges</triggerType>
+    </rules>
+</Workflow>

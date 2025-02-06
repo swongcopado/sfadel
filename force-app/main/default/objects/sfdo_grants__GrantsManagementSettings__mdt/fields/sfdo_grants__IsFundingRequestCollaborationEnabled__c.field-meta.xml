@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>sfdo_grants__IsFundingRequestCollaborationEnabled__c</fullName>
+    <defaultValue>false</defaultValue>
+    <deprecated>false</deprecated>
+    <description>Allow users to add collaborators to Funding Requests in Salesforce and through the grantseeker portal.</description>
+    <fieldManageability>SubscriberControlled</fieldManageability>
+    <inlineHelpText>Allow users to add collaborators to Funding Requests in Salesforce and through the grantseeker portal.</inlineHelpText>
+    <label>Funding Request Collaboration</label>
+    <type>Checkbox</type>
+</CustomField>

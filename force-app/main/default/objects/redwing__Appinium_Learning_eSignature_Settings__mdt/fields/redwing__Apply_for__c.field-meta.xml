@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>redwing__Apply_for__c</fullName>
+    <deprecated>false</deprecated>
+    <fieldManageability>DeveloperControlled</fieldManageability>
+    <inlineHelpText>Action requiring signature configuration.</inlineHelpText>
+    <label>Apply for</label>
+    <required>true</required>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Completion of Quiz Learning Objects</fullName>
+                <default>true</default>
+                <label>Completion of Quiz Learning Objects</label>
+            </value>
+            <value>
+                <fullName>Completion of Rich Text Learning Objects</fullName>
+                <default>false</default>
+                <label>Completion of Rich Text Learning Objects</label>
+            </value>
+            <value>
+                <fullName>Completion of Task Learning Objects</fullName>
+                <default>false</default>
+                <label>Completion of Task Learning Objects</label>
+            </value>
+            <value>
+                <fullName>Completion of Resource Learning Objects</fullName>
+                <default>false</default>
+                <label>Completion of Resource Learning Objects</label>
+            </value>
+            <value>
+                <fullName>Completion of Media Learning Objects</fullName>
+                <default>false</default>
+                <label>Completion of Media Learning Objects</label>
+            </value>
+            <value>
+                <fullName>Completion Learning Plan</fullName>
+                <default>false</default>
+                <label>Completion Learning Plan</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

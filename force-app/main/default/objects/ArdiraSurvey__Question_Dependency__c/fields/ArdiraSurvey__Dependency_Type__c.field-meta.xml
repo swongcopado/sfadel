@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ArdiraSurvey__Dependency_Type__c</fullName>
+    <deprecated>false</deprecated>
+    <description>Type of action to be used when the question dependency criteria is met.</description>
+    <inlineHelpText>Action to perform when the question dependency criteria is met.
+Branch to: Move survey to the dependent question by skipping all questions in between
+Show: Show the dependent question else hide the dependent question
+Submit Survey: Submit the survey and take user to the thank you page based on the configuration</inlineHelpText>
+    <label>Dependency Type</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Branch to</fullName>
+                <default>false</default>
+                <label>Branch to</label>
+            </value>
+            <value>
+                <fullName>Show</fullName>
+                <default>true</default>
+                <label>Show</label>
+            </value>
+            <value>
+                <fullName>Submit Survey</fullName>
+                <default>false</default>
+                <label>Submit Survey</label>
+            </value>
+            <value>
+                <fullName>Hide</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Hide</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

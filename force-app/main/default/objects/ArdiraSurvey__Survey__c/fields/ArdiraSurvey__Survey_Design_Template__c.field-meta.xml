@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ArdiraSurvey__Survey_Design_Template__c</fullName>
+    <deleteConstraint>SetNull</deleteConstraint>
+    <deprecated>false</deprecated>
+    <description>The design template to inherit branding, question styles, languages and other survey/form/questionnaire properties.</description>
+    <inlineHelpText>The design template for inheriting branding elements, question styles, language settings, and other properties essential for surveys, forms, or questionnaires.</inlineHelpText>
+    <label>Design Template</label>
+    <lookupFilter>
+        <active>true</active>
+        <errorMessage>Selected survey of Design Template type.</errorMessage>
+        <filterItems>
+            <field>ArdiraSurvey__Survey__c.ArdiraSurvey__Survey_Type__c</field>
+            <operation>equals</operation>
+            <value>Design Template</value>
+        </filterItems>
+        <filterItems>
+            <field>ArdiraSurvey__Survey__c.ArdiraSurvey__Status__c</field>
+            <operation>equals</operation>
+            <value>Open</value>
+        </filterItems>
+        <infoMessage>Search for Design Template</infoMessage>
+        <isOptional>false</isOptional>
+    </lookupFilter>
+    <referenceTo>ArdiraSurvey__Survey__c</referenceTo>
+    <relationshipLabel>Ardira Design Template</relationshipLabel>
+    <relationshipName>Ardira_Surveys</relationshipName>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Lookup</type>
+</CustomField>

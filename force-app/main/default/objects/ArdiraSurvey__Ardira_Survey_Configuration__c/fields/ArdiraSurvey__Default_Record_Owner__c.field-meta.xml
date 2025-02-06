@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ArdiraSurvey__Default_Record_Owner__c</fullName>
+    <deprecated>false</deprecated>
+    <description>When a record is created by survey response, assign this user as the record owner</description>
+    <externalId>false</externalId>
+    <inlineHelpText>When a record is created by survey response mapping, assign this user as the record owner</inlineHelpText>
+    <label>Default Record Owner</label>
+    <length>80</length>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

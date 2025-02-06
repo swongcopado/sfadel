@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>sfdo_grants__ApplicationForm__c</fullName>
+    <deprecated>false</deprecated>
+    <description>List of flows that can be selected to launch a new application (Funding Request) from a Funding Program.</description>
+    <inlineHelpText>Select a flow to use when creating a new application (Funding Request) for this Funding Program.</inlineHelpText>
+    <label>Application Form</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>GrantsManagementMultiSectionApplicationFormSample</fullName>
+                <default>false</default>
+                <label>Grants Management: Multi-Section Application Form (Sample)</label>
+            </value>
+            <value>
+                <fullName>GrantsManagementCreateApplication</fullName>
+                <default>false</default>
+                <label>Create Application</label>
+            </value>
+            <value>
+                <fullName>GrantsManagementEnhancedApplicationSample</fullName>
+                <default>false</default>
+                <label>Grants Management: Enhanced Application (Sample)</label>
+            </value>
+            <value>
+                <fullName>GrantsManagementMultiStageApplicationSample</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>GrantsManagementMultiStageApplicationSample</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

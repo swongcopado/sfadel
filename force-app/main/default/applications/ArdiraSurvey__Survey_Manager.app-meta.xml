@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomApplication xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionOverrides>
+        <actionName>View</actionName>
+        <comment>Action override created by Lightning App Builder during activation.</comment>
+        <content>ArdiraSurvey__Survey_Result_Record_Page</content>
+        <formFactor>Large</formFactor>
+        <skipRecordTypeSelect>false</skipRecordTypeSelect>
+        <type>Flexipage</type>
+        <pageOrSobjectType>ArdiraSurvey__Survey_Result__c</pageOrSobjectType>
+    </actionOverrides>
+    <brand>
+        <headerColor>#529C4E</headerColor>
+        <logoVersion>1</logoVersion>
+        <shouldOverrideOrgTheme>true</shouldOverrideOrgTheme>
+    </brand>
+    <description>Survey management application</description>
+    <formFactors>Small</formFactors>
+    <formFactors>Large</formFactors>
+    <isNavAutoTempTabsDisabled>false</isNavAutoTempTabsDisabled>
+    <isNavPersonalizationDisabled>false</isNavPersonalizationDisabled>
+    <isNavTabPersistenceDisabled>false</isNavTabPersistenceDisabled>
+    <isOmniPinnedViewEnabled>false</isOmniPinnedViewEnabled>
+    <label>SurveyVista</label>
+    <navType>Standard</navType>
+    <setupExperience>all</setupExperience>
+    <tabs>ArdiraSurvey__Survey__c</tabs>
+    <tabs>ArdiraSurvey__My_Assigned_Surveys</tabs>
+    <uiType>Lightning</uiType>
+    <utilityBar>ArdiraSurvey__Survey_Manager_UtilityBar</utilityBar>
+</CustomApplication>

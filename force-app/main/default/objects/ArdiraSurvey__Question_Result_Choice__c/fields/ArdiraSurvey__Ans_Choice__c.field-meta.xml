@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ArdiraSurvey__Ans_Choice__c</fullName>
+    <deleteConstraint>SetNull</deleteConstraint>
+    <deprecated>false</deprecated>
+    <description>Selected answer choice for a question response.</description>
+    <inlineHelpText>Selected answer choice for a question response.</inlineHelpText>
+    <label>Answer Choice</label>
+    <referenceTo>ArdiraSurvey__Answer_Choice__c</referenceTo>
+    <relationshipLabel>Question Result Choices</relationshipLabel>
+    <relationshipName>Question_Result_Choices2</relationshipName>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Lookup</type>
+</CustomField>

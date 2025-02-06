@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ArdiraSurvey__Allow_Multiple_Responses_From_Same_Devic__c</fullName>
+    <defaultValue>true</defaultValue>
+    <deprecated>false</deprecated>
+    <description>Allow the survey to be taken more than once from the same device.</description>
+    <inlineHelpText>Enabling this option allows multiple participants to respond to a survey from the same device. With this setting enabled, multiple individuals can use a single device to provide their survey responses.</inlineHelpText>
+    <label>Multiple Responses from a Device</label>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

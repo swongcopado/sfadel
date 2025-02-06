@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>outfunds__Recently_Closed_Funding_Requests</fullName>
+    <columns>NAME</columns>
+    <columns>outfunds__Applying_Contact__c</columns>
+    <columns>outfunds__Applying_Employee__c</columns>
+    <columns>outfunds__Applying_Organization__c</columns>
+    <columns>outfunds__Status__c</columns>
+    <columns>outfunds__Awarded_Amount__c</columns>
+    <columns>outfunds__Awarded_Date__c</columns>
+    <columns>outfunds__Total_Cancelled__c</columns>
+    <columns>outfunds__Total_Disbursed__c</columns>
+    <columns>outfunds__Term_End_Date__c</columns>
+    <columns>outfunds__Close_Date__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>outfunds__Status__c</field>
+        <operation>equals</operation>
+        <value>Closed</value>
+    </filters>
+    <filters>
+        <field>outfunds__Close_Date__c</field>
+        <operation>greaterOrEqual</operation>
+        <value>LAST_N_DAYS:60</value>
+    </filters>
+    <label>Recently Closed Funding Requests</label>
+</ListView>

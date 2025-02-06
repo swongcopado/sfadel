@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ArdiraSurvey__Submit_Confirmation_Message__c</fullName>
+    <deprecated>false</deprecated>
+    <description>To show a confirmation confirmation popup message on the submit button click, enter the confirmation message here. If a message is not specified, confirmation popup will not be displayed.</description>
+    <inlineHelpText>This setting allows you to specify a confirmation message that will be displayed in a popup when participants click on the submit button. The confirmation message serves as a visual acknowledgment and appreciation for participants&apos; completion of the survey. If no message is specified, the confirmation popup will not be displayed.</inlineHelpText>
+    <label>Submit Confirmation Message</label>
+    <length>32768</length>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Html</type>
+    <visibleLines>25</visibleLines>
+</CustomField>

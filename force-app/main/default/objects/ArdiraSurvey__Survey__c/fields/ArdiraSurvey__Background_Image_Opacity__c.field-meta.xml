@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ArdiraSurvey__Background_Image_Opacity__c</fullName>
+    <defaultValue>1</defaultValue>
+    <deprecated>false</deprecated>
+    <description>Set image opacity.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Choose the opacity level for the background image in the survey response interface. Use a scale of 0 to 1, where 0 indicates complete transparency and 1 indicates full opacity. Adjusting the image opacity allows you to control the visibility of the background image, creating different visual effects and blending it seamlessly with other elements of the survey interface.</inlineHelpText>
+    <label>Background Image Opacity</label>
+    <precision>6</precision>
+    <required>false</required>
+    <scale>2</scale>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Number</type>
+    <unique>false</unique>
+</CustomField>

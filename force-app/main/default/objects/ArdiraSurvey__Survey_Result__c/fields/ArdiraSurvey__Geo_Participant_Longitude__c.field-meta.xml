@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ArdiraSurvey__Geo_Participant_Longitude__c</fullName>
+    <deprecated>false</deprecated>
+    <description>To store Participant Geo Longitude.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Information about Participant Geo Longitude.</inlineHelpText>
+    <label>Geo Participant Longitude</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>15</scale>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Number</type>
+    <unique>false</unique>
+</CustomField>

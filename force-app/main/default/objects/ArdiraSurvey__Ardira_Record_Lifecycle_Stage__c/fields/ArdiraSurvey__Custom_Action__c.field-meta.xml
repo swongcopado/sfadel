@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ArdiraSurvey__Custom_Action__c</fullName>
+    <deprecated>false</deprecated>
+    <description>Custom Action information.</description>
+    <inlineHelpText>Specify a custom action to be executed when the record qualifies for the lifecycle stage. This can be a custom process or function.</inlineHelpText>
+    <label>Custom Action</label>
+    <length>32768</length>
+    <trackTrending>false</trackTrending>
+    <type>LongTextArea</type>
+    <visibleLines>3</visibleLines>
+</CustomField>

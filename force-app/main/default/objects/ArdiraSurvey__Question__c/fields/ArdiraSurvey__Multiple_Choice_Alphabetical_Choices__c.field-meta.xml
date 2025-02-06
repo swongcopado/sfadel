@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ArdiraSurvey__Multiple_Choice_Alphabetical_Choices__c</fullName>
+    <defaultValue>false</defaultValue>
+    <deprecated>false</deprecated>
+    <description>Enable to display answer choices in alphabetical order (not in the order entered). Random choices gets priority over this option.</description>
+    <inlineHelpText>Enable to display answer choices in alphabetical order (not in the order entered). Random choices gets priority over this option.</inlineHelpText>
+    <label>Multiple Choice - Alphabetical Choices</label>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

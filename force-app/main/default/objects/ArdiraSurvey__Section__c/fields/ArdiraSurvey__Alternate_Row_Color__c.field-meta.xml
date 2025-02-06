@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ArdiraSurvey__Alternate_Row_Color__c</fullName>
+    <defaultValue>false</defaultValue>
+    <deprecated>false</deprecated>
+    <description>This option will work with grid layout (Repeating section). It will set alternate color of row.</description>
+    <inlineHelpText>This option will work with grid layout (Repeating section). It will set alternate color of row.</inlineHelpText>
+    <label>Alternate Row Color</label>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

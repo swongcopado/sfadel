@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>redwing__vILT_Account__c</fullName>
+    <deleteConstraint>Restrict</deleteConstraint>
+    <deprecated>false</deprecated>
+    <label>vILT Account</label>
+    <referenceTo>redwing__vILT_Account__c</referenceTo>
+    <relationshipLabel>vILT Account Members</relationshipLabel>
+    <relationshipName>vILT_Account_Members</relationshipName>
+    <required>true</required>
+    <trackTrending>false</trackTrending>
+    <type>Lookup</type>
+</CustomField>

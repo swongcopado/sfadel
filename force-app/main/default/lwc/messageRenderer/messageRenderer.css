@@ -1,0 +1,35 @@
+.chat-message {
+    font-size: 0.875em;
+    max-width: 70%;
+    padding: 10px;
+    white-space: pre-wrap;
+    text-align: left;
+    width: fit-content;
+    border-radius: 10px 10px 0;
+}
+
+.chat-list-message {
+    font-size: 0.875em;
+    max-width: 90%;
+    padding: 10px;
+    white-space: pre-wrap;
+    width: fit-content;
+    margin: 6%;
+    border-radius: 10px 10px;
+}
+
+.chasitor {
+    /* Dark variant of BRAND that is accessible with white  */
+    background-color: var(--lwc-brandAccessible, #0070d2);
+
+    /* WHITE */
+    color: var(--lwc-colorTextInverse, white);
+    margin-left: auto;
+    float: right;
+}
+
+.agent {
+    margin-left: 40px;
+    background-color: var(--lwc-colorBackgroundRowActive, #e8e8e8);
+    color: var(--lwc-colorTextDefault, black);
+}

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Tag__c</fullName>
+    <description>Unique reference used to decide where this record&apos;s content should be used</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Unique reference used to decide where this record&apos;s content should be used</inlineHelpText>
+    <label>Tag</label>
+    <length>155</length>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

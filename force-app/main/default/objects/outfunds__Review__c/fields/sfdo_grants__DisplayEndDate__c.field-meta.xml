@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>sfdo_grants__DisplayEndDate__c</fullName>
+    <deprecated>false</deprecated>
+    <description>The review stops being displayed to the reviewer at the end of this day.</description>
+    <inlineHelpText>The review stops being displayed to the reviewer at the end of this day.</inlineHelpText>
+    <label>Display End Date</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Date</type>
+</CustomField>

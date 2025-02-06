@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ArdiraSurvey__Skip_Survey_Metrics_Update__c</fullName>
+    <defaultValue>true</defaultValue>
+    <deprecated>false</deprecated>
+    <description>If checked, metrics about number of surveys sent, completed etc. are not updated as soon as a survey result status changes.</description>
+    <inlineHelpText>If checked, metrics about number of surveys sent, completed etc. are not updated as soon as a survey result status changes. This should be checked if a survey is being sent to large number of recipients.</inlineHelpText>
+    <label>Skip Survey Metrics Update</label>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

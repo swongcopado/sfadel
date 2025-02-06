@@ -1,0 +1,17 @@
+<template>
+    <div class="slds-grid">
+        <div class="slds-size_1-of-1">
+            <template for:each={quickReplies} for:item="quickReply">
+                <span key={quickReply.id} class="slds-m-around_small">
+                    <button
+                        class="btn-quick-reply slds-truncate slds-text-body_regular"
+                        onclick={quickReply.onClick}
+                        title={quickReply.label}
+                    >
+                        {quickReply.label}
+                    </button>
+                </span>
+            </template>
+        </div>
+    </div>
+</template>

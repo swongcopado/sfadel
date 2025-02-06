@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>redwing__PermSet_API_Name__c</fullName>
+    <deprecated>false</deprecated>
+    <description>Permission Set API Name</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Permission Set API Name</inlineHelpText>
+    <label>PermSet API Name</label>
+    <length>100</length>
+    <required>true</required>
+    <trackHistory>true</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

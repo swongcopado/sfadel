@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ConnectedApp xmlns="http://soap.sforce.com/2006/04/metadata">
+    <contactEmail>pkunchai@deloitte.com</contactEmail>
+    <label>Gitlab CICD</label>
+    <oauthConfig>
+        <callbackUrl>http://localhost:1717/OauthRedirect</callbackUrl>
+        <certificate>MIIDnzCCAoegAwIBAgIUCjPxjQfw5duseRk8lBfD0XGzv8kwDQYJKoZIhvcNAQELBQAweDELMAkGA1UEBhMCVEgxDDAKBgNVBAgMA0JLSzEMMAoGA1UEBwwDQktLMQswCQYDVQQKDAJEQzENMAsGA1UECwwERGVtbzELMAkGA1UEAwwCREMxJDAiBgkqhkiG9w0BCQEWFXBrdW5jaGFpQGRlbG9pdHRlLmNvbTAeFw0yNTAxMjExNTAyNDRaFw0yNjAxMjExNTAyNDRaMHgxCzAJBgNVBAYTAlRIMQwwCgYDVQQIDANCS0sxDDAKBgNVBAcMA0JLSzELMAkGA1UECgwCREMxDTALBgNVBAsMBERlbW8xCzAJBgNVBAMMAkRDMSQwIgYJKoZIhvcNAQkBFhVwa3VuY2hhaUBkZWxvaXR0ZS5jb20wggEiMA0GCSqGSIb3DQEBAQUAA4IBDwAwggEKAoIBAQDpbd/xYqMowU/bPFJZ4aNWHKDqclha62nqae9M1kesAtpJPp0Zd/Kr1XzGvSV0SLR0Sf/3X/uFC7fPZl3WAllrOC1I0yai1k8Do5bQh9nb2Okrwfgw/PAtWbJdCpXyb3qy2HuG7O1Qx0qiA1r5BkugmdxUguobcc6MT08yfnlgKrOz7FvmYHcX6OPe5F8Syr9qVkIeDprdIQznctoDjaJUEHFc3CRRcDh4h5+bApiUHuUqxPmMvlNLhF3wGpAzYCY04l9QTxJaDJ75BAuFivLc+wOTYHOhmN9XHjjGunuRP0KJ9wDsEYHOIXTAHwrnZbrTZ/mVyIEmoZaSuWq/oWelAgMBAAGjITAfMB0GA1UdDgQWBBSdDr0ldJ4GqaUN2Bwhyu3a4UZlozANBgkqhkiG9w0BAQsFAAOCAQEAJwhWrTHJkRno5qwi9CkX7uOJHFDWLggszmWLtsvrLnrignLx4o7fOE1/Y8uhJdnZQ/jjPOsl6yG5fnSvYZbvS81lBvIiLZ6QOMkTNI6FSduNoRIeLY+pl4UJg6+HPEAW+QbiUGUwJu+Swy3v+RTZMoVajuJMKy6QP4D6yIB+KRBI4EFB3rrnkwZrMdHtyaCaoRThYMs67zBj5FCW66ZbcMp8Rcte5fxwn8+j8KVgwRe3QuMgVe/Jb6ySXWqIIz4twiTY986s1pPVGnLT9ePCzXNdNfJTi9dn2crAfiPun0VE//ZRKwR7MyZEGBiDAqobqtXS79xCEev6KCFp9WGmSg==</certificate>
+        <consumerKey>3MVG9zNEjUHDE8.XnVur1l6V2Mamb5W0MN6SEEttEHnkOXUsWS_GaSoXIwRrW4iElLw2VpR6qVljGXO3W1rFu</consumerKey>
+        <isAdminApproved>true</isAdminApproved>
+        <isClientCredentialEnabled>false</isClientCredentialEnabled>
+        <isCodeCredentialEnabled>false</isCodeCredentialEnabled>
+        <isCodeCredentialPostOnly>false</isCodeCredentialPostOnly>
+        <isConsumerSecretOptional>false</isConsumerSecretOptional>
+        <isIntrospectAllTokens>false</isIntrospectAllTokens>
+        <isNamedUserJwtEnabled>false</isNamedUserJwtEnabled>
+        <isPkceRequired>false</isPkceRequired>
+        <isRefreshTokenRotationEnabled>false</isRefreshTokenRotationEnabled>
+        <isSecretRequiredForRefreshToken>false</isSecretRequiredForRefreshToken>
+        <isSecretRequiredForTokenExchange>false</isSecretRequiredForTokenExchange>
+        <isTokenExchangeEnabled>false</isTokenExchangeEnabled>
+        <scopes>Basic</scopes>
+        <scopes>Api</scopes>
+        <scopes>Web</scopes>
+        <scopes>RefreshToken</scopes>
+        <scopes>OpenID</scopes>
+    </oauthConfig>
+    <oauthPolicy>
+        <ipRelaxation>ENFORCE</ipRelaxation>
+        <isTokenExchangeFlowEnabled>false</isTokenExchangeFlowEnabled>
+        <refreshTokenPolicy>zero</refreshTokenPolicy>
+    </oauthPolicy>
+    <profileName>System Administrator</profileName>
+</ConnectedApp>

@@ -1,0 +1,1028 @@
+<!--
+    Name:               pdfForm_SF52
+    Created:            12/2/2020 by Mitch Lynch for Salesforce
+    Last Modified:      12/18/2020 by Mitch Lynch
+    
+    Comments:           Displays a PDF version of the OPM Standard Form 50 (SF-52)
+                        that is auto-filled from related records in Salesforce.
+
+                        This page must be used in conjunction with a record in the
+                        Personnel_Action__c object.  Requires data from ancillary objects:
+                        -- Case (required)
+						-- Personnel_Action__c (required)
+                        -- Contact (required)
+                        -- Nature_of_Action__c (required)
+                        -- Position__c (optional)
+                        -- Occupational_Series__c (optional)
+                        -- Employee_Life_Insurance__c (optional)
+                        -- Employee_Retirement_Plan__c (optional)
+                        -- Bargaining_Unit__c (optional)
+-->
+
+<apex:page renderAs="PDF" standardController="Personnel_Action__c" standardStylesheets="false" applyHtmlTag="false" showHeader="false">
+
+    <html>
+        <head>
+            <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+            <title>Standard Form 52</title>
+            <style type="text/css">
+                @page {
+                    margin: 2em 2em 1.5em 2em;
+                }
+                
+                body {
+                    font-family:Arial,sans-serif;
+                    font-style:normal;
+                    font-weight:normal;
+                    text-color:black;
+                    font-size:16px;
+                    text-align:left;
+                    text-decoration:none;
+                    margin:0;
+                    padding:0;
+                    text-indent:0;
+                }
+                
+                * { margin:0; padding:0; text-indent:0; }
+                
+                h1 { font-weight:bold; font-size:16px; }
+                h2 { font-size:12px; }
+                
+                .p, p { font-size: 9pt; }
+                
+                .p1 { font-size:9px; }
+                .p2 { font-size:8px;margin-left:1px; }
+                .p2b { font-size:8px;margin-left:1px;font-weight:bold; }
+                .p3 { font-size:9px;margin-left:1px; }
+                .p3b { font-size:9px;margin-left:1px;font-weight:bold; }
+                .p4 { font-size:7px;margin-left:1px; }
+                .p5 { font-size:10px;margin-left:1px; }
+                .p5b { font-size:11px;margin-left:1px;font-weight:bold; }
+                .p5j { font-size:11px;margin-left:1px;text-align:justify;text-justify:inter-word;}
+                
+                
+                .r1 { font-family:"Lucida Console",Monaco,monospace;font-size:10px;font-weight:bold;margin-left:1px; }
+                .r2 { font-family:"Lucida Console",Monaco,monospace;font-size:12px;font-weight:bold;margin-left:1px; }
+                
+                table, tbody {vertical-align: top; overflow: visible; }
+            </style>
+        </head>
+        
+        
+        <body>
+            
+            <table width="100%" border="0" cellpadding="0" cellspacing="0" style="padding-bottom:5px;">
+                <tr>
+                    <td width="25%" align="left" valign="bottom">
+                        <p class="p1">
+                            Standard Form 52<br/>
+                            Rev. 7/91<br/>
+                            U.S. Office of Personnel Management<br/>
+                            FPM Supp. 296-33, Subch. 3
+                        </p>
+                    </td>
+                    <td width="50%" align="center" valign="bottom">
+                        <h1>REQUEST FOR PERSONNEL ACTION</h1>
+                    </td>
+                    <td width="25%"></td>
+                </tr>
+            </table>
+            
+            <table width="100%" border="0" cellpadding="0" cellspacing="0">
+                <tr>
+                    <td colspan="2" style="background-color:#DADADA;padding:2px 0 4px 2px;"><h2>PART A - Requesting Office <em>(Also complete Part B, Items 1, 7-22, 32, 33, 36, and 39.)</em></h2></td>
+                </tr>
+                <tr>
+                    <td valign="top" style="height:30px;border-bottom:1px solid black;border-right:1px solid black;">
+                        <p class="p2">1. Actions Requested</p>
+                        <p class="r1">
+                            {!Personnel_Action__c.SF52_Case__r.Subject}
+                        </p>
+                    </td>
+                    <td width="15%" valign="top" style="border-bottom:1px solid black;">
+                        <p class="p2">2. Request Number</p>
+                        <p class="r1">
+                            {!Personnel_Action__c.SF52_Case__r.CaseNumber}
+                        </p>
+                    </td>
+                </tr>
+                <tr>
+                    <td valign="top" style="height:30px;border-bottom:1px solid black;border-right:1px solid black;">
+                        <p class="p2">3. For Additional Information Call <em>(Name and Telephone Number)</em></p>
+                        <p class="r1">
+                            {!Personnel_Action__c.SF52_Case__r.Requester__r.FirstName} {!Personnel_Action__c.SF52_Case__r.Requester__r.LastName} -- {!Personnel_Action__c.SF52_Case__r.Requester__r.Phone} -- {!Personnel_Action__c.SF52_Case__r.Requester__r.Email}
+                        </p>
+                    </td>
+                    <td width="15%" valign="top" style="border-bottom:1px solid black;">
+                        <p class="p2">4. Proposed Effective Date</p>
+                        <p class="r1">
+                            <apex:outputText value="{0,date,MM'/'dd'/'yyyy}">
+                                <apex:param value="{!Personnel_Action__c.Effective_Date_Proposed__c}" /> 
+                            </apex:outputText>
+                        </p>
+                    </td>
+                </tr>
+            </table>
+            
+            <table width="100%" border="0" cellpadding="0" cellspacing="0">
+                <tr>
+                    <td width="50%" valign="top" style="height:50px;border-right:1px solid black;">
+                        <p class="p2">5. Action Requested By <em>(Typed Name, Title, Signature, and Request Date)</em></p>
+                        <p class="r1">
+                            {!Personnel_Action__c.SF52_Case__r.Requester__r.FirstName} {!Personnel_Action__c.SF52_Case__r.Requester__r.LastName}<br/>
+                            {!Personnel_Action__c.SF52_Case__r.Requester__r.Title}<br/>
+                            <apex:outputText value="{0,date,MM'/'dd'/'yyyy}">
+                                <apex:param value="{!Personnel_Action__c.SF52_Case__r.CreatedDate}" /> 
+                            </apex:outputText>
+                        </p>
+                    </td>
+                    <td width="50%" valign="top">
+                        <p class="p2">6. Action Authorized By <em>(Typed Name, Title, Signature, and Concurrence Date)</em></p>
+                        <p class="r1">
+                            <apex:outputText value="{0,date,MM'/'dd'/'yyyy}">
+                                <apex:param value="{!Personnel_Action__c.Effective_Date__c}" /> 
+                            </apex:outputText>
+                        </p>
+                    </td>
+                </tr>
+            </table>
+            
+            <table width="100%" border="0" cellpadding="0" cellspacing="0">
+                <tr>
+                    <td colspan="4" style="background-color:#DADADA;padding:2px 0 4px 2px;"><h2>PART B - For Preparation of SF 50 <em>(Use only codes in FPM Supplement 292-1. Show all dates in month-day-year order.)</em></h2></td>
+                </tr>
+                <tr>
+                    <td width="50%" valign="top" style="height:30px;border-right:1px solid black;">
+                        <p class="p2">1. Name <i>(Last, First, Middle)</i></p>
+                        <p class="r1">
+                            {!Personnel_Action__c.Employee__r.LastName}, {!Personnel_Action__c.Employee__r.FirstName}
+                        </p>
+                    </td>
+                    <td valign="top" style="border-right:1px solid black;">
+                        <p class="p2">2. Social Security Number</p>
+                        <p class="r1">
+                            {!Personnel_Action__c.Employee__r.SSN__c}
+                        </p>
+                    </td>
+                    <td valign="top" style="border-right:1px solid black;">
+                        <p class="p2">3. Date of Birth</p>
+                        <p class="r1">
+                            <apex:outputText value="{0,date,MM'/'dd'/'yyyy}">
+                                <apex:param value="{!Personnel_Action__c.Employee__r.Birthdate}" /> 
+                            </apex:outputText>
+                        </p>
+                    </td>
+                    <td width="15%" valign="top" style="border-left:2px solid black;border-right:none;border-bottom:2px solid black;">
+                        <p class="p2">4. Effective Date</p>
+                        <p class="r1">
+                            <apex:outputText value="{0,date,MM'/'dd'/'yyyy}">
+                                <apex:param value="{!Personnel_Action__c.Effective_Date__c}" /> 
+                            </apex:outputText>
+                        </p>
+                    </td>
+                </tr>
+            </table>
+            
+            
+            <table width="100%" border="0" cellpadding="0" cellspacing="0">
+                <tr>
+                    <td width="50%" style="background-color:#DADADA;padding:2px 0 4px 2px;"><h2>FIRST ACTION</h2></td>
+                    <td width="50%" style="background-color:#DADADA;padding:2px 0 4px 2px;"><h2>SECOND ACTION</h2></td>
+                </tr>
+                <tr>
+                    <td width="50%" valign="top">
+                        <table width="100%" border="0" cellpadding="0" cellspacing="0">
+                            <tr>
+                                <td width="11%" valign="top" style="height:30px;border-right:1px solid black;border-bottom:1px solid black;">
+                                    <p class="p2">5-A. Code</p>
+                                    <p class="r1"><apex:outputField value="{!Personnel_Action__c.Nature_of_Action__r.NOAC_Code__c}" rendered="{!NOT(ISBLANK(Personnel_Action__c.Nature_of_Action__r.NOAC_Code__c))}"/></p>
+                                </td>
+                                <td width="89%" valign="top" style="border-right:1px solid black;border-bottom:1px solid black;">
+                                    <p class="p2">5-B. Nature of Action</p>
+                                    <p class="r1"><apex:outputField value="{!Personnel_Action__c.Nature_of_Action__r.Explanation__c}" rendered="{!NOT(ISBLANK(Personnel_Action__c.Nature_of_Action__r.Explanation__c))}"/></p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td width="11%" valign="top" style="height:30px;border-right:1px solid black;border-bottom:1px solid black;">
+                                    <p class="p2">5-C. Code</p>
+                                </td>
+                                <td width="89%" valign="top" style="border-right:1px solid black;border-bottom:1px solid black;">
+                                    <p class="p2">5-D. Legal Authority</p>
+                                    <p class="r1"><apex:outputField value="{!Personnel_Action__c.Legal_Authority__c}" rendered="{!NOT(ISBLANK(Personnel_Action__c.Legal_Authority__c))}"/></p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td width="11%" valign="top" style="height:30px;border-right:1px solid black;border-bottom:1px solid black;"><p class="p2">5-E. Code</p></td>
+                                <td width="89%" valign="top" style="border-right:1px solid black;border-bottom:1px solid black;"><p class="p2">5-F. Legal Authority</p></td>
+                            </tr>
+                        </table>
+                    </td>
+                    <td width="50%" valign="top">
+                        <table width="100%" border="0" cellpadding="0" cellspacing="0">
+                            <tr>
+                                <td width="11%" valign="top" style="height:30px;border-right:1px solid black;border-bottom:1px solid black;"><p class="p2">6-A. Code</p></td>
+                                <td width="89%" valign="top" style="border-bottom:1px solid black;"><p class="p2">6-B. Nature of Action</p></td>
+                            </tr>
+                            <tr>
+                                <td width="11%" valign="top" style="height:30px;border-right:1px solid black;border-bottom:1px solid black;"><p class="p2">6-C. Code</p></td>
+                                <td width="89%" valign="top" style="border-bottom:1px solid black;"><p class="p2">6-D. Legal Authority</p></td>
+                            </tr>
+                            <tr>
+                                <td width="11%" valign="top" style="height:30px;border-right:1px solid black;border-bottom:1px solid black;"><p class="p2">6-E. Code</p></td>
+                                <td width="89%" valign="top" style="border-bottom:1px solid black;"><p class="p2">6-F. Legal Authority</p></td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+            </table>
+            
+            <table width="100%" border="0" cellpadding="0" cellspacing="0">
+                <tr>
+                    <td width="50%" valign="top" style="height:65px;border-top:2px solid black;border-right:1px solid black;">
+                        <p class="p3b">7. FROM: Position Title and Number</p>
+                        <p class="r1"><apex:outputField value="{!Personnel_Action__c.Position_Current__r.Name}" rendered="{!NOT(ISBLANK(Personnel_Action__c.Position_Current__c))}"/></p>
+                    </td>
+                    <td width="50%" valign="top" style="border-top:2px solid black;border-left:1px solid black;">
+                        <p class="p3b">15. TO: Position Title and Number</p>
+                        <p class="r1"><apex:outputField value="{!Personnel_Action__c.Position_New__r.Name}" rendered="{!NOT(ISBLANK(Personnel_Action__c.Position_New__c))}"/></p>
+                    </td>
+                </tr>
+                <tr>
+                    <td width="50%" style="border-right:1px solid black;">
+                        <table width="100%" border="0" cellpadding="0" cellspacing="0">
+                            <tr>
+                                <td valign="top" style="height:30px;border-right:1px solid black;border-top:1px solid black;">
+                                    <p class="p2">8. Pay Plan</p>
+                                    <p class="r1"><apex:outputText value="{!Personnel_Action__c.Pay_Plan_Current__c}" rendered="{!NOT(ISBLANK(Personnel_Action__c.Pay_Plan_Current__c))}"/></p>
+                                </td>
+                                <td valign="top" style="border-right:1px solid black;border-top:1px solid black;">
+                                    <p class="p2">9. Occ. Code</p>
+                                    <p class="r1"><apex:outputText value="{!Personnel_Action__c.Position_Current__r.Occupation__r.Occupational_Code__c}" rendered="{!NOT(ISBLANK(Personnel_Action__c.Position_Current__c))}"/></p>
+                                </td>
+                                <td valign="top" style="border-right:1px solid black;border-top:1px solid black;">
+                                    <p class="p2">10. Grade or Level</p>
+                                    <p class="r1"><apex:outputText value="{!Personnel_Action__c.Grade_or_Level_Current__c}" rendered="{!NOT(ISBLANK(Personnel_Action__c.Grade_or_Level_Current__c))}"/></p>
+                                </td>
+                                <td valign="top" style="border-right:1px solid black;border-top:1px solid black;">
+                                    <p class="p2">11. Step or Rate</p>
+                                    <p class="r1"><apex:outputText value="{!Personnel_Action__c.Step_or_Rate_Current__c}" rendered="{!NOT(ISBLANK(Personnel_Action__c.Step_or_Rate_Current__c))}"/></p>
+                                </td>
+                                <td valign="top" style="border-right:1px solid black;border-top:1px solid black;">
+                                    <p class="p2">12. Total Salary</p>
+                                    <p class="r1">
+                                        <apex:outputText value="{0, Number, Currency}" rendered="{!NOT(Personnel_Action__c.Total_Salary_Current__c == 0)}">
+                                            <apex:param value="{!Personnel_Action__c.Total_Salary_Current__c}"/> 
+                                        </apex:outputText>
+                                    </p>
+                                </td>
+                                <td valign="top" style="border-top:1px solid black;">
+                                    <p class="p2">13. Pay Basis</p>
+                                    <p class="r1"><apex:outputText value="{!Personnel_Action__c.Pay_Basis_Current__c}" rendered="{!NOT(ISBLANK(Personnel_Action__c.Pay_Basis_Current__c))}"/></p>
+                                </td>
+                            </tr>
+                        </table>
+                    </td>
+                    <td width="50%" style="border-left:1px solid black;">
+                        <table width="100%" border="0" cellpadding="0" cellspacing="0">
+                            <tr>
+                                <td valign="top" style="height:30px;border-right:1px solid black;border-top:1px solid black;">
+                                    <p class="p2">16. Pay Plan</p>
+                                    <p class="r1"><apex:outputText value="{!Personnel_Action__c.Pay_Plan_New__c}" rendered="{!NOT(ISBLANK(Personnel_Action__c.Pay_Plan_New__c))}"/></p>
+                                </td>
+                                <td valign="top" style="border-right:1px solid black;border-top:1px solid black;">
+                                    <p class="p2">17. Occ. Code</p>
+                                    <p class="r1"><apex:outputText value="{!Personnel_Action__c.Position_New__r.Occupation__r.Occupational_Code__c}" rendered="{!NOT(ISBLANK(Personnel_Action__c.Position_New__c))}"/></p>
+                                </td>
+                                <td valign="top" style="border-right:1px solid black;border-top:1px solid black;">
+                                    <p class="p2">18. Grade or Level</p>
+                                    <p class="r1"><apex:outputText value="{!Personnel_Action__c.Grade_or_Level_New__c}" rendered="{!NOT(ISBLANK(Personnel_Action__c.Grade_or_Level_New__c))}"/></p>
+                                </td>
+                                <td valign="top" style="border-right:1px solid black;border-top:1px solid black;">
+                                    <p class="p2">19. Step or Rate</p>
+                                    <p class="r1"><apex:outputText value="{!Personnel_Action__c.Step_or_Rate_New__c}" rendered="{!NOT(ISBLANK(Personnel_Action__c.Step_or_Rate_New__c))}"/></p>
+                                </td>
+                                <td valign="top" style="border-right:1px solid black;border-top:1px solid black;">
+                                    <p class="p2">20. Total Salary/Award</p>
+                                    <p class="r1">
+                                        <apex:outputText value="{0, Number, Currency}" rendered="{!NOT(Personnel_Action__c.Total_Salary_New__c == 0)}">
+                                            <apex:param value="{!Personnel_Action__c.Total_Salary_New__c}"/> 
+                                        </apex:outputText>
+                                    </p>
+                                </td>
+                                <td valign="top" style="border-top:1px solid black;">
+                                    <p class="p2">21. Pay Basis</p>
+                                    <p class="r1"><apex:outputText value="{!Personnel_Action__c.Pay_Basis_New__c}" rendered="{!NOT(ISBLANK(Personnel_Action__c.Pay_Basis_New__c))}"/></p>
+                                </td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+                <tr>
+                    <td width="50%" style="border-right:1px solid black;">
+                        <table width="100%" border="0" cellpadding="0" cellspacing="0">
+                            <tr>
+                                <td valign="top" style="height:30px;border-right:1px solid black;border-top:1px solid black;">
+                                    <p class="p2">12A. Basic Pay</p>
+                                    <p class="r1">
+                                        <apex:outputText value="{0, Number, Currency}" rendered="{!NOT(ISBLANK(Personnel_Action__c.Basic_Pay_Current__c))}">
+                                            <apex:param value="{!Personnel_Action__c.Basic_Pay_Current__c}"/> 
+                                        </apex:outputText>
+                                    </p>
+                                </td>
+                                <td valign="top" style="border-right:1px solid black;border-top:1px solid black;">
+                                    <p class="p2">12B. Locality Adj.</p>
+                                    <p class="r1">
+                                        <apex:outputText value="{0, Number, Currency}" rendered="{!NOT(ISBLANK(Personnel_Action__c.Locality_Adjustment_Current__c))}">
+                                            <apex:param value="{!Personnel_Action__c.Locality_Adjustment_Current__c}"/> 
+                                        </apex:outputText>
+                                    </p>
+                                </td>
+                                <td valign="top" style="border-right:1px solid black;border-top:1px solid black;">
+                                    <p class="p2">12C. Adj. Basic Pay</p>
+                                    <p class="r1">
+                                        <apex:outputText value="{0, Number, Currency}" rendered="{!NOT(Personnel_Action__c.Adjusted_Basic_Pay_Current__c == 0)}">
+                                            <apex:param value="{!Personnel_Action__c.Adjusted_Basic_Pay_Current__c}"/> 
+                                        </apex:outputText>
+                                    </p>
+                                </td>
+                                <td valign="top" style="border-top:1px solid black;">
+                                    <p class="p2">12D. Other Pay</p>
+                                    <p class="r1">
+                                        <apex:outputText value="{0, Number, Currency}" rendered="{!NOT(ISBLANK(Personnel_Action__c.Other_Pay_Current__c))}">
+                                            <apex:param value="{!Personnel_Action__c.Other_Pay_Current__c}"/> 
+                                        </apex:outputText>
+                                    </p>
+                                </td>
+                            </tr>
+                        </table>
+                    </td>
+                    <td width="50%" style="border-left:1px solid black;">
+                        <table width="100%" border="0" cellpadding="0" cellspacing="0">
+                            <tr>
+                                <td valign="top" style="height:30px;border-right:1px solid black;border-top:1px solid black;">
+                                    <p class="p2">20A. Basic Pay</p>
+                                    <p class="r1">
+                                        <apex:outputText value="{0, Number, Currency}" rendered="{!NOT(ISBLANK(Personnel_Action__c.Basic_Pay_New__c))}">
+                                            <apex:param value="{!Personnel_Action__c.Basic_Pay_New__c}"/> 
+                                        </apex:outputText>
+                                    </p>
+                                </td>
+                                <td valign="top" style="border-right:1px solid black;border-top:1px solid black;">
+                                    <p class="p2">20B. Locality Adj.</p>
+                                    <p class="r1">
+                                        <apex:outputText value="{0, Number, Currency}" rendered="{!NOT(ISBLANK(Personnel_Action__c.Locality_Adjustment_New__c))}">
+                                            <apex:param value="{!Personnel_Action__c.Locality_Adjustment_New__c}"/> 
+                                        </apex:outputText>
+                                    </p>
+                                </td>
+                                <td valign="top" style="border-right:1px solid black;border-top:1px solid black;">
+                                    <p class="p2">20C. Adj. Basic Pay</p>
+                                    <p class="r1">
+                                        <apex:outputText value="{0, Number, Currency}" rendered="{!NOT(Personnel_Action__c.Adjusted_Basic_Pay_New__c == 0)}">
+                                            <apex:param value="{!Personnel_Action__c.Adjusted_Basic_Pay_New__c}"/> 
+                                        </apex:outputText>
+                                    </p>
+                                </td>
+                                <td valign="top" style="border-top:1px solid black;">
+                                    <p class="p2">20D. Other Pay</p>
+                                    <p class="r1">
+                                        <apex:outputText value="{0, Number, Currency}" rendered="{!NOT(ISBLANK(Personnel_Action__c.Other_Pay_New__c))}">
+                                            <apex:param value="{!Personnel_Action__c.Other_Pay_New__c}"/> 
+                                        </apex:outputText>
+                                    </p>
+                                </td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+                <tr>
+                    <td width="50%" valign="top" style="height:100px;border-top:1px solid black;border-right:1px solid black;">
+                        <p class="p2">14. Name and Location of Position's Organization</p>
+                        <p class="r1"><apex:outputText value="{!Personnel_Action__c.Position_Current__r.Position_Organization__r.Name}" rendered="{!NOT(ISBLANK(Personnel_Action__c.Position_Current__c))}"/></p>
+                        <p class="r1">
+                            <apex:outputText value="{!Personnel_Action__c.Position_Current__r.Position_Organization__r.BillingStreet}" rendered="{!NOT(ISBLANK(Personnel_Action__c.Position_Current__c))}"/><br/>
+                            <apex:outputText value="{!Personnel_Action__c.Position_Current__r.Position_Organization__r.BillingCity}, {!Personnel_Action__c.Position_Current__r.Position_Organization__r.BillingState} {!Personnel_Action__c.Position_Current__r.Position_Organization__r.BillingPostalCode}" rendered="{!NOT(ISBLANK(Personnel_Action__c.Position_Current__c))}"/><br/>
+                            <apex:outputText value="{!Personnel_Action__c.Position_Current__r.Position_Organization__r.BillingCountry}" rendered="{!NOT(ISBLANK(Personnel_Action__c.Position_Current__c))}"/>
+                        </p>
+                    </td>
+                    <td width="50%" valign="top" style="border-top:1px solid black;border-left:1px solid black;">
+                        <p class="p2">22. Name and Location of Position's Organization</p>
+                        <p class="r1"><apex:outputText value="{!Personnel_Action__c.Position_New__r.Position_Organization__r.Name}" rendered="{!NOT(ISBLANK(Personnel_Action__c.Position_New__c))}"/></p>
+                        <p class="r1">
+                            <apex:outputText value="{!Personnel_Action__c.Position_New__r.Position_Organization__r.BillingStreet}" rendered="{!NOT(ISBLANK(Personnel_Action__c.Position_New__c))}"/><br/>
+                            <apex:outputText value="{!Personnel_Action__c.Position_New__r.Position_Organization__r.BillingCity}, {!Personnel_Action__c.Position_New__r.Position_Organization__r.BillingState} {!Personnel_Action__c.Position_New__r.Position_Organization__r.BillingPostalCode}" rendered="{!NOT(ISBLANK(Personnel_Action__c.Position_New__c))}"/><br/>
+                            <apex:outputText value="{!Personnel_Action__c.Position_New__r.Position_Organization__r.BillingCountry}" rendered="{!NOT(ISBLANK(Personnel_Action__c.Position_New__c))}"/>
+                        </p>
+                    </td>
+                </tr>
+            </table>
+            
+            <table width="100%" border="0" cellpadding="0" cellspacing="0">
+                <tr>
+                    <td colspan="5" style="background-color:#DADADA;padding:2px 0 4px 2px;"><h2>EMPLOYEE DATA</h2></td>
+                </tr>
+                <tr>
+                    <td width="50%" valign="top" colspan="2" style="height:15px;border-right:1px solid black;"><p class="p2">23. Veterans Preference</p></td>
+                    <td width="20%" valign="top" style="border-right:1px solid black;"><p class="p2">24. Tenure</p></td>
+                    <td width="17%" valign="top" style="border-right:1px solid black;"><p class="p2">25. Agency Use</p></td>
+                    <td width="13%" valign="top"><p class="p2">26. Veterans Pref for RIF</p></td>
+                </tr>
+                <tr>
+                    <td valign="bottom" colspan="2" style="border-right:1px solid black;border-bottom:1px solid black;">
+                        <table width="100%" border="0" cellpadding="0" cellspacing="0">
+                            <tr>
+                                <td style="width:35px;height:15px;border-right:1px solid black;border-top:1px solid black;">
+                                    <p class="r1">
+                                        <apex:outputText value="{!LEFT(Personnel_Action__c.Veterans_Preference__c,1)}" rendered="{!NOT(ISBLANK(Personnel_Action__c.Veterans_Preference__c))}"/>
+                                    </p>
+                                </td>
+                                <td>
+                                    <p class="p4">
+                                        1 - None<br/>
+                                        2 - 5-Point
+                                    </p>
+                                </td>
+                                <td>
+                                    <p class="p4">
+                                        3 - 10-Point/Disability<br/>
+                                        4 - 10-Point/Compensable
+                                    </p>
+                                </td>
+                                <td>
+                                    <p class="p4">
+                                        5 - 10-Point/Other<br/>
+                                        6 - 10-Point/Compensable/30%
+                                    </p>
+                                </td>
+                            </tr>
+                        </table>
+                    </td>
+                    <td valign="bottom" style="border-right:1px solid black;border-bottom:1px solid black;">
+                        <table width="100%" border="0" cellpadding="0" cellspacing="0">
+                            <tr>
+                                <td style="width:35px;height:15px;border-right:1px solid black;border-top:1px solid black;">
+                                    <p class="r1">
+                                        <apex:outputText value="{!LEFT(Personnel_Action__c.Tenure__c,1)}" rendered="{!NOT(ISBLANK(Personnel_Action__c.Tenure__c))}"/>
+                                    </p>
+                                </td>
+                                <td>
+                                    <p class="p4">
+                                        0 - None<br/>
+                                        1 - Permanent
+                                    </p>
+                                </td>
+                                <td>
+                                    <p class="p4">
+                                        2 - Conditional<br/>
+                                        3 - Indefinite
+                                    </p>
+                                </td>
+                            </tr>
+                        </table>
+                    </td>
+                    <td valign="bottom" style="border-right:1px solid black;border-bottom:1px solid black;">
+                        <table width="100%" border="0" cellpadding="0" cellspacing="0">
+                            <tr>
+                                <td style="width:35px;height:15px;border-right:1px solid black;border-top:1px solid black;"></td>
+                                <td></td>
+                            </tr>
+                        </table>
+                    </td>
+                    <td valign="bottom" style="border-bottom:1px solid black;">
+                        <table width="100%" border="0" cellpadding="0" cellspacing="0">
+                            <tr>
+                                <td style="width:15px;height:15px;border-right:1px solid black;border-top:1px solid black;">
+                                    <p class="r1">
+                                        <apex:outputText value="X" rendered="{!Personnel_Action__c.Veterans_Preference_for_RIF__c == true}"/>
+                                    </p>
+                                </td>
+                                <td><p class="p2">YES</p></td>
+                                <td style="width:15px;height:15px;border-left:1px solid black;border-right:1px solid black;border-top:1px solid black;">
+                                    <p class="r1">
+                                        <apex:outputText value="X" rendered="{!NOT(Personnel_Action__c.Veterans_Preference_for_RIF__c == true)}"/>
+                                    </p>
+                                </td>
+                                <td><p class="p2">NO</p></td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+                
+                
+                
+                <tr>
+                    <td width="50%" valign="top" colspan="2" style="height:15px;border-right:1px solid black;"><p class="p2">27. FEGLI</p></td>
+                    <td valign="top" colspan="2" style="border-right:1px solid black;"><p class="p2">28. Annuitant Indicator</p></td>
+                    <td valign="top"><p class="p2">29. Pay Rate Determinant</p></td>
+                </tr>
+                <tr>
+                    <td valign="bottom" colspan="2" style="border-right:1px solid black;border-bottom:1px solid black;">
+                        <table width="100%" border="0" cellpadding="0" cellspacing="0">
+                            <tr>
+                                <td style="width:35px;height:15px;border-right:1px solid black;border-top:1px solid black;">
+                                    <p class="r1">
+                                        <apex:outputText value="{!Personnel_Action__c.Employee_Life_Insurance_Plan__r.Code__c}" rendered="{!NOT(ISBLANK(Personnel_Action__c.Employee_Life_Insurance_Plan__c))}"/>
+                                    </p>
+                                </td>
+                                <td>
+                                    <p class="r1">
+                                        <apex:outputText value="{!Personnel_Action__c.Employee_Life_Insurance_Plan__r.Name}" rendered="{!NOT(ISBLANK(Personnel_Action__c.Employee_Life_Insurance_Plan__c))}"/>
+                                    </p>
+                                </td>
+                            </tr>
+                        </table>
+                    </td>
+                    <td valign="bottom" colspan="2" style="border-right:1px solid black;border-bottom:1px solid black;">
+                        <table width="100%" border="0" cellpadding="0" cellspacing="0">
+                            <tr>
+                                <td style="width:35px;height:15px;border-right:1px solid black;border-top:1px solid black;">
+                                    <p class="r1">
+                                        <apex:outputText value="{!LEFT(Personnel_Action__c.Annuitant_Indicator__c,1)}" rendered="{!NOT(ISBLANK(Personnel_Action__c.Annuitant_Indicator__c))}"/>
+                                    </p>
+                                </td>
+                                <td>
+                                    <p class="r1">
+                                        <apex:outputText value="{!Personnel_Action__c.Annuitant_Indicator__c}" rendered="{!NOT(ISBLANK(Personnel_Action__c.Annuitant_Indicator__c))}"/>
+                                    </p>
+                                </td>
+                            </tr>
+                        </table>
+                    </td>
+                    <td valign="bottom" style="border-bottom:1px solid black;">
+                        <table width="100%" border="0" cellpadding="0" cellspacing="0">
+                            <tr>
+                                <td style="width:35px;height:15px;border-right:1px solid black;border-top:1px solid black;">
+                                    <p class="r1">
+                                        <apex:outputText value="{!LEFT(Personnel_Action__c.Pay_Rate_Determinant__c,1)}" rendered="{!NOT(ISBLANK(Personnel_Action__c.Pay_Rate_Determinant__c))}"/>
+                                    </p>
+                                </td>
+                                <td></td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+                
+                
+                
+                <tr>
+                    <td width="30%" valign="top" style="height:15px;border-right:1px solid black;"><p class="p2">30. Retirement Plan</p></td>
+                    <td width="20%" valign="top" style="border-right:1px solid black;"><p class="p2">31. Service Comp. Date (Leave)</p></td>
+                    <td valign="top" colspan="2" style="border-right:1px solid black;"><p class="p2">32. Work Schedule</p></td>
+                    <td valign="top"><p class="p2">33. Part-Time Hours Per</p></td>
+                </tr>
+                <tr>
+                    <td valign="bottom" style="border-right:1px solid black;">
+                        <table width="100%" border="0" cellpadding="0" cellspacing="0">
+                            <tr>
+                                <td style="width:35px;height:15px;border-right:1px solid black;border-top:1px solid black;">
+                                    <p class="r1">
+                                        <apex:outputText value="{!Personnel_Action__c.Employee_Retirement_Plan__r.Code__c}" rendered="{!NOT(ISBLANK(Personnel_Action__c.Employee_Retirement_Plan__c))}"/>
+                                    </p>
+                                </td>
+                                <td>
+                                    <p class="r1">
+                                        <apex:outputText value="{!Personnel_Action__c.Employee_Retirement_Plan__r.Plan_Name__c}" rendered="{!NOT(ISBLANK(Personnel_Action__c.Employee_Retirement_Plan__c))}"/>
+                                    </p>
+                                </td>
+                            </tr>
+                        </table>
+                    </td>
+                    <td valign="bottom" style="border-right:1px solid black;">
+                        <p class="r1">
+                            <apex:outputText value="{0,date,MM'/'dd'/'yyyy}" rendered="{!NOT(ISBLANK(Personnel_Action__c.Service_Computation_Date_Leave__c))}">
+                                <apex:param value="{!Personnel_Action__c.Service_Computation_Date_Leave__c}"/> 
+                            </apex:outputText>
+                        </p>
+                    </td>
+                    <td valign="bottom" colspan="2" style="border-right:1px solid black;">
+                        <table width="100%" border="0" cellpadding="0" cellspacing="0">
+                            <tr>
+                                <td style="width:35px;height:15px;border-right:1px solid black;border-top:1px solid black;">
+                                    <p class="r1">
+                                        <apex:outputText value="{!LEFT(Personnel_Action__c.Work_Schedule__c,1)}" rendered="{!NOT(ISBLANK(Personnel_Action__c.Work_Schedule__c))}"/>
+                                    </p>
+                                </td>
+                                <td>
+                                    <p class="r1">
+                                        <apex:outputText value="{!Personnel_Action__c.Work_Schedule__c}" rendered="{!NOT(ISBLANK(Personnel_Action__c.Work_Schedule__c))}"/>
+                                    </p>
+                                </td>
+                            </tr>
+                        </table>
+                    </td>
+                    <td valign="bottom">
+                        <table width="100%" border="0" cellpadding="0" cellspacing="0">
+                            <tr>
+                                <td style="width:35px;height:15px;border-right:1px solid black;border-top:1px solid black;"></td>
+                                <td><p class="p4">Biweekly Pay Period</p></td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+                
+                <tr>
+                    <td colspan="5" style="background-color:#DADADA;padding:2px 0 4px 2px;"><h2>POSITION DATA</h2></td>
+                </tr>
+                <tr>
+                    <td width="30%" valign="top" style="height:15px;border-right:1px solid black;"><p class="p2">34. Position Occupied</p></td>
+                    <td width="20%" valign="top" style="border-right:1px solid black;"><p class="p2">35. FLSA Category</p></td>
+                    <td valign="top" colspan="2" style="border-right:1px solid black;"><p class="p2">36. Appropriation Code</p></td>
+                    <td valign="top"><p class="p2">37. Bargaining Unit Status</p></td>
+                </tr>
+                <tr>
+                    <td valign="bottom" style="border-right:1px solid black;border-bottom:1px solid black;">
+                        <table width="100%" border="0" cellpadding="0" cellspacing="0">
+                            <tr>
+                                <td style="width:35px;height:15px;border-right:1px solid black;border-top:1px solid black;">
+                                    <p class="r1">
+                                        <apex:outputText value="{!LEFT(Personnel_Action__c.Position_Occupied__c,1)}" rendered="{!NOT(ISBLANK(Personnel_Action__c.Position_Occupied__c))}"/>
+                                    </p>
+                                </td>
+                                <td>
+                                    <p class="p4">
+                                        1 - Competitive Service<br/>
+                                        2 - Excepted Service
+                                    </p>
+                                </td>
+                                <td>
+                                    <p class="p4">
+                                        3 - SES General<br/>
+                                        4 - SES Career
+                                    </p>
+                                </td>
+                            </tr>
+                        </table>
+                    </td>
+                    <td valign="bottom" style="border-right:1px solid black;border-bottom:1px solid black;">
+                        <table width="100%" border="0" cellpadding="0" cellspacing="0">
+                            <tr>
+                                <td style="width:35px;height:15px;border-right:1px solid black;border-top:1px solid black;">
+                                    <p class="r1">
+                                        <apex:outputText value="{!LEFT(Personnel_Action__c.FLSA_Category__c,1)}" rendered="{!NOT(ISBLANK(Personnel_Action__c.FLSA_Category__c))}"/>
+                                    </p>
+                                </td>
+                                <td>
+                                    <p class="p4">
+                                        E - Exempt<br/>
+                                        N - Nonexempt
+                                    </p>
+                                </td>
+                            </tr>
+                        </table>
+                    </td>
+                    <td valign="bottom" colspan="2" style="border-right:1px solid black;border-bottom:1px solid black;">
+                        <p class="r1">
+                            <apex:outputText value="{!Personnel_Action__c.Appropriation_Code__c}" rendered="{!NOT(ISBLANK(Personnel_Action__c.Appropriation_Code__c))}"/>
+                        </p>
+                    </td>
+                    <td valign="bottom" style="border-bottom:1px solid black;">
+                        <p class="r1">
+                            <apex:outputText value="{!Personnel_Action__c.Bargaining_Unit__r.BUS_Code__c}" rendered="{!NOT(ISBLANK(Personnel_Action__c.Bargaining_Unit__c))}"/>
+                        </p>
+                    </td>
+                </tr>
+                
+                
+                
+                <tr>
+                    <td width="30%" valign="top" style="height:30px;border-right:1px solid black;border-bottom:2px solid black;">
+                        <p class="p2">38. Duty Station Code</p>
+                        <p class="r1">
+                            <apex:outputText value="{!Personnel_Action__c.Duty_Station__r.Code__c}" rendered="{!NOT(ISBLANK(Personnel_Action__c.Duty_Station__r.Code__c))}"/>
+                        </p>
+                    </td>
+                    <td width="20%" valign="top" colspan="4" style="border-bottom:2px solid black;">
+                        <p class="p2">39. Duty Station <i>(City - County - State or Overseas Location)</i></p>
+                        <p class="r1">
+                            <apex:outputText value="{!Personnel_Action__c.Duty_Station__r.Name}" rendered="{!NOT(ISBLANK(Personnel_Action__c.Duty_Station__r.Name))}"/>
+                        </p>
+                    </td>
+                </tr>
+                
+            </table>
+            
+            <table width="100%" border="0" cellpadding="0" cellspacing="0">
+                <tr>
+                    <td width="15%" valign="top" style="height:30px;border-right:1px solid black;border-bottom:1px solid black;">
+                        <p class="p2">40. Agency Data</p>
+                    </td>
+                    <td width="15%" valign="top" style="border-right:1px solid black;border-bottom:1px solid black;">
+                        <p class="p2">41.</p>
+                    </td>
+                    <td width="15%" valign="top" style="border-right:1px solid black;border-bottom:1px solid black;">
+                        <p class="p2">42.</p>
+                    </td>
+                    <td width="15%" valign="top" style="border-right:1px solid black;border-bottom:1px solid black;">
+                        <p class="p2">43.</p>
+                    </td>
+                    <td width="40%" valign="top" style="border-bottom:1px solid black;">
+                        <p class="p2">44.</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td width="15%" valign="top" style="height:30px;border-right:1px solid black;">
+                        <p class="p2">45. Education Level</p>
+                    </td>
+                    <td width="15%" valign="top" style="border-right:1px solid black;">
+                        <p class="p2">46. Year Degree Attained</p>
+                    </td>
+                    <td width="15%" valign="top" style="border-right:1px solid black;">
+                        <p class="p2">47. Academic Discipline</p>
+                    </td>
+                    <td width="15%" valign="top" style="border-right:1px solid black;">
+                        <p class="p2">48.Functional Class</p>
+                    </td>
+                    <td width="40%" valign="top">
+                        <table width="100%" border="0" cellpadding="0" cellspacing="0">
+                            <tr>
+                                <td valign="top" style="height:15px;border-right:1px solid black;"><p class="p2">49. Citizenship</p></td>
+                                <td valign="top" style="border-right:1px solid black;"><p class="p2">50. Veterans Status</p></td>
+                                <td valign="top"><p class="p2">51. Supervisory Status</p></td>
+                            </tr>
+                            <tr>
+                                <td valign="bottom" style="border-right:1px solid black;">
+                                    <table width="100%" border="0" cellpadding="0" cellspacing="0">
+                                        <tr>
+                                            <td style="width:15px;height:15px;border-right:1px solid black;border-top:1px solid black;"></td>
+                                            <td><p class="p4" style="text-align:center;">1 - USA&nbsp;&nbsp;8 - Other</p></td>
+                                        </tr>
+                                    </table>
+                                </td>
+                                <td valign="bottom" style="border-right:1px solid black;">
+                                    <table width="100%" border="0" cellpadding="0" cellspacing="0">
+                                        <tr>
+                                            <td style="width:15px;height:15px;border-right:1px solid black;border-top:1px solid black;"></td>
+                                            <td><p class="p4"></p></td>
+                                        </tr>
+                                    </table>
+                                </td>
+                                <td valign="bottom">
+                                    <table width="100%" border="0" cellpadding="0" cellspacing="0">
+                                        <tr>
+                                            <td style="width:15px;height:15px;border-right:1px solid black;border-top:1px solid black;"></td>
+                                            <td><p class="p4"></p></td>
+                                        </tr>
+                                    </table>
+                                </td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+            </table>
+            
+            <table width="100%" border="0" cellpadding="0" cellspacing="0">
+                <tr>
+                    <td style="background-color:#DADADA;padding:2px 0 4px 2px;"><h2>PART C - Reviews and Approvals <em>(Not to be used by requesting office.)</em></h2></td>
+                </tr>
+            </table>
+            
+            <table width="100%" border="0" cellpadding="0" cellspacing="0">
+                <tr>
+                    <td width="50%" valign="top" style="height:50px;border-right:2px solid black;">
+                        <table width="100%" border="0" cellpadding="0" cellspacing="0">
+                            <tr>
+                                <td colspan="2" width="30%" valign="top" style="border-bottom:1px solid black;border-right:1px solid black;"><p class="p2b" style="text-align:center;">1. Office/Function</p></td>
+                                <td width="50%" valign="top" style="border-bottom:1px solid black;border-right:1px solid black;"><p class="p2b" style="text-align:center;">Initial/Signature</p></td>
+                                <td width="20%" valign="top" style="border-bottom:1px solid black;"><p class="p2b" style="text-align:center;">Date</p></td>
+                            </tr>
+                        	<tr>
+                                <td width="3%" valign="middle" style="height:30px;border-bottom:1px solid black;"><p class="p2b">A.</p></td>
+                                <td width="27%" valign="middle" style="border-bottom:1px solid black;border-right:1px solid black;"><p class="r1"></p></td>
+                                <td valign="middle" style="border-bottom:1px solid black;border-right:1px solid black;">
+                                    <p class="r1">
+                                        <apex:outputText value="{!Personnel_Action__c.Approval01_Manager__r.FirstName}" rendered="{!NOT(ISBLANK(Personnel_Action__c.Approval01_Manager__c)) && NOT(ISBLANK(Personnel_Action__c.Approval_1_Manager_Date__c))}"/>&nbsp;
+                                        <apex:outputText value="{!Personnel_Action__c.Approval01_Manager__r.LastName}" rendered="{!NOT(ISBLANK(Personnel_Action__c.Approval01_Manager__c)) && NOT(ISBLANK(Personnel_Action__c.Approval_1_Manager_Date__c))}"/>
+                                    </p>
+                                </td>
+                                <td valign="middle" style="border-bottom:1px solid black;">
+                                    <p class="r1">
+                                        <apex:outputText value="{0,date,MM'/'dd'/'yyyy}" rendered="{!NOT(ISBLANK(Personnel_Action__c.Approval_1_Manager_Date__c))}">
+                                            <apex:param value="{!Personnel_Action__c.Approval_1_Manager_Date__c}" /> 
+                                        </apex:outputText>
+                                    </p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td valign="middle" style="height:30px;border-bottom:1px solid black;"><p class="p2b">B.</p></td>
+                                <td valign="middle" style="border-bottom:1px solid black;border-right:1px solid black;"><p class="r1"></p></td>
+                                <td valign="middle" style="border-bottom:1px solid black;border-right:1px solid black;">
+                                    <p class="r1">
+                                        <apex:outputText value="{!Personnel_Action__c.Approval02_HR__r.FirstName}" rendered="{!NOT(ISBLANK(Personnel_Action__c.Approval02_HR__c)) && NOT(ISBLANK(Personnel_Action__c.Approval_2_HR_Date__c))}"/>&nbsp;
+                                        <apex:outputText value="{!Personnel_Action__c.Approval02_HR__r.LastName}" rendered="{!NOT(ISBLANK(Personnel_Action__c.Approval02_HR__c)) && NOT(ISBLANK(Personnel_Action__c.Approval_2_HR_Date__c))}"/>
+                                    </p>
+                                </td>
+                                <td valign="middle" style="border-bottom:1px solid black;"><p class="r1">
+                                        <apex:outputText value="{0,date,MM'/'dd'/'yyyy}" rendered="{!NOT(ISBLANK(Personnel_Action__c.Approval_2_HR_Date__c))}">
+                                            <apex:param value="{!Personnel_Action__c.Approval_2_HR_Date__c}" /> 
+                                        </apex:outputText>
+                                    </p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td valign="middle" style="height:30px;border-bottom:1px solid black;"><p class="p2b">C.</p></td>
+                                <td valign="middle" style="border-bottom:1px solid black;border-right:1px solid black;"><p class="r1"></p></td>
+                                <td valign="middle" style="border-bottom:1px solid black;border-right:1px solid black;"><p class="r1"></p></td>
+                                <td valign="middle" style="border-bottom:1px solid black;"><p class="r1"></p></td>
+                            </tr>
+                        </table>
+                    </td>
+                    <td width="50%" valign="top" style="height:50px;">
+                        <table width="100%" border="0" cellpadding="0" cellspacing="0">
+                            <tr>
+                                <td colspan="2" width="30%" valign="top" style="border-bottom:1px solid black;border-right:1px solid black;"><p class="p2b" style="text-align:center;">1. Office/Function</p></td>
+                                <td width="50%" valign="top" style="border-bottom:1px solid black;border-right:1px solid black;"><p class="p2b" style="text-align:center;">Initial/Signature</p></td>
+                                <td width="20%" valign="top" style="border-bottom:1px solid black;"><p class="p2b" style="text-align:center;">Date</p></td>
+                            </tr>
+                        	<tr>
+                                <td width="3%" valign="middle" style="height:30px;border-bottom:1px solid black;"><p class="p2b">D.</p></td>
+                                <td width="27%" valign="middle" style="border-bottom:1px solid black;border-right:1px solid black;"><p class="r1"></p></td>
+                                <td valign="middle" style="border-bottom:1px solid black;border-right:1px solid black;"><p class="r1"></p></td>
+                                <td valign="middle" style="border-bottom:1px solid black;"><p class="r1"></p></td>
+                            </tr>
+                            <tr>
+                                <td valign="middle" style="height:30px;border-bottom:1px solid black;"><p class="p2b">E.</p></td>
+                                <td valign="middle" style="border-bottom:1px solid black;border-right:1px solid black;"><p class="r1"></p></td>
+                                <td valign="middle" style="border-bottom:1px solid black;border-right:1px solid black;"><p class="r1"></p></td>
+                                <td valign="middle" style="border-bottom:1px solid black;"><p class="r1"></p></td>
+                            </tr>
+                            <tr>
+                                <td valign="middle" style="height:30px;border-bottom:1px solid black;"><p class="p2b">F.</p></td>
+                                <td valign="middle" style="border-bottom:1px solid black;border-right:1px solid black;"><p class="r1"></p></td>
+                                <td valign="middle" style="border-bottom:1px solid black;border-right:1px solid black;"><p class="r1"></p></td>
+                                <td valign="middle" style="border-bottom:1px solid black;"><p class="r1"></p></td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+                <tr>
+                    <td width="50%" valign="middle" style="height:30px;border-right:1px solid black;border-bottom:2px solid black;">
+                        <p class="p2">2.&nbsp;&nbsp;&nbsp;Approval: I certify that the information entered on this form is accurate and that the proposed action is in compliance with statutory and regulatory requirements.</p>
+                    </td>
+                    <td width="50%" valign="top" style="border-bottom:2px solid black;">
+                        <table width="100%" border="0" cellpadding="0" cellspacing="0">
+                            <tr>
+                                <td width="80%" valign="top" style="height:30px;border-right:1px solid black;">
+                                    <p class="p2">Signature</p>
+                                    <p class="r1">
+                                        <apex:outputText value="{!Personnel_Action__c.Employee__r.Account.Owner.Name}" rendered="{!ISBLANK(Personnel_Action__c.Position_Current__c) && ISBLANK(Personnel_Action__c.Position_New__c) && NOT(ISBLANK(Personnel_Action__c.Personnel_Action_Approval_Date__c))}"/>
+                                        <apex:outputText value="{!Personnel_Action__c.Position_Current__r.Position_Organization__r.Owner.Name}" rendered="{!NOT(ISBLANK(Personnel_Action__c.Position_Current__c)) && ISBLANK(Personnel_Action__c.Position_New__c) && NOT(ISBLANK(Personnel_Action__c.Personnel_Action_Approval_Date__c))}"/>
+                                        <apex:outputText value="{!Personnel_Action__c.Position_New__r.Position_Organization__r.Owner.Name}" rendered="{!NOT(ISBLANK(Personnel_Action__c.Position_New__c)) && NOT(ISBLANK(Personnel_Action__c.Personnel_Action_Approval_Date__c))}"/>
+                                    </p>
+                                </td>
+                                <td width="20%" valign="top">
+                                    <p class="p2">Approval Date</p>
+                                    <p class="r1">
+                                        <apex:outputText value="{0,date,MM'/'dd'/'yyyy}" rendered="{!NOT(ISBLANK(Personnel_Action__c.Personnel_Action_Approval_Date__c))}">
+                                            <apex:param value="{!Personnel_Action__c.Personnel_Action_Approval_Date__c}" /> 
+                                        </apex:outputText>
+                                    </p>
+                                </td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+            </table>
+            
+            <table width="100%" border="0" cellpadding="0" cellspacing="0" style="margin-bottom:5px;">
+                <tr>
+                    <td width="33%" align="left" valign="top">
+                        <p class="p5b">CONTINUED ON REVERSE SIDE</p>
+                        <p class="p1">52-118</p>
+                    </td>
+                    <td width="34%" align="center" valign="top">
+                        <p class="p5b">OVER</p>
+                    </td>
+                    <td width="33%" align="right" valign="top">
+                        <p class="p1">
+                            Editions Prior to 7/91 Are Not Usable After 6/30/93<br/>
+                            NSN 7540-01-333-6239
+                        </p>
+                    </td>
+                </tr>
+            </table>
+            
+            
+            
+            <!-- NEXT PAGE -->
+            
+            
+            
+            <table width="100%" border="0" cellpadding="0" cellspacing="0">
+                <tr>
+                    <td style="background-color:#DADADA;padding:2px 0 4px 2px;"><h2>PART D - Remarks by Requesting Office</h2></td>
+                </tr>
+            </table>
+            
+            <table width="100%" border="0" cellpadding="0" cellspacing="0">
+                <tr>
+                    <td width="15%" valign="top" style="height:30px;">
+                        <p class="p3">(Note to Supervisors:</p>
+                    </td>
+                    <td width="75%" valign="top">
+                        <p class="p3">Do you know of additional or conflicting reasons for the employee's resignation/retirement?</p>
+                        <p class="p3">If "YES", please state these facts on a separate sheet and attach to SF 52.)</p>
+                    </td>
+                    <td width="10%" valign="top">
+                        <table width="100%" border="0" cellpadding="0" cellspacing="0">
+                            <tr>
+                                <td valign="middle" style="width:13px;padding-right:3px;">
+                                    <p class="p3"><apex:image url="{!$Resource.formPDF_box_unchecked_icon}" height="13"/></p>
+                                </td>
+                                <td valign="middle" style="padding-right:15px;">
+                                    <p class="p3">YES</p>
+                                </td>
+                                <td valign="middle" style="width:13px;padding-right:3px;">
+                                    <p class="p3"><apex:image url="{!$Resource.formPDF_box_unchecked_icon}" height="13"/></p>
+                                </td>
+                                <td valign="middle" style="padding-right:15px;">
+                                    <p class="p3">NO</p>
+                                </td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="3" valign="top" style="height:200px;padding-top:10px;">
+                        <p class="r2">
+                            <apex:outputText value="{!Personnel_Action__c.Remarks_by_Requester__c}" rendered="{!NOT(ISBLANK(Personnel_Action__c.Remarks_by_Requester__c))}"/>
+                        </p>
+                    </td>
+                </tr>
+            </table>
+            
+            
+            
+            <table width="100%" border="0" cellpadding="0" cellspacing="0">
+                <tr>
+                    <td style="background-color:#DADADA;padding:2px 0 4px 2px;"><h2>PART E - Employee Resignation/Retirement</h2></td>
+                </tr>
+            </table>
+            
+            <table width="100%" border="0" cellpadding="0" cellspacing="0">
+                <tr>
+                    <td colspan="2" valign="top" style="text-align:center;padding-bottom:10px;"><p class="p5b">Privacy Act Statement</p></td>
+                </tr>
+                <tr>
+                    <td width="50%" valign="top" style="padding-right:15px;padding-bottom:10px;">
+                        <p class="p5j">You are requested to furnish a specific reason for your resignation or retirement and a forwarding address.  Your reason may be considered in any future decision regarding your re-employment in the Federal service and may also be used to determine your eligibility for unemployment compensation benefits. Your forwarding address will be used primarily to mail you copies of any documents you should have or any pay or compensation to which you are entitled.</p>
+                        <br/>
+                        <p class="p5j">This information is requested under authority of sections 301, 3301, and 8506 of title 5, U.S. Code. Sections 301 and 3301 authorize OPM</p>
+                    </td>
+                    <td width="50%" valign="top" style="padding-left:15px;padding-bottom:10px;">
+                        <p class="p5j">and agencies to issue regulations with regard to employment of individuals in the Federal service and their records, while section 8506 requires agencies to furnish the specific reason for termination of Federal service to the Secretary of Labor or a State agency in connection with administration of unemployment compensation programs.</p>
+                        <br/>
+                        <p class="p5j">The furnishing of this information is voluntary; however, failure to provide it may result in your not receiving: (1) your copies of those documents you should have; (2) pay or other compensation benefits to which you may be entitled.</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2" valign="top" style="border-top:1px solid black;">
+                        <table width="100%" border="0" cellpadding="0" cellspacing="0">
+                            <tr>
+                                <td width="15px" valign="top"><p class="p5">1.</p></td>
+                                <td valign="top"><p class="p5">Reasons for Resignation/Retirement (NOTE: Your reasons are used in determining possible unemployment benefits. Please be specific and avoid generalizations. Your resignation/retirement is effective at the end of the day - midnight - unless you specify otherwise.)</p></td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2" valign="top" style="height:200px;padding-top:10px;">
+                        <p class="r2"></p>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2" valign="top" style="border-top:1px solid black;">
+                        <table width="100%" border="0" cellpadding="0" cellspacing="0">
+                            <tr>
+                                <td width="10%" valign="top" style="height:15px;border-right:1px solid black;"><p class="p3">2. Effective Date</p></td>
+                                <td width="30%" valign="top" style="border-right:1px solid black;"><p class="p3">3. Your Signature</p></td>
+                                <td width="10%" valign="top" style="border-right:1px solid black;"><p class="p3">4. Date Signed</p></td>
+                                <td width="50%" valign="top"><p class="p3">5. Forwarding Address <em>(Number, Street, City, State, ZIP Code)</em></p></td>
+                            </tr>
+                            <tr>
+                                <td width="" valign="middle" style="height:30px;border-right:1px solid black;"><p class="r1"></p></td>
+                                <td width="" valign="middle" style="border-right:1px solid black;"><p class="r1"></p></td>
+                                <td width="" valign="middle" style="border-right:1px solid black;"><p class="r1"></p></td>
+                                <td width="" valign="middle"><p class="r1"></p></td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+            </table>
+            
+            <table width="100%" border="0" cellpadding="0" cellspacing="0">
+                <tr>
+                    <td style="background-color:#DADADA;padding:2px 0 4px 2px;"><h2>PART F - Remarks for SF 50</h2></td>
+                </tr>
+                <tr>
+                    <td valign="top" style="height:250px;border-bottom:2px solid black;padding-top:10px;">
+                        <p class="r2">
+                            <apex:outputText value="{!Personnel_Action__c.Remarks_for_SF50__c}" rendered="{!NOT(ISBLANK(Personnel_Action__c.Remarks_for_SF50__c))}"/>
+                        </p>
+                    </td>
+                </tr>
+            </table>
+            
+        </body>
+    </html>
+    
+</apex:page>

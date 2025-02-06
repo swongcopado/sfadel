@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<QueueRoutingConfig xmlns="http://soap.sforce.com/2006/04/metadata">
+    <capacityType>INHERITED</capacityType>
+    <capacityWeight>1.0</capacityWeight>
+    <dropAdditionalSkillsTimeout>120</dropAdditionalSkillsTimeout>
+    <isAttributeBased>true</isAttributeBased>
+    <label>Funding Request Routing Configuration</label>
+    <pushTimeout>60</pushTimeout>
+    <routingModel>LEAST_ACTIVE</routingModel>
+    <routingPriority>2</routingPriority>
+    <skills>
+        <skill>Grantmaker</skill>
+    </skills>
+</QueueRoutingConfig>

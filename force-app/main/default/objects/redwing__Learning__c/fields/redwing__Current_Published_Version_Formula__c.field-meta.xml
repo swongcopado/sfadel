@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>redwing__Current_Published_Version_Formula__c</fullName>
+    <deprecated>false</deprecated>
+    <externalId>false</externalId>
+    <formula>IF(!ISBLANK(redwing__Current_Published_Version__c),HYPERLINK(&quot;/&quot;&amp;redwing__Current_Published_Version__c,&quot;Version &quot;&amp;TEXT(redwing__Current_Published_Version__r.redwing__Version__c),&quot;_self&quot;) ,&quot;&quot;)</formula>
+    <label>Current Published Version</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

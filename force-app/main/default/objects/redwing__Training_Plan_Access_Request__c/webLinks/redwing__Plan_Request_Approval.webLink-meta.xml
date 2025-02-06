@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebLink xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>redwing__Plan_Request_Approval</fullName>
+    <availability>online</availability>
+    <description>Display VF page for approving a Learning Plan Request</description>
+    <displayType>button</displayType>
+    <height>600</height>
+    <linkType>page</linkType>
+    <masterLabel>Approve / Reject</masterLabel>
+    <openType>noSidebar</openType>
+    <page>redwing__TrainingPlanRequestApproval</page>
+    <protected>false</protected>
+</WebLink>

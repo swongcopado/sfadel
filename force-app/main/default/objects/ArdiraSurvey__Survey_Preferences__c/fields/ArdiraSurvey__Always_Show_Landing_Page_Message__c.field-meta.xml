@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ArdiraSurvey__Always_Show_Landing_Page_Message__c</fullName>
+    <defaultValue>false</defaultValue>
+    <deprecated>false</deprecated>
+    <description>Enable to show the landing page message on all pages when a survey is responded. If not enabled, landing page message will be visible only on the landing page.</description>
+    <inlineHelpText>Enable to show the landing page message on all pages when a survey is responded. If not enabled, landing page message will be visible only on the landing page.</inlineHelpText>
+    <label>Always Show Landing Page Message</label>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

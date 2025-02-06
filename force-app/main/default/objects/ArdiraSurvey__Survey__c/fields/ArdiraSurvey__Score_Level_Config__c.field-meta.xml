@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ArdiraSurvey__Score_Level_Config__c</fullName>
+    <deprecated>false</deprecated>
+    <description>JSON string representing the configuration to generate &quot;Score Level&quot; from numeric scores.</description>
+    <inlineHelpText>JSON string representing the configuration to generate &quot;Score Level&quot; from numeric scores.</inlineHelpText>
+    <label>Score Level Config</label>
+    <length>4000</length>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>LongTextArea</type>
+    <visibleLines>3</visibleLines>
+</CustomField>

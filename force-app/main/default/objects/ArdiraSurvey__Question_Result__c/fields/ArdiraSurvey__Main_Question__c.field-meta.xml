@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ArdiraSurvey__Main_Question__c</fullName>
+    <deleteConstraint>SetNull</deleteConstraint>
+    <deprecated>false</deprecated>
+    <description>Reference from sub questions to the main question of a grid like question.</description>
+    <inlineHelpText>Reference from sub questions to the main question of a grid like question.</inlineHelpText>
+    <label>Main Question</label>
+    <referenceTo>ArdiraSurvey__Question__c</referenceTo>
+    <relationshipLabel>Sub Question Results</relationshipLabel>
+    <relationshipName>Sub_Question_Results</relationshipName>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Lookup</type>
+</CustomField>

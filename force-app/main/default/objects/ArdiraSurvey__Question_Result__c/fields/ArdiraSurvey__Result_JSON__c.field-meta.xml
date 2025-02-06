@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ArdiraSurvey__Result_JSON__c</fullName>
+    <deprecated>false</deprecated>
+    <description>This field retains the unprocessed response received from external integrations, such as results from a sentiment analysis provider.</description>
+    <inlineHelpText>This field retains the unprocessed response received from external integrations, such as results from a sentiment analysis provider.</inlineHelpText>
+    <label>Result JSON</label>
+    <length>32768</length>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>LongTextArea</type>
+    <visibleLines>3</visibleLines>
+</CustomField>

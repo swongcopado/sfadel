@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ArdiraSurvey__Transition_Effect__c</fullName>
+    <deprecated>false</deprecated>
+    <description>The selected effect will be applied when navigating to the next or previous page while responding to a survey.</description>
+    <inlineHelpText>The selected effect will be applied when navigating to the next or previous page while responding to a survey.</inlineHelpText>
+    <label>Page Transition Effect</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Carousel</fullName>
+                <default>true</default>
+                <label>Carousel</label>
+            </value>
+            <value>
+                <fullName>Carousel - Vertical</fullName>
+                <default>false</default>
+                <label>Carousel - Vertical</label>
+            </value>
+            <value>
+                <fullName>Ease In/Out</fullName>
+                <default>false</default>
+                <label>Ease In/Out</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Conj permissões da regra permissão LMS</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Conjuntos permissões regra permis. LMS</value>
+    </caseValues>
+    <gender>Masculine</gender>
+    <nameFieldLabel>ID do conjunto de permissões de LMS</nameFieldLabel>
+</CustomObjectTranslation>

@@ -1,0 +1,76 @@
+{
+  "appPageId" : "7cd60cbf-9c3c-4756-b031-e5d09e77c8ab",
+  "componentName" : "siteforce:dynamicLayout",
+  "dataProviders" : [ ],
+  "id" : "59094efd-3e8d-4b8f-a47d-9897824326f9",
+  "label" : "LOI",
+  "regions" : [ {
+    "components" : [ {
+      "componentAttributes" : {
+        "background" : "background: rgba(0,0,0,0)",
+        "backgroundOverlay" : "rgba(0,0,0,0.5)",
+        "contentAreaWidth" : 100,
+        "sectionConfig" : {
+          "UUID" : "5a35191e-d647-4cbf-9524-f0a9d146015e",
+          "columns" : [ {
+            "UUID" : "a7109d4a-6125-4187-bc35-6f361cc52984",
+            "columnKey" : "1",
+            "columnName" : "Column 1",
+            "columnWidth" : "12",
+            "seedComponents" : [ ]
+          } ]
+        },
+        "sectionHeight" : 300
+      },
+      "componentName" : "forceCommunity:section",
+      "id" : "5a35191e-d647-4cbf-9524-f0a9d146015e",
+      "regions" : [ {
+        "components" : [ {
+          "componentAttributes" : {
+            "direction" : "ltr",
+            "display" : "Display OmniScript on page",
+            "inlineVariant" : "brand",
+            "language" : "English",
+            "subType" : "LOI",
+            "theme" : "lightning",
+            "type" : "Grants"
+          },
+          "componentName" : "runtime_omnistudio:omniscript",
+          "id" : "b6923b02-d8cb-422b-844d-7b6d6649aad7",
+          "renderPriority" : "NEUTRAL",
+          "renditionMap" : { },
+          "type" : "component"
+        } ],
+        "id" : "a7109d4a-6125-4187-bc35-6f361cc52984",
+        "regionLabel" : "Column 1",
+        "regionName" : "1",
+        "renditionMap" : { },
+        "type" : "region"
+      } ],
+      "renderPriority" : "NEUTRAL",
+      "renditionMap" : { },
+      "type" : "component"
+    } ],
+    "id" : "7f91a91e-dc69-4262-9b1e-bfde03112f43",
+    "regionName" : "content",
+    "type" : "region"
+  }, {
+    "components" : [ {
+      "componentAttributes" : {
+        "customHeadTags" : "",
+        "description" : "",
+        "title" : "LOI"
+      },
+      "componentName" : "forceCommunity:seoAssistant",
+      "id" : "fd9c33bf-1f3f-42f7-b3a3-e8c546fa97b6",
+      "renditionMap" : { },
+      "type" : "component"
+    } ],
+    "id" : "df691e79-d0d2-493e-9f57-6a9ce416d4a9",
+    "regionName" : "sfdcHiddenRegion",
+    "type" : "region"
+  } ],
+  "themeLayoutType" : "Inner",
+  "type" : "view",
+  "viewType" : "custom-loi"
+}

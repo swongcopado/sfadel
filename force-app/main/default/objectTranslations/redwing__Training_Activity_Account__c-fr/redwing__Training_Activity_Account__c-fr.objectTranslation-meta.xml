@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Compte d&apos;activité d&apos;apprentissage</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Comptes d&apos;activités d&apos;apprentissage</value>
+    </caseValues>
+    <gender>Masculine</gender>
+    <nameFieldLabel>ID du compte d&apos;activité d&apos;apprentissage</nameFieldLabel>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ArdiraSurvey__Show_Random_Questions_on_Retake__c</fullName>
+    <defaultValue>false</defaultValue>
+    <deprecated>false</deprecated>
+    <description>When Number of Questions to Present is configured, then the system will display random sets of questions to a quiz taker on retake.</description>
+    <inlineHelpText>When enabled, this option will generate a fresh set of randomly selected questions for participants with each quiz retake, ensuring a diverse experience with every attempt. Disabling this setting maintains consistency by presenting the same set of questions on quiz retakes. Note: If the &quot;Randomized Question Limit&quot; is not configured, all available questions will be presented regardless of this setting.</inlineHelpText>
+    <label>Re-Randomize Questions for Retakes</label>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

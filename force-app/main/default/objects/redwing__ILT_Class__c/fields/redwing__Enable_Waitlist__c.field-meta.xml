@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>redwing__Enable_Waitlist__c</fullName>
+    <defaultValue>false</defaultValue>
+    <deprecated>false</deprecated>
+    <description>If selected, all participants that will be registering for a class after the Max Seats limit is reached will be added to the Waitlist. Email Notification will be send to waitlisted participants. Refer to Appendix A for detailed Waitlist workflow</description>
+    <label>Enable Waitlist</label>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

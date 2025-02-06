@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<NavigationMenu xmlns="http://soap.sforce.com/2006/04/metadata">
+    <container>Integrated Services</container>
+    <containerType>Network</containerType>
+    <label>Permit_Menu</label>
+    <navigationMenuItem>
+        <label>New Business Permit Application*</label>
+        <position>1</position>
+        <publiclyAvailable>true</publiclyAvailable>
+        <target>https://www.salesforce.com/eu/solutions/industries/government/verticals/</target>
+        <type>ExternalLink</type>
+    </navigationMenuItem>
+    <navigationMenuItem>
+        <label>Exterior Residential Project</label>
+        <position>2</position>
+        <publiclyAvailable>true</publiclyAvailable>
+        <target>https://www.salesforce.com/eu/solutions/industries/government/verticals/</target>
+        <type>ExternalLink</type>
+    </navigationMenuItem>
+    <navigationMenuItem>
+        <label>Interior &amp; Residential remodel</label>
+        <position>3</position>
+        <publiclyAvailable>true</publiclyAvailable>
+        <target>https://www.salesforce.com/eu/solutions/industries/government/verticals/</target>
+        <type>ExternalLink</type>
+    </navigationMenuItem>
+    <navigationMenuItem>
+        <label>Kitchen or Bath Remode</label>
+        <position>4</position>
+        <publiclyAvailable>true</publiclyAvailable>
+        <target>https://www.salesforce.com/eu/solutions/industries/government/verticals/</target>
+        <type>ExternalLink</type>
+    </navigationMenuItem>
+    <navigationMenuItem>
+        <label>New Business Signs &amp; Signage*</label>
+        <position>5</position>
+        <publiclyAvailable>true</publiclyAvailable>
+        <target>https://www.salesforce.com/eu/solutions/industries/government/verticals/</target>
+        <type>ExternalLink</type>
+    </navigationMenuItem>
+    <navigationMenuItem>
+        <label>Street Space or &quot;Parklet&quot; Permit</label>
+        <position>6</position>
+        <publiclyAvailable>true</publiclyAvailable>
+        <target>https://www.salesforce.com/eu/solutions/industries/government/verticals/</target>
+        <type>ExternalLink</type>
+    </navigationMenuItem>
+    <navigationMenuItem>
+        <label>New menu itemAccessory Dwelling Unit (ADU) Permit</label>
+        <position>7</position>
+        <publiclyAvailable>true</publiclyAvailable>
+        <target>https://www.salesforce.com/eu/solutions/industries/government/verticals/</target>
+        <type>ExternalLink</type>
+    </navigationMenuItem>
+    <navigationMenuItem>
+        <label>Soft Story Retrofit Permit</label>
+        <position>8</position>
+        <publiclyAvailable>true</publiclyAvailable>
+        <target>https://www.salesforce.com/eu/solutions/industries/government/verticals/</target>
+        <type>ExternalLink</type>
+    </navigationMenuItem>
+</NavigationMenu>

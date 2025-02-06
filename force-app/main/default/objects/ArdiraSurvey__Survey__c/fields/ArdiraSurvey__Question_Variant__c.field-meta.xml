@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ArdiraSurvey__Question_Variant__c</fullName>
+    <deprecated>false</deprecated>
+    <description>Use Question-Inline to horizontally align the question and response fields. Use Question-Stacked to place the question above the response fields. For the best experience, the system may override certain layout options when a user takes a survey on a tablet or mobile device.</description>
+    <inlineHelpText>Choose the desired question variant for the survey response interface:
+Question-Inline: Aligns the question and response fields horizontally, placing them side by side.
+Question-Stacked: Positions the question above the response fields, stacking them vertically.
+Please note that for optimal user experience, the layout options may be automatically adjusted on tablet or mobile devices to ensure proper display and usability.</inlineHelpText>
+    <label>Question Variant</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Question-Stacked</fullName>
+                <default>true</default>
+                <label>Question-Stacked</label>
+            </value>
+            <value>
+                <fullName>Question-Inline</fullName>
+                <default>false</default>
+                <label>Question-Inline</label>
+            </value>
+            <value>
+                <fullName>Question-Inline (Right-aligned)</fullName>
+                <default>false</default>
+                <label>Question-Inline (Right-aligned)</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

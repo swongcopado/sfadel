@@ -1,0 +1,7 @@
+h1 {}
+
+.errorneousRecord{
+    border-color: red !important;
+    border-width: 1px !important;
+    border-style: solid !important; 
+}

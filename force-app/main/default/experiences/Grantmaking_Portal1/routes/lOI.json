@@ -1,0 +1,12 @@
+{
+  "activeViewId" : "59094efd-3e8d-4b8f-a47d-9897824326f9",
+  "appPageId" : "7cd60cbf-9c3c-4756-b031-e5d09e77c8ab",
+  "configurationTags" : [ ],
+  "devName" : "LOI__c",
+  "id" : "29e892a8-4f06-4efc-a805-eec81f1579d5",
+  "label" : "LOI",
+  "pageAccess" : "UseParent",
+  "routeType" : "custom-loi",
+  "type" : "route",
+  "urlPrefix" : "loi"
+}

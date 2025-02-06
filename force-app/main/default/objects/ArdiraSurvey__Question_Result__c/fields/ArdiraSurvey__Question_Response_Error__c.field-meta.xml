@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ArdiraSurvey__Question_Response_Error__c</fullName>
+    <deprecated>false</deprecated>
+    <description>Error encountered when collecting a question response.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Error encountered when collecting a question response.</inlineHelpText>
+    <label>Question Response Error</label>
+    <length>255</length>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

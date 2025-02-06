@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<DecisionMatrixDefinition xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label>Food Assistance Benefits</label>
+    <type>Standard</type>
+    <versions>
+        <fullName>Food_Assistance_Benefits_V1</fullName>
+        <columns>
+            <columnType>Input</columnType>
+            <dataType>Number</dataType>
+            <displaySequence>1</displaySequence>
+            <isWildcardColumn>false</isWildcardColumn>
+            <name>HouseholdSize</name>
+        </columns>
+        <columns>
+            <columnType>Output</columnType>
+            <dataType>Currency</dataType>
+            <displaySequence>2</displaySequence>
+            <isWildcardColumn>false</isWildcardColumn>
+            <name>MaximumMonthlyBenefit</name>
+        </columns>
+        <decisionMatrixDefinition>Food_Assistance_Benefits</decisionMatrixDefinition>
+        <label>Food Assistance Benefits V1</label>
+        <startDate>2021-12-01T08:00:00.000Z</startDate>
+        <status>Active</status>
+        <versionNumber>1</versionNumber>
+    </versions>
+</DecisionMatrixDefinition>

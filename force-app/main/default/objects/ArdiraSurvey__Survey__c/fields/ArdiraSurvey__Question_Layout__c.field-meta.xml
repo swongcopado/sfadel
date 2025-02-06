@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ArdiraSurvey__Question_Layout__c</fullName>
+    <deprecated>false</deprecated>
+    <description>Display option for setting a question on either a new row or next to previous question. That is either single column layout or two column layout.</description>
+    <inlineHelpText>Choose the desired question layout for the survey response interface:
+Single Row: Displays each question on its own row, occupying the full width of the response interface.
+Side-by-Side: Positions two consecutive questions side by side, allowing participants to view and respond to them simultaneously.
+Please note that for the best user experience, certain layout options may be automatically overridden when participants take the survey on a tablet or mobile device.</inlineHelpText>
+    <label>Question Layout</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <controllingField>ArdiraSurvey__CNav_Pagination__c</controllingField>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Display question in single row in 1-column layout</fullName>
+                <default>true</default>
+                <label>Display question in single row in 1-column layout</label>
+            </value>
+            <value>
+                <fullName>Display two questions side-by-side in 2-column layout</fullName>
+                <default>false</default>
+                <label>Display two questions side-by-side in 2-column layout</label>
+            </value>
+        </valueSetDefinition>
+        <valueSettings>
+            <controllingFieldValue>No Pagination</controllingFieldValue>
+            <controllingFieldValue>Section</controllingFieldValue>
+            <controllingFieldValue>Question</controllingFieldValue>
+            <valueName>Display question in single row in 1-column layout</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>No Pagination</controllingFieldValue>
+            <controllingFieldValue>Section</controllingFieldValue>
+            <valueName>Display two questions side-by-side in 2-column layout</valueName>
+        </valueSettings>
+    </valueSet>
+</CustomField>

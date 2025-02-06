@@ -1,0 +1,159 @@
+<template>
+    <div class="slds-grid slds-wrap  slds-p-around_x-small">
+        <div class="slds-col slds-size_3-of-12 slds-p-bottom_small">
+            <h2 class="slds-m-bottom_x-small">Filters </h2>
+            <lightning-record-edit-form object-api-name="Supply_Chain__c" record-id="a4dao000000C6EXAA0">
+                     <lightning-input-field field-name="Food_Supply_Tracing__c" onchange = {handleFoodRecallChange}> </lightning-input-field>
+
+            </lightning-record-edit-form>
+
+        </div>
+        <div class="slds-col slds-size_9-of-12 slds-p-bottom_small" style ="text-align:right">
+            <div class="slds-button-group" role="group">
+
+                <button class="slds-button slds-button_neutral slds-p-left_medium slds-p-right_medium">
+                    <lightning-icon icon-name="utility:play" alternative-text="Connected" size="x-small"
+                    title="x-small size" class="slds-icon slds-icon_x-small slds-icon-text-default slds-m-right_x-small"> </lightning-icon>
+                    <span>Initiate Recall</span>
+                </button>
+
+                <button class="slds-button slds-button_neutral slds-p-left_medium slds-p-right_medium">
+                    <lightning-icon icon-name="utility:reminder" alternative-text="Connected" size="x-small"
+                    title="x-small size" class="slds-icon slds-icon_x-small slds-icon-text-default slds-m-right_x-small"> </lightning-icon>
+                    <span>Bulk Email Reminder</span>    
+                </button>
+                <button class="slds-button slds-button_neutral slds-p-left_medium slds-p-right_medium">
+                    <lightning-icon icon-name="utility:refresh" alternative-text="Connected" size="x-small"
+                    title="x-small size" class="slds-icon slds-icon_x-small slds-icon-text-default slds-m-right_x-small"> </lightning-icon>
+                    <span>Refresh</span>
+                </button>
+            </div>
+        </div>
+    </div>
+    <div class="slds-grid slds-wrap  slds-p-around_x-small">
+        <div class="slds-col slds-size_3-of-12 slds-p-bottom_small">
+        
+            <h2 class="slds-m-bottom_medium">Recall Summary </h2>
+            <p> </p>
+            <table>
+                <tr>
+                     <td><b>Product</b> </td>
+                     <td>{fsProduct}</td>
+                </tr>
+                <tr>
+                 
+                     <td><b>Lot #</b></td>
+                     <td>{fsLot}</td>
+                 </tr>
+                 <tr>
+                     <td><b>Status</b> </td>
+                     <td>{fsStatus}</td>
+                 </tr>
+                 <tr>
+                     <td><b>Reason for Tracing</b> </td>
+                     <td>{fsReason}</td>
+                 </tr>
+                 <tr>
+                    <td><b>Target Completion</b> </td>
+                    <td>{fsTargetComplete}</td>
+                </tr>
+                 <tr>
+                    <td><b>Time Left</b>  </td>
+                    <td>{timeVal} </td>
+                 </tr>
+
+
+                 <tr>
+                    <td> <b>Total Quantity Accounted So Far</b></td>
+                    <td> 18,042 </td>
+                 </tr>
+
+                 <tr>
+                    <td> <b>Quantity Sold to Consumers</b></td>
+                    <td> 5,822 </td>
+                 </tr>
+
+                 <tr>
+                    <td> <b>Quantity To Be Recalled</b></td>
+                    <td> 4,020 </td>
+                 </tr>
+
+                 <tr>
+                    <td> <b>Missing Quantity</b></td>
+                    <td> 8,200 </td>
+                 </tr>
+             </table>
+        </div>
+        
+        <div class="slds-col slds-size_9-of-12  slds-p-around_x-small">
+            <div class="barchart">
+                <img style="max-height: 200px" class="slds-m-top_xx-large" alt="Legend" src={legendImage}/>
+            </div>
+            <div class="nodeChart">
+                <svg
+                    class="d3"
+                    width={svgWidth}
+                    height={svgHeight}
+                    lwc:dom="manual"
+                ></svg>
+            </div>
+            
+        </div>
+        <div class="slds-grid slds-wrap  slds-p-around_x-small">
+            <div class="slds-col slds-size_12-of-12 slds-p-bottom_small">
+                <h2 class="slds-m-bottom_medium">Supply Chain Related To Node - {selectedNodeName}</h2>
+                <div class="scDataTable">
+                    <lightning-datatable
+                    key-field="Id"
+                    data={tableDisplayData}
+                    columns={supplyChainColumns}
+                    onrowaction={handleRowAction}>
+                    >
+                    </lightning-datatable>
+                </div>
+            
+            </div>
+        </div>
+    
+    </div>
+
+    
+    
+
+    <template lwc:if={showMenu}> 
+        <div class="slds-dropdown-trigger slds-dropdown-trigger_click slds-is-open" style="position:absolute;" data-id="dropDownMenu">
+            <div class="slds-dropdown slds-dropdown_left slds-dropdown_small">
+              <ul class="slds-dropdown__list" role="menu" aria-label="Show More">
+
+                <li class="slds-dropdown__item" role="presentation" data-id="Email FU" >
+                  <a  role="menuitem" tabindex="0" data-id="Email Follow Up">
+                    <span class="slds-truncate" title="Email Follow Up">
+                        <lightning-icon icon-name="utility:email" alternative-text="Connected" size="x-small"
+                        title="x-small size" class="slds-icon slds-icon_x-small slds-icon-text-default slds-m-right_x-small"></lightning-icon>
+                        Email Follow Up</span>
+                  </a>
+                </li>
+
+                <li class="slds-dropdown__item" role="presentation" data-id="Approve">
+                  <a role="menuitem" tabindex="-1">
+                    <span class="slds-truncate" title="Assign Task">
+                        <lightning-icon icon-name="utility:check" alternative-text="Connected" size="x-small"
+                        title="x-small size" class="slds-icon slds-icon_x-small slds-icon-text-default slds-m-right_x-small"></lightning-icon>
+                        Assign Task</span>
+                  </a>
+                </li>
+
+                <li class="slds-dropdown__item" role="presentation" data-id="Secondary Recall" onclick={handleMenuSelection}>
+                    <a role="menuitem" tabindex="-1">
+                      <span class="slds-truncate" title="Secondary Investigation">
+                          <lightning-icon icon-name="utility:tour_check" alternative-text="Connected" size="x-small"
+                          title="x-small size" class="slds-icon slds-icon_x-small slds-icon-text-default slds-m-right_x-small"></lightning-icon>
+                          Initiate Secondary Recall</span>
+                    </a>
+                  </li>
+              </ul>
+            </div>
+        </div>
+    </template>
+
+</template>

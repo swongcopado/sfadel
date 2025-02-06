@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<StandardValueSetTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <valueTranslation>
+        <masterLabel>Fingerprinting</masterLabel>
+        <translation><!-- Fingerprinting --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Municipal Building</masterLabel>
+        <translation>Edificio municipal</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Plant</masterLabel>
+        <translation>Planta</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>School</masterLabel>
+        <translation>Escuela</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Site</masterLabel>
+        <translation>Solar</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Van</masterLabel>
+        <translation>Van</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Virtual</masterLabel>
+        <translation>Virtual</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Warehouse</masterLabel>
+        <translation>Almacén</translation>
+    </valueTranslation>
+</StandardValueSetTranslation>

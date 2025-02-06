@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ArdiraSurvey__Advanced_Section_Body_Style__c</fullName>
+    <deprecated>false</deprecated>
+    <description>Use this option to change the section body style of survey responder interface. Use standard CSS style. e.g. background-color: #445566 !important;border-radius:20px;border: 3px solid #ff0000;font-size: 20px.</description>
+    <inlineHelpText>Body Style allows you to customize the visual style of the section body in the survey responder interface. You can use this option to apply CSS styles. e.g. background-color: #445566 !important;border-radius:20px;border: 3px solid #ff0000;font-size: 20px.</inlineHelpText>
+    <label>Section Body Style</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>TextArea</type>
+</CustomField>

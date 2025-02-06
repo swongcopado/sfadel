@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>redwing__Google_Maps_API_Key__c</fullName>
+    <deprecated>false</deprecated>
+    <description>URL path for your custom page</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Replace this value with your custom Google Maps API Key (https://console.developers.google.com)</inlineHelpText>
+    <label>Google Maps API Key</label>
+    <length>255</length>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

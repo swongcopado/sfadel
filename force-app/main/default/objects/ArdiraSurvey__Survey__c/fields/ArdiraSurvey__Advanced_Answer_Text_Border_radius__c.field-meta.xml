@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ArdiraSurvey__Advanced_Answer_Text_Border_radius__c</fullName>
+    <deprecated>false</deprecated>
+    <description>Use this option to change the border radius of choice based questions. Enter value with number and unit combination e.g: 5px or 10% etc.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Answer Text Border Radius allows you to specify the border radius of choice-based questions in the survey responder interface. You can enter a value with a number and unit combination to define the curvature of the border edges. For example, setting the value to 5px will create a border with a 5-pixel radius, giving it a slightly rounded appearance. Similarly, using a value of 10% will create a border with a radius equal to 10% of its width or height, resulting in a more rounded shape.</inlineHelpText>
+    <label>Answer Text Border Radius</label>
+    <length>6</length>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

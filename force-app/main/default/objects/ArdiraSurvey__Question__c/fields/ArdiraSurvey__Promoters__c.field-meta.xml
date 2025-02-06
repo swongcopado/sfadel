@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ArdiraSurvey__Promoters__c</fullName>
+    <defaultValue>&quot;#008000&quot;</defaultValue>
+    <deprecated>false</deprecated>
+    <description>Color to be used for Promoters.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Select a color to use for the promoters in the NPS question.</inlineHelpText>
+    <label>Promoters (9-10)</label>
+    <length>40</length>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

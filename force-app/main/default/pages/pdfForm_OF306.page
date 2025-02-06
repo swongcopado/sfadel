@@ -1,0 +1,684 @@
+<apex:page renderAs="PDF" standardController="Contact" standardStylesheets="false" applyHtmlTag="false" showHeader="false">
+
+    <html>
+        <head>
+            <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+            <title>Optional Form 306 (Rev. October 2011)</title>
+            <style type="text/css">
+                @page {
+                    margin: 2em 2em 1.5em 2em;
+                }
+                
+                body {
+                    font-family:Arial,sans-serif;
+                    font-style:normal;
+                    font-weight:normal;
+                    text-color:black;
+                    font-size:16px;
+                    text-align:left;
+                    text-decoration:none;
+                    margin:0;
+                    padding:0;
+                    text-indent:0;
+                }
+                
+                * { margin:0; padding:0; text-indent:0; }
+                
+                h1 { font-weight:bold; font-size:25px; }
+                p.asterisk { font-size:11px; }
+                p.formnumber { font-size:8px; }
+                p.opm { font-size:13px; }
+                
+                h2 { font-weight:bold; font-size:16px; width:100%; border-bottom:6px solid #000; line-height:0px; margin-top:20px; margin-bottom:10px; }
+                h2 span { font-family:Arial,sans-serif; background:#fff; padding:0 10px 0 0; }
+                p.instructions { font-size:13px; margin-left:20px; margin-bottom:15px; }
+                p.instructions2 { font-size:12px; margin-bottom:15px; }
+                
+                h3 { font-weight:normal; font-size:11px; margin-top:0; }
+                h3 span { font-weight:normal; font-size:9px; }
+                
+                h4 { font-family:'Times New Roman',serif; font-weight:normal; font-size:13px; line-height:30px; }
+                h4 span { font-family:Arial,sans-serif;font-weight:normal; font-size:13px; line-height:30px; }
+                
+                
+                .p, p { font-size: 9pt;}
+                
+                .s1 { font-size: 9.5pt; }
+                .s2 { font-size: 8pt; }
+                .s3 { font-weight: bold; font-size: 9pt; }
+                .s4 { font-weight: bold; text-decoration: none; font-size: 16pt; }
+                .s5 { font-size: 8pt; }
+                .s6 { font-size: 9pt; }
+                .s7 { font-weight: bold; font-size: 16pt; vertical-align: -1pt; }
+                .s8 { font-size: 9pt; }
+                .s9 { font-size: 8pt; }
+                .s10 { font-style: italic; font-size: 9pt; }
+                .s11 { font-weight: bold; font-size: 8pt; }
+                .s12 { font-weight: normal; }
+                .s13 { font-size: 10pt; }
+                .s14 { font-size: 6pt; }
+                .s16 { font-size: 7pt; }
+                .s17 { font-size: 9pt; vertical-align: -5pt; }
+                
+                li {display: block; }
+                #l1 {padding-left: 0pt;counter-reset: c1 8; }
+                #l1> li>*:first-child:before {counter-increment: c1; content: counter(c1, decimal)". "; color: black; font-family:Arial, sans-serif; font-style: normal; font-weight: normal; text-decoration: none; font-size: 9pt; }
+                #l1> li:first-child>*:first-child:before {counter-increment: c1 0;  }
+                
+                table, tbody {vertical-align: top; overflow: visible; }
+            </style>
+        </head>
+        
+        
+        <body>
+            
+            <table width="100%" border="0">
+                <tr>
+                    <td width="20%" align="left"></td>
+                    <td width="60%" align="center">
+                        <h1>Declaration for Federal Employment*</h1>
+                        <p class="asterisk">(*This form may also be used to assess fitness for federal contract employment)</p>
+                    </td>
+                    <td width="20%" align="right" valign="top">
+                        <p class="formnumber">
+                            Form Approved:<br/>
+                            OMB No. 3206-0182
+                        </p>
+                    </td>
+                </tr>
+            </table>
+            
+            <br/>
+            
+            <h2><span>Instructions</span></h2>
+            <p class="instructions">
+                The information collected on this form is used to determine your acceptability for Federal and Federal contract employment and your enrollment status in the Government&#39;s Life Insurance program. You may be asked to complete this form at any time during the hiring process. Follow instructions that the agency provides. If you are selected, before you are appointed you will be asked to update your responses on this form and on other materials submitted during the application process and then to recertify that your answers are true.
+            </p>
+            <p class="instructions">
+                All your answers must be truthful and complete. <strong>A false statement on any part of this declaration or attached forms or sheets may be grounds for not hiring you, or for firing you after you begin work. Also, you may be punished by a fine or imprisonment (U.S. Code, title 18, section 1001).</strong>
+            </p>
+            <p class="instructions">
+                Either type your responses on this form or print clearly in dark ink. If you need additional space, attach letter-size sheets (8.5&quot; X 11&quot;). Include your name, Social Security Number, and item number on each sheet. We recommend that you keep a photocopy of your completed form for your records.
+            </p>
+            
+            
+            <h2><span>Privacy Act Statement</span></h2>
+            <p class="instructions">
+                The Office of Personnel Management is authorized to request this information under sections 1302, 3301, 3304, 3328, and 8716 of title 5, U. S. Code. Section 1104 of title 5 allows the Office of Personnel Management to delegate personnel management functions to other Federal agencies. If necessary, and usually in conjunction with another form or forms, this form may be used in conducting an investigation to determine your suitability or your ability to hold a security clearance, and it may be disclosed to authorized officials making similar, subsequent determinations.
+            </p>
+            <p class="instructions">
+                Your Social Security Number (SSN) is needed to keep our records accurate, because other people may have the same name and birth date. Public Law 104-134 (April 26, 1996) asks Federal agencies to use this number to help identify individuals in agency records. Giving us your SSN or any other information is voluntary. However, if you do not give us your SSN or any other information requested, we cannot process your application. Incomplete addresses and ZIP Codes may also slow processing.
+            </p>
+            <p class="instructions">
+                ROUTINE USES: Any disclosure of this record or information in this record is in accordance with routine uses found in System Notice OPM/GOVT-1, General Personnel Records. This system allows disclosure of information to: training facilities; organizations deciding claims for retirement, insurance, unemployment, or health benefits; officials in litigation or administrative proceedings where the Government is a party; law enforcement agencies concerning a violation of law or regulation; Federal agencies for statistical reports and studies; officials of labor organizations recognized by law in connection with representation of employees; Federal agencies or other sources requesting information for Federal agencies in connection with hiring or retaining, security clearance, security or suitability investigations, classifying jobs, contracting, or issuing licenses, grants, or other benefits; public and private organizations, including news media, which grant or publicize employee recognitions and awards; the Merit Systems Protection Board, the Office of Special Counsel, the Equal Employment Opportunity Commission, the Federal Labor Relations Authority, the National Archives and Records Administration, and Congressional offices in connection with their official functions; prospective non-Federal employers concerning tenure of employment, civil service status, length of service, and the date and nature of action for separation as shown on the SF 50 (or authorized exception) of a specifically identified individual; requesting organizations or individuals concerning the home address and other relevant information on those who might have contracted an illness or been exposed to a health hazard; authorized Federal and non-Federal agencies for use in computer matching; spouses or dependent children asking whether the employee has changed from a self-and-family to a self-only health benefits enrollment; individuals working on a contract, service, grant, cooperative agreement, or job for the Federal government; non-agency members of an agency&#39;s performance or other panel; and agency-appointed representatives of employees concerning information issued to the employees about fitness-for-duty or agency-filed disability retirement procedures.
+            </p>
+            
+            
+            <h2><span>Public Burden Statement</span></h2>
+            <p class="instructions">
+                Public burden reporting for this collection of information is estimated to vary from 5 to 30 minutes with an average of 15 minutes per response, including time for reviewing instructions, searching existing data sources, gathering the data needed, and completing and reviewing the collection of information. Send comments regarding the burden estimate or any other aspect of the collection of information, including suggestions for reducing this burden, to the U.S. Office of Personnel Management, Reports and Forms Manager (3206-0182), Washington, DC 20415-7900. The OMB number, 3206-0182, is valid. OPM may not collect this information, and you are not required to respond, unless this number is displayed.
+            </p>
+            
+            
+            <table width="100%" border="0" style="margin-top:40px;">
+                <tr>
+                    <td width="50%" align="left" valign="bottom">
+                        <p class="opm">
+                            U.S. Office of Personnel Management
+                        </p>
+                        <p class="formnumber">
+                            5 U.S.C. 1302, 1301, 3304, 3328 &amp; 8716
+                        </p>
+                    </td>
+                    <td width="50%" align="right" valign="bottom">
+                        <p class="formnumber">
+                            Optional Form 306<br/>
+                            Revised October 2011<br/>
+                            Previous editions obsolete and unusable
+                        </p>
+                    </td>
+                </tr>
+            </table>
+            
+            
+            <!-- NEXT PAGE -->
+            
+            
+            <table width="100%" border="0">
+                <tr>
+                    <td width="20%" align="left"></td>
+                    <td width="60%" align="center">
+                        <h1>Declaration for Federal Employment*</h1>
+                        <p class="asterisk">(*This form may also be used to assess fitness for federal contract employment)</p>
+                    </td>
+                    <td width="20%" align="right" valign="top">
+                        <p class="formnumber">
+                            Form Approved:<br/>
+                            OMB No. 3206-0182
+                        </p>
+                    </td>
+                </tr>
+            </table>
+            
+            <h2><span>GENERAL INFORMATION</span></h2>
+            
+            <table width="100%" border="0" cellpadding="0" cellspacing="0">
+                <tr>
+                    <td valign="top" width="3%">
+                        <h3><strong>1.</strong></h3>
+                    </td>
+                    <td valign="top" width="97%" colspan="5">
+                        <h3><strong>FULL NAME </strong><span>(Provide your full name. If you have only initials in your name, provide them and indicate &quot;Initial only&quot;. If you do not have a middle name, indicate &quot;No Middle Name&quot;. If you are a &quot;Jr.,&quot; &quot;Sr.,&quot; etc. enter this under Suffix. First, Middle, Last, Suffix)</span></h3>
+                    </td>
+                </tr>
+                <tr>
+                    <td valign="top" width="3%" style="border-bottom:3px solid black;"></td>
+                    <td valign="top" width="97%" colspan="5" style="border-bottom:3px solid black;">
+                        <h4><apex:image url="{!$Resource.formPDF_diamond_icon}" height="13"/> {!Contact.FirstName} {!Contact.LastName}</h4>
+                    </td>
+                </tr>
+                <tr>
+                    <td valign="top" width="3%">
+                        <h3><strong>2.</strong></h3>
+                    </td>
+                    <td valign="top" width="30%">
+                        <h3><strong>SOCIAL SECURITY NUMBER</strong></h3>
+                    </td>
+                    <td valign="top" width="3%" style="border-left:3px solid black;">
+                        <h3><strong>3a.</strong></h3>
+                    </td>
+                    <td valign="top" width="64%" colspan="3">
+                        <h3><strong>PLACE OF BIRTH </strong><span>(Include city and state or country)</span></h3>
+                    </td>
+                </tr>
+                <tr>
+                    <td valign="top" width="3%" style="border-bottom:3px solid black;"></td>
+                    <td valign="top" width="30%" style="border-bottom:3px solid black;">
+                        <h4><apex:image url="{!$Resource.formPDF_diamond_icon}" height="13"/> 123-45-6789</h4>
+                    </td>
+                    <td valign="top" width="3%" style="border-bottom:3px solid black;border-left:3px solid black;"></td>
+                    <td valign="top" width="64%" colspan="3" style="border-bottom:3px solid black;">
+                        <h4><apex:image url="{!$Resource.formPDF_diamond_icon}" height="13"/> San Francisco, CA</h4>
+                    </td>
+                </tr>
+                <tr>
+                    <td valign="top" width="3%">
+                        <h3><strong>3b.</strong></h3>
+                    </td>
+                    <td valign="top" width="64%" colspan="3">
+                        <h3><strong>ARE YOU A U.S. CITIZEN?</strong></h3>
+                    </td>
+                    <td valign="top" width="3%" style="border-left:3px solid black;">
+                        <h3><strong>4.</strong></h3>
+                    </td>
+                    <td valign="top" width="30%">
+                        <h3><strong>DATE OF BIRTH </strong><span>(MM / DD / YYYY)</span></h3>
+                    </td>
+                </tr>
+                <tr>
+                    <td valign="top" width="3%" style="border-bottom:3px solid black;"></td>
+                    <td valign="top" width="64%" colspan="3" style="border-bottom:3px solid black;">
+                        <h4>
+                            <apex:image url="{!$Resource.formPDF_box_checked_icon}" height="13"/> YES &nbsp;&nbsp;&nbsp;
+                            <apex:image url="{!$Resource.formPDF_box_unchecked_icon}" height="13"/> NO (if &quot;NO&quot;, provide country of citizenship) &nbsp;&nbsp;&nbsp;
+                            <apex:image url="{!$Resource.formPDF_diamond_icon}" height="13"/>
+                        </h4>
+                    </td>
+                    <td valign="top" width="3%" style="border-bottom:3px solid black;border-left:3px solid black;"></td>
+                    <td valign="top" width="30%" style="border-bottom:3px solid black;">
+                        <h4><apex:image url="{!$Resource.formPDF_diamond_icon}" height="13"/> {!Contact.Birthdate}</h4>
+                    </td>
+                </tr>
+                <tr>
+                    <td valign="top" width="3%">
+                        <h3><strong>5.</strong></h3>
+                    </td>
+                    <td valign="top" width="64%" colspan="3">
+                        <h3><strong>OTHER NAMES EVER USED </strong><span>(For example, maiden name, nickname, etc.)</span></h3>
+                    </td>
+                    <td valign="top" width="3%" style="border-left:3px solid black;">
+                        <h3><strong>6.</strong></h3>
+                    </td>
+                    <td valign="top" width="30%">
+                        <h3><strong>PHONE NUMBERS </strong><span>(Include area codes)</span></h3>
+                    </td>
+                </tr>
+                <tr>
+                    <td valign="top" width="3%"></td>
+                    <td valign="top" width="64%" colspan="3">
+                        <h4>
+                            <apex:image url="{!$Resource.formPDF_diamond_icon}" height="13"/>
+                        </h4>
+                    </td>
+                    <td valign="top" width="3%" style="border-bottom:2px solid black;border-left:3px solid black;"></td>
+                    <td valign="top" width="30%" style="border-bottom:2px solid black;">
+                        <h4><span>Day&nbsp;&nbsp;&nbsp;</span> <apex:image url="{!$Resource.formPDF_diamond_icon}" height="13"/> {!Contact.Phone}</h4>
+                    </td>
+                </tr>
+                <tr>
+                    <td valign="top" width="3%" style="border-bottom:3px solid black;"></td>
+                    <td valign="top" width="64%" rowspan="2" colspan="3" style="border-bottom:3px solid black;">
+                        <h4>
+                            <apex:image url="{!$Resource.formPDF_diamond_icon}" height="13"/>
+                        </h4>
+                    </td>
+                    <td valign="top" width="3%" style="border-bottom:3px solid black;border-left:3px solid black;"></td>
+                    <td valign="top" width="30%" style="border-bottom:3px solid black;">
+                        <h4><span>Night&nbsp;</span> <apex:image url="{!$Resource.formPDF_diamond_icon}" height="13"/> {!Contact.Phone}</h4>
+                    </td>
+                </tr>
+            </table>
+
+            <h2><span>Selective Service Registration</span></h2>
+            
+            <p class="instructions2">
+                If you are a male born after December 31, 1959, and are at least 18 years of age, civil service employment law (5 U.S.C. 3328) requires that you must register with the Selective Service System, unless you meet certain exemptions.
+            </p>
+            
+            <table width="100%" border="0" cellpadding="0" cellspacing="0">
+                <tr>
+                    <td valign="top" width="3%">
+                        <h3>7a.</h3>
+                    </td>
+                    <td valign="top">
+                        <h3>Are you a male born after December 31, 1959?</h3>
+                    </td>
+                    <td valign="top">
+                        <h3><apex:image url="{!$Resource.formPDF_box_checked_icon}" height="13"/> YES</h3>
+                    </td>
+                    <td valign="top">
+                        <h3><apex:image url="{!$Resource.formPDF_box_unchecked_icon}" height="13"/> NO <span>(If &quot;NO&quot;, proceed to 8.)</span></h3>
+                    </td>
+                </tr>
+                <tr>
+                    <td valign="top" width="3%">
+                        <h3>7b.</h3>
+                    </td>
+                    <td valign="top">
+                        <h3>Have you registered with the Selective Service System?</h3>
+                    </td>
+                    <td valign="top">
+                        <h3><apex:image url="{!$Resource.formPDF_box_checked_icon}" height="13"/> YES <span>(If &quot;YES&quot;, proceed to 8.)</span></h3>
+                    </td>
+                    <td valign="top">
+                        <h3><apex:image url="{!$Resource.formPDF_box_unchecked_icon}" height="13"/> NO <span>(If &quot;NO&quot;, proceed to 7c.)</span></h3>
+                    </td>
+                </tr>
+                <tr>
+                    <td valign="top" width="3%">
+                        <h3>7c.</h3>
+                    </td>
+                    <td valign="top" colspan="3">
+                        <h3>If &quot;NO,&quot; describe your reason(s) in item 16.</h3>
+                    </td>
+                </tr>
+            </table>
+            
+            <h2><span>Military Service</span></h2>
+            
+            <table width="100%" border="0" cellpadding="0" cellspacing="0">
+                <tr>
+                    <td valign="top" width="3%">
+                        <h3>8.</h3>
+                    </td>
+                    <td valign="top" width="">
+                        <h3>Have you ever served in the United States military?</h3>
+                    </td>
+                    <td valign="top" width="">
+                        <h3><apex:image url="{!$Resource.formPDF_box_checked_icon}" height="13"/> YES <span>(If &quot;YES&quot;, provide information below)</span></h3>
+                    </td>
+                    <td valign="top" width="">
+                        <h3><apex:image url="{!$Resource.formPDF_box_unchecked_icon}" height="13"/> NO</h3>
+                    </td>
+                </tr>
+                <tr>
+                    <td valign="top" width="3%"></td>
+                    <td valign="top" colspan="3">
+                        <h3>
+                            <i>If you answered &quot;YES,&quot; list the branch, dates, and type of discharge for all active duty.</i>
+                        </h3>
+                    </td>
+                </tr>
+                <tr>
+                    <td valign="top" width="3%"></td>
+                    <td valign="top" colspan="3">
+                        <h3>
+                            <i>If your only active duty was training in the Reserves or National Guard, answer &quot;NO&quot;</i>
+                        </h3>
+                    </td>
+                </tr>
+            </table>
+            
+            <table width="100%" border="0" cellpadding="0" cellspacing="0" style="border:3px solid black;">
+                <tr>
+                    <td valign="top" width="25%" style="border-bottom:2px solid black;background-color:#D2D2D2;">
+                        <h3 style="text-align:center;"><strong>Branch</strong></h3>
+                    </td>
+                    <td valign="top" width="20%" style="border-bottom:2px solid black;border-left:2px solid black;background-color:#D2D2D2;">
+                        <h3 style="text-align:center;"><strong>From</strong> <span>(MM/DD/YYYY)</span></h3>
+                    </td>
+                    <td valign="top" width="20%" style="border-bottom:2px solid black;border-left:2px solid black;background-color:#D2D2D2;">
+                        <h3 style="text-align:center;"><strong>To</strong> <span>(MM/DD/YYYY)</span></h3>
+                    </td>
+                    <td valign="top" width="35%" style="border-bottom:2px solid black;border-left:2px solid black;background-color:#D2D2D2;">
+                        <h3 style="text-align:center;"><strong>Type of Discharge</strong></h3>
+                    </td>
+                </tr>
+                <tr>
+                    <td valign="top" style="border-bottom:2px solid black;">&nbsp;</td>
+                    <td valign="top" style="border-bottom:2px solid black;border-left:2px solid black;">&nbsp;</td>
+                    <td valign="top" style="border-bottom:2px solid black;border-left:2px solid black;">&nbsp;</td>
+                    <td valign="top" style="border-bottom:2px solid black;border-left:2px solid black;">&nbsp;</td>
+                </tr>
+                <tr>
+                    <td valign="top" style="border-bottom:2px solid black;">&nbsp;</td>
+                    <td valign="top" style="border-bottom:2px solid black;border-left:2px solid black;">&nbsp;</td>
+                    <td valign="top" style="border-bottom:2px solid black;border-left:2px solid black;">&nbsp;</td>
+                    <td valign="top" style="border-bottom:2px solid black;border-left:2px solid black;">&nbsp;</td>
+                </tr>
+                <tr>
+                    <td valign="top">&nbsp;</td>
+                    <td valign="top" style="border-left:2px solid black;">&nbsp;</td>
+                    <td valign="top" style="border-left:2px solid black;">&nbsp;</td>
+                    <td valign="top" style="border-left:2px solid black;">&nbsp;</td>
+                </tr>
+            </table>
+            
+            <h2><span>Background Information</span></h2>
+            
+            <p class="instructions2">
+                <strong>For all questions, provide all additional requested information under item 16 or on attached sheets.</strong> The circumstances of each event you list will be considered. However, in most cases you can still be considered for Federal jobs.
+            </p>
+            
+            <p class="instructions2">
+                For questions 9,10, and 11, your answers should include convictions resulting from a plea of <i>nolo contendere </i>(no contest), but omit (1) traffic fines of $300 or less, (2) any violation of law committed before your 16th birthday, (3) any violation of law committed before your 18th birthday if finally decided in juvenile court or under a Youth Offender law, (4) any conviction set aside under the Federal Youth Corrections Act or similar state law, and (5) any conviction for which the record was expunged under Federal or state law.
+            </p>
+            
+            <table width="100%" border="0" cellpadding="0" cellspacing="0" style="border-bottom:6px solid #000;">
+                <tr>
+                    <td valign="top" width="3%"><h3>9.</h3></td>
+                    <td valign="top" width="">
+                        <h3>During the last 7 years, have you been convicted, been imprisoned, been on probation, or been on parole? (Includes felonies, firearms or explosives violations, misdemeanors, and all other offenses.) <i>If &quot;YES,&quot; use item 16 to provide the date, explanation of the violation, place of occurrence, and the name and address of the police department or court involved.</i></h3>
+                    </td>
+                    <td valign="top" width="10%">
+                        <h3><apex:image url="{!$Resource.formPDF_box_unchecked_icon}" height="13"/> YES</h3>
+                    </td>
+                    <td valign="top" width="10%">
+                        <h3><apex:image url="{!$Resource.formPDF_box_checked_icon}" height="13"/> NO</h3>
+                    </td>
+                </tr>
+                <tr>
+                    <td valign="top" width="3%"><h3>10.</h3></td>
+                    <td valign="top" width="">
+                        <h3>Have you been convicted by a military court-martial in the past 7 years? <i>(If no military service, answer &quot;NO.&quot;) If &quot;YES,&quot; use item 16 to provide the date, explanation of the violation, place of occurrence, and the name and address of the military authority or court involved.</i></h3>
+                    </td>
+                    <td valign="top" width="">
+                        <h3><apex:image url="{!$Resource.formPDF_box_unchecked_icon}" height="13"/> YES</h3>
+                    </td>
+                    <td valign="top" width="">
+                        <h3><apex:image url="{!$Resource.formPDF_box_checked_icon}" height="13"/> NO</h3>
+                    </td>
+                </tr>
+                <tr>
+                    <td valign="top" width="3%"><h3>11.</h3></td>
+                    <td valign="top" width="">
+                        <h3>Are you currently under charges for any violation of law? <i>If &quot;YES,&quot; use item 16 to provide the date, explanation of the violation, place of occurrence, and the name and address of the police department or court involved.</i></h3>
+                    </td>
+                    <td valign="top" width="">
+                        <h3><apex:image url="{!$Resource.formPDF_box_unchecked_icon}" height="13"/> YES</h3>
+                    </td>
+                    <td valign="top" width="">
+                        <h3><apex:image url="{!$Resource.formPDF_box_checked_icon}" height="13"/> NO</h3>
+                    </td>
+                </tr>
+                <tr>
+                    <td valign="top" width="3%"><h3>12.</h3></td>
+                    <td valign="top" width="">
+                        <h3>During the last 5 years, have you been fired from any job for any reason, did you quit after being told that you would be fired, did you leave any job by mutual agreement because of specific problems, or were you debarred from Federal employment by the Office of Personnel Management or any other Federal agency? <i>If &quot;YES,&quot; use item 16 to provide the date, an explanation of the problem, reason for leaving, and the employer&#39;s name and address.</i></h3>
+                    </td>
+                    <td valign="top" width="">
+                        <h3><apex:image url="{!$Resource.formPDF_box_unchecked_icon}" height="13"/> YES</h3>
+                    </td>
+                    <td valign="top" width="">
+                        <h3><apex:image url="{!$Resource.formPDF_box_checked_icon}" height="13"/> NO</h3>
+                    </td>
+                </tr>
+                <tr>
+                    <td valign="top" width="3%"><h3>13.</h3></td>
+                    <td valign="top" width="">
+                        <h3>Are you delinquent on any Federal debt? (Includes delinquencies arising from Federal taxes, loans, overpayment of benefits, and other debts to the U.S. Government, plus defaults of Federally guaranteed or insured loans such as student and home mortgage loans.) <i>If &quot;YES,&quot; use item 16 to provide the type, length, and amount of the delinquency or default, and steps that you are taking to correct the error or repay the debt.</i></h3>
+                    </td>
+                    <td valign="top" width="">
+                        <h3><apex:image url="{!$Resource.formPDF_box_unchecked_icon}" height="13"/> YES</h3>
+                    </td>
+                    <td valign="top" width="">
+                        <h3><apex:image url="{!$Resource.formPDF_box_checked_icon}" height="13"/> NO</h3>
+                    </td>
+                </tr>
+            </table>
+            
+            
+            <table width="100%" border="0" style="margin-top:6px;">
+                <tr>
+                    <td width="50%" align="left" valign="bottom">
+                        <p class="opm">
+                            U.S. Office of Personnel Management
+                        </p>
+                        <p class="formnumber">
+                            5 U.S.C. 1302, 1301, 3304, 3328 &amp; 8716
+                        </p>
+                    </td>
+                    <td width="50%" align="right" valign="bottom">
+                        <p class="formnumber">
+                            Optional Form 306<br/>
+                            Revised October 2011<br/>
+                            Previous editions obsolete and unusable
+                        </p>
+                    </td>
+                </tr>
+            </table>
+            
+            
+            <!-- NEXT PAGE -->
+            
+            
+            <table width="100%" border="0">
+                <tr>
+                    <td width="20%" align="left"></td>
+                    <td width="60%" align="center">
+                        <h1>Declaration for Federal Employment*</h1>
+                        <p class="asterisk">(*This form may also be used to assess fitness for federal contract employment)</p>
+                    </td>
+                    <td width="20%" align="right" valign="top">
+                        <p class="formnumber">
+                            Form Approved:<br/>
+                            OMB No. 3206-0182
+                        </p>
+                    </td>
+                </tr>
+            </table>
+            
+            
+            <h2><span>Additional Questions</span></h2>
+            
+            <table width="100%" border="0" cellpadding="0" cellspacing="0">
+                <tr>
+                    <td valign="top" width="3%"><h3>14.</h3></td>
+                    <td valign="top" width="">
+                        <h3>Do any of your relatives work for the agency or government organization to which you are submitting this form? (Include: father, mother, husband, wife, son, daughter, brother, sister, uncle, aunt, first cousin, nephew, niece, father-in-law,mother-in-law, son-in-law, daughter-in-law, brother-in-law, sister-in-law, stepfather, stepmother, stepson, stepdaughter, stepbrother, stepsister, half brother, and half sister.) <i>If &quot;YES,&quot; use item 16 to provide the relative&#39;s name,relationship, and the department, agency, or branch of the Armed Forces for which your relative works.</i></h3>
+                    </td>
+                    <td valign="top" width="10%">
+                        <h3><apex:image url="{!$Resource.formPDF_box_unchecked_icon}" height="13"/> YES</h3>
+                    </td>
+                    <td valign="top" width="10%">
+                        <h3><apex:image url="{!$Resource.formPDF_box_checked_icon}" height="13"/> NO</h3>
+                    </td>
+                </tr>
+                <tr>
+                    <td valign="top" width="3%"><h3>15.</h3></td>
+                    <td valign="top" width="">
+                        <h3>Do you receive, or have you ever applied for, retirement pay, pension, or other retired pay based on military, Federal civilian, or District of Columbia Government service?</h3>
+                    </td>
+                    <td valign="top" width="">
+                        <h3><apex:image url="{!$Resource.formPDF_box_unchecked_icon}" height="13"/> YES</h3>
+                    </td>
+                    <td valign="top" width="">
+                        <h3><apex:image url="{!$Resource.formPDF_box_checked_icon}" height="13"/> NO</h3>
+                    </td>
+                </tr>
+            </table>
+            
+            <h2><span>Continuation Space / Agency Optional Questions</span></h2>
+            
+            <table width="100%" border="0" cellpadding="0" cellspacing="0">
+                <tr>
+                    <td valign="top" width="3%"><h3>16.</h3></td>
+                    <td valign="top" width="97%">
+                        <h3>Provide details requested in items 7 through 15 and 18c in the space below or on attached sheets. Be sure to identify attached sheets with your name, Social Security Number, and item number, and to include ZIP Codes in all addresses. If any questions are printed below, please answer as instructed <i>(these questions are specific to your position and your agency is authorized to ask them).</i></h3>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2" style="height:190px;">&nbsp;</td>
+                </tr>
+            </table>
+            
+            <h2><span>Certifications / Additional Questions</span></h2>
+            
+            <p class="instructions2">
+                <strong>APPLICANT: If you are applying for a position and have not yet been selected</strong>, carefully review your answers on this form and any attached sheets. When this form and all attached materials are accurate, read item 17, and complete 17a.
+            </p>
+            
+            <p class="instructions2">
+                <strong>APPOINTEE: If you are being appointed</strong>, carefully review your answers on this form and any attached sheets, including any other application materials that your agency has attached to this form. If any information requires correction to be accurate as of the date you are signing, make changes on this form or the attachments and/or provide updated information on additional sheets, initialing and dating all changes and additions. When this form and all attached materials are accurate, read item 17, complete 17b, read 18, and answer 18a, 18b, and 18c as appropriate.
+            </p>
+            
+            <table width="100%" border="0" cellpadding="0" cellspacing="0">
+                <tr>
+                    <td valign="top" width="3%"><h3>17.</h3></td>
+                    <td valign="top" width="97%">
+                        <h3><strong>I certify that</strong>, to the best of my knowledge and belief, all of the information on and attached to this Declaration for Federal Employment, including any attached application materials, is true, correct, complete, and made in good faith. <strong>I understand that a false or fraudulent answer to any question or item on any part of this declaration or its attachments may be grounds for not hiring me, or for firing me after I begin work, and may be punishable by fine or imprisonment. I understand that</strong> any information I give may be investigated for purposes of determining eligibility for Federal employment as allowed by law or Presidential order. <strong>I consent</strong> to the release of information about my ability and fitness for Federal employment by employers, schools, law enforcement agencies, and other individuals and organizations to investigators, personnel specialists, and other authorized employees or representatives of the Federal Government. <strong>I understand</strong> that for financial or lending institutions, medical institutions, hospitals, health care professionals, and some other sources of information, a separate specific release may be needed, and I may be contacted for such a release at a later date.</h3>
+                    </td>
+                </tr>
+            </table>
+            
+            <br/>
+            
+            <table width="100%" border="0" cellpadding="0" cellspacing="0">
+                <tr>
+                    <td valign="bottom" width="3%"><h3>17a.</h3></td>
+                    <td valign="bottom" width="15%" align="right"><h3>Applicant's Signature:</h3></td>
+                    <td valign="bottom" width="35%" style="border-bottom:1px solid black;">&nbsp;</td>
+                    <td valign="bottom" width="4%" align="right"><h3>Date</h3></td>
+                    <td valign="bottom" width="10%" style="border-bottom:1px solid black;">&nbsp;</td>
+                    <td valign="bottom" width="20%" rowspan="3" align="center" style="padding-left:5px;">
+                        <table width="100%" border="0" cellpadding="0" cellspacing="0" align="center">
+                            <tr>
+                                <td style="border:1px solid black;padding-left:5px;padding-right:5px;">
+                                    <h3>
+                                        <strong>Appointing Officer</strong><br/>
+                                        <span style="font-size:8px;">Enter Date of Appointment or Conversion<br/>
+                                            MM / DD / YYYY</span><br/><br/>
+                                    </h3>
+                                    
+                                </td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+                <tr>
+                    <td valign="top">&nbsp;</td>
+                    <td valign="top">&nbsp;</td>
+                    <td valign="top"><h3><span>(Sign in ink)</span></h3></td>
+                    <td valign="top">&nbsp;</td>
+                    <td valign="top">&nbsp;</td>
+                </tr>
+                <tr>
+                    <td valign="bottom"><h3>17a.</h3></td>
+                    <td valign="bottom" align="right"><h3>Appointee's Signature:</h3></td>
+                    <td valign="bottom" style="border-bottom:1px solid black;">&nbsp;</td>
+                    <td valign="bottom" align="right"><h3>Date</h3></td>
+                    <td valign="bottom" style="border-bottom:1px solid black;">&nbsp;</td>
+                </tr>
+                <tr>
+                    <td valign="top">&nbsp;</td>
+                    <td valign="top">&nbsp;</td>
+                    <td valign="top"><h3><span>(Sign in ink)</span></h3></td>
+                    <td valign="top">&nbsp;</td>
+                    <td valign="top">&nbsp;</td>
+                    <td valign="top">&nbsp;</td>
+                </tr>
+            </table>
+            
+            <table width="100%" border="0" cellpadding="0" cellspacing="0" style="border-top:6px solid #000;">
+                <tr>
+                    <td valign="top" width="3%" style="border-bottom:1px solid black;"><h3>18.</h3></td>
+                    <td valign="top" width="97%" colspan="4" style="border-bottom:1px solid black;">
+                        <h3><strong>Appointee (Only respond if you have been employed by the Federal Government before):</strong> Your elections of life insurance during previous Federal employment may affect your eligibility for life insurance during your new appointment. These questions are asked to help your personnel office make a correct determination.</h3>
+                    </td>
+                </tr>
+                <tr>
+                    <td valign="middle" width="3%" style="border-bottom:1px solid black;height:30px;"><h3>18a.</h3></td>
+                    <td valign="middle" width="" style="border-bottom:1px solid black;">
+                        <h3>When did you leave your last Federal job?</h3>
+                    </td>
+                    <td valign="middle" width="40%" colspan="3" style="border-bottom:1px solid black;">
+                        <h3>DATE:</h3>
+                    </td>
+                </tr>
+                <tr>
+                    <td valign="top" width="3%" style="border-bottom:1px solid black;"><h3>18b.</h3></td>
+                    <td valign="top" width="" style="border-bottom:1px solid black;">
+                        <h3>When you worked for the Federal Government the last time, did you waive Basic Life Insurance or any type of optional life insurance?</h3>
+                    </td>
+                    <td valign="top" width="10%" style="border-bottom:1px solid black;">
+                        <h3><apex:image url="{!$Resource.formPDF_box_unchecked_icon}" height="13"/> YES</h3>
+                    </td>
+                    <td valign="top" width="10%" style="border-bottom:1px solid black;">
+                        <h3><apex:image url="{!$Resource.formPDF_box_unchecked_icon}" height="13"/> NO</h3>
+                    </td>
+                    <td valign="top" width="20%" style="border-bottom:1px solid black;">
+                        <h3><apex:image url="{!$Resource.formPDF_box_unchecked_icon}" height="13"/> DO NOT KNOW</h3>
+                    </td>
+                </tr>
+                <tr>
+                    <td valign="top" width="3%"><h3>18c.</h3></td>
+                    <td valign="top" width="">
+                        <h3>If you answered &quot;YES&quot; to item 18b, did you later cancel the waiver(s)? If your answer to item 18c is &quot;NO,&quot; use item 16 to identify the type(s) of insurance for which waivers were not canceled.</h3>
+                    </td>
+                    <td valign="top" width="10%">
+                        <h3><apex:image url="{!$Resource.formPDF_box_unchecked_icon}" height="13"/> YES</h3>
+                    </td>
+                    <td valign="top" width="10%">
+                        <h3><apex:image url="{!$Resource.formPDF_box_unchecked_icon}" height="13"/> NO</h3>
+                    </td>
+                    <td valign="top" width="20%">
+                        <h3><apex:image url="{!$Resource.formPDF_box_unchecked_icon}" height="13"/> DO NOT KNOW</h3>
+                    </td>
+                </tr>
+            </table>
+            
+            
+            <table width="100%" border="0" style="margin-top:6px;border-top:6px solid #000;">
+                <tr>
+                    <td width="50%" align="left" valign="bottom">
+                        <p class="opm">
+                            U.S. Office of Personnel Management
+                        </p>
+                        <p class="formnumber">
+                            5 U.S.C. 1302, 1301, 3304, 3328 &amp; 8716
+                        </p>
+                    </td>
+                    <td width="50%" align="right" valign="bottom">
+                        <p class="formnumber">
+                            Optional Form 306<br/>
+                            Revised October 2011<br/>
+                            Previous editions obsolete and unusable
+                        </p>
+                    </td>
+                </tr>
+            </table>
+            
+        </body>
+    </html>
+    
+</apex:page>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Catalogue de Trac d&apos;apprentissage</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Catalogues de Trac d&apos;apprentissage</value>
+    </caseValues>
+    <gender>Masculine</gender>
+    <nameFieldLabel>ID de catalogue de Trac d&apos;apprentissage</nameFieldLabel>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

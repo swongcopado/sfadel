@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ArdiraSurvey__Show_Questions_in_Random_Order__c</fullName>
+    <defaultValue>false</defaultValue>
+    <deprecated>false</deprecated>
+    <description>Enabling this setting allows questions to be displayed in a random order to each respondent, with the exception of questions that are configured as part of a question dependency. This means that each respondent will see the questions in a different order, reducing the potential for order bias in the survey responses.</description>
+    <inlineHelpText>When enabled, this setting will randomize the order in which questions are presented to participants during each quiz session. This adds variety to the quiz experience and helps prevent bias or predictability. Disable this setting to present questions in their original order as defined in the quiz configuration.</inlineHelpText>
+    <label>Randomize Question Order</label>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

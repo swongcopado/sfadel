@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>outfunds__Open_Milestones</fullName>
+    <columns>NAME</columns>
+    <columns>outfunds__Funding_Request__c</columns>
+    <columns>outfunds__Assigned__c</columns>
+    <columns>outfunds__Type__c</columns>
+    <columns>outfunds__Status__c</columns>
+    <columns>outfunds__Due_Date__c</columns>
+    <columns>outfunds__Completed_Date__c</columns>
+    <columns>outfunds__Primary_Contact__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>outfunds__Status__c</field>
+        <operation>equals</operation>
+        <value>Open,In Progress,Delayed</value>
+    </filters>
+    <label>Open Milestones</label>
+</ListView>

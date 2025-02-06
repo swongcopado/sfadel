@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ArdiraSurvey__Survey_Background_Images_Library_Id__c</fullName>
+    <deprecated>false</deprecated>
+    <description>Survey background images are stored in this library.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Survey background images are stored in this library.</inlineHelpText>
+    <label>Survey Background Images Library Id</label>
+    <length>40</length>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

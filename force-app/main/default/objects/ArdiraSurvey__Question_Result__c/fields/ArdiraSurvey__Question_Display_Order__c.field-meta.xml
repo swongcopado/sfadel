@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ArdiraSurvey__Question_Display_Order__c</fullName>
+    <deprecated>false</deprecated>
+    <description>Order in which this question is displayed in a Survey Result. This is a concatenation of the section display order and this questions display order. A typical value will be concatenation of two three character strings (005 002). One representing the display order of section and other representing the display order of the question itself.</description>
+    <externalId>false</externalId>
+    <formula>ArdiraSurvey__Question__r.ArdiraSurvey__Survey_Display_Order__c</formula>
+    <inlineHelpText>Order in which this question is displayed in a Survey Result. This is a concatenation of the section display order and this question display order.</inlineHelpText>
+    <label>Question Display Order</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

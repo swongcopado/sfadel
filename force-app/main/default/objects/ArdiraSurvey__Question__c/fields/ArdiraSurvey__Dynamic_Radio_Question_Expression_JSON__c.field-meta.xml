@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ArdiraSurvey__Dynamic_Radio_Question_Expression_JSON__c</fullName>
+    <deprecated>false</deprecated>
+    <description>In the case of &quot;Object Records&quot; source, the field stores expression JSON to query the selected object records to present as dynamic answer choices.</description>
+    <inlineHelpText>In the case of &quot;Object Records&quot; source, the field stores expression JSON to query the selected object records to present as dynamic answer choices.</inlineHelpText>
+    <label>Dynamic Radio Question Expression JSON</label>
+    <length>32000</length>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>LongTextArea</type>
+    <visibleLines>3</visibleLines>
+</CustomField>

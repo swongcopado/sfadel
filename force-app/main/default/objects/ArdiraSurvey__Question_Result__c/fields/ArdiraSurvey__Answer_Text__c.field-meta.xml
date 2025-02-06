@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ArdiraSurvey__Answer_Text__c</fullName>
+    <deprecated>false</deprecated>
+    <description>Text response for questions.</description>
+    <inlineHelpText>Text response for a question. Note that for any question type, a response will be copied as text in this field.</inlineHelpText>
+    <label>Answer Text</label>
+    <length>32768</length>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>LongTextArea</type>
+    <visibleLines>3</visibleLines>
+</CustomField>

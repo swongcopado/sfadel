@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PermissionSetGroup xmlns="http://soap.sforce.com/2006/04/metadata">
+    <hasActivationRequired>false</hasActivationRequired>
+    <label>OmniStudio Experience Cloud</label>
+    <permissionSets>Business_Rules_Engine_Runtime_for_Communities</permissionSets>
+    <permissionSets>Decision_Explainer_Runtime_Site_User</permissionSets>
+    <permissionSets>OmniStudio_Digital_Experience_Objects_and_Apex</permissionSets>
+    <permissionSets>OmniStudio_Digital_Experience_User</permissionSets>
+    <permissionSets>force__DocGenRuntimeCC</permissionSets>
+    <status>Updated</status>
+</PermissionSetGroup>

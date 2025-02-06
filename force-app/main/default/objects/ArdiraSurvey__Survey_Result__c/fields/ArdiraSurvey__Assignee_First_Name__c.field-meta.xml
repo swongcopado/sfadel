@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ArdiraSurvey__Assignee_First_Name__c</fullName>
+    <deprecated>false</deprecated>
+    <description>First name of the survey assignee. Convenience field to be used as merge field in email templates.</description>
+    <externalId>false</externalId>
+    <formula>IF(ISPICKVAL(ArdiraSurvey__Assignee_Type__c, &quot;User&quot;), ArdiraSurvey__Assigned_To_User__r.FirstName,  IF(ISPICKVAL(ArdiraSurvey__Assignee_Type__c, &quot;Contact&quot;), ArdiraSurvey__Assigned_To_Contact__r.FirstName, &apos;&apos;) )</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <inlineHelpText>First name of the survey assignee. Convenience field to be used as merge field in email templates.</inlineHelpText>
+    <label>Assignee First Name</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

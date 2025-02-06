@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ArdiraSurvey__Survey_Result__c</fullName>
+    <deprecated>false</deprecated>
+    <description>Question result is part of this survey result.</description>
+    <inlineHelpText>Question result is part of this survey result.</inlineHelpText>
+    <label>Survey Result</label>
+    <referenceTo>ArdiraSurvey__Survey_Result__c</referenceTo>
+    <relationshipLabel>Question Results</relationshipLabel>
+    <relationshipName>Question_Results</relationshipName>
+    <relationshipOrder>0</relationshipOrder>
+    <reparentableMasterDetail>false</reparentableMasterDetail>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>MasterDetail</type>
+    <writeRequiresMasterRead>false</writeRequiresMasterRead>
+</CustomField>

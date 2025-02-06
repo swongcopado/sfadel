@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ArdiraSurvey__Title__c</fullName>
+    <deprecated>false</deprecated>
+    <description>Descriptive title for the survey section.</description>
+    <inlineHelpText>Enter a title for this section.</inlineHelpText>
+    <label>Title</label>
+    <length>4096</length>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>LongTextArea</type>
+    <visibleLines>3</visibleLines>
+</CustomField>

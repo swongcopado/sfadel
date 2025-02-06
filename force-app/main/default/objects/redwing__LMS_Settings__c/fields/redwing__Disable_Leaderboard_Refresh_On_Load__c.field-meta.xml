@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>redwing__Disable_Leaderboard_Refresh_On_Load__c</fullName>
+    <defaultValue>false</defaultValue>
+    <deprecated>false</deprecated>
+    <inlineHelpText>Enable this option if you&apos;d like disable leaderboard cache refresh on page load</inlineHelpText>
+    <label>Disable Leaderboard Refresh On Load</label>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

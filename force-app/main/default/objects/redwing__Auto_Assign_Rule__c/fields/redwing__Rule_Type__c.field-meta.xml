@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>redwing__Rule_Type__c</fullName>
+    <deprecated>false</deprecated>
+    <inlineHelpText>Type of the rule</inlineHelpText>
+    <label>Rule Type</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Simple Rule</fullName>
+                <default>true</default>
+                <label>Simple Rule</label>
+            </value>
+            <value>
+                <fullName>Advanced Rule</fullName>
+                <default>false</default>
+                <label>Advanced Rule</label>
+            </value>
+            <value>
+                <fullName>Rule Condition</fullName>
+                <default>false</default>
+                <label>Rule Condition</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

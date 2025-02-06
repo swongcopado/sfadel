@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ArdiraSurvey__Advanced_Answer_Choice_Button_Sel_Color__c</fullName>
+    <deprecated>false</deprecated>
+    <description>Use this option to change the selected background color of choice based questions. Use hex or RGB color code as a value.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Answer Choice Button Selected Color allows you to customize the background color of selected answer choices in choice-based questions. You can use either a hex color code (e.g., #RRGGBB) or an RGB color code (e.g., rgb(R, G, B)) as the value. By selecting a specific color, you can visually highlight the chosen answer options and provide a clear indication to participants of their selected choices.</inlineHelpText>
+    <label>Answer Choice Button Selected Color</label>
+    <length>30</length>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

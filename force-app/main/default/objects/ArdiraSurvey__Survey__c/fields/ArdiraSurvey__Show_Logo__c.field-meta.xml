@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ArdiraSurvey__Show_Logo__c</fullName>
+    <defaultValue>true</defaultValue>
+    <deprecated>false</deprecated>
+    <description>Show logo in survey response page.</description>
+    <inlineHelpText>Enable this option to display the logo in the survey response interface. By showing the logo, you can add branding and visual identity to the survey, providing a cohesive experience for the participants.</inlineHelpText>
+    <label>Display Logo</label>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

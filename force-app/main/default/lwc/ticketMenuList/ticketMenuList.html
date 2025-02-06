@@ -1,0 +1,56 @@
+<template>
+    <template for:each={page} for:item="ticket">
+        <c-ticket-card
+            key={ticket.id}
+            record-id={ticket.id}
+            case-number={ticket.caseNumber}
+            subject={ticket.subject}
+            status={ticket.status}
+            description={ticket.description}
+            priority={ticket.priority}
+            created-date={ticket.createdDate}
+        >
+        </c-ticket-card>
+    </template>
+
+    <template if:true={showAllTickets}>
+        <div class="slds-size_1-of-1 card">
+            <lightning-card>
+                <div
+                    class="slds-grid slds-var-p-horizontal_medium slds-var-p-bottom_medium"
+                >
+                    <div class="slds-size_1-of-1">
+                        <span class="footer-text"
+                            ><a data-element="footer" href="#" onclick={openAllTickets}
+                                >{label.seeAllTickets}</a
+                            ></span
+                        >
+                        <p class="slds-float_right slds-var-p-horizontal_small">
+                            <lightning-icon
+                                icon-name="utility:forward"
+                                alternative-text="See all tickets"
+                                title="See all tickets"
+                                size="x-small"
+                            ></lightning-icon>
+                        </p>
+                    </div>
+                </div>
+            </lightning-card>
+        </div>
+    </template>
+
+    <!-- Prompt message "No tickets found" if tickets is empty -->
+    <template if:true={noTickets}>
+        <div class="slds-size_1-of-1 card">
+            <lightning-card>
+                <div
+                    class="slds-grid slds-var-p-horizontal_medium slds-var-p-bottom_medium"
+                >
+                    <div class="slds-size_1-of-1">
+                        <span class="footer-text"><a href="#">{label.NoTickets}</a></span>
+                    </div>
+                </div>
+            </lightning-card>
+        </div>
+    </template>
+</template>

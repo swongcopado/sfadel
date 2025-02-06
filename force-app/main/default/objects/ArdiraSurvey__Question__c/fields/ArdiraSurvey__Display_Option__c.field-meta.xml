@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ArdiraSurvey__Display_Option__c</fullName>
+    <defaultValue>&apos;Squares&apos;</defaultValue>
+    <deprecated>false</deprecated>
+    <description>Select display option for a question.</description>
+    <inlineHelpText>Select display option for a question.</inlineHelpText>
+    <label>Display Option</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Circles</fullName>
+                <default>false</default>
+                <label>Circles</label>
+            </value>
+            <value>
+                <fullName>Squares</fullName>
+                <default>true</default>
+                <label>Squares</label>
+            </value>
+            <value>
+                <fullName>Squares with Shadow</fullName>
+                <default>false</default>
+                <label>Squares with Shadow</label>
+            </value>
+            <value>
+                <fullName>Stars</fullName>
+                <default>false</default>
+                <label>Stars</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

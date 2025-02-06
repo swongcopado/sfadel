@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>redwing__Question_Feedback_Visibility__c</fullName>
+    <deprecated>false</deprecated>
+    <inlineHelpText>Option for displaying the Question-level feedback for users.</inlineHelpText>
+    <label>Question Feedback Visibility</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Show when incorrect</fullName>
+                <default>true</default>
+                <label>Show when incorrect</label>
+            </value>
+            <value>
+                <fullName>Show always</fullName>
+                <default>false</default>
+                <label>Show always</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

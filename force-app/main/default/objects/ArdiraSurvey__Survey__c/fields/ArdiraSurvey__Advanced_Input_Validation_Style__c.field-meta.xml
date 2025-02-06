@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ArdiraSurvey__Advanced_Input_Validation_Style__c</fullName>
+    <deprecated>false</deprecated>
+    <description>Use this option to change the input controls validation text message color in survey responder interface. Use hex or RGB color code as a value.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Input Validation Text Color allows you to change the color of the validation text messages for input controls in the survey responder interface. You can use a hex or RGB color code as a value to define the desired color for the validation text. By customizing this option, you can ensure that the validation messages stand out and are easily readable, helping participants understand any errors or requirements related to their input.</inlineHelpText>
+    <label>Input Validation Text Color</label>
+    <length>25</length>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

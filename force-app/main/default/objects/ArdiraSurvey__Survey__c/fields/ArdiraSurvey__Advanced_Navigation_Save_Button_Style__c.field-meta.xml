@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ArdiraSurvey__Advanced_Navigation_Save_Button_Style__c</fullName>
+    <deprecated>false</deprecated>
+    <description>Use this option to change the save as draft button style. Use standard CSS style. e.g. background-color: #445566;border-radius:20px;border: 3px solid #ff0000.</description>
+    <inlineHelpText>Save Draft Button Style allows you to customize the visual appearance of the Save Draft button in the survey responder interface using custom CSS styles. e.g. background-color: #445566;border-radius:20px;border: 3px solid #ff0000.</inlineHelpText>
+    <label>Save Draft Button style</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>TextArea</type>
+</CustomField>

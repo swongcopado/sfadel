@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ArdiraSurvey__Multiple_Choice_Allow_Multiple_Answers__c</fullName>
+    <defaultValue>true</defaultValue>
+    <deprecated>false</deprecated>
+    <description>If checked, allow multiple choices to be selected.</description>
+    <inlineHelpText>Enable to allow multiple answer choices to be selected for the question response.</inlineHelpText>
+    <label>Multiple Choice - Allow Multiple Answers</label>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

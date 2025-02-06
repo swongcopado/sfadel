@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebLink xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Check_Eligibility</fullName>
+    <availability>online</availability>
+    <displayType>button</displayType>
+    <encodingKey>UTF-8</encodingKey>
+    <height>600</height>
+    <linkType>url</linkType>
+    <masterLabel>Check Eligibility</masterLabel>
+    <openType>sidebar</openType>
+    <protected>false</protected>
+    <url>/lightning/cmp/omnistudio__vlocityLWCOmniWrapper?c__target=c:benefitManagementCheckEligibilityAndAssignBenefitEnglish&amp;c__layout=lightning&amp;c__tabIcon=custom:custom18&amp;c__tabLabel=Check Eligibility and Assign Benefit&amp;c__ContextId={!IndividualApplication.Id}</url>
+</WebLink>

@@ -1,0 +1,347 @@
+<template>
+            <div class="slds-grid slds-wrap slds-is-relative ">
+            <div style="position: fixed;z-index: 999999;top: 0;right: 0;">
+  <omnistudio-toast class="flexcard-toast-element" theme="slds" title="" message="" styletype=""> </omnistudio-toast>
+</div>
+            <div if:true={showLoader} class="slds-is-absolute vloc-loader_override" style="height: 100%; width: 100%; min-height:50px; background: transparent; z-index: 99;">
+  <div>
+   <omnistudio-spinner
+      variant="brand"
+      alternative-text="Loading content..."
+      size="medium"
+      theme="slds"
+      ></omnistudio-spinner>
+  </div>
+</div>
+            <template if:false={hasPermission}>
+              You don't have required permissions to view this card.
+            </template>
+            <template if:true={hasPermission}>
+              <template if:true={hasRecords}>
+                        <template for:each={_records} for:item="record" for:index="rindex">
+                            <omnistudio-flex-card-state if:true={record}  key={record._flex.uniqueKey} data-recordid={record.Id} record={record} data-statue="true"  data-index="0" data-rindex={rindex} class="cf-vlocity-state-0 cf-vlocity-state slds-size_12-of-12 "  tracking-obj={_childCardTrackingObj} >
+      <div if:true={cardLoaded} class="slds-grid slds-wrap  slds-m-bottom_x-small " style="             ">
+          <div data-style-id="state0element0" class="slds-col   slds-p-around_x-small  slds-size_12-of-12  " data-rindex={rindex} style="background-color:#F4F6F9;             " >
+    <omnistudio-block data-style-id="state0element0_child"  card={card}  record={record}  label="Block"  collapsible="false"  collapsed-by-default="false"  theme="slds"  ><div class="slds-grid slds-wrap">
+          <div data-style-id="state0element0block_element0" class="slds-col   slds-large-size_9-of-12  slds-medium-size_11-of-12  slds-small-size_11-of-12  slds-size_9-of-12  " data-rindex={rindex} style="          min-height:20px;   padding-top:10px; padding-left:18px" ><omnistudio-output-field data-style-id="state0element0block_element0_child"   card={card}  record={record}  merge-field="%3Cdiv%3E%3Cspan%20style=%22font-size:%2012pt;%22%3E%3Cspan%20class=%22slds-text-heading_medium%22%3E%7BfilterLabel%7D%3C/span%3E%3C/span%3E%3C/div%3E"  theme="slds"  ></omnistudio-output-field>
+      </div><div data-style-id="state0element0block_element1" class="slds-col  slds-text-align_left slds-p-right_x-small  slds-large-size_3-of-12 slds-medium-size_1-of-12 slds-small-size_1-of-12 slds-size_3-of-12  " data-rindex={rindex} style="     : #ccc 1px solid; 
+         padding-top:7px;" >
+    <omnistudio-flex-menu data-style-id="state0element0block_element1_child" 
+    onupdateos={updateOmniscript} onselectcards={updateSelectedCards} onsetvalue={updateAction}  card={card}  record={record}  type="action"  size="small"  variant="neutral"  icon-name="utility:filter"  overflow="true"  label=""  position="right"  icon-position="left"  icon-size="x-small" 
+    theme="slds" > 
+     <omnistudio-flex-menu-item 
+    name="menu-item-0-0"
+    theme="slds"
+    data-style-id="state0element0block_element1_menuitem_0"
+    
+    class=""
+    >
+    <omnistudio-flex-action record={record} card={card}  action-list='\[{"stateObj":"{record}","card":"{card}","stateAction":{"id":"flex-action-1608762639558","type":"cardAction","displayName":"All","vlocityIcon":"","targetType":"Web Page","openUrlIn":"Current Window","Web Page":{"targetName":"/apex"},"eventName":"updatedatasource","parent":"menu","message":"{\"type\":\"IntegrationProcedures\",\"value\":{\"ipMethod\":\"CustomerStory_Marshaller\",\"vlocityAsync\":false,\"inputMap\":{\"accountId\":\"{recordId}\",\"inboundFilter\":\"\"}},\"orderBy\":{\"name\":\"\",\"isReverse\":false},\"contextVariables\":[{\"name\":\"recordId\",\"val\":\"001ao00000D6zwnAAS\",\"id\":2}]}","actionConditions":null},"isTrackingDisabled":true}]'  label="All"  icon-name=""  re-render-flyout="undefined"  preload-flyout="undefined"  flyout-details='\{}'  flyout-channel="undefined"  class="state0element0block_element1_menuitem_0 flexActionElement" onexecuteaction={performAction} 
+    data-action-element-class="state0element0block_element1_menuitem_0" data-show-spinner="false" 
+    data-element-label="mnufiltermenuitem0" 
+    theme="slds" extra-class="slds-dropdown__item" 
+      action-wrapperclass=""
+      action-labelclass="slds-truncate menu-item-label"
+      menu-item-data="%7B%22iconPosition%22%3A%22%22%7D"
+      icon-size="x-small"
+      icon-extraclass="slds-icon-text-default slds-m-right_x-small" >
+     </omnistudio-flex-action>
+    </omnistudio-flex-menu-item><omnistudio-flex-menu-item 
+    name="menu-item-1631568894296-0"
+    theme="slds"
+    data-style-id="state0element0block_element1_menuitem_1"
+    
+    class=""
+    >
+    <omnistudio-flex-action record={record} card={card}  action-list='\[{"stateObj":"{record}","card":"{card}","stateAction":{"id":"flex-action-1631571303915","type":"cardAction","displayName":"Paused Process","vlocityIcon":"","targetType":"Web Page","openUrlIn":"Current Window","Web Page":{"targetName":"/apex"},"eventName":"updatedatasource","message":"{\"type\":\"IntegrationProcedures\",\"value\":{\"dsDelay\":0,\"ipMethod\":\"CustomerStory_Marshaller\",\"vlocityAsync\":false,\"inputMap\":{\"accountId\":\"{recordId}\",\"inboundFilter\":\"OmniScript\"}},\"orderBy\":{\"name\":\"\",\"isReverse\":false},\"contextVariables\":[{\"name\":\"recordId\",\"val\":\"001ao00000D6zwoAAB\",\"id\":2}]}","parent":"menu","actionConditions":null}}]'  label="Paused Process"  icon-name=""  re-render-flyout="undefined"  preload-flyout="undefined"  flyout-details='\{}'  flyout-channel="undefined"  class="state0element0block_element1_menuitem_1 flexActionElement" onexecuteaction={performAction} 
+    data-action-element-class="state0element0block_element1_menuitem_1" data-show-spinner="false" 
+    data-element-label="mnufiltermenuitem1" 
+    theme="slds" extra-class="slds-dropdown__item" 
+      action-wrapperclass=""
+      action-labelclass="slds-truncate menu-item-label"
+      menu-item-data="%7B%7D"
+      icon-size="x-small"
+      icon-extraclass="slds-icon-text-default slds-m-right_x-small" >
+     </omnistudio-flex-action>
+    </omnistudio-flex-menu-item><omnistudio-flex-menu-item 
+    name="menu-item-1-0"
+    theme="slds"
+    data-style-id="state0element0block_element1_menuitem_2"
+    
+    class=""
+    >
+    <omnistudio-flex-action record={record} card={card}  action-list='\[{"stateObj":"{record}","card":"{card}","stateAction":{"id":"flex-action-1608762715596","type":"cardAction","displayName":"Cases","vlocityIcon":"","targetType":"Web Page","openUrlIn":"Current Window","Web Page":{"targetName":"/apex"},"eventName":"updatedatasource","parent":"menu","message":"{\"type\":\"IntegrationProcedures\",\"value\":{\"ipMethod\":\"CustomerStory_Marshaller\",\"vlocityAsync\":false,\"inputMap\":{\"accountId\":\"{recordId}\",\"inboundFilter\":\"Cases\"}},\"orderBy\":{\"name\":\"\",\"isReverse\":false},\"contextVariables\":[{\"name\":\"recordId\",\"val\":\"001ao00000D6zwnAAS\",\"id\":2}]}","actionConditions":null},"isTrackingDisabled":true}]'  label="Cases"  icon-name=""  re-render-flyout="undefined"  preload-flyout="undefined"  flyout-details='\{}'  flyout-channel="undefined"  class="state0element0block_element1_menuitem_2 flexActionElement" onexecuteaction={performAction} 
+    data-action-element-class="state0element0block_element1_menuitem_2" data-show-spinner="false" 
+    data-element-label="mnufiltermenuitem2" 
+    theme="slds" extra-class="slds-dropdown__item" 
+      action-wrapperclass=""
+      action-labelclass="slds-truncate menu-item-label"
+      menu-item-data="%7B%22iconPosition%22%3A%22%22%7D"
+      icon-size="x-small"
+      icon-extraclass="slds-icon-text-default slds-m-right_x-small" >
+     </omnistudio-flex-action>
+    </omnistudio-flex-menu-item><omnistudio-flex-menu-item 
+    name="menu-item-2-0"
+    theme="slds"
+    data-style-id="state0element0block_element1_menuitem_3"
+    
+    class=""
+    >
+    <omnistudio-flex-action record={record} card={card}  action-list='\[{"stateObj":"{record}","card":"{card}","stateAction":{"id":"flex-action-1608763321487","type":"cardAction","displayName":"Opportunities","vlocityIcon":"","targetType":"Web Page","openUrlIn":"Current Window","Web Page":{"targetName":"/apex"},"parent":"menu","eventName":"updatedatasource","message":"{\"type\":\"IntegrationProcedures\",\"value\":{\"ipMethod\":\"CustomerStory_Marshaller\",\"vlocityAsync\":false,\"inputMap\":{\"accountId\":\"{recordId}\",\"inboundFilter\":\"Opportunities\"}},\"orderBy\":{\"name\":\"\",\"isReverse\":false},\"contextVariables\":[{\"name\":\"recordId\",\"val\":\"001ao00000D6zwnAAS\",\"id\":2}]}","actionConditions":null},"isTrackingDisabled":true}]'  label="Opportunities"  icon-name=""  re-render-flyout="undefined"  preload-flyout="undefined"  flyout-details='\{}'  flyout-channel="undefined"  class="state0element0block_element1_menuitem_3 flexActionElement" onexecuteaction={performAction} 
+    data-action-element-class="state0element0block_element1_menuitem_3" data-show-spinner="false" 
+    data-element-label="mnufiltermenuitem3" 
+    theme="slds" extra-class="slds-dropdown__item" 
+      action-wrapperclass=""
+      action-labelclass="slds-truncate menu-item-label"
+      menu-item-data="%7B%22iconPosition%22%3A%22%22%7D"
+      icon-size="x-small"
+      icon-extraclass="slds-icon-text-default slds-m-right_x-small" >
+     </omnistudio-flex-action>
+    </omnistudio-flex-menu-item><omnistudio-flex-menu-item 
+    name="menu-item-5-0"
+    theme="slds"
+    data-style-id="state0element0block_element1_menuitem_4"
+    
+    class=""
+    >
+    <omnistudio-flex-action record={record} card={card}  action-list='\[{"stateObj":"{record}","card":"{card}","stateAction":{"id":"flex-action-1617074155480","type":"cardAction","displayName":"Orders","vlocityIcon":"","targetType":"Web Page","openUrlIn":"Current Window","Web Page":{"targetName":"/apex"},"eventName":"updatedatasource","parent":"menu","message":"{\"type\":\"IntegrationProcedures\",\"value\":{\"ipMethod\":\"CustomerStory_Marshaller\",\"vlocityAsync\":false,\"inputMap\":{\"accountId\":\"{recordId}\",\"inboundFilter\":\"Orders\"}},\"orderBy\":{\"name\":\"\",\"isReverse\":false},\"contextVariables\":[{\"name\":\"recordId\",\"val\":\"001ao00000D6zwoAAB\",\"id\":2}]}","actionConditions":null}}]'  label="Orders"  icon-name=""  re-render-flyout="undefined"  preload-flyout="undefined"  flyout-details='\{}'  flyout-channel="undefined"  class="state0element0block_element1_menuitem_4 flexActionElement" onexecuteaction={performAction} 
+    data-action-element-class="state0element0block_element1_menuitem_4" data-show-spinner="false" 
+    data-element-label="mnufiltermenuitem4" 
+    theme="slds" extra-class="slds-dropdown__item" 
+      action-wrapperclass=""
+      action-labelclass="slds-truncate menu-item-label"
+      menu-item-data="%7B%7D"
+      icon-size="x-small"
+      icon-extraclass="slds-icon-text-default slds-m-right_x-small" >
+     </omnistudio-flex-action>
+    </omnistudio-flex-menu-item><omnistudio-flex-menu-item 
+    name="menu-item-6-0"
+    theme="slds"
+    data-style-id="state0element0block_element1_menuitem_5"
+    
+    class=""
+    >
+    <omnistudio-flex-action record={record} card={card}  action-list='\[{"stateObj":"{record}","card":"{card}","stateAction":{"id":"flex-action-1617074165863","type":"cardAction","displayName":"Work Orders","vlocityIcon":"","targetType":"Web Page","openUrlIn":"Current Window","Web Page":{"targetName":"/apex"},"eventName":"updatedatasource","parent":"menu","message":"{\"type\":\"IntegrationProcedures\",\"value\":{\"ipMethod\":\"CustomerStory_Marshaller\",\"vlocityAsync\":false,\"inputMap\":{\"accountId\":\"{recordId}\",\"inboundFilter\":\"WorkOrders\"}},\"orderBy\":{\"name\":\"\",\"isReverse\":false},\"contextVariables\":[{\"name\":\"recordId\",\"val\":\"001ao00000D6zwoAAB\",\"id\":2}]}","actionConditions":null}}]'  label="Work Orders"  icon-name=""  re-render-flyout="undefined"  preload-flyout="undefined"  flyout-details='\{}'  flyout-channel="undefined"  class="state0element0block_element1_menuitem_5 flexActionElement" onexecuteaction={performAction} 
+    data-action-element-class="state0element0block_element1_menuitem_5" data-show-spinner="false" 
+    data-element-label="mnufiltermenuitem5" 
+    theme="slds" extra-class="slds-dropdown__item" 
+      action-wrapperclass=""
+      action-labelclass="slds-truncate menu-item-label"
+      menu-item-data="%7B%7D"
+      icon-size="x-small"
+      icon-extraclass="slds-icon-text-default slds-m-right_x-small" >
+     </omnistudio-flex-action>
+    </omnistudio-flex-menu-item><omnistudio-flex-menu-item 
+    name="menu-item-3-0"
+    theme="slds"
+    data-style-id="state0element0block_element1_menuitem_6"
+    
+    class=""
+    >
+    <omnistudio-flex-action record={record} card={card}  action-list='\[{"stateObj":"{record}","card":"{card}","stateAction":{"id":"flex-action-1617073822838","type":"cardAction","displayName":"Tasks","vlocityIcon":"","targetType":"Web Page","openUrlIn":"Current Window","Web Page":{"targetName":"/apex"},"eventName":"updatedatasource","parent":"menu","message":"{\"type\":\"IntegrationProcedures\",\"value\":{\"ipMethod\":\"CustomerStory_Marshaller\",\"vlocityAsync\":false,\"inputMap\":{\"accountId\":\"{recordId}\",\"inboundFilter\":\"Tasks\"}},\"orderBy\":{\"name\":\"\",\"isReverse\":false},\"contextVariables\":[{\"name\":\"recordId\",\"val\":\"001ao00000D6zwnAAS\",\"id\":2}]}","actionConditions":null},"isTrackingDisabled":true}]'  label="Tasks"  icon-name=""  re-render-flyout="undefined"  preload-flyout="undefined"  flyout-details='\{}'  flyout-channel="undefined"  class="state0element0block_element1_menuitem_6 flexActionElement" onexecuteaction={performAction} 
+    data-action-element-class="state0element0block_element1_menuitem_6" data-show-spinner="false" 
+    data-element-label="mnufiltermenuitem6" 
+    theme="slds" extra-class="slds-dropdown__item" 
+      action-wrapperclass=""
+      action-labelclass="slds-truncate menu-item-label"
+      menu-item-data="%7B%22iconPosition%22%3A%22%22%7D"
+      icon-size="x-small"
+      icon-extraclass="slds-icon-text-default slds-m-right_x-small" >
+     </omnistudio-flex-action>
+    </omnistudio-flex-menu-item><omnistudio-flex-menu-item 
+    name="menu-item-1622764336697-0"
+    theme="slds"
+    data-style-id="state0element0block_element1_menuitem_7"
+    
+    class=""
+    >
+    <omnistudio-flex-action record={record} card={card}  action-list='\[{"stateObj":"{record}","card":"{card}","stateAction":{"id":"flex-action-1622764336726","type":"cardAction","displayName":"Application","vlocityIcon":"","targetType":"Web Page","openUrlIn":"Current Window","Web Page":{"targetName":"/apex"},"eventName":"updatedatasource","message":"{\"type\":\"IntegrationProcedures\",\"value\":{\"ipMethod\":\"CustomerStory_Marshaller\",\"vlocityAsync\":false,\"inputMap\":{\"accountId\":\"{recordId}\",\"inboundFilter\":\"Applications\"}},\"orderBy\":{\"name\":\"\",\"isReverse\":false},\"contextVariables\":[{\"name\":\"recordId\",\"val\":\"001ao00000D6zwoAAB\",\"id\":2}]}","parent":"menu","actionConditions":null}}]'  label="Application"  icon-name=""  re-render-flyout="undefined"  preload-flyout="undefined"  flyout-details='\{}'  flyout-channel="undefined"  class="state0element0block_element1_menuitem_7 flexActionElement" onexecuteaction={performAction} 
+    data-action-element-class="state0element0block_element1_menuitem_7" data-show-spinner="false" 
+    data-element-label="mnufiltermenuitem7" 
+    theme="slds" extra-class="slds-dropdown__item" 
+      action-wrapperclass=""
+      action-labelclass="slds-truncate menu-item-label"
+      menu-item-data="%7B%7D"
+      icon-size="x-small"
+      icon-extraclass="slds-icon-text-default slds-m-right_x-small" >
+     </omnistudio-flex-action>
+    </omnistudio-flex-menu-item>
+    </omnistudio-flex-menu>
+    </div>
+        </div></omnistudio-block>
+    </div><div data-style-id="state0element1" class="slds-col  slds-p-left_x-small slds-p-top_x-small slds-p-right_x-small  slds-large-size_12-of-12 slds-medium-size_12-of-12 slds-small-size_12-of-12 slds-size_12-of-12  " data-rindex={rindex} style="background-color:#ffffff;             " ><c-cf-demo_-console_-story_-card data-style-id="state0element1_child"  tracking-obj={_childCardTrackingObj}  is-inside-parent={insideParent} parent-uniquekey={uniqueKey}  card-node="\{record.InteractionActivities}"  parent-record={record}  records={_records}  parent-mergefields={card}  record-id={recordId}  is-child-card-tracking-enabled="false"  object-api-name={objectApiName}  theme="slds"   onupdateparent={updateParentData}></c-cf-demo_-console_-story_-card>
+    </div>
+        </div>
+      </omnistudio-flex-card-state>
+                        </template>
+                      </template>
+                      <template if:false={hasRecords}>
+                            <omnistudio-flex-card-state  record={record} data-statue="false"  data-index="0" data-rindex={rindex} class="cf-vlocity-state-0 cf-vlocity-state slds-size_12-of-12 "  tracking-obj={_childCardTrackingObj} >
+      <div if:true={cardLoaded} class="slds-grid slds-wrap  slds-m-bottom_x-small " style="             ">
+          <div data-style-id="state0element0" class="slds-col   slds-p-around_x-small  slds-size_12-of-12  " data-rindex={rindex} style="background-color:#F4F6F9;             " >
+    <omnistudio-block data-style-id="state0element0_child"  card={card}  record={record}  label="Block"  collapsible="false"  collapsed-by-default="false"  theme="slds"  ><div class="slds-grid slds-wrap">
+          <div data-style-id="state0element0block_element0" class="slds-col   slds-large-size_9-of-12  slds-medium-size_11-of-12  slds-small-size_11-of-12  slds-size_9-of-12  " data-rindex={rindex} style="          min-height:20px;   padding-top:10px; padding-left:18px" ><omnistudio-output-field data-style-id="state0element0block_element0_child"   card={card}  record={record}  merge-field="%3Cdiv%3E%3Cspan%20style=%22font-size:%2012pt;%22%3E%3Cspan%20class=%22slds-text-heading_medium%22%3E%7BfilterLabel%7D%3C/span%3E%3C/span%3E%3C/div%3E"  theme="slds"  ></omnistudio-output-field>
+      </div><div data-style-id="state0element0block_element1" class="slds-col  slds-text-align_left slds-p-right_x-small  slds-large-size_3-of-12 slds-medium-size_1-of-12 slds-small-size_1-of-12 slds-size_3-of-12  " data-rindex={rindex} style="     : #ccc 1px solid; 
+         padding-top:7px;" >
+    <omnistudio-flex-menu data-style-id="state0element0block_element1_child" 
+    onupdateos={updateOmniscript} onselectcards={updateSelectedCards} onsetvalue={updateAction}  card={card}  record={record}  type="action"  size="small"  variant="neutral"  icon-name="utility:filter"  overflow="true"  label=""  position="right"  icon-position="left"  icon-size="x-small" 
+    theme="slds" > 
+     <omnistudio-flex-menu-item 
+    name="menu-item-0-0"
+    theme="slds"
+    data-style-id="state0element0block_element1_menuitem_0"
+    
+    class=""
+    >
+    <omnistudio-flex-action record={record} card={card}  action-list='\[{"stateObj":"{record}","card":"{card}","stateAction":{"id":"flex-action-1608762639558","type":"cardAction","displayName":"All","vlocityIcon":"","targetType":"Web Page","openUrlIn":"Current Window","Web Page":{"targetName":"/apex"},"eventName":"updatedatasource","parent":"menu","message":"{\"type\":\"IntegrationProcedures\",\"value\":{\"ipMethod\":\"CustomerStory_Marshaller\",\"vlocityAsync\":false,\"inputMap\":{\"accountId\":\"{recordId}\",\"inboundFilter\":\"\"}},\"orderBy\":{\"name\":\"\",\"isReverse\":false},\"contextVariables\":[{\"name\":\"recordId\",\"val\":\"001ao00000D6zwnAAS\",\"id\":2}]}","actionConditions":null},"isTrackingDisabled":true}]'  label="All"  icon-name=""  re-render-flyout="undefined"  preload-flyout="undefined"  flyout-details='\{}'  flyout-channel="undefined"  class="state0element0block_element1_menuitem_0 flexActionElement" onexecuteaction={performAction} 
+    data-action-element-class="state0element0block_element1_menuitem_0" data-show-spinner="false" 
+    data-element-label="mnufiltermenuitem0" 
+    theme="slds" extra-class="slds-dropdown__item" 
+      action-wrapperclass=""
+      action-labelclass="slds-truncate menu-item-label"
+      menu-item-data="%7B%22iconPosition%22%3A%22%22%7D"
+      icon-size="x-small"
+      icon-extraclass="slds-icon-text-default slds-m-right_x-small" >
+     </omnistudio-flex-action>
+    </omnistudio-flex-menu-item><omnistudio-flex-menu-item 
+    name="menu-item-1631568894296-0"
+    theme="slds"
+    data-style-id="state0element0block_element1_menuitem_1"
+    
+    class=""
+    >
+    <omnistudio-flex-action record={record} card={card}  action-list='\[{"stateObj":"{record}","card":"{card}","stateAction":{"id":"flex-action-1631571303915","type":"cardAction","displayName":"Paused Process","vlocityIcon":"","targetType":"Web Page","openUrlIn":"Current Window","Web Page":{"targetName":"/apex"},"eventName":"updatedatasource","message":"{\"type\":\"IntegrationProcedures\",\"value\":{\"dsDelay\":0,\"ipMethod\":\"CustomerStory_Marshaller\",\"vlocityAsync\":false,\"inputMap\":{\"accountId\":\"{recordId}\",\"inboundFilter\":\"OmniScript\"}},\"orderBy\":{\"name\":\"\",\"isReverse\":false},\"contextVariables\":[{\"name\":\"recordId\",\"val\":\"001ao00000D6zwoAAB\",\"id\":2}]}","parent":"menu","actionConditions":null}}]'  label="Paused Process"  icon-name=""  re-render-flyout="undefined"  preload-flyout="undefined"  flyout-details='\{}'  flyout-channel="undefined"  class="state0element0block_element1_menuitem_1 flexActionElement" onexecuteaction={performAction} 
+    data-action-element-class="state0element0block_element1_menuitem_1" data-show-spinner="false" 
+    data-element-label="mnufiltermenuitem1" 
+    theme="slds" extra-class="slds-dropdown__item" 
+      action-wrapperclass=""
+      action-labelclass="slds-truncate menu-item-label"
+      menu-item-data="%7B%7D"
+      icon-size="x-small"
+      icon-extraclass="slds-icon-text-default slds-m-right_x-small" >
+     </omnistudio-flex-action>
+    </omnistudio-flex-menu-item><omnistudio-flex-menu-item 
+    name="menu-item-1-0"
+    theme="slds"
+    data-style-id="state0element0block_element1_menuitem_2"
+    
+    class=""
+    >
+    <omnistudio-flex-action record={record} card={card}  action-list='\[{"stateObj":"{record}","card":"{card}","stateAction":{"id":"flex-action-1608762715596","type":"cardAction","displayName":"Cases","vlocityIcon":"","targetType":"Web Page","openUrlIn":"Current Window","Web Page":{"targetName":"/apex"},"eventName":"updatedatasource","parent":"menu","message":"{\"type\":\"IntegrationProcedures\",\"value\":{\"ipMethod\":\"CustomerStory_Marshaller\",\"vlocityAsync\":false,\"inputMap\":{\"accountId\":\"{recordId}\",\"inboundFilter\":\"Cases\"}},\"orderBy\":{\"name\":\"\",\"isReverse\":false},\"contextVariables\":[{\"name\":\"recordId\",\"val\":\"001ao00000D6zwnAAS\",\"id\":2}]}","actionConditions":null},"isTrackingDisabled":true}]'  label="Cases"  icon-name=""  re-render-flyout="undefined"  preload-flyout="undefined"  flyout-details='\{}'  flyout-channel="undefined"  class="state0element0block_element1_menuitem_2 flexActionElement" onexecuteaction={performAction} 
+    data-action-element-class="state0element0block_element1_menuitem_2" data-show-spinner="false" 
+    data-element-label="mnufiltermenuitem2" 
+    theme="slds" extra-class="slds-dropdown__item" 
+      action-wrapperclass=""
+      action-labelclass="slds-truncate menu-item-label"
+      menu-item-data="%7B%22iconPosition%22%3A%22%22%7D"
+      icon-size="x-small"
+      icon-extraclass="slds-icon-text-default slds-m-right_x-small" >
+     </omnistudio-flex-action>
+    </omnistudio-flex-menu-item><omnistudio-flex-menu-item 
+    name="menu-item-2-0"
+    theme="slds"
+    data-style-id="state0element0block_element1_menuitem_3"
+    
+    class=""
+    >
+    <omnistudio-flex-action record={record} card={card}  action-list='\[{"stateObj":"{record}","card":"{card}","stateAction":{"id":"flex-action-1608763321487","type":"cardAction","displayName":"Opportunities","vlocityIcon":"","targetType":"Web Page","openUrlIn":"Current Window","Web Page":{"targetName":"/apex"},"parent":"menu","eventName":"updatedatasource","message":"{\"type\":\"IntegrationProcedures\",\"value\":{\"ipMethod\":\"CustomerStory_Marshaller\",\"vlocityAsync\":false,\"inputMap\":{\"accountId\":\"{recordId}\",\"inboundFilter\":\"Opportunities\"}},\"orderBy\":{\"name\":\"\",\"isReverse\":false},\"contextVariables\":[{\"name\":\"recordId\",\"val\":\"001ao00000D6zwnAAS\",\"id\":2}]}","actionConditions":null},"isTrackingDisabled":true}]'  label="Opportunities"  icon-name=""  re-render-flyout="undefined"  preload-flyout="undefined"  flyout-details='\{}'  flyout-channel="undefined"  class="state0element0block_element1_menuitem_3 flexActionElement" onexecuteaction={performAction} 
+    data-action-element-class="state0element0block_element1_menuitem_3" data-show-spinner="false" 
+    data-element-label="mnufiltermenuitem3" 
+    theme="slds" extra-class="slds-dropdown__item" 
+      action-wrapperclass=""
+      action-labelclass="slds-truncate menu-item-label"
+      menu-item-data="%7B%22iconPosition%22%3A%22%22%7D"
+      icon-size="x-small"
+      icon-extraclass="slds-icon-text-default slds-m-right_x-small" >
+     </omnistudio-flex-action>
+    </omnistudio-flex-menu-item><omnistudio-flex-menu-item 
+    name="menu-item-5-0"
+    theme="slds"
+    data-style-id="state0element0block_element1_menuitem_4"
+    
+    class=""
+    >
+    <omnistudio-flex-action record={record} card={card}  action-list='\[{"stateObj":"{record}","card":"{card}","stateAction":{"id":"flex-action-1617074155480","type":"cardAction","displayName":"Orders","vlocityIcon":"","targetType":"Web Page","openUrlIn":"Current Window","Web Page":{"targetName":"/apex"},"eventName":"updatedatasource","parent":"menu","message":"{\"type\":\"IntegrationProcedures\",\"value\":{\"ipMethod\":\"CustomerStory_Marshaller\",\"vlocityAsync\":false,\"inputMap\":{\"accountId\":\"{recordId}\",\"inboundFilter\":\"Orders\"}},\"orderBy\":{\"name\":\"\",\"isReverse\":false},\"contextVariables\":[{\"name\":\"recordId\",\"val\":\"001ao00000D6zwoAAB\",\"id\":2}]}","actionConditions":null}}]'  label="Orders"  icon-name=""  re-render-flyout="undefined"  preload-flyout="undefined"  flyout-details='\{}'  flyout-channel="undefined"  class="state0element0block_element1_menuitem_4 flexActionElement" onexecuteaction={performAction} 
+    data-action-element-class="state0element0block_element1_menuitem_4" data-show-spinner="false" 
+    data-element-label="mnufiltermenuitem4" 
+    theme="slds" extra-class="slds-dropdown__item" 
+      action-wrapperclass=""
+      action-labelclass="slds-truncate menu-item-label"
+      menu-item-data="%7B%7D"
+      icon-size="x-small"
+      icon-extraclass="slds-icon-text-default slds-m-right_x-small" >
+     </omnistudio-flex-action>
+    </omnistudio-flex-menu-item><omnistudio-flex-menu-item 
+    name="menu-item-6-0"
+    theme="slds"
+    data-style-id="state0element0block_element1_menuitem_5"
+    
+    class=""
+    >
+    <omnistudio-flex-action record={record} card={card}  action-list='\[{"stateObj":"{record}","card":"{card}","stateAction":{"id":"flex-action-1617074165863","type":"cardAction","displayName":"Work Orders","vlocityIcon":"","targetType":"Web Page","openUrlIn":"Current Window","Web Page":{"targetName":"/apex"},"eventName":"updatedatasource","parent":"menu","message":"{\"type\":\"IntegrationProcedures\",\"value\":{\"ipMethod\":\"CustomerStory_Marshaller\",\"vlocityAsync\":false,\"inputMap\":{\"accountId\":\"{recordId}\",\"inboundFilter\":\"WorkOrders\"}},\"orderBy\":{\"name\":\"\",\"isReverse\":false},\"contextVariables\":[{\"name\":\"recordId\",\"val\":\"001ao00000D6zwoAAB\",\"id\":2}]}","actionConditions":null}}]'  label="Work Orders"  icon-name=""  re-render-flyout="undefined"  preload-flyout="undefined"  flyout-details='\{}'  flyout-channel="undefined"  class="state0element0block_element1_menuitem_5 flexActionElement" onexecuteaction={performAction} 
+    data-action-element-class="state0element0block_element1_menuitem_5" data-show-spinner="false" 
+    data-element-label="mnufiltermenuitem5" 
+    theme="slds" extra-class="slds-dropdown__item" 
+      action-wrapperclass=""
+      action-labelclass="slds-truncate menu-item-label"
+      menu-item-data="%7B%7D"
+      icon-size="x-small"
+      icon-extraclass="slds-icon-text-default slds-m-right_x-small" >
+     </omnistudio-flex-action>
+    </omnistudio-flex-menu-item><omnistudio-flex-menu-item 
+    name="menu-item-3-0"
+    theme="slds"
+    data-style-id="state0element0block_element1_menuitem_6"
+    
+    class=""
+    >
+    <omnistudio-flex-action record={record} card={card}  action-list='\[{"stateObj":"{record}","card":"{card}","stateAction":{"id":"flex-action-1617073822838","type":"cardAction","displayName":"Tasks","vlocityIcon":"","targetType":"Web Page","openUrlIn":"Current Window","Web Page":{"targetName":"/apex"},"eventName":"updatedatasource","parent":"menu","message":"{\"type\":\"IntegrationProcedures\",\"value\":{\"ipMethod\":\"CustomerStory_Marshaller\",\"vlocityAsync\":false,\"inputMap\":{\"accountId\":\"{recordId}\",\"inboundFilter\":\"Tasks\"}},\"orderBy\":{\"name\":\"\",\"isReverse\":false},\"contextVariables\":[{\"name\":\"recordId\",\"val\":\"001ao00000D6zwnAAS\",\"id\":2}]}","actionConditions":null},"isTrackingDisabled":true}]'  label="Tasks"  icon-name=""  re-render-flyout="undefined"  preload-flyout="undefined"  flyout-details='\{}'  flyout-channel="undefined"  class="state0element0block_element1_menuitem_6 flexActionElement" onexecuteaction={performAction} 
+    data-action-element-class="state0element0block_element1_menuitem_6" data-show-spinner="false" 
+    data-element-label="mnufiltermenuitem6" 
+    theme="slds" extra-class="slds-dropdown__item" 
+      action-wrapperclass=""
+      action-labelclass="slds-truncate menu-item-label"
+      menu-item-data="%7B%22iconPosition%22%3A%22%22%7D"
+      icon-size="x-small"
+      icon-extraclass="slds-icon-text-default slds-m-right_x-small" >
+     </omnistudio-flex-action>
+    </omnistudio-flex-menu-item><omnistudio-flex-menu-item 
+    name="menu-item-1622764336697-0"
+    theme="slds"
+    data-style-id="state0element0block_element1_menuitem_7"
+    
+    class=""
+    >
+    <omnistudio-flex-action record={record} card={card}  action-list='\[{"stateObj":"{record}","card":"{card}","stateAction":{"id":"flex-action-1622764336726","type":"cardAction","displayName":"Application","vlocityIcon":"","targetType":"Web Page","openUrlIn":"Current Window","Web Page":{"targetName":"/apex"},"eventName":"updatedatasource","message":"{\"type\":\"IntegrationProcedures\",\"value\":{\"ipMethod\":\"CustomerStory_Marshaller\",\"vlocityAsync\":false,\"inputMap\":{\"accountId\":\"{recordId}\",\"inboundFilter\":\"Applications\"}},\"orderBy\":{\"name\":\"\",\"isReverse\":false},\"contextVariables\":[{\"name\":\"recordId\",\"val\":\"001ao00000D6zwoAAB\",\"id\":2}]}","parent":"menu","actionConditions":null}}]'  label="Application"  icon-name=""  re-render-flyout="undefined"  preload-flyout="undefined"  flyout-details='\{}'  flyout-channel="undefined"  class="state0element0block_element1_menuitem_7 flexActionElement" onexecuteaction={performAction} 
+    data-action-element-class="state0element0block_element1_menuitem_7" data-show-spinner="false" 
+    data-element-label="mnufiltermenuitem7" 
+    theme="slds" extra-class="slds-dropdown__item" 
+      action-wrapperclass=""
+      action-labelclass="slds-truncate menu-item-label"
+      menu-item-data="%7B%7D"
+      icon-size="x-small"
+      icon-extraclass="slds-icon-text-default slds-m-right_x-small" >
+     </omnistudio-flex-action>
+    </omnistudio-flex-menu-item>
+    </omnistudio-flex-menu>
+    </div>
+        </div></omnistudio-block>
+    </div><div data-style-id="state0element1" class="slds-col  slds-p-left_x-small slds-p-top_x-small slds-p-right_x-small  slds-large-size_12-of-12 slds-medium-size_12-of-12 slds-small-size_12-of-12 slds-size_12-of-12  " data-rindex={rindex} style="background-color:#ffffff;             " ><c-cf-demo_-console_-story_-card data-style-id="state0element1_child"  tracking-obj={_childCardTrackingObj}  is-inside-parent={insideParent} parent-uniquekey={uniqueKey}  card-node="\{record.InteractionActivities}"  parent-record={record}  records={_records}  parent-mergefields={card}  record-id={recordId}  is-child-card-tracking-enabled="false"  object-api-name={objectApiName}  theme="slds"   onupdateparent={updateParentData}></c-cf-demo_-console_-story_-card>
+    </div>
+        </div>
+      </omnistudio-flex-card-state>
+                      </template>
+            </template>
+            <template if:true={hasError}>
+            {error}
+            </template>
+            
+      <omnistudio-action action-wrapperclass="slds-hide" re-render-flyout class="action-trigger slds-col" onupdateos={updateOmniscript} onselectcards={updateSelectedCards} onsetvalue={updateAction} onfireactionevent={actionEvtHandler}>
+      
+      </omnistudio-action>
+  
+            <omnistudio-action class="execute-action" re-render-flyout action-wrapperclass="slds-hide" onupdateos={updateOmniscript} onselectcards={updateSelectedCards} onsetvalue={updateAction} onfireactionevent={actionEvtHandler}>
+            
+            </omnistudio-action>
+            </div>
+          </template>

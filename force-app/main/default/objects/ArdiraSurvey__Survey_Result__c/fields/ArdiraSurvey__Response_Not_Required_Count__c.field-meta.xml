@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ArdiraSurvey__Response_Not_Required_Count__c</fullName>
+    <deprecated>false</deprecated>
+    <description>Count of all dependent questions skipped based on the question dependency rules.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Count of questions that do not require a response, based on the question dependency rules.</inlineHelpText>
+    <label>Response Not Required Count</label>
+    <precision>5</precision>
+    <required>false</required>
+    <scale>0</scale>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Number</type>
+    <unique>false</unique>
+</CustomField>

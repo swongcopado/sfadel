@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <apiVersion>53.0</apiVersion>
+    <label>Dental Benefits</label>
+    <processType>ServiceCatalogItemFlow</processType>
+    <start>
+        <locationX>0</locationX>
+        <locationY>0</locationY>
+        <connector>
+            <targetReference>Fulfillment_Flow_Subflow</targetReference>
+        </connector>
+    </start>
+    <status>Active</status>
+    <subflows>
+        <name>Fulfillment_Flow_Subflow</name>
+        <label>Fulfillment Flow</label>
+        <locationX>0</locationX>
+        <locationY>0</locationY>
+        <flowName>wkdw__Service_Catalog_Create_Case_Fulfillment_Flow</flowName>
+        <inputAssignments>
+            <name>var_sc_caseStatus</name>
+            <value>
+                <stringValue>New</stringValue>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <name>var_sc_casePriority</name>
+            <value>
+                <stringValue>Medium</stringValue>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <name>var_sc_caseRecordTypeName</name>
+            <value>
+                <stringValue>HR_Benefits</stringValue>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <name>var_sc_caseOrigin</name>
+            <value>
+                <stringValue>Web</stringValue>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <name>var_sc_caseSubject</name>
+            <value>
+                <stringValue>Dental Benefits</stringValue>
+            </value>
+        </inputAssignments>
+        <storeOutputAutomatically>true</storeOutputAutomatically>
+    </subflows>
+</Flow>

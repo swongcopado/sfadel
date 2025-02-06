@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ArdiraSurvey__Action_Label__c</fullName>
+    <deprecated>false</deprecated>
+    <description>Action label to use for this workflow stage e.g. Respond or Review.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Action Label refers to the label assigned to a stage action within a workflow. It is typically used to indicate the desired action to be taken at that particular stage. For example, in a survey workflow, the Action Label for a stage where participants need to respond to the survey questions could be &quot;Respond&quot;, while the Action Label for a stage where survey responses are reviewed could be &quot;Review&quot;.</inlineHelpText>
+    <label>Action Label</label>
+    <length>255</length>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

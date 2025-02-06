@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ArdiraSurvey__Show_Prev_on_Left_and_Next_on_Right__c</fullName>
+    <defaultValue>false</defaultValue>
+    <deprecated>false</deprecated>
+    <description>When checked, the Prev button will show on the left side and Next button will show on the right side. Save Draft will show on the left side after Prev and Submit will show on the right side.</description>
+    <inlineHelpText>Enable this option to split the button alignment in the survey response interface. The &quot;Prev&quot; button will be displayed on the left side, while the &quot;Next&quot; button will be displayed on the right side. The &quot;Save Draft&quot; button will appear on the left side after the &quot;Prev&quot; button, and the &quot;Submit&quot; button will be shown on the right side. This arrangement provides a visually balanced and intuitive layout for participants to navigate through the survey and take actions conveniently.</inlineHelpText>
+    <label>Prev/Next Button Placement: Left/Right</label>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

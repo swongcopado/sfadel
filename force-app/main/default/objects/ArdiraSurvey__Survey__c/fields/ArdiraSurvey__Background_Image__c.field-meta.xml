@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ArdiraSurvey__Background_Image__c</fullName>
+    <deprecated>false</deprecated>
+    <description>Background image to be used during survey response.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Specify a background image to be displayed in the survey response interface. This customization option allows you to enhance the visual aesthetics of the survey by adding a visually appealing background image. Choose an image that aligns with your branding or the theme of the survey to create a more engaging and immersive experience for participants.</inlineHelpText>
+    <label>Background Image</label>
+    <length>255</length>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

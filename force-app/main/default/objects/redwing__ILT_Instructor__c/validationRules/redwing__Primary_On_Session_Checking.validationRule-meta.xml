@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>redwing__Primary_On_Session_Checking</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND(redwing__Primary__c, NOT(ISBLANK(redwing__ILT_Session__c)))</errorConditionFormula>
+    <errorMessage>Primary Instructor can be selected for ILT Class only</errorMessage>
+</ValidationRule>

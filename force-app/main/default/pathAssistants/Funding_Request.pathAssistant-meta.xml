@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PathAssistant xmlns="http://soap.sforce.com/2006/04/metadata">
+    <active>true</active>
+    <entityName>outfunds__Funding_Request__c</entityName>
+    <fieldName>outfunds__Status__c</fieldName>
+    <masterLabel>Funding Request</masterLabel>
+    <pathAssistantSteps>
+        <fieldNames>outfunds__Awarded_Amount__c</fieldNames>
+        <fieldNames>outfunds__Awarded_Date__c</fieldNames>
+        <picklistValueName>Awarded</picklistValueName>
+    </pathAssistantSteps>
+    <pathAssistantSteps>
+        <info>&lt;ul&gt;&lt;li&gt;&lt;b&gt;Fill out Strategies for each Funding Section&lt;/b&gt;&lt;/li&gt;&lt;li&gt;&lt;b&gt;Create or Upload All Planned Activities&lt;/b&gt;&lt;/li&gt;&lt;li&gt;&lt;b&gt;Create Project Funding Records &amp;amp; Requirements&lt;/b&gt;&lt;/li&gt;&lt;li&gt;&lt;b&gt;Set Initial Outcome Measures&lt;/b&gt;&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;</info>
+        <picklistValueName>In Review</picklistValueName>
+    </pathAssistantSteps>
+    <pathAssistantSteps>
+        <fieldNames>outfunds__Application_Date__c</fieldNames>
+        <fieldNames>outfunds__Total_Remaining__c</fieldNames>
+        <fieldNames>outfunds__Requested_Amount__c</fieldNames>
+        <fieldNames>outfunds__Requested_For__c</fieldNames>
+        <fieldNames>outfunds__FundingProgram__c</fieldNames>
+        <info>&lt;ul&gt;&lt;li&gt;&lt;b&gt;Fill out Strategies for each Funding Section&lt;/b&gt;&lt;/li&gt;&lt;li&gt;&lt;b&gt;Create or Upload All Planned Activities&lt;/b&gt;&lt;/li&gt;&lt;li&gt;&lt;b&gt;Create Project Funding Records &amp;amp; Requirements&lt;/b&gt;&lt;/li&gt;&lt;li&gt;&lt;b&gt;Set Initial Outcome Measures&lt;/b&gt;&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;</info>
+        <picklistValueName>In progress</picklistValueName>
+    </pathAssistantSteps>
+    <pathAssistantSteps>
+        <fieldNames>outfunds__Requested_Amount__c</fieldNames>
+        <fieldNames>outfunds__Awarded_Amount__c</fieldNames>
+        <fieldNames>outfunds__Awarded_Date__c</fieldNames>
+        <info>&lt;ul&gt;&lt;li&gt;&lt;b&gt;Create or Upload All Planned Activities&lt;/b&gt;&lt;/li&gt;&lt;li&gt;&lt;b&gt;Create Project Funding Records &amp;amp; Requirements&lt;/b&gt;&lt;/li&gt;&lt;li&gt;&lt;b&gt;Set Initial Outcome Measures&lt;/b&gt;&lt;/li&gt;&lt;li&gt;&lt;b&gt;All Scorecards Completed&lt;/b&gt;&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;If award date &amp;amp; awarded amount have values - status will change to Awarded&lt;/b&gt;&lt;/p&gt;</info>
+        <picklistValueName>Reviewed</picklistValueName>
+    </pathAssistantSteps>
+    <pathAssistantSteps>
+        <fieldNames>outfunds__Application_Date__c</fieldNames>
+        <fieldNames>outfunds__FundingProgram__c</fieldNames>
+        <fieldNames>outfunds__Requested_Amount__c</fieldNames>
+        <fieldNames>outfunds__Requested_For__c</fieldNames>
+        <picklistValueName>Submitted</picklistValueName>
+    </pathAssistantSteps>
+    <recordTypeName>__MASTER__</recordTypeName>
+</PathAssistant>

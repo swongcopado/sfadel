@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<SharingSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <description>Share cases with community user if they are the contact on the case - not necessarily the case owner (Same as in SDO; done by BTMURPHY)</description>
+    <name>Community User is Contact on Case</name>
+    <profiles>authenticated website</profiles>
+    <profiles>bronze partner user</profiles>
+    <profiles>csplite</profiles>
+    <profiles>custom-customer portal manager</profiles>
+    <profiles>customer community login user</profiles>
+    <profiles>customer community plus login user</profiles>
+    <profiles>customer community plus user</profiles>
+    <profiles>customer community plus user - pbu ido</profiles>
+    <profiles>customer community user</profiles>
+    <profiles>customer portal manager custom</profiles>
+    <profiles>customer portal manager standard</profiles>
+    <profiles>customermanager</profiles>
+    <profiles>customeruser</profiles>
+    <profiles>gold partner user</profiles>
+    <profiles>highvolumeportal</profiles>
+    <profiles>internal portal user</profiles>
+    <profiles>overage authenticated website user</profiles>
+    <profiles>partner</profiles>
+    <profiles>partner community login user</profiles>
+    <profiles>partner community user</profiles>
+    <profiles>platformportal</profiles>
+    <profiles>silver partner user</profiles>
+    <profiles>standardpartner</profiles>
+</SharingSet>

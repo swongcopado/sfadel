@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmbeddedServiceBranding xmlns="http://soap.sforce.com/2006/04/metadata">
+    <contrastInvertedColor>#ffffff</contrastInvertedColor>
+    <contrastPrimaryColor>#333333</contrastPrimaryColor>
+    <embeddedServiceConfig>GPS_Benefits_Management</embeddedServiceConfig>
+    <font>Salesforce Sans</font>
+    <height>480</height>
+    <masterLabel>EmbeddedServiceBranding_Parent04I4S000000XlnXUAS_185ef8ba4b3</masterLabel>
+    <navBarColor>#5D738B</navBarColor>
+    <navBarTextColor>#ffffff</navBarTextColor>
+    <primaryColor>#222222</primaryColor>
+    <secondaryColor>#395878</secondaryColor>
+    <secondaryNavBarColor>#cb2b19</secondaryNavBarColor>
+    <width>320</width>
+</EmbeddedServiceBranding>

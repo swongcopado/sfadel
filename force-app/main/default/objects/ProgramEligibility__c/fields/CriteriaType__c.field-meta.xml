@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>CriteriaType__c</fullName>
+    <label>CriteriaType</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>A. State Government</fullName>
+                <default>false</default>
+                <label>A. State Government</label>
+            </value>
+            <value>
+                <fullName>B. County Government</fullName>
+                <default>false</default>
+                <label>B. County Government</label>
+            </value>
+            <value>
+                <fullName>C. City or Township Government</fullName>
+                <default>false</default>
+                <label>C. City or Township Government</label>
+            </value>
+            <value>
+                <fullName>D. Special District Government</fullName>
+                <default>false</default>
+                <label>D. Special District Government</label>
+            </value>
+            <value>
+                <fullName>E. Regional Organization</fullName>
+                <default>false</default>
+                <label>E. Regional Organization</label>
+            </value>
+            <value>
+                <fullName>F. U.S. Territory or Possession</fullName>
+                <default>false</default>
+                <label>F. U.S. Territory or Possession</label>
+            </value>
+            <value>
+                <fullName>G. Independent School District</fullName>
+                <default>false</default>
+                <label>G. Independent School District</label>
+            </value>
+            <value>
+                <fullName>H. Public/State Controlled Institution of Higher Education</fullName>
+                <default>false</default>
+                <label>H. Public/State Controlled Institution of Higher Education</label>
+            </value>
+            <value>
+                <fullName>I. Indian/Native American Tribal Government (Federally Recognized)</fullName>
+                <default>false</default>
+                <label>I. Indian/Native American Tribal Government (Federally Recognized)</label>
+            </value>
+            <value>
+                <fullName>J. Indian/Native American Tribal Government (Other than Federally Recognized)</fullName>
+                <default>false</default>
+                <label>J. Indian/Native American Tribal Government (Other than Federally Recognized)</label>
+            </value>
+            <value>
+                <fullName>K. Indian/Native American Tribally Designated Organization</fullName>
+                <default>false</default>
+                <label>K. Indian/Native American Tribally Designated Organization</label>
+            </value>
+            <value>
+                <fullName>L. Public/Indian Housing</fullName>
+                <default>false</default>
+                <label>L. Public/Indian Housing</label>
+            </value>
+            <value>
+                <fullName>M. Nonprofit</fullName>
+                <default>false</default>
+                <label>M. Nonprofit</label>
+            </value>
+            <value>
+                <fullName>N. Private Institution of Higher Education</fullName>
+                <default>false</default>
+                <label>N. Private Institution of Higher Education</label>
+            </value>
+            <value>
+                <fullName>O. Individual</fullName>
+                <default>false</default>
+                <label>O. Individual</label>
+            </value>
+            <value>
+                <fullName>P. For-Profit Organization (Other than Small Business)</fullName>
+                <default>false</default>
+                <label>P. For-Profit Organization (Other than Small Business)</label>
+            </value>
+            <value>
+                <fullName>Q. Small Business</fullName>
+                <default>false</default>
+                <label>Q. Small Business</label>
+            </value>
+            <value>
+                <fullName>R. Hispanic-serving Institution</fullName>
+                <default>false</default>
+                <label>R. Hispanic-serving Institution</label>
+            </value>
+            <value>
+                <fullName>S. Historically Black Colleges and Universities (HBCUs)</fullName>
+                <default>false</default>
+                <label>S. Historically Black Colleges and Universities (HBCUs)</label>
+            </value>
+            <value>
+                <fullName>T. Tribally Controlled Colleges and Universities (TCCUs)</fullName>
+                <default>false</default>
+                <label>T. Tribally Controlled Colleges and Universities (TCCUs)</label>
+            </value>
+            <value>
+                <fullName>U. Alaska Native and and Native Hawaiian Serving Institutions</fullName>
+                <default>false</default>
+                <label>U. Alaska Native and and Native Hawaiian Serving Institutions</label>
+            </value>
+            <value>
+                <fullName>V. Non-US Entity</fullName>
+                <default>false</default>
+                <label>V. Non-US Entity</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

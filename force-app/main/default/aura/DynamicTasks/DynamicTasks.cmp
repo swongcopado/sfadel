@@ -1,0 +1,217 @@
+<aura:component controller="DynamicTasksCtrl" implements="flexipage:availableForAllPageTypes,force:hasRecordId,forceCommunity:availableForAllPageTypes" access="global" >
+    <aura:handler name="init" value="{!this}" action="{!c.doInit}" />
+    
+    <aura:attribute name="DisplayFormat" type="String" access="global"/>
+    <aura:attribute name="Title" type="String" default="My Tasks" access="global"/>
+    <aura:attribute name="Note" type="String" default="The following tasks are assigned to you. Please note the due dates and complete them in a timely fashion." access="global"/>
+    
+    <!-- The current list of tasks -->
+    <aura:attribute name="dTasks" type="Task[]" />
+    
+    <!-- For flow launcher -->
+    <aura:attribute name="showModal" type="Boolean" default="false"></aura:attribute>
+    <aura:attribute name="flow" type="Object"></aura:attribute>
+    
+    <!-- For link type to display in task subject -->
+    <aura:attribute name="pathPrefix" type="String" default=""/>
+    
+    <!-- Only display if modal button for flow has been clicked -->
+    <div class="{! v.showModal ? 'slds-show' : 'slds-hide' }">
+        <section class="slds-modal slds-fade-in-open">
+            <div class="slds-modal__container">
+                <header class="slds-modal__header slds-modal__header_empty">
+                	<lightning:buttonIcon size="large" iconName="utility:close" variant="bare" onclick="{!c.closeModal}" alternativeText="Close window" class="slds-button slds-button_icon slds-modal__close slds-button_icon-inverse" />
+                </header>
+                <div class="slds-modal__content slds-p-around_medium">
+                    {! v.body }
+                </div>
+            </div>
+        </section>
+        <div class="slds-backdrop slds-backdrop_open"></div>
+    </div>
+    
+    <!-- Only display if dynamic tasks exist -->
+    <aura:renderIf isTrue="{!v.dTasks.length > 0}">
+        
+        <lightning:card>
+            <div class="DTask-header">
+                <p class="DTask-title"><strong>{!v.Title}</strong></p>
+
+                <aura:renderIf isTrue="{!v.Note.length > 0}">
+                    <p class="slds-p-horizontal_small">{!v.Note}</p>
+                </aura:renderIf>
+            </div>
+
+            <!--> Display Tasks as Lightning Cards<!-->
+            <aura:renderIf isTrue="{!v.DisplayFormat == 'Cards'}">
+                
+                <p class="slds-p-horizontal_small">
+                    <ul class="slds-has-dividers_around-space">
+                        <aura:iteration items="{!v.dTasks}" var="dTask" indexVar="index">
+                            <li class="slds-item">
+                                <article class="slds-tile slds-tile_board">
+                                    <div class="slds-card__header slds-grid">
+                                        <aura:renderIf isTrue="{!dTask.DTask_Type__c == 'Flow'}">
+                                            <ui:inputCheckbox aura:id="checkbox" label="" value="" text="{!dTask.Id}" disabled="true" /> &nbsp; 
+                                            <aura:set attribute="else">
+                                                <ui:inputCheckbox aura:id="checkbox" label="" change="{!c.completeTask}" value="" text="{!dTask.Id}"/> &nbsp; 
+                                            </aura:set>
+                                        </aura:renderIf>
+                                        <span id="{!dTask.Id}" class="slds-text-heading_small" style="padding-left:10px;font-weight:bold;">
+                                            <aura:if isTrue="{!v.pathPrefix != ''}">
+                                                <!-- IF TRUE display the record with a community URL <!-->
+                                                Task #{!index +1}:  <a href="{! v.pathPrefix + '/detail/' + dTask.Id}">{!dTask.Subject}</a>
+                                                
+                                                <!-- ELSE display the record with an internal URL <!-->
+                                                <aura:set attribute="else">
+                                                    Task #{!index +1}:  <a href="{!'/lightning/r/Task/' + dTask.Id + '/view'}">{!dTask.Subject}</a>
+                                                </aura:set>
+                                            </aura:if>
+                                            
+                                        </span>
+                                    </div>
+                                    <div class="slds-card__body slds-card__body_inner">
+                                        <div class="slds-grid">
+                                            <div class="slds-col" style="width:60px;">
+                                                <lightning:icon iconName="action:new_task" size="small" alternativeText="dynamic_task" />
+                                            </div>
+                                            <div class="slds-col slds-text-align--left slds-text-body--medium" style="white-space: pre-wrap;width:100%;">
+                                                <p><span style="font-weight:bold;">
+                                                        <aura:renderIf isTrue="{!dTask.ActivityDate}">Due: <lightning:formattedDateTime value="{!dTask.ActivityDate}" year="numeric" month="long" day="2-digit" weekday="long" timeZone="UTC" /><br/></aura:renderIf>
+                                                        
+                                                        <aura:renderIf isTrue="{!dTask.Priority}">Priority: {!dTask.Priority}<br/></aura:renderIf>
+                                                    </span>
+                                                    
+                                                    <aura:renderIf isTrue="{!dTask.Description}">{!dTask.Description}</aura:renderIf>
+                                                    
+                                                    <aura:renderIf isTrue="{!dTask.DTask_Type__c == 'Flow'}">
+                                                        <br/><br/>
+                                                        <lightning:button iconName="utility:magicwand"
+                                                                        iconPosition="left"
+                                                                        variant="brand"
+                                                                        name="{!dTask.DTask_Flow_Name__c}"
+                                                                        label="Launch Wizard"
+                                                                        onclick="{! c.runFlow }"/>
+                                                    </aura:renderIf>
+                                                    
+                                                    <aura:renderIf isTrue="{!dTask.DTask_Type__c == 'Link'}">
+                                                        <br/><br/>
+                                                        <lightning:button iconName="utility:link"
+                                                                        iconPosition="left"
+                                                                        variant="brand"
+                                                                        name="{!dTask.DTask_Link_URL__c}"
+                                                                        label="{!dTask.DTask_Link_Label__c}"
+                                                                        onclick="{! c.gotoURL }"/>
+                                                    </aura:renderIf>
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div> 
+                                </article>
+                            </li>
+                        </aura:iteration>
+                    </ul>
+                </p>
+
+            </aura:renderIf>
+            <!-->End Tasks as Lightning Cards<!-->
+            
+            
+
+
+
+
+
+
+
+
+            
+            <!--> Display Tasks as Compact List<!-->
+                <aura:renderIf isTrue="{!v.DisplayFormat == 'List'}">
+                
+                    <ul class="slds-timeline">
+                        
+                        <aura:iteration items="{!v.dTasks}" var="dTask" indexVar="index">
+                        
+                            <li>
+                                <div class="slds-timeline__item_expandable slds-timeline__item_task">
+                                    <div class="slds-media">
+                                        <div class="slds-media__body">
+                                            <div class="slds-grid slds-grid_align-spread slds-timeline__trigger">
+                                                <div class="slds-grid">
+                                                    <aura:renderIf isTrue="{!dTask.DTask_Type__c == 'Flow'}">
+                                                        <ui:inputCheckbox aura:id="checkbox" label="" value="" text="{!dTask.Id}" disabled="true" /> &nbsp; 
+                                                        <aura:set attribute="else">
+                                                            <ui:inputCheckbox aura:id="checkbox" label="" change="{!c.completeTask}" value="" text="{!dTask.Id}"/> &nbsp; 
+                                                        </aura:set>
+                                                    </aura:renderIf>
+                                                    <h3 id="{!dTask.Id}">
+                                                        <aura:if isTrue="{!v.pathPrefix != ''}">
+                                                            <!-- IF TRUE display the record with a community URL -->
+                                                            <strong><a href="{! v.pathPrefix + '/detail/' + dTask.Id}">{!dTask.Subject}</a></strong>
+                                                            
+                                                            <!-- ELSE display the record with an internal URL -->
+                                                            <aura:set attribute="else">
+                                                                <strong><a href="{!'/lightning/r/Task/' + dTask.Id + '/view'}">{!dTask.Subject}</a></strong>
+                                                            </aura:set>
+                                                        </aura:if>
+                                                        
+                                                        <aura:renderIf isTrue="{!dTask.ActivityDate}"><br/>Due: <lightning:formattedDateTime value="{!dTask.ActivityDate}" year="numeric" month="long" day="2-digit" weekday="long" timeZone="UTC" /></aura:renderIf>
+                                                    </h3>
+                                                    
+                                                </div>
+                                                <div class="slds-timeline__actions">
+                                                    
+                                                    <aura:renderIf isTrue="{!dTask.DTask_Type__c == 'Flow'}">
+                                                        <lightning:buttonIcon   iconName="utility:magicwand"
+                                                                                variant="brand"
+                                                                                name="{!dTask.DTask_Flow_Name__c}"
+                                                                                onclick="{! c.runFlow }"/>
+                                                    </aura:renderIf>
+
+                                                    <aura:renderIf isTrue="{!dTask.DTask_Type__c == 'Link'}">
+                                                        <lightning:buttonIcon   iconName="utility:link"
+                                                                                variant="brand"
+                                                                                name="{!dTask.DTask_Link_URL__c}"
+                                                                                onclick="{! c.gotoURL }"/>
+                                                    </aura:renderIf>
+                                                    
+                                                    <!-->
+                                                    <aura:renderIf isTrue="{!dTask.DTask_Type__c == 'Flow'}">
+                                                        <lightning:button iconName="utility:magicwand"
+                                                                        iconPosition="left"
+                                                                        variant="brand"
+                                                                        name="{!dTask.DTask_Flow_Name__c}"
+                                                                        label="Launch Wizard"
+                                                                        onclick="{! c.runFlow }"/>
+                                                    </aura:renderIf>
+                                                    
+                                                    <aura:renderIf isTrue="{!dTask.DTask_Type__c == 'Link'}">
+                                                        <lightning:button iconName="utility:link"
+                                                                        iconPosition="left"
+                                                                        variant="brand"
+                                                                        name="{!dTask.DTask_Link_URL__c}"
+                                                                        label="{!dTask.DTask_Link_Label__c}"
+                                                                        onclick="{! c.gotoURL }"/>
+                                                    </aura:renderIf>
+                                                    <!-->
+
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+
+                        </aura:iteration>
+
+                    </ul>
+    
+                </aura:renderIf>
+                <!-->End Tasks as Compact List<!-->
+            
+            
+            
+        </lightning:card>
+    </aura:renderIf>
+</aura:component>

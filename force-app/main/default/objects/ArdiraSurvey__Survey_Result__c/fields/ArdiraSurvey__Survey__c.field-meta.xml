@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ArdiraSurvey__Survey__c</fullName>
+    <deleteConstraint>SetNull</deleteConstraint>
+    <deprecated>false</deprecated>
+    <description>Result of this survey.</description>
+    <inlineHelpText>Result of this Survey.</inlineHelpText>
+    <label>Survey</label>
+    <referenceTo>ArdiraSurvey__Survey__c</referenceTo>
+    <relationshipLabel>Survey Results</relationshipLabel>
+    <relationshipName>Survey_Results</relationshipName>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Lookup</type>
+</CustomField>

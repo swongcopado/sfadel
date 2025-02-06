@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>redwing__Learning_Category__c</fullName>
+    <deleteConstraint>SetNull</deleteConstraint>
+    <deprecated>false</deprecated>
+    <label>Catalog</label>
+    <referenceTo>redwing__Learning_Category__c</referenceTo>
+    <relationshipLabel>LMS Sharing Rule Items</relationshipLabel>
+    <relationshipName>LMS_Sharing_Rule_Items</relationshipName>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Lookup</type>
+</CustomField>

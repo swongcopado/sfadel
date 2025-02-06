@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ArdiraSurvey__Response_URL__c</fullName>
+    <deprecated>false</deprecated>
+    <description>URL to be used to respond to the survey associated with this survey result.</description>
+    <externalId>false</externalId>
+    <formula>IF(ArdiraSurvey__Community_Assignment__c == true, 
+	(ArdiraSurvey__Survey__r.ArdiraSurvey__Community_URL__c &amp; IF(ISBLANK(ArdiraSurvey__Survey__r.ArdiraSurvey__Experience_Cloud_Survey_Response_Page__c), &quot;/ArdiraSurvey/SurveyResponse.app&quot;, ArdiraSurvey__Survey__r.ArdiraSurvey__Experience_Cloud_Survey_Response_Page__c)) &amp; &quot;?logicalId=&quot; &amp; ArdiraSurvey__Logical_Id__c &amp; &quot;&amp;recordId=&quot; &amp; Id &amp; IF(ArdiraSurvey__Survey__r.ArdiraSurvey__CS_Do_Not_Require_Authentication__c = False, &quot;&amp;ut=&quot; &amp; text((CreatedDate - DATETIMEVALUE( &quot;1970-01-01 00:00:00&quot; )) * 86400), &quot;&quot;), 
+ 	LEFT($Api.Partner_Server_URL_450, FIND(&apos;/services&apos;, $Api.Partner_Server_URL_450)) &amp; &quot;ArdiraSurvey/SurveyResponse.app?logicalId=&quot; &amp; ArdiraSurvey__Logical_Id__c &amp; &quot;&amp;recordId=&quot; &amp; Id &amp; IF(ArdiraSurvey__Survey__r.ArdiraSurvey__CS_Do_Not_Require_Authentication__c = False, &quot;&amp;ut=&quot; &amp; text((CreatedDate - DATETIMEVALUE( &quot;1970-01-01 00:00:00&quot; )) * 86400), &quot;&quot;)
+    )</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <inlineHelpText>A URL to send to the survey participant for this survey result. Use Record Edit URL field instead of this field to have better file upload support.</inlineHelpText>
+    <label>Response URL</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

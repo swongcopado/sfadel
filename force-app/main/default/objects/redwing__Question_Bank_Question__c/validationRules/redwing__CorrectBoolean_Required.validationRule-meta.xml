@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>redwing__CorrectBoolean_Required</fullName>
+    <active>true</active>
+    <errorConditionFormula>ISBLANK(TEXT(redwing__Correct_Boolean__c)) &amp;&amp;  TEXT(redwing__Type__c) == &quot;True/False&quot;</errorConditionFormula>
+    <errorMessage>You must specify a correct true/false value for this type of question</errorMessage>
+</ValidationRule>

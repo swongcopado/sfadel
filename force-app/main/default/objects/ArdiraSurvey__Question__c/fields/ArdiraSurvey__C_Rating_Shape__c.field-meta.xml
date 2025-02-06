@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ArdiraSurvey__C_Rating_Shape__c</fullName>
+    <defaultValue>&quot;Star&quot;</defaultValue>
+    <deprecated>false</deprecated>
+    <description>Shape to use for displaying rating ranges.</description>
+    <inlineHelpText>Select a shape to use for the ratings in the survey response interface.</inlineHelpText>
+    <label>Rating Question - Shape</label>
+    <required>true</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Star</fullName>
+                <default>false</default>
+                <label>Star</label>
+            </value>
+            <value>
+                <fullName>Heart</fullName>
+                <default>false</default>
+                <label>Heart</label>
+            </value>
+            <value>
+                <fullName>Circle</fullName>
+                <default>false</default>
+                <label>Circle</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

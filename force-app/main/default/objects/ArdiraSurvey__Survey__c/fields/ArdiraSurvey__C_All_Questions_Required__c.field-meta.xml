@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ArdiraSurvey__C_All_Questions_Required__c</fullName>
+    <defaultValue>false</defaultValue>
+    <deprecated>false</deprecated>
+    <description>If enabled, all questions in the survey have to be responded.</description>
+    <inlineHelpText>Enabling this option will make all questions in the survey mandatory. When this setting is enabled, the individual question-level mandatory settings will be ignored.</inlineHelpText>
+    <label>All Questions Required</label>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

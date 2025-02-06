@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ArdiraSurvey__All</fullName>
+    <columns>NAME</columns>
+    <columns>ArdiraSurvey__Assigned_To__c</columns>
+    <columns>ArdiraSurvey__Assignee_Type__c</columns>
+    <columns>ArdiraSurvey__Target_Record__c</columns>
+    <columns>ArdiraSurvey__Target_Record_Object_Type_Label__c</columns>
+    <columns>ArdiraSurvey__Progress__c</columns>
+    <columns>ArdiraSurvey__Status__c</columns>
+    <columns>ArdiraSurvey__Survey__c</columns>
+    <columns>ArdiraSurvey__Total_Count__c</columns>
+    <columns>ArdiraSurvey__View_Report__c</columns>
+    <filterScope>Everything</filterScope>
+    <label>All</label>
+</ListView>

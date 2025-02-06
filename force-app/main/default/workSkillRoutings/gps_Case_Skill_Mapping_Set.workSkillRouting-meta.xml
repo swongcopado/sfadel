@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WorkSkillRouting xmlns="http://soap.sforce.com/2006/04/metadata">
+    <isActive>true</isActive>
+    <masterLabel>GPS Case Skill Mapping Set</masterLabel>
+    <relatedEntity>Case</relatedEntity>
+    <workSkillRoutingAttributes>
+        <field>Case.Priority</field>
+        <isAdditionalSkill>true</isAdditionalSkill>
+        <skill>Senior_Case_Specialist</skill>
+        <skillLevel>1</skillLevel>
+        <skillPriority>0</skillPriority>
+        <value>High</value>
+    </workSkillRoutingAttributes>
+</WorkSkillRouting>

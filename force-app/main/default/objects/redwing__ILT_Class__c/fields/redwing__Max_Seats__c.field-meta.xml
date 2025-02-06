@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>redwing__Max_Seats__c</fullName>
+    <deprecated>false</deprecated>
+    <description>The maximum number of users that can be enrolled in the ILT Class. All following users will either be added to a Waitlist (if enabled) or will see a message that limit for the ILT Class is reached and they will not be registered.</description>
+    <externalId>false</externalId>
+    <label>Max Seats</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>0</scale>
+    <trackTrending>false</trackTrending>
+    <type>Number</type>
+    <unique>false</unique>
+</CustomField>

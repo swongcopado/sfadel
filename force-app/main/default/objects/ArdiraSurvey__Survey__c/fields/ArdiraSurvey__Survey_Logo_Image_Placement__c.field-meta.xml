@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ArdiraSurvey__Survey_Logo_Image_Placement__c</fullName>
+    <deprecated>false</deprecated>
+    <description>Select survey logo image placement with respect to the landing page message.</description>
+    <inlineHelpText>Select the placement of the survey logo image with respect to the landing page message in the survey response interface.</inlineHelpText>
+    <label>Logo Placement</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Left Center</fullName>
+                <default>false</default>
+                <label>Left Center</label>
+            </value>
+            <value>
+                <fullName>Top Center</fullName>
+                <default>true</default>
+                <label>Top Center</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

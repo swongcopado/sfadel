@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>redwing__Due_Date_Validation</fullName>
+    <active>true</active>
+    <errorConditionFormula>NOT(ISBLANK(redwing__Due_Date_Term__c)) &amp;&amp; redwing__Due_Date_Term__c &lt; 1</errorConditionFormula>
+    <errorDisplayField>redwing__Due_Date_Term__c</errorDisplayField>
+    <errorMessage>Due Date should be empty or greater than 0.</errorMessage>
+</ValidationRule>

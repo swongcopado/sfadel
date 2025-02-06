@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RecordType xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Court_Case</fullName>
+    <active>true</active>
+    <businessProcess>Court Case Process</businessProcess>
+    <compactLayoutAssignment>CCM_Court_Case_Layout</compactLayoutAssignment>
+    <label>Court Case</label>
+    <picklistValues>
+        <picklist>Grant_Documentation_Status__c</picklist>
+        <values>
+            <fullName>Missing</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Not applicable</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Submitted</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Origin</picklist>
+        <values>
+            <fullName>Complaint</fullName>
+            <default>true</default>
+        </values>
+        <values>
+            <fullName>Email</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Phone</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Payment_Billing__c</picklist>
+        <values>
+            <fullName>Annually</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Monthly</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Quarterly</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Semi-Annually</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Priority</picklist>
+        <values>
+            <fullName>Critical</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>High</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Low</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Medium</fullName>
+            <default>true</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Reason</picklist>
+        <values>
+            <fullName>Complex functionality</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Existing problem</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Instructions not clear</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>New problem</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>User didn%27t attend training</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Sub_Type__c</picklist>
+        <values>
+            <fullName>Complaint</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Graffiti</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Individual Assistance Grant</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Integrated Eligibility</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Loose Dog</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Personnel Action</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Trash In Yard</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Type</picklist>
+        <values>
+            <fullName>Court Case</fullName>
+            <default>true</default>
+        </values>
+        <values>
+            <fullName>Other</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>wkdw__TicketCategory__c</picklist>
+        <values>
+            <fullName>HR - Benefits</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>HR - Employee Relations</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>HR - General</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>HR - Leave</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>HR - Onboarding</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>HR - Payroll</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>IT</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+</RecordType>

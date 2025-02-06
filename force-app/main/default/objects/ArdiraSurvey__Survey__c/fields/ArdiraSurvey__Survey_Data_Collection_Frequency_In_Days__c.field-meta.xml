@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ArdiraSurvey__Survey_Data_Collection_Frequency_In_Days__c</fullName>
+    <defaultValue>0</defaultValue>
+    <deprecated>false</deprecated>
+    <description>Value 0 means, only one time data collection for the survey from the survey participants. Value greater than 0 enables collecting the survey response from participants every n days after the last response collection date.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Specify the number of days after which the survey response is to be recollected from participants. Enter a numeric value. Use 0 or leave the field empty for one-time data collection from survey participants, indicating that their responses will not be recollected. This setting allows you to determine the interval at which participants will be prompted to provide updated survey responses, ensuring that you collect the most recent and relevant data from them.</inlineHelpText>
+    <label>Response Recollection Cycle (In Days)</label>
+    <precision>3</precision>
+    <required>false</required>
+    <scale>0</scale>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Number</type>
+    <unique>false</unique>
+</CustomField>

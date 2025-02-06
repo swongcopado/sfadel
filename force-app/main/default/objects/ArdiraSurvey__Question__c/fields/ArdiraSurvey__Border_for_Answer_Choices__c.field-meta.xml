@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ArdiraSurvey__Border_for_Answer_Choices__c</fullName>
+    <defaultValue>&quot;Dark&quot;</defaultValue>
+    <deprecated>false</deprecated>
+    <description>Set border for answer choices.</description>
+    <inlineHelpText>Set border for answer choices.</inlineHelpText>
+    <label>Border for Answer Choices</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Light</fullName>
+                <default>false</default>
+                <label>Light</label>
+            </value>
+            <value>
+                <fullName>Dark</fullName>
+                <default>true</default>
+                <label>Dark</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

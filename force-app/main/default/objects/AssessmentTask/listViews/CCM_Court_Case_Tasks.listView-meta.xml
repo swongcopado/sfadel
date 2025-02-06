@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>CCM_Court_Case_Tasks</fullName>
+    <booleanFilter>1 OR 2</booleanFilter>
+    <columns>Parent</columns>
+    <columns>Name</columns>
+    <columns>Status</columns>
+    <columns>IsRequired</columns>
+    <columns>Description</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>AssessmentTaskDefinition</field>
+        <operation>contains</operation>
+        <value>Interrogate Property Owner</value>
+    </filters>
+    <filters>
+        <field>AssessmentTaskDefinition</field>
+        <operation>equals</operation>
+        <value>Search Property</value>
+    </filters>
+    <label>Investigate Property Tasks</label>
+</ListView>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ArdiraSurvey__Automatically_Save_Responses_in_Seconds__c</fullName>
+    <defaultValue>10</defaultValue>
+    <deprecated>false</deprecated>
+    <description>System automatically saving survey participants responses on next/prev/submit navigation button clicks. In addition, to enable system automatically save responses every &lt;n&gt; seconds, specify &lt;n&gt; value here.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>System automatically saving survey participants responses on next/prev/submit navigation button clicks. In addition, to enable system automatically save responses every &lt;n&gt; seconds, specify &lt;n&gt; value here.</inlineHelpText>
+    <label>Automatically Save Responses in Seconds</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>0</scale>
+    <trackTrending>false</trackTrending>
+    <type>Number</type>
+    <unique>false</unique>
+</CustomField>

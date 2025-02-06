@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>redwing__Total_Section_Items__c</fullName>
+    <deprecated>false</deprecated>
+    <label>Total Section Items</label>
+    <summaryFilterItems>
+        <field>redwing__Training_Plan_Section_Item__c.redwing__Removed__c</field>
+        <operation>equals</operation>
+        <value>False</value>
+    </summaryFilterItems>
+    <summaryForeignKey>redwing__Training_Plan_Section_Item__c.redwing__Training_Plan_Section__c</summaryForeignKey>
+    <summaryOperation>count</summaryOperation>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Summary</type>
+</CustomField>

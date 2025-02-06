@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ArdiraSurvey__Skip_Rule__c</fullName>
+    <deprecated>false</deprecated>
+    <description>Rule using target object fields to be evaluated at runtime to decide if the question has to be displayed for response. Result of the rule is used to set &quot;Response Not Required&quot; field of question result.</description>
+    <inlineHelpText>A rule using the target record fields that is evaluated when a survey is sent to a recipient. A question is skipped when the rule evaluates to true.</inlineHelpText>
+    <label>Skip Rule</label>
+    <length>1024</length>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>LongTextArea</type>
+    <visibleLines>10</visibleLines>
+</CustomField>

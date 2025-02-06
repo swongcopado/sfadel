@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Mục trong Phần Kế Hoạch Học Tập</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value><!-- Mục trong Phần Kế Hoạch Học Tập --></value>
+    </caseValues>
+    <nameFieldLabel>ID Mục trong Phần Kế Hoạch Học Tập</nameFieldLabel>
+</CustomObjectTranslation>

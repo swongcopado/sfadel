@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>DTask_Link_Label__c</fullName>
+    <externalId>false</externalId>
+    <inlineHelpText>If using a link task, provide a label to display in the button that will appear.  A default value is provided.  A value in this field will not affect other task types.</inlineHelpText>
+    <label>DTask Link Label</label>
+    <length>155</length>
+    <required>false</required>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ArdiraSurvey__Email_Embedded_Question__c</fullName>
+    <deleteConstraint>SetNull</deleteConstraint>
+    <deprecated>false</deprecated>
+    <description>Question to be embedded in the survey invitation notification.</description>
+    <inlineHelpText>A question that needs to be embedded in the survey invitation notification.</inlineHelpText>
+    <label>Email Embedded Question</label>
+    <referenceTo>ArdiraSurvey__Question__c</referenceTo>
+    <relationshipLabel>Embedding Surveys</relationshipLabel>
+    <relationshipName>Embedding_Surveys</relationshipName>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Lookup</type>
+</CustomField>

@@ -1,0 +1,4 @@
+<aura:event type="COMPONENT">
+	<aura:attribute name="fileOperation" type="String"/>
+    <aura:attribute name="fileName" type="String"/>
+</aura:event>

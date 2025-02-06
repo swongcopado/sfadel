@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>バッチ操作の学習</value>
+    </caseValues>
+    <nameFieldLabel>バッチ作業番号の学習</nameFieldLabel>
+</CustomObjectTranslation>

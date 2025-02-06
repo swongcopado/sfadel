@@ -1,0 +1,5 @@
+<design:component label="Dynamic Tasks">
+	<design:attribute name="DisplayFormat" label="Display Format" datasource="Cards,List" default="Cards" />
+	<design:attribute name="Title" label="Title" description="For no title, leave blank" />
+	<design:attribute name="Note" label="Note/Instructions" description="This text will appear at the top of the task list. For no notes, leave blank" />
+</design:component>

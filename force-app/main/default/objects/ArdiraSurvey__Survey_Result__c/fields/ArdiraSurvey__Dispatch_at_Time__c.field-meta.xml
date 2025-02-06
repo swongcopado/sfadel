@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ArdiraSurvey__Dispatch_at_Time__c</fullName>
+    <deprecated>false</deprecated>
+    <description>Datetime at which the survey is to be dispatched for response collection.</description>
+    <inlineHelpText>Future datetime at which the survey is to be dispatched for response collection. If not set survey will be dispatched immediately.  For this functionality to work, a scheduled job must be configured using the Apex class SurveyDispatchSchedulable.</inlineHelpText>
+    <label>Dispatch at Future Time</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>DateTime</type>
+</CustomField>

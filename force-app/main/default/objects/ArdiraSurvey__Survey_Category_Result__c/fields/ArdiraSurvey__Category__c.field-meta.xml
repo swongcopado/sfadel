@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ArdiraSurvey__Category__c</fullName>
+    <deleteConstraint>Restrict</deleteConstraint>
+    <deprecated>false</deprecated>
+    <description>Result contains the scores aggregated by this category.</description>
+    <inlineHelpText>Result contains the scores aggregated by this category.</inlineHelpText>
+    <label>Category</label>
+    <referenceTo>ArdiraSurvey__Category__c</referenceTo>
+    <relationshipLabel>Survey Category Results</relationshipLabel>
+    <relationshipName>Survey_Category_Results</relationshipName>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Lookup</type>
+</CustomField>

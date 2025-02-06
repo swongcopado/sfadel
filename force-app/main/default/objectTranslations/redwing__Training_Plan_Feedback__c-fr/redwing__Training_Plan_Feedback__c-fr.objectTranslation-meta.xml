@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Retour sur le plan d&apos;apprentissage</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Retours sur le plan d&apos;apprentissage</value>
+    </caseValues>
+    <gender>Masculine</gender>
+    <nameFieldLabel>ID de retour sur le plan d&apos;apprentissage</nameFieldLabel>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

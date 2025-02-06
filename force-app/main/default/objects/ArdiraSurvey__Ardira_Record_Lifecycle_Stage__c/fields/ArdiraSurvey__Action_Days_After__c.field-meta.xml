@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ArdiraSurvey__Action_Days_After__c</fullName>
+    <deprecated>false</deprecated>
+    <description>Number of days, the stage action will be executed this many days after a record gets into the stage.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Number of days after the trigger record meets the condition to execute the action.</inlineHelpText>
+    <label>Action Days After</label>
+    <precision>3</precision>
+    <required>false</required>
+    <scale>0</scale>
+    <trackTrending>false</trackTrending>
+    <type>Number</type>
+    <unique>false</unique>
+</CustomField>

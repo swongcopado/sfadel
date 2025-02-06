@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ArdiraSurvey__Section_Border_Color__c</fullName>
+    <defaultValue>&quot;#FFFFFF&quot;</defaultValue>
+    <deprecated>false</deprecated>
+    <description>Section Border Color.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Choose a color for the border of the section area in the survey response interface. This allows you to add visual separation and structure to the sections, making it easier for participants to navigate through the survey. By selecting an appropriate border color, you can customize the appearance of the section area and enhance the overall design of the survey.</inlineHelpText>
+    <label>Section Border</label>
+    <length>40</length>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

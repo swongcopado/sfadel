@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ArdiraSurvey__Community_Response_URL__c</fullName>
+    <deprecated>false</deprecated>
+    <description>Survey Response URL to be used by authenticated and unauthenticated community users.</description>
+    <externalId>false</externalId>
+    <formula>(ArdiraSurvey__Community_URL__c &amp; IF( ISBLANK(ArdiraSurvey__Experience_Cloud_Survey_Response_Page__c), &quot;/ArdiraSurvey/SurveyResponse.app&quot;, ArdiraSurvey__Experience_Cloud_Survey_Response_Page__c) &amp; &quot;?recordId=&quot; &amp; Id &amp;&quot;&amp;logicalId=&quot; &amp; ArdiraSurvey__Logical_Id__c &amp; IF(ArdiraSurvey__CS_Do_Not_Require_Authentication__c = False, &quot;&amp;ut=&quot; &amp; text((CreatedDate - DATETIMEVALUE( &quot;1970-01-01 00:00:00&quot; )) * 86400), &quot;&quot;))</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <inlineHelpText>Survey Response URL to be used by authenticated and unauthenticated community users.</inlineHelpText>
+    <label>Community Response URL</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

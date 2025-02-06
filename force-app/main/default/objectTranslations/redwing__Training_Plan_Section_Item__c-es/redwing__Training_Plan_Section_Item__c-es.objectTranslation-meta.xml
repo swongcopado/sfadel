@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Aprendizaje de Curso</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Aprendizajes de Curso</value>
+    </caseValues>
+    <gender>Masculine</gender>
+    <nameFieldLabel>ID de Aprendizaje de Curso</nameFieldLabel>
+</CustomObjectTranslation>

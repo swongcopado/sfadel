@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Reporting_Period__c</fullName>
+    <formula>DATE( VALUE(Year_of_Sale__c),VALUE(CASE(Sale_Period__c , &apos;q1&apos;, &apos;1&apos;, &apos;q2&apos;, &apos;4&apos;,&apos;q3&apos;,&apos;7&apos;, &apos;10&apos;) ),1)</formula>
+    <label>Reporting Period</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Date</type>
+</CustomField>

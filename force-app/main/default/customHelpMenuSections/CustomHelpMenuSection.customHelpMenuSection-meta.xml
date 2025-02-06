@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomHelpMenuSection xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customHelpMenuItems>
+        <linkUrl>https://salesforce.quip.com/ue5fAXAcoqb4</linkUrl>
+        <masterLabel>Setup Guide</masterLabel>
+        <sortOrder>1</sortOrder>
+    </customHelpMenuItems>
+    <customHelpMenuItems>
+        <linkUrl>https://salesforce.quip.com/EzqdAwIC03qr</linkUrl>
+        <masterLabel>Release Notes</masterLabel>
+        <sortOrder>2</sortOrder>
+    </customHelpMenuItems>
+    <customHelpMenuItems>
+        <linkUrl>https://salesforce.quip.com/rtirArpMoL4x</linkUrl>
+        <masterLabel>Improvement/Enhancement Request</masterLabel>
+        <sortOrder>3</sortOrder>
+    </customHelpMenuItems>
+    <customHelpMenuItems>
+        <linkUrl>https://salesforce.quip.com/1DdNAk1gHaho</linkUrl>
+        <masterLabel>Service Demo Script</masterLabel>
+        <sortOrder>4</sortOrder>
+    </customHelpMenuItems>
+    <customHelpMenuItems>
+        <linkUrl>https://salesforce.quip.com/XJ60Azg6bbFX</linkUrl>
+        <masterLabel>LiveAgent Demo Script</masterLabel>
+        <sortOrder>5</sortOrder>
+    </customHelpMenuItems>
+    <masterLabel>Public Sector IDO</masterLabel>
+</CustomHelpMenuSection>

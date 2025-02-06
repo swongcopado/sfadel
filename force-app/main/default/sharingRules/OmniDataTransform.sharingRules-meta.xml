@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<SharingRules xmlns="http://soap.sforce.com/2006/04/metadata">
+    <sharingGuestRules>
+        <fullName>Access_Benefits_Omni_Data_Transformation_Guest_User</fullName>
+        <accessLevel>Read</accessLevel>
+        <label>Access Benefits Omni Data Transformation Guest User</label>
+        <sharedTo>
+            <guestUser>Access_Benefits</guestUser>
+        </sharedTo>
+        <criteriaItems>
+            <field>CreatedById</field>
+            <operation>notEqual</operation>
+            <value>null</value>
+        </criteriaItems>
+        <includeHVUOwnedRecords>false</includeHVUOwnedRecords>
+    </sharingGuestRules>
+    <sharingGuestRules>
+        <fullName>Constituent_Self_Service_Data_Transformation_Guest_User</fullName>
+        <accessLevel>Read</accessLevel>
+        <label>Constituent Self Service Data Transformation Guest User</label>
+        <sharedTo>
+            <guestUser>Constituent_Self_Service</guestUser>
+        </sharedTo>
+        <criteriaItems>
+            <field>CreatedById</field>
+            <operation>notEqual</operation>
+            <value>null</value>
+        </criteriaItems>
+        <includeHVUOwnedRecords>false</includeHVUOwnedRecords>
+    </sharingGuestRules>
+    <sharingGuestRules>
+        <fullName>FR_Omni_Data_Transformation_Guest_User</fullName>
+        <accessLevel>Read</accessLevel>
+        <label>FR Omni Data Transformation Guest User</label>
+        <sharedTo>
+            <guestUser>FR_Portail_Demandes_Aides_Permis</guestUser>
+        </sharedTo>
+        <criteriaItems>
+            <field>CreatedById</field>
+            <operation>notEqual</operation>
+            <value>null</value>
+        </criteriaItems>
+        <includeHVUOwnedRecords>false</includeHVUOwnedRecords>
+    </sharingGuestRules>
+    <sharingGuestRules>
+        <fullName>Funding_Program_Omni_Data_Transformation_Guest_User</fullName>
+        <accessLevel>Read</accessLevel>
+        <label>Funding Program Omni Data Transformation Guest User</label>
+        <sharedTo>
+            <guestUser>Deprecated_Funding_Program_Portal</guestUser>
+        </sharedTo>
+        <criteriaItems>
+            <field>CreatedById</field>
+            <operation>notEqual</operation>
+            <value>null</value>
+        </criteriaItems>
+        <includeHVUOwnedRecords>false</includeHVUOwnedRecords>
+    </sharingGuestRules>
+    <sharingGuestRules>
+        <fullName>LPI_Omni_Data_Transformation_Guest_User</fullName>
+        <accessLevel>Read</accessLevel>
+        <label>LPI Omni Data Transformation Guest User</label>
+        <sharedTo>
+            <guestUser>LPI</guestUser>
+        </sharedTo>
+        <criteriaItems>
+            <field>CreatedById</field>
+            <operation>notEqual</operation>
+            <value>null</value>
+        </criteriaItems>
+        <includeHVUOwnedRecords>false</includeHVUOwnedRecords>
+    </sharingGuestRules>
+</SharingRules>

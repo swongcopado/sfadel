@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>redwing__Registration_Survey__c</fullName>
+    <deleteConstraint>SetNull</deleteConstraint>
+    <deprecated>false</deprecated>
+    <inlineHelpText>Select the default registration survey to be used for new ILT Classes created within this ILT Event</inlineHelpText>
+    <label>Registration Survey</label>
+    <referenceTo>redwing__Survey__c</referenceTo>
+    <relationshipLabel>ILT Events</relationshipLabel>
+    <relationshipName>ILT_Events</relationshipName>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Lookup</type>
+</CustomField>

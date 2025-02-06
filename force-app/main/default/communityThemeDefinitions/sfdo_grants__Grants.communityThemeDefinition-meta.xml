@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CommunityThemeDefinition xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customThemeLayoutType>
+        <label>I8TGEXFyaxKcD82bHgbp5qH7qUTe6k</label>
+    </customThemeLayoutType>
+    <customThemeLayoutType>
+        <label>PjwS7kNrRhsFLzxDU2Bsbzdgmv42lV</label>
+    </customThemeLayoutType>
+    <customThemeLayoutType>
+        <label>CSkuHH0HRre8Y50wOFAz0iU4c8XJmC</label>
+    </customThemeLayoutType>
+    <defaultBrandingSet>sfdo_grants__Grants</defaultBrandingSet>
+    <enableExtendedCleanUpOnDelete>true</enableExtendedCleanUpOnDelete>
+    <masterLabel>Grantee Portal</masterLabel>
+    <publisher>Salesforce.org</publisher>
+    <themeSetting>
+        <customThemeLayoutType>I8TGEXFyaxKcD82bHgbp5qH7qUTe6k</customThemeLayoutType>
+        <themeLayout>sfdo_grants__Grants_themeLayout_Grants_Default_Theme_Layout</themeLayout>
+    </themeSetting>
+    <themeSetting>
+        <customThemeLayoutType>PjwS7kNrRhsFLzxDU2Bsbzdgmv42lV</customThemeLayoutType>
+        <themeLayout>sfdo_grants__Grants_themeLayout_Grants_Default_Home_Layout</themeLayout>
+    </themeSetting>
+    <themeSetting>
+        <themeLayout>sfdo_grants__Grants_themeLayout_Login</themeLayout>
+        <themeLayoutType>Login</themeLayoutType>
+    </themeSetting>
+    <themeSetting>
+        <themeLayout>sfdo_grants__Grants_themeLayout_Default</themeLayout>
+        <themeLayoutType>Inner</themeLayoutType>
+    </themeSetting>
+    <themeSetting>
+        <customThemeLayoutType>CSkuHH0HRre8Y50wOFAz0iU4c8XJmC</customThemeLayoutType>
+        <themeLayout>sfdo_grants__Grants_themeLayout_Grants_Default_Login_Layout</themeLayout>
+    </themeSetting>
+</CommunityThemeDefinition>

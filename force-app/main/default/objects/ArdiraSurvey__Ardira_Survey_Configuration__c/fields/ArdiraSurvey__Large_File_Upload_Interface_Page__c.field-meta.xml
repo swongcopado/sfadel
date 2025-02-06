@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ArdiraSurvey__Large_File_Upload_Interface_Page__c</fullName>
+    <deprecated>false</deprecated>
+    <description>Specify URL / Link to Community Page in which File Upload for Guest component is embedded.</description>
+    <inlineHelpText>To allow a large file upload by a guest user, configure a separate experience builder page and specify the page url here.</inlineHelpText>
+    <label>Large File Upload Interface Page</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Url</type>
+</CustomField>

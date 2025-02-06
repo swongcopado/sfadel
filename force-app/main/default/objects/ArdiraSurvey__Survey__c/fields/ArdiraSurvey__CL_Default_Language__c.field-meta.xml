@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ArdiraSurvey__CL_Default_Language__c</fullName>
+    <deprecated>false</deprecated>
+    <description>Default language of the survey.</description>
+    <inlineHelpText>Select the language that you used to author all questions in the main survey interface. This language will be selected as the default response language unless overwritten using other ways when sending a survey.</inlineHelpText>
+    <label>Default Language</label>
+    <required>false</required>
+    <trackHistory>true</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetName>ArdiraSurvey__Survey_Languages</valueSetName>
+    </valueSet>
+</CustomField>

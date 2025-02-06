@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ArdiraSurvey__Execute_Synchronous_Scoring__c</fullName>
+    <defaultValue>false</defaultValue>
+    <deprecated>false</deprecated>
+    <description>If one or more response mapping rule has &quot;Execute Sync Enabled&quot; set to true, this flag is set to true.</description>
+    <inlineHelpText>Enabling this option allows for synchronous calculation of the survey score when a responder submits the survey. Please note that this may result in a slight delay as the score calculation takes place. If disabled, the score calculation will be performed in the background after the survey is submitted.</inlineHelpText>
+    <label>Execute Synchronous Scoring</label>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Queue xmlns="http://soap.sforce.com/2006/04/metadata">
+    <doesSendEmailToMembers>false</doesSendEmailToMembers>
+    <email>tier3@example.com</email>
+    <name>Tier 3 Queue</name>
+    <queueMembers>
+        <users>
+            <user>bill.west.yn2oxn6xj1cf.imljfgn8ligh@deloitte.com.sfademo</user>
+            <user>cindy.central.lgiavk4exclq.rzilnr3spu1h@deloitte.com.sfademo</user>
+            <user>customer.qulfmaf3gjwb.n4lt16fggaiy.b7q4zjkqhwk.zjyfofofds3o@deloitte.com.sfademo</user>
+            <user>daviddirector.ifb0kkalko9v.kzqwuegpd4jx.miqonxebfx1y@deloitte.com.sfademo</user>
+            <user>ely.east.yoibvvuuzm5d.cktmbua6tofx@deloitte.com.sfademo</user>
+            <user>miho@deloitte.com.sfademo</user>
+            <user>partner.rlhrsdw5odis.dtswgzycande.qtwlr0pqihfx.et1u9gdheyfb@deloitte.com.sfademo</user>
+            <user>quinton.engineer.ini83ypr0c1g.pffbeykoikpw@deloitte.com.sfademo</user>
+            <user>sue.marketing.vfslsdytbmyw.d346pnzcqexo@deloitte.com.sfademo</user>
+            <user>tim.service.5t21sqagvev9.oabdeshavv2x@deloitte.com.sfademo</user>
+        </users>
+    </queueMembers>
+    <queueRoutingConfig>Escalations</queueRoutingConfig>
+    <queueSobject>
+        <sobjectType>Case</sobjectType>
+    </queueSobject>
+</Queue>

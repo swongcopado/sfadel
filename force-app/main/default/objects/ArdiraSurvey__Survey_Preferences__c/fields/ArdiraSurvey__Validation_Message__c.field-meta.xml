@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ArdiraSurvey__Validation_Message__c</fullName>
+    <deprecated>false</deprecated>
+    <description>Message to displayed after a completed survey is validated.</description>
+    <inlineHelpText>Message to display when a participant submits incomplete survey response.</inlineHelpText>
+    <label>Validation Message</label>
+    <length>8192</length>
+    <trackTrending>false</trackTrending>
+    <type>Html</type>
+    <visibleLines>10</visibleLines>
+</CustomField>

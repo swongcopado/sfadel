@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>My_Licenses</fullName>
+    <columns>Name</columns>
+    <columns>LastModifiedDate</columns>
+    <columns>LastModifiedBy</columns>
+    <columns>Contact</columns>
+    <columns>Account</columns>
+    <columns>User</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>Community_Contact_Match__c</field>
+        <operation>equals</operation>
+        <value>1</value>
+    </filters>
+    <label>My Licenses</label>
+</ListView>

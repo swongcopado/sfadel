@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ArdiraSurvey__Salesforce_Record_Hierarchy_Type__c</fullName>
+    <deprecated>false</deprecated>
+    <description>Dynamic answer choices will be presented from one object or two objects using the records with a matching criteria.</description>
+    <inlineHelpText>Dynamic answer choices will be presented from one object or two objects using the records with a matching criteria.</inlineHelpText>
+    <label>Salesforce Record Hierarchy Type</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Hierarchy using single object</fullName>
+                <default>false</default>
+                <label>Hierarchy using single object</label>
+            </value>
+            <value>
+                <fullName>Hierarchy using two objects</fullName>
+                <default>false</default>
+                <label>Hierarchy using two objects</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ArdiraSurvey__Email_Embedded_Question_Preview__c</fullName>
+    <deprecated>false</deprecated>
+    <description>Rich text preview of the question to be embedded in the survey invitation notification.</description>
+    <inlineHelpText>Rich text preview of the question to be embedded in the survey invitation notification.</inlineHelpText>
+    <label>Email Embedded Question Preview</label>
+    <length>131071</length>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Html</type>
+    <visibleLines>10</visibleLines>
+</CustomField>

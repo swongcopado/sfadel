@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ArdiraSurvey__For_External_Participants_Shortened_URL__c</fullName>
+    <deprecated>false</deprecated>
+    <description>Survey Shortened Response URL to be used by authenticated and unauthenticated community users.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Survey Shortened Response URL to be used by authenticated and unauthenticated community users.</inlineHelpText>
+    <label>For External Participants Shortened URL</label>
+    <length>255</length>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ArdiraSurvey__Participant_Geo_Location_Tracking__c</fullName>
+    <defaultValue>&quot;No Tracking&quot;</defaultValue>
+    <deprecated>false</deprecated>
+    <description>Configuration for participant geo tracking.</description>
+    <inlineHelpText>Select the desired configuration for participant Geo location tracking:
+No Tracking: No tracking of participant Geo location.
+Geo Location Only: Track and capture participant Geo location.
+Geo Location and IP Address: Track and capture both participant Geo location and IP address.</inlineHelpText>
+    <label>Participant Geo Location Tracking</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>No Tracking</fullName>
+                <default>true</default>
+                <label>No Tracking</label>
+            </value>
+            <value>
+                <fullName>Geo Location Only</fullName>
+                <default>false</default>
+                <label>Geo Location Only</label>
+            </value>
+            <value>
+                <fullName>Geo Location and IP Address</fullName>
+                <default>false</default>
+                <label>Geo Location and IP Address</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

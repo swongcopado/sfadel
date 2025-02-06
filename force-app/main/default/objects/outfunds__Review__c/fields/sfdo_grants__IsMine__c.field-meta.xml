@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>sfdo_grants__IsMine__c</fullName>
+    <deprecated>false</deprecated>
+    <description>Indicates if the review is assigned to the person logged into the portal.</description>
+    <formula>$User.Username =  outfunds__AssignedTo__r.Username</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>My Review</label>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

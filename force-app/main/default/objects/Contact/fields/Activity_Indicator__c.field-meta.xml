@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Activity_Indicator__c</fullName>
+    <description>Indicates how recently we&apos;ve been in contact with this person</description>
+    <externalId>false</externalId>
+    <formula>IMAGE( IF(  Days_Since_Last_Activity__c &lt;31,&quot;/img/samples/light_green.gif&quot;, IF( Days_Since_Last_Activity__c &gt;100, &quot;/img/samples/light_red.gif&quot;,&quot;/img/samples/light_yellow.gif&quot;)),&quot;N/A&quot;,20,50)</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <inlineHelpText>&lt;31 days = Green, &gt;100 days = Red, Other = Yellow</inlineHelpText>
+    <label>Activity Indicator</label>
+    <required>false</required>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

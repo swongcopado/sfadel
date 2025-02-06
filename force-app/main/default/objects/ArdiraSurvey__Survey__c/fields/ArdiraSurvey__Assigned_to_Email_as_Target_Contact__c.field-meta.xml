@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ArdiraSurvey__Assigned_to_Email_as_Target_Contact__c</fullName>
+    <defaultValue>false</defaultValue>
+    <deprecated>false</deprecated>
+    <description>When a survey is assigned to an email, enable to find and link the contact as the target contact. If there are multiple contacts with the same email, it will randomly pick one.</description>
+    <inlineHelpText>When a survey is assigned to an email, enabling this option allows you to automatically link the contact associated with that email as the target contact for the survey. If there are multiple contacts with the same email, the system will randomly select one of them.</inlineHelpText>
+    <label>Link Assigned to Email as Target Contact</label>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

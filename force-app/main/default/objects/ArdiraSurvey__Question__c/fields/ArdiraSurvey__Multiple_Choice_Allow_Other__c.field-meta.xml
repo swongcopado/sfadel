@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ArdiraSurvey__Multiple_Choice_Allow_Other__c</fullName>
+    <defaultValue>false</defaultValue>
+    <deprecated>false</deprecated>
+    <description>If checked, add &quot;other&quot; choice that allows text entry.</description>
+    <inlineHelpText>Enable to add ‘Other’ as one of the answer choice for the question response. A text field will also be added along with this choice.</inlineHelpText>
+    <label>Multiple Choice - Allow Other</label>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

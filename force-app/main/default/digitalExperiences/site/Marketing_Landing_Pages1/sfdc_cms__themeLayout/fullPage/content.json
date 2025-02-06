@@ -1,0 +1,13 @@
+{
+  "type" : "sfdc_cms__themeLayout",
+  "title" : "Full Page",
+  "contentBody" : {
+    "component" : {
+      "attributes" : { },
+      "definition" : "experience_marketing_landing:fullPage",
+      "id" : "b26b64b5-3c1c-4ca5-87a4-ca0232790ac5",
+      "type" : "component"
+    }
+  },
+  "urlName" : "full-page"
+}

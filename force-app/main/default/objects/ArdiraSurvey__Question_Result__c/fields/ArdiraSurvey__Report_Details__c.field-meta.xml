@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ArdiraSurvey__Report_Details__c</fullName>
+    <defaultValue>false</defaultValue>
+    <deprecated>false</deprecated>
+    <description>A field that can be used to show/hide a hyperlink to a question result in the survey result view response / report page.</description>
+    <inlineHelpText>A field that can be used to show/hide a hyperlink to a question result in the survey result view response / report page.</inlineHelpText>
+    <label>Report Details</label>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

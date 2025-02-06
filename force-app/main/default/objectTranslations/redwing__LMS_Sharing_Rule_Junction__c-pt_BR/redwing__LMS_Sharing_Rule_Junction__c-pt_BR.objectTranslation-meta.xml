@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Junção da regra de compartilham. de LMS</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Junções da regra de compartilham. de LMS</value>
+    </caseValues>
+    <gender>Feminine</gender>
+    <nameFieldLabel>Nome da junção da regra de compart. LMS</nameFieldLabel>
+</CustomObjectTranslation>

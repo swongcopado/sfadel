@@ -1,0 +1,71 @@
+{
+  "appPageId" : "7fe97e67-1ab0-4fe3-8497-ddfeb8bcee4b",
+  "componentName" : "siteforce:dynamicLayout",
+  "dataProviders" : [ ],
+  "id" : "d7c0f052-987f-43e5-a7db-cb991c4bb42b",
+  "label" : "Seafood Data Submission",
+  "regions" : [ {
+    "components" : [ {
+      "componentAttributes" : {
+        "background" : "background: rgba(0,0,0,0)",
+        "backgroundOverlay" : "rgba(0,0,0,0.5)",
+        "contentAreaWidth" : 100,
+        "sectionConfig" : {
+          "UUID" : "30a58298-6f56-4053-9d65-fac44c8b6681",
+          "columns" : [ {
+            "UUID" : "41910c8c-57c8-45e3-b254-0e65a4122d0b",
+            "columnKey" : "1",
+            "columnName" : "Column 1",
+            "columnWidth" : "12",
+            "seedComponents" : [ ]
+          } ]
+        },
+        "sectionHeight" : 300
+      },
+      "componentName" : "forceCommunity:section",
+      "id" : "30a58298-6f56-4053-9d65-fac44c8b6681",
+      "regions" : [ {
+        "components" : [ {
+          "componentAttributes" : {
+            "flowArguments" : "[]",
+            "flowName" : "SFA_Seafood_Data_Submission"
+          },
+          "componentName" : "forceCommunity:flowCommunity",
+          "id" : "63261c12-9562-465b-91a6-ec1a50c01239",
+          "renderPriority" : "NEUTRAL",
+          "renditionMap" : { },
+          "type" : "component"
+        } ],
+        "id" : "41910c8c-57c8-45e3-b254-0e65a4122d0b",
+        "regionLabel" : "Column 1",
+        "regionName" : "1",
+        "renditionMap" : { },
+        "type" : "region"
+      } ],
+      "renderPriority" : "NEUTRAL",
+      "renditionMap" : { },
+      "type" : "component"
+    } ],
+    "id" : "9b6d8734-64f3-404f-9976-7dbfa3004018",
+    "regionName" : "content",
+    "type" : "region"
+  }, {
+    "components" : [ {
+      "componentAttributes" : {
+        "customHeadTags" : "",
+        "description" : "",
+        "title" : "Seafood Data Submission"
+      },
+      "componentName" : "forceCommunity:seoAssistant",
+      "id" : "a7c97edc-ca9f-47bb-a289-593ebdd60ba9",
+      "renditionMap" : { },
+      "type" : "component"
+    } ],
+    "id" : "840c5818-c1f4-4856-a573-c990890b065f",
+    "regionName" : "sfdcHiddenRegion",
+    "type" : "region"
+  } ],
+  "themeLayoutType" : "Inner",
+  "type" : "view",
+  "viewType" : "custom-seafood-data-submission"
+}

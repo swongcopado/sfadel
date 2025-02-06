@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ArdiraSurvey__Community_Assignment__c</fullName>
+    <defaultValue>false</defaultValue>
+    <deprecated>false</deprecated>
+    <description>If checked, indicates that this survey assignment is for a community user. Community user can be an authenticated user or a guest user.</description>
+    <inlineHelpText>If checked, indicates that this survey assignment is for a community user. Community user can be an authenticated user or a guest user.</inlineHelpText>
+    <label>Community Assignment</label>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

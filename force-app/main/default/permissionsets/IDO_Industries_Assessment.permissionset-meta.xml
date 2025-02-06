@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PermissionSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <description>What: Grants access to Industry Assessments Discovery Framework
+Who: Daniel Rushbrook
+When: 2023-03-30</description>
+    <hasActivationRequired>false</hasActivationRequired>
+    <label>Industries Assessment</label>
+    <license>IndustriesAssessmentPsl</license>
+    <userPermissions>
+        <enabled>true</enabled>
+        <name>AssessmentPlatformUser</name>
+    </userPermissions>
+</PermissionSet>

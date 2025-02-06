@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ArdiraSurvey__Survey_Result_Flags__c</fullName>
+    <deprecated>false</deprecated>
+    <description>A bitmap field for internal use, where each bit corresponds to a specific flag.</description>
+    <externalId>false</externalId>
+    <label>Survey Result Flags</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>0</scale>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Number</type>
+    <unique>false</unique>
+</CustomField>

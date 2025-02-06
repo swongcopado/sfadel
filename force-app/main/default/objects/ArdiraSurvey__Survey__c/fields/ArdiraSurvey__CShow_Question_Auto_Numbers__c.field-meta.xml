@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ArdiraSurvey__CShow_Question_Auto_Numbers__c</fullName>
+    <deprecated>false</deprecated>
+    <description>Do not auto number - Do not auto number questions
+Auto number questions over the entire survey - Auto number questions relative to the survey as a whole
+Auto number each page of questions separately - Restart auto numbering on each page starting at 1</description>
+    <inlineHelpText>Choose the desired question auto numbering option:
+No numbering: Questions will not be numbered.
+Sequential numbering: Questions will be numbered sequentially throughout the entire survey.
+Section-based numbering: Questions will be numbered separately within each section, starting from 1 for each new section.</inlineHelpText>
+    <label>Question Auto Numbering</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Do not auto number</fullName>
+                <default>true</default>
+                <label>No numbering</label>
+            </value>
+            <value>
+                <fullName>Auto number questions over the entire survey</fullName>
+                <default>false</default>
+                <label>Sequential numbering</label>
+            </value>
+            <value>
+                <fullName>Auto number each section of questions separately</fullName>
+                <default>false</default>
+                <label>Section-based numbering</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

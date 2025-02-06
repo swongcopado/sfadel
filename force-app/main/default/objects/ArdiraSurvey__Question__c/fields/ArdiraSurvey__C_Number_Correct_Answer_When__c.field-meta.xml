@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ArdiraSurvey__C_Number_Correct_Answer_When__c</fullName>
+    <defaultValue>&quot;Answered&quot;</defaultValue>
+    <deprecated>false</deprecated>
+    <description>Rule to determine a correct answer</description>
+    <inlineHelpText>Specify when a response to the question can be marked as the correct response.</inlineHelpText>
+    <label>Number Question - Correct Answer When</label>
+    <required>true</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Answered</fullName>
+                <default>true</default>
+                <label>Answered</label>
+            </value>
+            <value>
+                <fullName>Answer Equals To</fullName>
+                <default>false</default>
+                <label>Answer Equals To</label>
+            </value>
+            <value>
+                <fullName>Answer Not Equals To</fullName>
+                <default>false</default>
+                <label>Answer Not Equals To</label>
+            </value>
+            <value>
+                <fullName>Answer Less Than</fullName>
+                <default>false</default>
+                <label>Answer Less Than</label>
+            </value>
+            <value>
+                <fullName>Answer Less Or Equal To</fullName>
+                <default>false</default>
+                <label>Answer Less Or Equal To</label>
+            </value>
+            <value>
+                <fullName>Answer Greater Than</fullName>
+                <default>false</default>
+                <label>Answer Greater Than</label>
+            </value>
+            <value>
+                <fullName>Answer Greater Or Equal To</fullName>
+                <default>false</default>
+                <label>Answer Greater Or Equal To</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

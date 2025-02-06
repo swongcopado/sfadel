@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Enregistrement de l&apos;opération par lots</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Enregistrements de l&apos;opération par lots</value>
+    </caseValues>
+    <gender>Masculine</gender>
+    <nameFieldLabel>ID d&apos;enregistrement de l&apos;opération par l</nameFieldLabel>
+    <startsWith>Vowel</startsWith>
+</CustomObjectTranslation>

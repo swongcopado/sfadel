@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ArdiraSurvey__CEven_Question_Background_Color__c</fullName>
+    <defaultValue>&quot;#FFFFFF&quot;</defaultValue>
+    <deprecated>false</deprecated>
+    <description>Select background color to use for even questions e.g. 2, 4, 6…</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Choose a background color to be used for even-numbered questions (e.g., 2, 4, 6...) in the survey response. This allows you to differentiate the appearance of even questions from odd questions, creating a visually distinct layout for a better user experience.</inlineHelpText>
+    <label>Even Question Background</label>
+    <length>40</length>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

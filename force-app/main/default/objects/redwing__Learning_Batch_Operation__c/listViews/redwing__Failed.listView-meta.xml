@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>redwing__Failed</fullName>
+    <columns>NAME</columns>
+    <columns>redwing__Batch_Id__c</columns>
+    <columns>redwing__Batch_Type__c</columns>
+    <columns>redwing__Batch_Status__c</columns>
+    <columns>redwing__Batch_Operation_Stage__c</columns>
+    <columns>LAST_UPDATE</columns>
+    <columns>redwing__Processing_Errors__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>redwing__Batch_Status__c</field>
+        <operation>equals</operation>
+        <value>Failed</value>
+    </filters>
+    <label>Failed</label>
+</ListView>

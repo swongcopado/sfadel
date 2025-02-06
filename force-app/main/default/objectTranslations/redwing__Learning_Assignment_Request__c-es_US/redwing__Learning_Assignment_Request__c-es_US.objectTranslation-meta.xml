@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Solicitud de la asignación de formación</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Solicitudes de asignaciones de formación</value>
+    </caseValues>
+    <gender>Feminine</gender>
+    <nameFieldLabel>Solicitudes de la asig. de formación</nameFieldLabel>
+</CustomObjectTranslation>

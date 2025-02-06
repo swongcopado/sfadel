@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ArdiraSurvey__Answer_Text_Other3__c</fullName>
+    <deprecated>false</deprecated>
+    <description>This field serves multiple functions based on the type of question asked: For Address question, it stores Province Name. For Full Name question, it stores Middle Name. For Payment Gateway questions, it stores payment intent id for Stripe and transaction Id for PayPal.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>This field serves multiple functions based on the type of question asked: For Address question, it stores Province Name. For Full Name question, it stores Middle Name. For Payment Gateway questions, it stores payment intent id for Stripe and transaction Id for PayPal.</inlineHelpText>
+    <label>Answer Text Other3</label>
+    <length>255</length>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

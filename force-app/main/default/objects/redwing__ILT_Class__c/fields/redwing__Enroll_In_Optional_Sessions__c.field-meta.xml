@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>redwing__Enroll_In_Optional_Sessions__c</fullName>
+    <defaultValue>false</defaultValue>
+    <deprecated>false</deprecated>
+    <inlineHelpText>If selected, end users will be automatically enrolled in all optional session of the class. If not, then users will need to be manually enrolled in each session.</inlineHelpText>
+    <label>Auto Enroll in Optional ILT Sessions</label>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

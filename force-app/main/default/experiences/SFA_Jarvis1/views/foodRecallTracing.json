@@ -1,0 +1,71 @@
+{
+  "appPageId" : "7fe97e67-1ab0-4fe3-8497-ddfeb8bcee4b",
+  "componentName" : "siteforce:dynamicLayout",
+  "dataProviders" : [ ],
+  "id" : "df0434b7-8939-4dd4-8e02-05af39004684",
+  "label" : "Food Recall tracing",
+  "regions" : [ {
+    "components" : [ {
+      "componentAttributes" : {
+        "background" : "background: rgba(0,0,0,0)",
+        "backgroundOverlay" : "rgba(0,0,0,0.5)",
+        "contentAreaWidth" : 100,
+        "sectionConfig" : {
+          "UUID" : "da53a4c3-4c80-417d-b07a-2c578c320eb1",
+          "columns" : [ {
+            "UUID" : "2a4d96f3-57f7-4403-b35f-d7ca841255cb",
+            "columnKey" : "1",
+            "columnName" : "Column 1",
+            "columnWidth" : "12",
+            "seedComponents" : [ ]
+          } ]
+        },
+        "sectionHeight" : 300
+      },
+      "componentName" : "forceCommunity:section",
+      "id" : "da53a4c3-4c80-417d-b07a-2c578c320eb1",
+      "regions" : [ {
+        "components" : [ {
+          "componentAttributes" : {
+            "flowArguments" : "",
+            "flowName" : "SFA_Seafood_Data_Submission"
+          },
+          "componentName" : "forceCommunity:flowCommunity",
+          "id" : "83179bea-7eb3-4edf-bc9d-10e97ba794e1",
+          "renderPriority" : "NEUTRAL",
+          "renditionMap" : { },
+          "type" : "component"
+        } ],
+        "id" : "2a4d96f3-57f7-4403-b35f-d7ca841255cb",
+        "regionLabel" : "Column 1",
+        "regionName" : "1",
+        "renditionMap" : { },
+        "type" : "region"
+      } ],
+      "renderPriority" : "NEUTRAL",
+      "renditionMap" : { },
+      "type" : "component"
+    } ],
+    "id" : "eed2536d-0612-4405-9e4e-309d80fa471f",
+    "regionName" : "content",
+    "type" : "region"
+  }, {
+    "components" : [ {
+      "componentAttributes" : {
+        "customHeadTags" : "",
+        "description" : "",
+        "title" : "Food Recall tracing"
+      },
+      "componentName" : "forceCommunity:seoAssistant",
+      "id" : "0cd7e30f-c538-4d3c-a2bf-04cfb451f56b",
+      "renditionMap" : { },
+      "type" : "component"
+    } ],
+    "id" : "9a880b05-05e5-4b86-b2b5-54b167f30c13",
+    "regionName" : "sfdcHiddenRegion",
+    "type" : "region"
+  } ],
+  "themeLayoutType" : "Inner",
+  "type" : "view",
+  "viewType" : "custom-food-recall-tracing"
+}

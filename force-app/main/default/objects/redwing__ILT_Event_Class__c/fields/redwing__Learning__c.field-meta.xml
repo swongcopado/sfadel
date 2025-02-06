@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>redwing__Learning__c</fullName>
+    <deleteConstraint>SetNull</deleteConstraint>
+    <deprecated>false</deprecated>
+    <label>Learning</label>
+    <lookupFilter>
+        <active>true</active>
+        <filterItems>
+            <field>redwing__Learning__c.RecordType.DeveloperName</field>
+            <operation>equals</operation>
+            <value>ILT</value>
+        </filterItems>
+        <isOptional>false</isOptional>
+    </lookupFilter>
+    <referenceTo>redwing__Learning__c</referenceTo>
+    <relationshipLabel>ILT Event Classes</relationshipLabel>
+    <relationshipName>ILT_Event_Classes</relationshipName>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Lookup</type>
+</CustomField>

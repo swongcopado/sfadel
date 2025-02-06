@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ArdiraSurvey__Layout_Type__c</fullName>
+    <deprecated>false</deprecated>
+    <description>Select a layout for view response interface and survey result report page.</description>
+    <inlineHelpText>Choose the layout type for the preview interface and survey result report page:
+
+    Compact: Offers a condensed display, maximizing space utilization for a more efficient view.
+    Comfy: Provides a more spacious and comfortable display, ensuring a user-friendly experience with ample spacing and padding around the elements.</inlineHelpText>
+    <label>Response Layout Type</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Compact</fullName>
+                <default>false</default>
+                <label>Compact</label>
+            </value>
+            <value>
+                <fullName>Comfy</fullName>
+                <default>true</default>
+                <label>Comfy</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

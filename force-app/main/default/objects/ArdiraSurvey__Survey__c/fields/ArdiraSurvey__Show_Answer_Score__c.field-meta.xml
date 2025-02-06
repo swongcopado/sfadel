@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ArdiraSurvey__Show_Answer_Score__c</fullName>
+    <deprecated>false</deprecated>
+    <description>When a question is responded, choose to show a question score in the responder interface.</description>
+    <inlineHelpText>When enabled, the responder interface will display the score or points associated with each question when it is answered. This allows the quiz taker to see the score they received for each question, providing them with immediate feedback on their performance.</inlineHelpText>
+    <label>Display Answer Score</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Never</fullName>
+                <default>true</default>
+                <label>Never</label>
+            </value>
+            <value>
+                <fullName>Always</fullName>
+                <default>false</default>
+                <label>Always</label>
+            </value>
+            <value>
+                <fullName>Only on Retake</fullName>
+                <default>false</default>
+                <label>Only on Retake</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

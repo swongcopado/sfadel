@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Workflow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <alerts>
+        <fullName>ArdiraSurvey__Survey_Assignment_Notification_To_Contact</fullName>
+        <description>Survey Assignment Notification To Contact</description>
+        <protected>false</protected>
+        <recipients>
+            <field>ArdiraSurvey__Assigned_To_Contact__c</field>
+            <type>contactLookup</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>ArdiraSurvey__Survey_Email_Templates/ArdiraSurvey__Survey_Assignment_Notification_To_User</template>
+    </alerts>
+    <alerts>
+        <fullName>ArdiraSurvey__Survey_Assignment_Notification_To_Email</fullName>
+        <description>Survey Assignment Notification To Email</description>
+        <protected>false</protected>
+        <recipients>
+            <field>ArdiraSurvey__Assigned_To_Email__c</field>
+            <type>email</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>ArdiraSurvey__Survey_Email_Templates/ArdiraSurvey__Survey_Assignment_Notification_To_User</template>
+    </alerts>
+    <alerts>
+        <fullName>ArdiraSurvey__Survey_Assignment_Notification_To_User</fullName>
+        <description>Survey Assignment Notification To User</description>
+        <protected>false</protected>
+        <recipients>
+            <field>ArdiraSurvey__Assigned_To_User__c</field>
+            <type>userLookup</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>ArdiraSurvey__Survey_Email_Templates/ArdiraSurvey__Survey_Assignment_Notification_To_User</template>
+    </alerts>
+    <alerts>
+        <fullName>ArdiraSurvey__Survey_Reminder_Notification_To_Contact</fullName>
+        <description>Survey Reminder Notification To Contact</description>
+        <protected>false</protected>
+        <recipients>
+            <field>ArdiraSurvey__Assigned_To_Contact__c</field>
+            <type>contactLookup</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>ArdiraSurvey__Survey_Email_Templates/ArdiraSurvey__Survey_Reminder_Notification</template>
+    </alerts>
+    <alerts>
+        <fullName>ArdiraSurvey__Survey_Reminder_Notification_To_Email</fullName>
+        <description>Survey Reminder Notification To Email</description>
+        <protected>false</protected>
+        <recipients>
+            <field>ArdiraSurvey__Assigned_To_Email__c</field>
+            <type>email</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>ArdiraSurvey__Survey_Email_Templates/ArdiraSurvey__Survey_Reminder_Notification</template>
+    </alerts>
+    <alerts>
+        <fullName>ArdiraSurvey__Survey_Reminder_Notification_To_User</fullName>
+        <description>Survey Reminder Notification To User</description>
+        <protected>false</protected>
+        <recipients>
+            <field>ArdiraSurvey__Assigned_To_User__c</field>
+            <type>userLookup</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>ArdiraSurvey__Survey_Email_Templates/ArdiraSurvey__Survey_Reminder_Notification</template>
+    </alerts>
+</Workflow>

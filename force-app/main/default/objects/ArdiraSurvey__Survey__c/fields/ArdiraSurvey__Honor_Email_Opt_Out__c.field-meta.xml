@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ArdiraSurvey__Honor_Email_Opt_Out__c</fullName>
+    <defaultValue>false</defaultValue>
+    <deprecated>false</deprecated>
+    <description>When enabled, if a survey is assigned to a lead or contact as a recipient and the recipient record Email Opt Out field is set to true, do not send email notification.</description>
+    <inlineHelpText>When enabled, if a survey is assigned to a Lead or Contact recipient and the Email Opt Out field is set to true in the recipient&apos;s record, no email notification will be sent. This setting respects the recipient&apos;s preference to opt out of email communications, ensuring compliance with their choices and avoiding sending unwanted emails.</inlineHelpText>
+    <label>Respect Email Opt-Out</label>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

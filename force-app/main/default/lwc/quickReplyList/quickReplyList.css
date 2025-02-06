@@ -1,0 +1,15 @@
+button.btn-quick-reply {
+    /* Rounded button */
+    color: var(--lwc-brandTextLink, #006dcc);
+    background-color: white;
+    border: 1px solid var(--lwc-colorBorderButtonDefault);
+    border-radius: 15rem;
+    padding: 0.2em 1em;
+    max-width: 30ch;
+}
+
+button.btn-quick-reply:hover {
+    color: var(--lwc-brandTextLink, #006dcc);
+    background-color: var(--lwc-brandBackgroundPrimary);
+    opacity: 1;
+}

@@ -1,0 +1,7 @@
+<apex:page controller="ESRIApplyHeader">
+   <apex:outputPanel id="ESRIMap">
+       <div class="slds-panel slds-grid slds-grid--vertical slds-panel__section " style="position: relative; height: 600px">            
+            <c:ESRIMap ></c:ESRIMap>
+       </div>
+   </apex:outputPanel>
+</apex:page>

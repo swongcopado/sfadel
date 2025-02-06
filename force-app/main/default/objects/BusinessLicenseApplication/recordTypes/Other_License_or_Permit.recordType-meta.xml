@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RecordType xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Other_License_or_Permit</fullName>
+    <active>true</active>
+    <description>Non-reopening</description>
+    <label>License or Permit</label>
+    <picklistValues>
+        <picklist>ApplicationCategory</picklist>
+        <values>
+            <fullName>Basic</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Special</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>ApplicationType</picklist>
+        <values>
+            <fullName>New</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Renewal</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Application_Source__c</picklist>
+        <values>
+            <fullName>Bot</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Category</picklist>
+        <values>
+            <fullName>License</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Permit</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>PublicSector__ReopeningPermitType__c</picklist>
+        <values>
+            <fullName>Curbside Service</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Indoor Operation</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Outdoor Operation</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Status</picklist>
+        <values>
+            <fullName>Application Accepted</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Approved</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>In Review</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Inspection Completed</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Inspection Phase</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>License Issued</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Submitted</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Violations Observed</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Type_of_Work__c</picklist>
+        <values>
+            <fullName>Building Demolition</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Building Expansion</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Other</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Removal of a Tree</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Removal of a Tree Stump</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Work_Entity_Information__c</picklist>
+        <values>
+            <fullName>General Contractor</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Other</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Property Owner</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+</RecordType>

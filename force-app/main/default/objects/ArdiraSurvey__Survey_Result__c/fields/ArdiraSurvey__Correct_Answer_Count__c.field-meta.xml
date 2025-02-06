@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ArdiraSurvey__Correct_Answer_Count__c</fullName>
+    <deprecated>false</deprecated>
+    <label>Correct Answer Count</label>
+    <summaryFilterItems>
+        <field>ArdiraSurvey__Question_Result__c.ArdiraSurvey__Is_Correct_Answer__c</field>
+        <operation>equals</operation>
+        <value>Yes</value>
+    </summaryFilterItems>
+    <summaryFilterItems>
+        <field>ArdiraSurvey__Question_Result__c.ArdiraSurvey__Question_Is_Main_Question__c</field>
+        <operation>equals</operation>
+        <value>False</value>
+    </summaryFilterItems>
+    <summaryForeignKey>ArdiraSurvey__Question_Result__c.ArdiraSurvey__Survey_Result__c</summaryForeignKey>
+    <summaryOperation>count</summaryOperation>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Summary</type>
+</CustomField>

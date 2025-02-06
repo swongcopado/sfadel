@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Survey_Comment__c</fullName>
+    <description>Comments relating to their choice of positive or negative for the bot session</description>
+    <inlineHelpText>Comments relating to their choice of positive or negative for the bot session</inlineHelpText>
+    <label>Survey Comment</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>TextArea</type>
+</CustomField>

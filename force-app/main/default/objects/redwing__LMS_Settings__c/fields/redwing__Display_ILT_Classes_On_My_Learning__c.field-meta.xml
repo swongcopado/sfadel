@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>redwing__Display_ILT_Classes_On_My_Learning__c</fullName>
+    <defaultValue>true</defaultValue>
+    <deprecated>false</deprecated>
+    <inlineHelpText>Enable this option if you would like to show ILT Classes on Learning List component and account them in the counters on the Learning User Profile, My Team and My Team Overview components.</inlineHelpText>
+    <label>Display ILT Classes on My Learning</label>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

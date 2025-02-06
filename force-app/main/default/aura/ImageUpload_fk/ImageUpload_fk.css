@@ -1,0 +1,92 @@
+.THIS {
+}
+.THIS.container{
+    padding: 20px;
+    position: relative;
+}
+.THIS .message {
+    margin: 20px 0 0 0;
+    padding: 12px 15px 14px 15px;
+    background-color: #04844b;
+    border-radius: 4px;
+    color: #FFFFFF;
+}
+.THIS .warning {
+    background-color: #ffb75d;
+    color: #16325c
+}
+.THIS .camera {    
+    width: 27px;
+    position: absolute;
+    top: 3px;
+    left: 10px;
+    
+}
+.THIS .camera-button-div{
+    /*width: 174px;
+    height: 36px;
+    overflow: hidden;
+    float: left;*/
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+}
+.THIS .camera-button{
+    padding-left: 47px;
+}
+.THIS .file-button {
+    opacity: 0;
+    filter: alpha(opacity: 0);
+    position: absolute;
+    top: 0px;
+    left: 0;
+    width: 174px;
+    height: 36px;
+    cursor: pointer;
+}
+.THIS .save-button{
+    opacity: 10;
+    margin-left: 15px;
+    position: relative;
+}
+.THIS .file-image-display{
+    max-width: calc(100% - 40px);
+    max-height:600px; 
+    border-radius: 2px;
+    padding: 0px;
+    border: 1px solid rgb(216, 221, 230);
+    box-shadow: 0 0 0 7px #fff, 
+                0 0 0 8px #ddd;
+    margin: 10px;
+    background-color: #eee;
+}
+.THIS .clear{
+    clear: left;
+    margin-top: 20px;
+}
+.THIS .loadingX{
+    position: absolute;
+    z-index: 1000;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background: rgba( 0, 0, 0, .5 ) 
+    50% 50% 
+    no-repeat;
+}
+.THIS .loading-imageX{
+    position: absolute;
+    top: calc(50% - 30px);
+    left: calc(50% - 30px);
+    width: 60px;
+}
+.THIS .clicked{
+    background-color: rgba(25, 124, 190, 0.1);
+}
+.THIS .display-none{
+    display: none;
+}
+.THIS.display-none{
+    display: none;
+}

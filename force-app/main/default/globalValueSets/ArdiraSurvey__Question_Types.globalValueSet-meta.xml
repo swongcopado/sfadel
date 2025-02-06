@@ -1,0 +1,217 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customValue>
+        <fullName>Text-Short</fullName>
+        <default>false</default>
+        <label>Text Question - Short</label>
+    </customValue>
+    <customValue>
+        <fullName>Text-Long</fullName>
+        <default>false</default>
+        <label>Text Question - Long</label>
+    </customValue>
+    <customValue>
+        <fullName>Text-Rich</fullName>
+        <default>false</default>
+        <label>Text Question - Rich</label>
+    </customValue>
+    <customValue>
+        <fullName>Text-URL</fullName>
+        <default>false</default>
+        <label>Text Question - URL</label>
+    </customValue>
+    <customValue>
+        <fullName>Text-Email</fullName>
+        <default>false</default>
+        <label>Text Question - Email</label>
+    </customValue>
+    <customValue>
+        <fullName>Text-Thanks</fullName>
+        <default>false</default>
+        <label>Text Question - Thank You</label>
+    </customValue>
+    <customValue>
+        <fullName>Polar-Yes/No</fullName>
+        <default>false</default>
+        <label>Yes-No Question</label>
+    </customValue>
+    <customValue>
+        <fullName>Polar-Customer Satisfaction</fullName>
+        <default>false</default>
+        <label>Customer Satisfaction</label>
+    </customValue>
+    <customValue>
+        <fullName>Polar-Net Promoter</fullName>
+        <default>false</default>
+        <label>Net Promoter</label>
+    </customValue>
+    <customValue>
+        <fullName>Polar-Numeric Scale</fullName>
+        <default>false</default>
+        <label>Numeric Scale</label>
+    </customValue>
+    <customValue>
+        <fullName>Polar-Image Scale</fullName>
+        <default>false</default>
+        <label>Image Scale</label>
+    </customValue>
+    <customValue>
+        <fullName>Polar-Radio</fullName>
+        <default>false</default>
+        <label>Radio</label>
+    </customValue>
+    <customValue>
+        <fullName>Multiple Choice</fullName>
+        <default>false</default>
+        <label>Multiple Choice</label>
+    </customValue>
+    <customValue>
+        <fullName>Date</fullName>
+        <default>false</default>
+        <label>Date</label>
+    </customValue>
+    <customValue>
+        <fullName>Date Time</fullName>
+        <default>false</default>
+        <label>Date Time</label>
+    </customValue>
+    <customValue>
+        <fullName>Number</fullName>
+        <default>false</default>
+        <label>Number</label>
+    </customValue>
+    <customValue>
+        <fullName>Percentage</fullName>
+        <default>false</default>
+        <label>Percentage</label>
+    </customValue>
+    <customValue>
+        <fullName>Document Upload</fullName>
+        <default>false</default>
+        <label>Document Upload</label>
+    </customValue>
+    <customValue>
+        <fullName>Rating</fullName>
+        <default>false</default>
+        <label>Rating</label>
+    </customValue>
+    <customValue>
+        <fullName>Ranking</fullName>
+        <default>false</default>
+        <label>Ranking</label>
+    </customValue>
+    <customValue>
+        <fullName>Grid-Rating</fullName>
+        <default>false</default>
+        <label>Grid - Rating</label>
+    </customValue>
+    <customValue>
+        <fullName>Grid-Multiple Choice</fullName>
+        <default>false</default>
+        <label>Grid - Multiple Choice</label>
+    </customValue>
+    <customValue>
+        <fullName>Grid-Polar Yes/No</fullName>
+        <default>false</default>
+        <label>Grid - Yes-No Question</label>
+    </customValue>
+    <customValue>
+        <fullName>Grid-Table</fullName>
+        <default>false</default>
+        <label>Grid - Table</label>
+    </customValue>
+    <customValue>
+        <fullName>Certification</fullName>
+        <default>false</default>
+        <label>Certification</label>
+    </customValue>
+    <customValue>
+        <fullName>Slider</fullName>
+        <default>false</default>
+        <label>Slider</label>
+    </customValue>
+    <customValue>
+        <fullName>Consent</fullName>
+        <default>false</default>
+        <label>Consent Statement</label>
+    </customValue>
+    <customValue>
+        <fullName>Signature</fullName>
+        <default>false</default>
+        <label>Signature</label>
+    </customValue>
+    <customValue>
+        <fullName>Video</fullName>
+        <default>false</default>
+        <label>Video</label>
+    </customValue>
+    <customValue>
+        <fullName>SF Integration</fullName>
+        <default>false</default>
+        <label>SF Integration</label>
+    </customValue>
+    <customValue>
+        <fullName>Radio - Using Salesforce Data</fullName>
+        <default>false</default>
+        <label>Radio - Using Salesforce Data</label>
+    </customValue>
+    <customValue>
+        <fullName>Multiple - Using Salesforce Data</fullName>
+        <default>false</default>
+        <label>Multiple - Using Salesforce Data</label>
+    </customValue>
+    <customValue>
+        <fullName>Salesforce Record Hierarchy</fullName>
+        <default>false</default>
+        <label>Salesforce Record Hierarchy</label>
+    </customValue>
+    <customValue>
+        <fullName>Formula</fullName>
+        <default>false</default>
+        <label>Formula</label>
+    </customValue>
+    <customValue>
+        <fullName>Unsubscribe</fullName>
+        <default>false</default>
+        <label>Unsubscribe</label>
+    </customValue>
+    <customValue>
+        <fullName>Appointment</fullName>
+        <default>false</default>
+        <label>Appointment</label>
+    </customValue>
+    <customValue>
+        <fullName>Phone Number</fullName>
+        <default>false</default>
+        <label>Phone Number</label>
+    </customValue>
+    <customValue>
+        <fullName>Address</fullName>
+        <default>false</default>
+        <label>Address</label>
+    </customValue>
+    <customValue>
+        <fullName>Full Name</fullName>
+        <default>false</default>
+        <label>Full Name</label>
+    </customValue>
+    <customValue>
+        <fullName>Currency</fullName>
+        <default>false</default>
+        <label>Currency</label>
+    </customValue>
+    <customValue>
+        <fullName>Consent Question</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Consent Question</label>
+    </customValue>
+    <customValue>
+        <fullName>Payment Gateway</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Payment Gateway</label>
+    </customValue>
+    <masterLabel>Question Types</masterLabel>
+    <sorted>false</sorted>
+</GlobalValueSet>

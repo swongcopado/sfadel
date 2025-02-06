@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebLink xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>redwing__Delete_Assignments</fullName>
+    <availability>online</availability>
+    <description>VF page for deleting assignments related to the current section item</description>
+    <displayType>button</displayType>
+    <height>600</height>
+    <linkType>page</linkType>
+    <masterLabel>Delete Assignments</masterLabel>
+    <openType>noSidebar</openType>
+    <page>redwing__TrainingPlanSectionItemAssignmentsDelete</page>
+    <protected>false</protected>
+</WebLink>

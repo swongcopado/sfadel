@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ArdiraSurvey__Number_of_Attempts_Allowed__c</fullName>
+    <defaultValue>1</defaultValue>
+    <deprecated>false</deprecated>
+    <description>This setting allows you to specify the number of times a user can retake a quiz in order to pass it. For example, if you set the number of retakes allowed to 3, a user will have up to 3 attempts to pass the quiz.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Determine the maximum number of quiz retakes allowed to pass the quiz. This setting controls the number of times a quiz taker can retake the quiz if they fail to achieve a passing score within their initial attempt. Once the retake limit is reached, further retakes will be restricted for the participant.</inlineHelpText>
+    <label>Quiz Retake Limit</label>
+    <precision>2</precision>
+    <required>false</required>
+    <scale>0</scale>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Number</type>
+    <unique>false</unique>
+</CustomField>

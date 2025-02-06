@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<SharingRules xmlns="http://soap.sforce.com/2006/04/metadata">
+    <sharingGuestRules>
+        <fullName>Access_Benefits_Community</fullName>
+        <accessLevel>Read</accessLevel>
+        <label>Access Benefits Community</label>
+        <sharedTo>
+            <guestUser>Access_Benefits</guestUser>
+        </sharedTo>
+        <criteriaItems>
+            <field>Name</field>
+            <operation>notEqual</operation>
+            <value>foo</value>
+        </criteriaItems>
+        <includeHVUOwnedRecords>false</includeHVUOwnedRecords>
+    </sharingGuestRules>
+    <sharingGuestRules>
+        <fullName>Emergency_Response_Guest</fullName>
+        <accessLevel>Read</accessLevel>
+        <label>Emergency Response Guest</label>
+        <sharedTo>
+            <guestUser>Emergency_Response_Community</guestUser>
+        </sharedTo>
+        <criteriaItems>
+            <field>Name</field>
+            <operation>notEqual</operation>
+            <value>foo</value>
+        </criteriaItems>
+        <includeHVUOwnedRecords>false</includeHVUOwnedRecords>
+    </sharingGuestRules>
+    <sharingGuestRules>
+        <fullName>Employee_Services_Guest</fullName>
+        <accessLevel>Read</accessLevel>
+        <label>Employee Services Guest</label>
+        <sharedTo>
+            <guestUser>Employee_Service_Community</guestUser>
+        </sharedTo>
+        <criteriaItems>
+            <field>Name</field>
+            <operation>notEqual</operation>
+            <value>foo</value>
+        </criteriaItems>
+        <includeHVUOwnedRecords>false</includeHVUOwnedRecords>
+    </sharingGuestRules>
+    <sharingGuestRules>
+        <fullName>Guest_Access</fullName>
+        <accessLevel>Read</accessLevel>
+        <label>Guest Access</label>
+        <sharedTo>
+            <guestUser>Constituent_Self_Service</guestUser>
+        </sharedTo>
+        <criteriaItems>
+            <field>Name</field>
+            <operation>notEqual</operation>
+            <value>FOO</value>
+        </criteriaItems>
+        <includeHVUOwnedRecords>false</includeHVUOwnedRecords>
+    </sharingGuestRules>
+    <sharingGuestRules>
+        <fullName>Integrated_Services_Guest</fullName>
+        <accessLevel>Read</accessLevel>
+        <label>Integrated Services Guest</label>
+        <sharedTo>
+            <guestUser>Integrated_Services</guestUser>
+        </sharedTo>
+        <criteriaItems>
+            <field>Name</field>
+            <operation>notEqual</operation>
+            <value>foo</value>
+        </criteriaItems>
+        <includeHVUOwnedRecords>false</includeHVUOwnedRecords>
+    </sharingGuestRules>
+    <sharingGuestRules>
+        <fullName>LPI</fullName>
+        <accessLevel>Read</accessLevel>
+        <label>LPI</label>
+        <sharedTo>
+            <guestUser>LPI</guestUser>
+        </sharedTo>
+        <criteriaItems>
+            <field>Name</field>
+            <operation>notEqual</operation>
+            <value>FOO</value>
+        </criteriaItems>
+        <includeHVUOwnedRecords>false</includeHVUOwnedRecords>
+    </sharingGuestRules>
+</SharingRules>

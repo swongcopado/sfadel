@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmbeddedServiceMenuSettings xmlns="http://soap.sforce.com/2006/04/metadata">
+    <embeddedServiceCustomizations>
+        <customizationName>SnapinsSnippetSettingsFile</customizationName>
+        <embeddedServiceResources>
+            <resource>PSS_snapinsSnippetSettingsFile_ChannelMenu</resource>
+            <resourceType>SettingsFile</resourceType>
+        </embeddedServiceResources>
+    </embeddedServiceCustomizations>
+    <embeddedServiceMenuItems>
+        <channel>GPS_ChatPack</channel>
+        <channelType>EmbeddedServiceConfig</channelType>
+        <displayOrder>1</displayOrder>
+        <isDisplayedOnPageLoad>true</isDisplayedOnPageLoad>
+        <itemName>Chat</itemName>
+        <osOptionsHideInIOS>false</osOptionsHideInIOS>
+        <osOptionsHideInLinuxOS>false</osOptionsHideInLinuxOS>
+        <osOptionsHideInMacOS>false</osOptionsHideInMacOS>
+        <osOptionsHideInOtherOS>false</osOptionsHideInOtherOS>
+        <osOptionsHideInWindowsOS>false</osOptionsHideInWindowsOS>
+        <shouldOpenUrlInSameTab>false</shouldOpenUrlInSameTab>
+    </embeddedServiceMenuItems>
+    <isEnabled>true</isEnabled>
+    <masterLabel>GPS_ChatPack</masterLabel>
+    <site>GPS_Chat_Pack_Test</site>
+</EmbeddedServiceMenuSettings>
