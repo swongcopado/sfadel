@@ -761,6 +761,12 @@
                 <identifier>RecordAge_cField</identifier>
             </fieldInstance>
         </itemInstances>
+        <itemInstances>
+            <fieldInstance>
+                <fieldItem>Record.Hobbies__c</fieldItem>
+                <identifier>RecordHobbies__cField</identifier>
+            </fieldInstance>
+        </itemInstances>
         <name>Facet-6081a253-3865-4e8f-8c57-8645210df29f</name>
         <type>Facet</type>
     </flexiPageRegions>
